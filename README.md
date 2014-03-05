@@ -1,2 +1,2 @@
-training
+training (for Active Commerce)
 ========

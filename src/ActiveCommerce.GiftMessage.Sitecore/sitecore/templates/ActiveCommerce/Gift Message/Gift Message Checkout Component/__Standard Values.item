@@ -1,0 +1,72 @@
+----item----
+version: 1
+id: {35D83205-1A76-4E5E-97BC-B86646538E05}
+database: master
+path: /sitecore/templates/ActiveCommerce/Gift Message/Gift Message Checkout Component/__Standard Values
+parent: {3A022A70-7856-467E-9D07-4793EA8C6445}
+name: __Standard Values
+master: {00000000-0000-0000-0000-000000000000}
+template: {3A022A70-7856-467E-9D07-4793EA8C6445}
+templatekey: Gift Message Checkout Component
+
+----version----
+language: en
+version: 1
+revision: 1bf7d476-bea8-4bd3-86aa-1ab0851d1321
+
+----field----
+field: {3CB48796-2247-46BE-806C-B0611FA99BC5}
+name: Title
+key: title
+content-length: 12
+
+Gift Message
+----field----
+field: {603B4EE5-894D-4556-8A08-CE5B7F90FD0B}
+name: Instructions
+key: instructions
+content-length: 42
+
+<p>You may enter up to 500 characters.</p>
+----field----
+field: {7D7EAD60-152D-44A7-B57F-0DA56FA3AF3E}
+name: Gift Message
+key: gift message
+content-length: 12
+
+Gift Message
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 15
+
+20140227T132813
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+1bf7d476-bea8-4bd3-86aa-1ab0851d1321
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20140227T132859:635291045397257991
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

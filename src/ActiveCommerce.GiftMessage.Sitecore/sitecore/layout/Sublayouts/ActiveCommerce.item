@@ -1,0 +1,65 @@
+----item----
+version: 1
+id: {C5DC71FB-5A8A-43F9-953C-45E364BBF869}
+database: master
+path: /sitecore/layout/Sublayouts/ActiveCommerce
+parent: {EB443C0B-F923-409E-85F3-E7893C8C30C2}
+name: ActiveCommerce
+master: {00000000-0000-0000-0000-000000000000}
+template: {3BAA73E5-6BA9-4462-BF72-C106F8801B11}
+templatekey: Sublayout Folder
+
+----field----
+field: {06D5295C-ED2F-4A54-9BF2-26228D113318}
+name: __Icon
+key: __icon
+content-length: 41
+
+activecommerce-icons/32x32/logo-black.png
+----field----
+field: {1172F251-DAD4-4EFB-A329-0C63500E4F1E}
+name: __Masters
+key: __masters
+content-length: 116
+
+{BD3AD888-7E9B-407E-95AF-ADFE0FD1DDEB}|{3BAA73E5-6BA9-4462-BF72-C106F8801B11}|{C8093866-77A8-4AB9-8AF5-A0388C921B72}
+----version----
+language: en
+version: 1
+revision: 3068e7c5-5a52-4050-a0c5-0d6e13d717fe
+
+----field----
+field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
+name: __Display name
+key: __display name
+content-length: 15
+
+Active Commerce
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 15
+
+20110623T150500
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+3068e7c5-5a52-4050-a0c5-0d6e13d717fe
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20121017T203145:634861027054954487
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
