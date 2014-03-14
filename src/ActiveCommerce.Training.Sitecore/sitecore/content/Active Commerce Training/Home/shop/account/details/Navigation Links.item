@@ -1,0 +1,58 @@
+----item----
+version: 1
+id: {B33DDCAA-16CC-48E4-8E34-E18B0639E3DF}
+database: master
+path: /sitecore/content/Active Commerce Training/Home/shop/account/details/Navigation Links
+parent: {8CDB6E0F-9766-4E96-8534-E199E4346625}
+name: Navigation Links
+master: {B0DB2EFD-FFF5-4D6D-ABC9-0C2026B0AD18}
+template: {E85B457D-FFB6-45CA-BBA7-F4F082734E52}
+templatekey: Navigation Links
+
+----field----
+field: {F6D8A61C-2F84-4401-BD24-52D2068172BC}
+name: __Originator
+key: __originator
+content-length: 0
+
+
+----version----
+language: en
+version: 1
+revision: 99d620a5-fd1b-4b35-847f-20ae76576cd1
+
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 15
+
+20140313T182632
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 17
+
+default\Anonymous
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+99d620a5-fd1b-4b35-847f-20ae76576cd1
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20140313T182632:635303319928976369
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 17
+
+default\Anonymous

@@ -1,0 +1,212 @@
+----item----
+version: 1
+id: {72E27D3E-C188-4D86-AE19-EB28F81AB44F}
+database: master
+path: /sitecore/content/Active Commerce Training/Site Settings/General
+parent: {5D9B223E-C457-42E8-9415-FF02274071B6}
+name: General
+master: {B0DB2EFD-FFF5-4D6D-ABC9-0C2026B0AD18}
+template: {DFCB0D08-B922-4FB7-9829-5739EEAEE271}
+templatekey: General
+
+----field----
+field: {DDFC0F05-E638-4D88-8B63-CD8E81304A16}
+name: Default VAT region
+key: default vat region
+content-length: 38
+
+{25D254A1-7B91-44AC-A39F-5958A83752FA}
+----field----
+field: {CB047C90-BA98-4949-9B34-672EBB762F71}
+name: Default Country
+key: default country
+content-length: 38
+
+{687DF23D-ED1D-4B9E-8409-5F47C32E138F}
+----field----
+field: {8B0A8F08-9628-4BC9-9DDB-7338C7EE5F91}
+name: Price Format String
+key: price format string
+content-length: 5
+
+{0:C}
+----field----
+field: {BA466EB0-F722-43A5-9C69-D2A33305BE41}
+name: Master Currency
+key: master currency
+content-length: 38
+
+{EDBD0D97-C388-4680-B0F5-5E90E88A11E1}
+----field----
+field: {7C796AFA-04AF-442E-B877-4CBEFD440868}
+name: Display Currency
+key: display currency
+content-length: 38
+
+{EDBD0D97-C388-4680-B0F5-5E90E88A11E1}
+----field----
+field: {3276AEB1-4FC3-4499-BC26-6674FEDB06FE}
+name: Display order status
+key: display order status
+content-length: 1
+
+1
+----field----
+field: {17DCBB4F-2C75-4205-B31C-609DA4D25E21}
+name: Display out of stock products
+key: display out of stock products
+content-length: 1
+
+1
+----field----
+field: {6D0B68EC-4D6B-418B-80F1-81C2A94E7F44}
+name: Show color swatches
+key: show color swatches
+content-length: 1
+
+1
+----field----
+field: {FA87B494-7D78-4DE5-947E-8D239264C06B}
+name: Main Login Link
+key: main login link
+content-length: 38
+
+{13B956FA-D0AB-422E-80B7-4CFCB081BF0E}
+----field----
+field: {5173E58C-EFF1-4828-B390-2991E3E5B737}
+name: Password Reminder Link
+key: password reminder link
+content-length: 38
+
+{13B956FA-D0AB-422E-80B7-4CFCB081BF0E}
+----field----
+field: {2DC4C967-91A3-49D2-B0F7-44EFF55CAC9B}
+name: New User Account Link
+key: new user account link
+content-length: 38
+
+{13B956FA-D0AB-422E-80B7-4CFCB081BF0E}
+----field----
+field: {F40A33C0-1492-4F88-8343-C8CCBDEA06F1}
+name: My Page Link
+key: my page link
+content-length: 38
+
+{8CDB6E0F-9766-4E96-8534-E199E4346625}
+----field----
+field: {D2E5012C-21BC-4A47-9919-93BCD39D8F2B}
+name: Search Page Link
+key: search page link
+content-length: 38
+
+{5B81F927-D996-4471-B0F6-2A05E671E518}
+----field----
+field: {8329A9EB-3D31-4E15-8E45-DD30BD299091}
+name: Product Compare Link
+key: product compare link
+content-length: 38
+
+{75D5C5B8-C4D2-4374-B73B-5018EF62D08A}
+----field----
+field: {228E31B8-6ACF-4FE7-8A52-6FF32BD21A58}
+name: Product Quick Look Link
+key: product quick look link
+content-length: 38
+
+{A3AB9B99-22FE-4BC8-A00C-96794E14319F}
+----field----
+field: {C865A64C-8DD9-4584-B5F3-BDBB3191B759}
+name: Main Logout Link
+key: main logout link
+content-length: 38
+
+{39F4C343-959B-4E77-B55E-D25A65158FC0}
+----field----
+field: {5CEFAF2D-0782-48BD-8B7F-EEB5C607ADA0}
+name: Shopping Cart Link
+key: shopping cart link
+content-length: 38
+
+{FC72CADD-E663-4050-89A2-DE3A6B303910}
+----field----
+field: {7142AE1D-7191-497D-A3F4-81AAF1B0715B}
+name: Mail Templates Link
+key: mail templates link
+content-length: 38
+
+{A10D13BD-19CA-47D6-8C3B-C3F76C6BC050}
+----field----
+field: {B1459446-AE11-49CB-9102-A0A9B0F5A899}
+name: Default Customer Roles
+key: default customer roles
+content-length: 17
+
+extranet\Customer
+----field----
+field: {06D5295C-ED2F-4A54-9BF2-26228D113318}
+name: __Icon
+key: __icon
+content-length: 28
+
+Applications/16x16/gears.png
+----field----
+field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
+name: __Sortorder
+key: __sortorder
+content-length: 3
+
+300
+----field----
+field: {F6D8A61C-2F84-4401-BD24-52D2068172BC}
+name: __Originator
+key: __originator
+content-length: 0
+
+
+----version----
+language: en
+version: 1
+revision: e22ea51c-58ad-43e9-a416-038708293f16
+
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 15
+
+20140313T182652
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 17
+
+default\Anonymous
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+e22ea51c-58ad-43e9-a416-038708293f16
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20140313T182654:635303320141866369
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 17
+
+default\Anonymous

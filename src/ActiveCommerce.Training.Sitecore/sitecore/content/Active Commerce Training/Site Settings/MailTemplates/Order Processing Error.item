@@ -1,0 +1,113 @@
+----item----
+version: 1
+id: {504EE4FC-8325-48D4-A453-83EEDD2EE728}
+database: master
+path: /sitecore/content/Active Commerce Training/Site Settings/MailTemplates/Order Processing Error
+parent: {A10D13BD-19CA-47D6-8C3B-C3F76C6BC050}
+name: Order Processing Error
+master: {B0DB2EFD-FFF5-4D6D-ABC9-0C2026B0AD18}
+template: {D21A3FBA-DCC2-429F-8301-03122C9F5F1C}
+templatekey: Mail Template
+
+----field----
+field: {5A05285B-7146-4E12-ACF6-0A48B7181EE5}
+name: From
+key: from
+content-length: 21
+
+no_reply@sitecore.net
+----field----
+field: {66A054A6-CC5A-4379-A32A-A3339D62D472}
+name: To
+key: to
+content-length: 11
+
+{Recipient}
+----field----
+field: {F6D8A61C-2F84-4401-BD24-52D2068172BC}
+name: __Originator
+key: __originator
+content-length: 0
+
+
+----version----
+language: en
+version: 1
+revision: bf848ad0-b6d4-4832-824f-d804da4a9e0c
+
+----field----
+field: {0D460F03-34DF-444A-9C76-7997F0069155}
+name: Subject
+key: subject
+content-length: 31
+
+Order Processing Error: {Error}
+----field----
+field: {27E74DE9-CC60-4CC4-BF45-C164A3099187}
+name: Body
+key: body
+content-length: 467
+
+<p>There was a serious error during order processing. Details are below.</p>
+<table>
+    <tbody>
+        <tr>
+            <th>Step</th>
+            <td>{Step}</td>
+        </tr>
+        <tr>
+            <th>Error</th>
+            <td>{Error}</td>
+        </tr>
+        <tr>
+            <th>Order Number</th>
+            <td>{OrderNumber}</td>
+        </tr>
+        <tr>
+            <th>Customer</th>
+            <td>{Customer}</td>
+        </tr>
+    </tbody>
+</table>
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 17
+
+default\Anonymous
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 15
+
+20140313T182653
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 17
+
+default\Anonymous
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+bf848ad0-b6d4-4832-824f-d804da4a9e0c
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20140313T182653:635303320130746369
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 17
+
+default\Anonymous

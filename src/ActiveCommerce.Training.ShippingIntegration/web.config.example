@@ -1,0 +1,21 @@
+﻿<?xml version="1.0"?>
+<configuration>
+
+    <system.web>
+      <compilation debug="true" targetFramework="4.5" />
+      <httpRuntime targetFramework="4.5" />
+    </system.web>
+
+    <system.serviceModel>
+        <bindings>
+            <basicHttpBinding>
+                <binding name="BasicHttpBinding_IShippingService" />
+            </basicHttpBinding>
+        </bindings>
+        <client>
+            <endpoint address="http://services.training.activecommerce.com/Services/ShippingService.svc"
+                binding="basicHttpBinding" bindingConfiguration="BasicHttpBinding_IShippingService"
+                contract="Services.IShippingService" name="BasicHttpBinding_IShippingService" />
+        </client>
+    </system.serviceModel>
+</configuration>

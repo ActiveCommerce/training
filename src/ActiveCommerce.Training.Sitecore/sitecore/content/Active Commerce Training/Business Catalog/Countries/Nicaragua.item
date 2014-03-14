@@ -1,0 +1,100 @@
+----item----
+version: 1
+id: {1A83348A-35BE-451D-8E8E-7F77A41AE7EC}
+database: master
+path: /sitecore/content/Active Commerce Training/Business Catalog/Countries/Nicaragua
+parent: {2B868FCD-E34A-45A7-9978-9A88A17F6735}
+name: Nicaragua
+master: {B0DB2EFD-FFF5-4D6D-ABC9-0C2026B0AD18}
+template: {3B064378-2EE3-4720-B3B5-4DF4EAED91C8}
+templatekey: Country
+
+----field----
+field: {221F40EE-7B31-4173-B163-9F7E8F53EA05}
+name: Code
+key: code
+content-length: 2
+
+NI
+----field----
+field: {3AD47898-202D-4B9B-A3AA-8585AA29FECF}
+name: Name
+key: name
+content-length: 9
+
+Nicaragua
+----field----
+field: {F6D8A61C-2F84-4401-BD24-52D2068172BC}
+name: __Originator
+key: __originator
+content-length: 0
+
+
+----field----
+field: {A4F985D9-98B3-4B52-AAAF-4344F6E747C6}
+name: __Workflow
+key: __workflow
+content-length: 38
+
+{27418690-B217-4D3A-A2E6-091A30B54886}
+----version----
+language: en
+version: 1
+revision: 76ec8e22-b0f7-43c3-92f2-36c1cacd4356
+
+----field----
+field: {EE4BD860-A144-4869-9E21-FA2441A85864}
+name: Title
+key: title
+content-length: 9
+
+Nicaragua
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 15
+
+20140313T182647
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 17
+
+default\Anonymous
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+76ec8e22-b0f7-43c3-92f2-36c1cacd4356
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20140313T183355:635303324354896369
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {3E431DE1-525E-47A3-B6B0-1CCBEC3A8C98}
+name: __Workflow state
+key: __workflow state
+content-length: 38
+
+{8AD77832-A5A9-4D4C-BF8A-186B21A56204}
+----field----
+field: {001DD393-96C5-490B-924A-B0F25CD9EFD8}
+name: __Lock
+key: __lock
+content-length: 5
+
+<r />

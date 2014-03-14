@@ -1,0 +1,121 @@
+----item----
+version: 1
+id: {F1576FBE-3F9B-4E06-B85E-61EAB4B5A927}
+database: master
+path: /sitecore/content/Active Commerce Training/Site Settings/Rich Mail Templates/Order Receipt
+parent: {699B32F4-079A-4E08-AE3C-2EE135C0F102}
+name: Order Receipt
+master: {B0DB2EFD-FFF5-4D6D-ABC9-0C2026B0AD18}
+template: {4EB77F68-4AC6-4A9F-BB94-0C003E35A3AC}
+templatekey: Email Body
+
+----field----
+field: {9B7EFAD0-C7BC-4D2C-AE14-75B6420B98BE}
+name: Site Link
+key: site link
+content-length: 151
+
+<link linktype="internal" url="/sitecore/content/Active Commerce Training/Home" querystring="" target="" id="{73585E7F-9768-4BDB-BB9B-934CB07ED8DE}" />
+----field----
+field: {F6D8A61C-2F84-4401-BD24-52D2068172BC}
+name: __Originator
+key: __originator
+content-length: 0
+
+
+----field----
+field: {F1A1FE9E-A60C-4DDB-A3A0-BB5B29FE732E}
+name: __Renderings
+key: __renderings
+content-length: 316
+
+<r xmlns:p="p" xmlns:s="s" p:p="1"><d id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}"><p uid="{0FE03EC3-D8CB-442F-852D-C7E92B59B5EE}"><p:d /></p><r uid="{3CC0FF3D-3994-4767-8F98-EFEF6C502A48}" s:id="{C7664041-7EC9-41D9-9A59-579FD1868A5A}" s:ph="main" /><r uid="{75AECC6A-3060-4E46-963A-BA3ABDFDEAF0}"><p:d /></r></d></r>
+----field----
+field: {A4F985D9-98B3-4B52-AAAF-4344F6E747C6}
+name: __Workflow
+key: __workflow
+content-length: 38
+
+{27418690-B217-4D3A-A2E6-091A30B54886}
+----version----
+language: en
+version: 1
+revision: 7f7a5a44-3947-44a2-b4c4-298e815e8bfd
+
+----field----
+field: {A9530359-3990-4E95-89C3-97380862BDE5}
+name: Site Name
+key: site name
+content-length: 24
+
+Active Commerce Training
+----field----
+field: {30E4A98F-B30A-4FE6-8130-8AC7109F4CE4}
+name: Title
+key: title
+content-length: 21
+
+Thanks for your Order
+----field----
+field: {0290CD52-E7EC-4468-9389-D8557AE4E127}
+name: Background Color
+key: background color
+content-length: 7
+
+#FFFFFF
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 19
+
+sitecore\nwesselman
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 15
+
+20140313T182653
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 17
+
+default\Anonymous
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+7f7a5a44-3947-44a2-b4c4-298e815e8bfd
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20140313T183357:635303324375006369
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {3E431DE1-525E-47A3-B6B0-1CCBEC3A8C98}
+name: __Workflow state
+key: __workflow state
+content-length: 38
+
+{8AD77832-A5A9-4D4C-BF8A-186B21A56204}
+----field----
+field: {001DD393-96C5-490B-924A-B0F25CD9EFD8}
+name: __Lock
+key: __lock
+content-length: 5
+
+<r />

@@ -1,0 +1,2436 @@
+﻿<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>c4bddc75-0fc7-44e0-9d82-01d8419e57dd</ProjectGuid>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <SourceWebPhysicalPath>..\ActiveCommerce.Training.Web</SourceWebPhysicalPath>
+    <SourceWebProject>{0e21b3b1-03f5-44e7-b498-e5f19bd785e6}|ActiveCommerce.Training.Web\ActiveCommerce.Training.Web.csproj</SourceWebProject>
+    <SourceWebVirtualPath>/ActiveCommerce.Training.Web.csproj</SourceWebVirtualPath>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <EnableUpdateable>true</EnableUpdateable>
+    <UseMerge>true</UseMerge>
+    <SingleAssemblyName>ActiveCommerce.Training.Sitecore</SingleAssemblyName>
+    <UseWebConfigReplacement>false</UseWebConfigReplacement>
+    <DeleteAppCodeCompiledFiles>true</DeleteAppCodeCompiledFiles>
+    <LegacyFileReplacement>false</LegacyFileReplacement>
+    <AssemblyName>ActiveCommerce.Training.Sitecore</AssemblyName>
+    <Name>ActiveCommerce.Training.Sitecore</Name>
+    <RootNamespace>ActiveCommerce.Training.Sitecore</RootNamespace>
+    <SitecoreDatabase>master</SitecoreDatabase>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>.\Debug\</OutputPath>
+    <RecursiveDeployAction>Ignore</RecursiveDeployAction>
+    <SitecoreDeployFolder>C:\Sitecore\ActiveCommerceTraining\Website</SitecoreDeployFolder>
+    <SitecoreWebUrl>http://activecommercetraining</SitecoreWebUrl>
+    <SitecoreAccessGuid>6620bde8-a0cd-4307-a749-f772a7176c22</SitecoreAccessGuid>
+    <InstallSitecoreConnector>True</InstallSitecoreConnector>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>false</DebugSymbols>
+    <OutputPath>.\Release\</OutputPath>
+    <RecursiveDeployAction>Ignore</RecursiveDeployAction>
+  </PropertyGroup>
+  <ItemGroup>
+    <AssemblyAttributes Include="AssemblyFileVersion">
+      <Value>$(AssemblyFileVersion)</Value>
+    </AssemblyAttributes>
+    <AssemblyAttributes Include="AssemblyVersion">
+      <Value>$(AssemblyVersion)</Value>
+    </AssemblyAttributes>
+  </ItemGroup>
+  <ItemGroup>
+    <ExcludedAssemblies Include="Sitecore.%2a.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <SitecoreItem Include="sitecore\commerce.item">
+      <Icon>/temp/IconCache/activecommerce-icons/32x32/logo-orange.png</Icon>
+      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
+      <ItemDeployment>DeployOnce</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\commerce\products.item">
+      <Icon>/temp/IconCache/people/16x16/box.png</Icon>
+      <ItemDeployment>DeployOnce</ItemDeployment>
+      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\commerce\products\Training.item">
+      <Icon>/temp/IconCache/people/16x16/box.png</Icon>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content.item">
+      <Icon>/temp/IconCache/People/16x16/cubes_blue.png</Icon>
+      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training.item">
+      <Icon>/temp/IconCache/Network/32x32/earth.png</Icon>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog.item">
+      <Icon>/temp/IconCache/imaging/32x32/shapes_h.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Company Master Data.item">
+      <Icon>/temp/IconCache/Network/16x16/id_card.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Company Master Data\Sale.item">
+      <Icon>/temp/IconCache/Other/16x16/at.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Company Master Data\Support.item">
+      <Icon>/temp/IconCache/Other/16x16/at.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Company Master Data\Technical.item">
+      <Icon>/temp/IconCache/Other/16x16/at.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries.item">
+      <Icon>/~/icon/Flags/32x32/flag_canada.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Afghanistan.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Albania.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Algeria.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\American Samoa.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Andorra.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Angola.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Anguilla.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Antarctica.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Antigua and Barbuda.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Argentina.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Armenia.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Aruba.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Australia.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Austria.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Azerbaijan.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Bahamas.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Bahrain.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Bangladesh.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Barbados.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Belarus.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Belgium.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Belize.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Benin.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Bermuda.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Bhutan.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Bolivia.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Bosnia and Herzegovina.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Botswana.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Bouvet Island.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Brazil.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\British Indian OceanTerritory.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Brunei Darussalam.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Bulgaria.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Burkina Faso.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Burundi.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Cambodia.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Cameroon.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Canada.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Canada\Alberta.item">
+      <Icon>/~/icon/Flags/32x32/flag_usa.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Canada\British Columbia.item">
+      <Icon>/~/icon/Flags/32x32/flag_usa.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Canada\Manitoba.item">
+      <Icon>/~/icon/Flags/32x32/flag_usa.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Canada\New Brunswick.item">
+      <Icon>/~/icon/Flags/32x32/flag_usa.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Canada\Newfoundland and Labrador.item">
+      <Icon>/~/icon/Flags/32x32/flag_usa.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Canada\Northwest Territories.item">
+      <Icon>/~/icon/Flags/32x32/flag_usa.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Canada\Nova Scotia.item">
+      <Icon>/~/icon/Flags/32x32/flag_usa.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Canada\Nunavut.item">
+      <Icon>/~/icon/Flags/32x32/flag_usa.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Canada\Ontario.item">
+      <Icon>/~/icon/Flags/32x32/flag_usa.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Canada\Prince Edward Island.item">
+      <Icon>/~/icon/Flags/32x32/flag_usa.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Canada\Quebec.item">
+      <Icon>/~/icon/Flags/32x32/flag_usa.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Canada\Saskatchewan.item">
+      <Icon>/~/icon/Flags/32x32/flag_usa.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Canada\Yukon.item">
+      <Icon>/~/icon/Flags/32x32/flag_usa.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Cape Verde.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Cayman Islands.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Central African Republic.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Chad.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Chile.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\China.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Christmas Island.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Cocos Keeling Islands.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Colombia.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Comoros.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Congo Brazzaville.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Congo Kinshasa.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Cook Islands.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Costa Rica.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Croatia.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Cuba.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Cyprus.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Czech Republic.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Denmark.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Djibouti.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Dominica.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Dominican Republic.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Ecuador.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Egypt.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\El Salvador.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Equatorial Guinea.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Eritrea.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Estonia.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Ethiopia.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Falkland Islands.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Faroe Islands.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Fiji.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Finland.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\France.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\French Guiana.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\French Polynesia.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\French Southern Lands.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Gabon.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Gambia.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Georgia.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Germany.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Ghana.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Gibraltar.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Greece.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Greenland.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Grenada.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Guadeloupe.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Guam.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Guatemala.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Guernsey.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Guinea.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Guinea-Bissau.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Guyana.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Haiti.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Heard and McDonald Islands.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Honduras.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Hong Kong.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Hungary.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Iceland.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\India.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Indonesia.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Iran.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Iraq.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Ireland.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Isle of Man.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Israel.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Italy.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Jamaica.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Japan.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Jersey.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Jordan.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Kazakhstan.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Kenya.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Kiribati.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Korea North.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Korea South.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Kuwait.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Kyrgyzstan.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Laos.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Latvia.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Lebanon.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Lesotho.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Liberia.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Libya.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Liechtenstein.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Lithuania.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Luxembourg.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Macau.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Macedonia.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Madagascar.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Malawi.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Malaysia.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Maldives.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Mali.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Malta.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Marshall Islands.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Martinique.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Mauritania.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Mauritius.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Mayotte.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Mexico.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Micronesia.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Moldova.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Monaco.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Mongolia.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Montenegro.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Montserrat.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Morocco.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Mozambique.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Myanmar.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Namibia.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Nauru.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Nederland.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Nepal.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Netherlands Antilles.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Netherlands.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\New Caledonia.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\New Zealand.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Nicaragua.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Niger.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Nigeria.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Niue.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Norfolk Island.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Northern Mariana Islands.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Norway.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Oman.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Pakistan.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Palau.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Palestine.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Panama.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Papua New Guinea.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Paraguay.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Peru.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Philippines.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Pitcairn.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Poland.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Portugal.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Puerto Rico.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Qatar.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Reunion.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Romania.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Russian Federation.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Rwanda.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Saint Barthélemy.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Saint Helena.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Saint Kitts and Nevis.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Saint Lucia.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Saint Martin French part.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Saint Pierre and Miquelon.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Saint Vincent and theGrenadines.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Samoa.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\San Marino.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Sao Tome and Principe.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Saudi Arabia.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Senegal.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Serbia.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Seychelles.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Sierra Leone.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Singapore.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Slovakia.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Slovenia.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Solomon Islands.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Somalia.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\South Africa.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\South Georgia and SouthSandwich Islands.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Spain.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Sri Lanka.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Sudan.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Suriname.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Svalbard and Jan MayenIslands.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Swaziland.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Sweden.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Switzerland.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Syria.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Taiwan.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Tajikistan.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Tanzania.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Thailand.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Timor-Leste.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Togo.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Tokelau.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Tonga.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Trinidad and Tobago.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Tunisia.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Turkey.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Turkmenistan.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Turks and Caicos Islands.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Tuvalu.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Uganda.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Ukraine.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\United Arab Emirates.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\United Kingdom.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\United States MinorOutlying Islands.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\United States.item">
+      <Icon>/~/icon/Flags/32x32/flag_micronesia.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\United States\Alabama.item">
+      <Icon>/~/icon/Flags/32x32/flag_usa.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\United States\Alaska.item">
+      <Icon>/~/icon/Flags/32x32/flag_usa.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\United States\American Samoa.item">
+      <Icon>/~/icon/Flags/32x32/flag_usa.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\United States\Arizona.item">
+      <Icon>/~/icon/Flags/32x32/flag_usa.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\United States\Arkansas.item">
+      <Icon>/~/icon/Flags/32x32/flag_usa.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\United States\California.item">
+      <Icon>/~/icon/Flags/32x32/flag_usa.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\United States\Colorado.item">
+      <Icon>/~/icon/Flags/32x32/flag_usa.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\United States\Connecticut.item">
+      <Icon>/~/icon/Flags/32x32/flag_usa.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\United States\Delaware.item">
+      <Icon>/~/icon/Flags/32x32/flag_usa.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\United States\District Of Columbia.item">
+      <Icon>/~/icon/Flags/32x32/flag_usa.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\United States\Florida.item">
+      <Icon>/~/icon/Flags/32x32/flag_usa.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\United States\Georgia.item">
+      <Icon>/~/icon/Flags/32x32/flag_usa.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\United States\Guam.item">
+      <Icon>/~/icon/Flags/32x32/flag_usa.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\United States\Hawaii.item">
+      <Icon>/~/icon/Flags/32x32/flag_usa.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\United States\Idaho.item">
+      <Icon>/~/icon/Flags/32x32/flag_usa.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\United States\Illinois.item">
+      <Icon>/~/icon/Flags/32x32/flag_usa.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\United States\Indiana.item">
+      <Icon>/~/icon/Flags/32x32/flag_usa.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\United States\Iowa.item">
+      <Icon>/~/icon/Flags/32x32/flag_usa.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\United States\Kansas.item">
+      <Icon>/~/icon/Flags/32x32/flag_usa.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\United States\Kentucky.item">
+      <Icon>/~/icon/Flags/32x32/flag_usa.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\United States\Louisiana.item">
+      <Icon>/~/icon/Flags/32x32/flag_usa.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\United States\Maine.item">
+      <Icon>/~/icon/Flags/32x32/flag_usa.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\United States\Maryland.item">
+      <Icon>/~/icon/Flags/32x32/flag_usa.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\United States\Massachusetts.item">
+      <Icon>/~/icon/Flags/32x32/flag_usa.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\United States\Michigan.item">
+      <Icon>/~/icon/Flags/32x32/flag_usa.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\United States\Minnesota.item">
+      <Icon>/~/icon/Flags/32x32/flag_usa.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\United States\Mississippi.item">
+      <Icon>/~/icon/Flags/32x32/flag_usa.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\United States\Missouri.item">
+      <Icon>/~/icon/Flags/32x32/flag_usa.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\United States\Montana.item">
+      <Icon>/~/icon/Flags/32x32/flag_usa.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\United States\Nebraska.item">
+      <Icon>/~/icon/Flags/32x32/flag_usa.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\United States\Nevada.item">
+      <Icon>/~/icon/Flags/32x32/flag_usa.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\United States\New Hampshire.item">
+      <Icon>/~/icon/Flags/32x32/flag_usa.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\United States\New Jersey.item">
+      <Icon>/~/icon/Flags/32x32/flag_usa.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\United States\New Mexico.item">
+      <Icon>/~/icon/Flags/32x32/flag_usa.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\United States\New York.item">
+      <Icon>/~/icon/Flags/32x32/flag_usa.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\United States\North Carolina.item">
+      <Icon>/~/icon/Flags/32x32/flag_usa.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\United States\North Dakota.item">
+      <Icon>/~/icon/Flags/32x32/flag_usa.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\United States\Northern Mariana Islands.item">
+      <Icon>/~/icon/Flags/32x32/flag_usa.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\United States\Ohio.item">
+      <Icon>/~/icon/Flags/32x32/flag_usa.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\United States\Oklahoma.item">
+      <Icon>/~/icon/Flags/32x32/flag_usa.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\United States\Oregon.item">
+      <Icon>/~/icon/Flags/32x32/flag_usa.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\United States\Palau.item">
+      <Icon>/~/icon/Flags/32x32/flag_usa.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\United States\Pennsylvania.item">
+      <Icon>/~/icon/Flags/32x32/flag_usa.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\United States\Puerto Rico.item">
+      <Icon>/~/icon/Flags/32x32/flag_usa.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\United States\Rhode Island.item">
+      <Icon>/~/icon/Flags/32x32/flag_usa.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\United States\South Carolina.item">
+      <Icon>/~/icon/Flags/32x32/flag_usa.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\United States\South Dakota.item">
+      <Icon>/~/icon/Flags/32x32/flag_usa.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\United States\Tennessee.item">
+      <Icon>/~/icon/Flags/32x32/flag_usa.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\United States\Texas.item">
+      <Icon>/~/icon/Flags/32x32/flag_usa.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\United States\Utah.item">
+      <Icon>/~/icon/Flags/32x32/flag_usa.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\United States\Vermont.item">
+      <Icon>/~/icon/Flags/32x32/flag_usa.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\United States\Virgin Islands.item">
+      <Icon>/~/icon/Flags/32x32/flag_usa.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\United States\Virginia.item">
+      <Icon>/~/icon/Flags/32x32/flag_usa.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\United States\Washington.item">
+      <Icon>/~/icon/Flags/32x32/flag_usa.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\United States\West Virginia.item">
+      <Icon>/~/icon/Flags/32x32/flag_usa.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\United States\Wisconsin.item">
+      <Icon>/~/icon/Flags/32x32/flag_usa.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\United States\Wyoming.item">
+      <Icon>/~/icon/Flags/32x32/flag_usa.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Uruguay.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Uzbekistan.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Vanuatu.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Vatican City.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Venezuela.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Vietnam.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Virgin Islands British.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Virgin Islands US.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Wallis and Futuna Islands.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Western Sahara.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Yemen.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Zambia.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Countries\Zimbabwe.item">
+      <Icon>/temp/IconCache/Flags/32x32/flag_micronesia.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Currencies.item">
+      <Icon>/temp/IconCache/business/32x32/moneybag_euro.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Currencies\DKK.item">
+      <Icon>/~/icon/Business/32x32/currency_euro.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Currencies\Euro.item">
+      <Icon>/~/icon/Business/32x32/currency_euro.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Currencies\GBP.item">
+      <Icon>/~/icon/Business/32x32/currency_euro.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Currencies\USD.item">
+      <Icon>/~/icon/Business/32x32/currency_euro.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Currency Matrix.item">
+      <Icon>/temp/IconCache/Business/32x32/moneybag_euro.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Currency Matrix\USD.item">
+      <Icon>/~/icon/Business/32x32/currency_euro.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Currency Matrix\USD\Euro.item">
+      <Icon>/~/icon/business/32x32/currency_euro.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Languages.item">
+      <Icon>/~/icon/Network/32x32/passport_blue.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Languages\English.item">
+      <Icon>/~/icon/People/32x32/flag_blue.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Lists.item">
+      <Icon>/~/icon/Business/32x32/cabinet.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Notification Options.item">
+      <Icon>/~/icon/People/32x32/box_tall.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Order Statuses.item">
+      <Icon>/temp/IconCache/People/16x16/hourglass.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Order Statuses\Authorized.item">
+      <Icon>/temp/IconCache/People/16x16/hourglass.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Order Statuses\Canceled.item">
+      <Icon>/~/icon/Applications/32x32/scroll_delete.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Order Statuses\Captured.item">
+      <Icon>/temp/IconCache/People/16x16/hourglass.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Order Statuses\Closed.item">
+      <Icon>/temp/IconCache/Applications/32x32/scroll_ok.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Order Statuses\Completed.item">
+      <Icon>/~/icon/Applications/32x32/scroll_ok.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Order Statuses\Held.item">
+      <Icon>/~/icon/Applications/32x32/scroll_warning.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Order Statuses\New.item">
+      <Icon>/~/icon/Applications/32x32/scroll.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Order Statuses\Pending.item">
+      <Icon>/~/icon/Applications/32x32/scroll_information.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Order Statuses\Processing.item">
+      <Icon>/~/icon/Applications/32x32/scroll_edit.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Orders.item">
+      <Icon>/temp/IconCache/Business/16x16/row.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Payments.item">
+      <Icon>/~/icon/Business/32x32/creditcards.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Payments\Mock Integrated Payment.item">
+      <Icon>/~/icon/Business/32x32/smartcard.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Promotions.item">
+      <Icon>/~/icon/Business/32x32/shoppingcart_full.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Shipping Providers.item">
+      <Icon>/temp/IconCache/People/16x16/cubes_yellow.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\Shipping Providers\Flat Rate.item">
+      <Icon>/temp/IconCache/People/16x16/box.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\VAT Regions.item">
+      <Icon>/~/icon/Flags/32x32/flag_eu.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\VAT Regions\North America Sales Tax with Handling.item">
+      <Icon>/temp/IconCache/Business/32x32/courthouse.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\VAT Regions\North America Sales Tax with Shipping and Handling.item">
+      <Icon>/temp/IconCache/Business/32x32/courthouse.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\VAT Regions\North America Sales Tax with Shipping.item">
+      <Icon>/~/icon/Business/32x32/courthouse.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\VAT.item">
+      <Icon>/~/icon/business/32x32/moneybag_euro.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\VAT\Default.item">
+      <Icon>/~/icon/business/32x32/percent.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Home.item">
+      <Icon>/temp/IconCache/Network/32x32/home.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Home\404.item">
+      <Icon>/~/icon/Applications/32x32/document_error.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Home\About Us.item">
+      <Icon>/~/icon/Applications/32x32/text_rich_colored.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Home\Content.item">
+      <Icon>/~/icon/Applications/32x32/folder_blue.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Home\Error.item">
+      <Icon>/temp/IconCache/Applications/32x32/document_error.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Home\news.item">
+      <Icon>/~/icon/applications/32x32/text_rich.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Home\news\Categories.item">
+      <Icon>/temp/IconCache/Applications/16x16/folder.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Home\products.item">
+      <Icon>/~/icon/People/32x32/books.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Home\shop.item">
+      <Icon>/temp/IconCache/activecommerce-icons/32x32/logo-orange.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Home\shop\account.item">
+      <Icon>/~/icon/Network/32x32/lock.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Home\shop\account\details.item">
+      <Icon>/~/icon/People/32x32/pawn_glass_green.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Home\shop\account\details\list.item">
+      <Icon>/~/icon/applications/32x32/contract.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Home\shop\account\details\Navigation Links.item">
+      <Icon>/~/icon/Network/32x32/link_add.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Home\shop\account\details\Navigation Links\List Details.item">
+      <Icon>/~/icon/Network/16x16/link.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Home\shop\account\details\Navigation Links\Order Details.item">
+      <Icon>/~/icon/Network/16x16/link.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Home\shop\account\details\order.item">
+      <Icon>/~/icon/Business/32x32/money2.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Home\shop\account\login.item">
+      <Icon>/~/icon/Network/32x32/key1_ok.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Home\shop\account\login\Components.item">
+      <Icon>/temp/IconCache/Applications/32x32/folder_blue.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Home\shop\account\login\Components\Change Email Form.item">
+      <Icon>/~/icon/Software/32x32/component.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Home\shop\account\login\Components\Forgot Password Form.item">
+      <Icon>/~/icon/Software/32x32/component.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Home\shop\account\login\Components\Login Form.item">
+      <Icon>/~/icon/Software/32x32/component.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Home\shop\account\login\Components\Login Header.item">
+      <Icon>/~/icon/Software/32x32/component.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Home\shop\account\login\Components\New Account Form.item">
+      <Icon>/~/icon/Software/32x32/component.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Home\shop\account\login\Navigation Links.item">
+      <Icon>/~/icon/Network/32x32/link_add.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Home\shop\account\login\Navigation Links\Login Default.item">
+      <Icon>/~/icon/Network/16x16/link.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Home\shop\account\logout.item">
+      <Icon>/~/icon/Network/32x32/key1_error.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Home\shop\account\logout\Navigation Links.item">
+      <Icon>/~/icon/Network/32x32/link_add.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Home\shop\account\logout\Navigation Links\Logout Successful.item">
+      <Icon>/~/icon/Network/16x16/link.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Home\shop\cart.item">
+      <Icon>/temp/IconCache/Business/32x32/shoppingcart_full.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Home\shop\cart\Components.item">
+      <Icon>/temp/IconCache/Applications/32x32/folder_blue.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Home\shop\cart\Components\Checkout.item">
+      <Icon>/~/icon/Business/32x32/shoppingcart_edit.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Home\shop\cart\Components\Continue Shopping.item">
+      <Icon>/~/icon/Business/32x32/shoppingcart_edit.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Home\shop\cart\Components\Coupon Code.item">
+      <Icon>/~/icon/Business/32x32/shoppingcart_edit.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Home\shop\cart\Components\Product List.item">
+      <Icon>/~/icon/Business/32x32/shoppingcart_edit.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Home\shop\cart\Components\Related Products.item">
+      <Icon>/~/icon/Business/32x32/shoppingcart_edit.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Home\shop\cart\Components\Summary.item">
+      <Icon>/~/icon/Business/32x32/shoppingcart_edit.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Home\shop\cart\Components\Totals.item">
+      <Icon>/~/icon/Business/32x32/shoppingcart_edit.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Home\shop\cart\Navigation Links.item">
+      <Icon>/~/icon/Network/32x32/link_add.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Home\shop\cart\Navigation Links\Checkout.item">
+      <Icon>/~/icon/Network/16x16/link.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Home\shop\cart\Navigation Links\Empty Cart.item">
+      <Icon>/~/icon/Network/16x16/link.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Home\shop\cart\Navigation Links\Login.item">
+      <Icon>/~/icon/Network/16x16/link.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Home\shop\checkout.item">
+      <Icon>/~/icon/Business/32x32/cashier.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Home\shop\checkout\Actions.item">
+      <Icon>/temp/IconCache/Applications/32x32/folder_blue.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Home\shop\checkout\Actions\Continue as Guest.item">
+      <Icon>/~/icon/Applications/32x32/flash.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Home\shop\checkout\Actions\Next.item">
+      <Icon>/~/icon/Applications/32x32/flash.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Home\shop\checkout\Actions\Place Order.item">
+      <Icon>/~/icon/Applications/32x32/flash.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Home\shop\checkout\Components.item">
+      <Icon>/temp/IconCache/Applications/32x32/folder_blue.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Home\shop\checkout\Components\Account Create.item">
+      <Icon>/~/icon/people/32x32/user1_new.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Home\shop\checkout\Components\Account Exists.item">
+      <Icon>/~/icon/people/32x32/user1_preferences.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Home\shop\checkout\Components\Account Summary.item">
+      <Icon>/~/icon/Software/32x32/component.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Home\shop\checkout\Components\Billing Address Summary.item">
+      <Icon>/~/icon/Software/32x32/component.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Home\shop\checkout\Components\Billing Address.item">
+      <Icon>/~/icon/People/32x32/house.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Home\shop\checkout\Components\Billing Contact.item">
+      <Icon>/~/icon/Business/32x32/address_book3.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Home\shop\checkout\Components\Cart Summary.item">
+      <Icon>/~/icon/Software/32x32/component.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Home\shop\checkout\Components\Checkout Header.item">
+      <Icon>/~/icon/Network/32x32/link_add.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Home\shop\checkout\Components\Checkout Header\Checkout.item">
+      <Icon>/~/icon/Network/16x16/link.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Home\shop\checkout\Components\Checkout Header\Receipt.item">
+      <Icon>/~/icon/Network/16x16/link.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Home\shop\checkout\Components\Checkout Header\Shopping Cart.item">
+      <Icon>/~/icon/Network/16x16/link.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Home\shop\checkout\Components\Checkout Header\Sign  In.item">
+      <Icon>/~/icon/Network/16x16/link.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Home\shop\checkout\Components\Credit Card Payment.item">
+      <Icon>/~/icon/Business/32x32/smartcard.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Home\shop\checkout\Components\Credit Card.item">
+      <Icon>/temp/IconCache/Business/32x32/creditcards.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Home\shop\checkout\Components\Payment Summary.item">
+      <Icon>/~/icon/Software/32x32/component.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Home\shop\checkout\Components\Payments.item">
+      <Icon>/~/icon/Software/32x32/component.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Home\shop\checkout\Components\Review.item">
+      <Icon>/~/icon/Software/32x32/component.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Home\shop\checkout\Components\Shipping Address Summary.item">
+      <Icon>/~/icon/Software/32x32/component.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Home\shop\checkout\Components\Shipping Address.item">
+      <Icon>/~/icon/People/32x32/house.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Home\shop\checkout\Components\Shipping Method Summary.item">
+      <Icon>/~/icon/Software/32x32/component.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Home\shop\checkout\Components\Shipping Method.item">
+      <Icon>/~/icon/Software/32x32/component.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Home\shop\checkout\error.item">
+      <Icon>/~/icon/Business/32x32/nonprofit.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Home\shop\checkout\error\Navigation Links.item">
+      <Icon>/~/icon/Network/32x32/link_add.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Home\shop\checkout\error\Navigation Links\Payment.item">
+      <Icon>/~/icon/Network/16x16/link.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Home\shop\checkout\Navigation Links.item">
+      <Icon>/~/icon/Network/32x32/link_add.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Home\shop\checkout\Navigation Links\Receipt.item">
+      <Icon>/~/icon/Network/16x16/link.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Home\shop\checkout\return.item">
+      <Icon>/~/icon/Applications/32x32/undo.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Home\shop\checkout\Steps.item">
+      <Icon>/temp/IconCache/Applications/32x32/folder_blue.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Home\shop\checkout\Steps\Account.item">
+      <Icon>/~/icon/Software/32x32/step.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Home\shop\checkout\Steps\Payment Info.item">
+      <Icon>/~/icon/Software/32x32/step.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Home\shop\checkout\Steps\Review.item">
+      <Icon>/~/icon/Software/32x32/step.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Home\shop\checkout\Steps\Shipping Info.item">
+      <Icon>/~/icon/Software/32x32/step.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Home\shop\checkout\Steps\Shipping Method.item">
+      <Icon>/~/icon/Software/32x32/step.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Home\shop\checkout-login.item">
+      <Icon>/~/icon/Network/32x32/key1_preferences.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Home\shop\checkout-login\Components.item">
+      <Icon>/temp/IconCache/Applications/32x32/folder_blue.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Home\shop\checkout-login\Components\Guest Checkout.item">
+      <Icon>/~/icon/Software/32x32/component.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Home\shop\checkout-login\Navigation Links.item">
+      <Icon>/~/icon/Network/32x32/link_add.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Home\shop\checkout-login\Navigation Links\Login Default.item">
+      <Icon>/~/icon/Network/16x16/link.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Home\shop\compare.item">
+      <Icon>/~/icon/Business/32x32/tables.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Home\shop\quicklook.item">
+      <Icon>/~/icon/Applications/32x32/document_zoom_in.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Home\shop\receipt.item">
+      <Icon>/~/icon/Business/32x32/note.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Home\shop\search.item">
+      <Icon>/~/icon/Applications/32x32/view.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Home\shop\search\Entire site.item">
+      <Icon>/~/icon/applications/32x32/scroll_view.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Home\shop\search\News.item">
+      <Icon>/~/icon/applications/32x32/scroll_view.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Home\shop\search\Products.item">
+      <Icon>/~/icon/applications/32x32/scroll_view.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Navigation.item">
+      <Icon>/temp/IconCache/Software/32x32/branch_element.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Navigation\Footer.item">
+      <Icon>/~/icon/Control/32x32/multi_controls_b.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Navigation\Footer\Customer Service.item">
+      <Icon>/temp/IconCache/Control/32x32/listview_b.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Navigation\Footer\First Column.item">
+      <Icon>/temp/IconCache/Control/32x32/listview_b.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Navigation\Footer\Follow Us.item">
+      <Icon>/~/icon/Control/32x32/listview_b.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Navigation\Footer\Follow Us\Facebook.item">
+      <Icon>/~/icon/control/32x32/button_b_h.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Navigation\Footer\Follow Us\Twitter.item">
+      <Icon>/~/icon/control/32x32/button_b_h.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Navigation\Footer\Products.item">
+      <Icon>/temp/IconCache/Control/32x32/listview_b.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Navigation\Header.item">
+      <Icon>/~/icon/Control/32x32/window.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Navigation\Header\About Us.item">
+      <Icon>/~/icon/control/32x32/button_b_h.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Navigation\Header\News.item">
+      <Icon>/~/icon/control/32x32/button_b_h.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Navigation\Header\Products.item">
+      <Icon>/~/icon/control/32x32/button_b_h.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Navigation\Slim Footer.item">
+      <Icon>/temp/IconCache/Control/32x32/multi_controls_b.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Navigation\Slim Header.item">
+      <Icon>/temp/IconCache/Control/32x32/window.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Site Settings.item">
+      <Icon>/temp/IconCache/Applications/16x16/gear.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Site Settings\Business Catalog.item">
+      <Icon>/temp/IconCache/imaging/32x32/shapes_h.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Site Settings\General.item">
+      <Icon>/temp/IconCache/Applications/16x16/gears.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Site Settings\MailTemplates.item">
+      <Icon>/temp/IconCache/Other/16x16/at.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Site Settings\MailTemplates\Order Mail To Admin.item">
+      <Icon>/~/icon/Applications/32x32/Document.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Site Settings\MailTemplates\Order Mail To Customer.item">
+      <Icon>/~/icon/Applications/32x32/Document.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Site Settings\MailTemplates\Order Processing Error.item">
+      <Icon>/~/icon/Applications/32x32/Document.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Site Settings\MailTemplates\Your password has been changed.item">
+      <Icon>/~/icon/Applications/32x32/Document.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Site Settings\Rich Mail Templates.item">
+      <Icon>/~/icon/Network/32x32/mail_server.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Site Settings\Rich Mail Templates\Forgot Password.item">
+      <Icon>/~/icon/Network/32x32/mail2.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Active Commerce Training\Site Settings\Rich Mail Templates\Order Receipt.item">
+      <Icon>/~/icon/Network/32x32/mail2.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\HedgehogDevelopment\SitecoreProject\v9.0\HedgehogDevelopment.SitecoreProject.targets" />
+</Project>

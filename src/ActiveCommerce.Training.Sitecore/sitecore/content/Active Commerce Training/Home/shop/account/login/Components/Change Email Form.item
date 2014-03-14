@@ -1,0 +1,149 @@
+----item----
+version: 1
+id: {376FA512-EB97-4ED0-A878-015DA90A18D4}
+database: master
+path: /sitecore/content/Active Commerce Training/Home/shop/account/login/Components/Change Email Form
+parent: {EBBE0293-314B-49CF-A65E-1631C4FA80AD}
+name: Change Email Form
+master: {B0DB2EFD-FFF5-4D6D-ABC9-0C2026B0AD18}
+template: {D5138C2B-301A-4645-B181-89B2249D7CEE}
+templatekey: Change Email Form
+
+----field----
+field: {F6D8A61C-2F84-4401-BD24-52D2068172BC}
+name: __Originator
+key: __originator
+content-length: 0
+
+
+----field----
+field: {A4F985D9-98B3-4B52-AAAF-4344F6E747C6}
+name: __Workflow
+key: __workflow
+content-length: 38
+
+{27418690-B217-4D3A-A2E6-091A30B54886}
+----version----
+language: en
+version: 1
+revision: 2f1ee6ab-028a-470f-a0e8-b2e47805a0a2
+
+----field----
+field: {714D006A-C6E3-4C8E-B31B-C024C1946690}
+name: Form Header
+key: form header
+content-length: 31
+
+Has your email address changed?
+----field----
+field: {C12DE2A0-6EDA-4817-9C7F-52CC870F6F32}
+name: Success Header
+key: success header
+content-length: 7
+
+Thanks!
+----field----
+field: {E368C594-7FBC-49F7-AC85-B9E2D626D2E4}
+name: Change Email Instructions
+key: change email instructions
+content-length: 54
+
+Enter your information below and click "Change Email."
+----field----
+field: {9ECB7DA8-53A7-4D93-8DB0-72833B19B426}
+name: Success Message
+key: success message
+content-length: 57
+
+Your email address has been successfully changed. Thanks!
+----field----
+field: {9D28605C-7E11-42E4-9929-4F9737526524}
+name: Submit Button
+key: submit button
+content-length: 12
+
+Change Email
+----field----
+field: {30BF973B-7AB6-43F2-A1EB-DAD82A77685E}
+name: Cancel Button
+key: cancel button
+content-length: 6
+
+Cancel
+----field----
+field: {5F3778C2-FB8C-4974-BC66-F901AAE8F422}
+name: Success Button
+key: success button
+content-length: 8
+
+Continue
+----field----
+field: {2C422DAB-8D6F-476A-BDAE-6F6D6C833907}
+name: Old Email Label
+key: old email label
+content-length: 22
+
+Your old email address
+----field----
+field: {A30250F9-F921-4087-9B4B-C830EB849784}
+name: New Email Label
+key: new email label
+content-length: 22
+
+Your new email address
+----field----
+field: {D8D2AC87-5860-4129-B763-1B96A02B67BA}
+name: Password Label
+key: password label
+content-length: 8
+
+Password
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 15
+
+20140313T182632
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 17
+
+default\Anonymous
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+2f1ee6ab-028a-470f-a0e8-b2e47805a0a2
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20140313T183339:635303324198216369
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {3E431DE1-525E-47A3-B6B0-1CCBEC3A8C98}
+name: __Workflow state
+key: __workflow state
+content-length: 38
+
+{8AD77832-A5A9-4D4C-BF8A-186B21A56204}
+----field----
+field: {001DD393-96C5-490B-924A-B0F25CD9EFD8}
+name: __Lock
+key: __lock
+content-length: 5
+
+<r />

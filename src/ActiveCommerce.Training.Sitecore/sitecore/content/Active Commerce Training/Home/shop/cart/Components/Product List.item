@@ -1,0 +1,142 @@
+----item----
+version: 1
+id: {1DD486C5-0182-4DFB-898C-15CEBECD8793}
+database: master
+path: /sitecore/content/Active Commerce Training/Home/shop/cart/Components/Product List
+parent: {21B95369-855A-4311-A1D5-7D97F3475560}
+name: Product List
+master: {B0DB2EFD-FFF5-4D6D-ABC9-0C2026B0AD18}
+template: {D4586DB0-E420-4E37-81A1-F79013A2528C}
+templatekey: Shopping Cart Product List
+
+----field----
+field: {F6D8A61C-2F84-4401-BD24-52D2068172BC}
+name: __Originator
+key: __originator
+content-length: 0
+
+
+----field----
+field: {A4F985D9-98B3-4B52-AAAF-4344F6E747C6}
+name: __Workflow
+key: __workflow
+content-length: 38
+
+{27418690-B217-4D3A-A2E6-091A30B54886}
+----version----
+language: en
+version: 1
+revision: feccb475-8f38-4890-9531-ce4ce47953b4
+
+----field----
+field: {6A8E3227-02ED-40A3-B32C-1CA300053C10}
+name: Product List Header
+key: product list header
+content-length: 10
+
+Your Order
+----field----
+field: {BFA9927F-29F5-411D-9349-65DAA673E876}
+name: Cart Is Empty Message
+key: cart is empty message
+content-length: 37
+
+Your shopping cart is currently empty
+----field----
+field: {DD2BFCC0-8E4D-41DA-A7CE-17FE267B4F12}
+name: Remove Product Confirmation
+key: remove product confirmation
+content-length: 26
+
+Remove {0} from your cart?
+----field----
+field: {B6DAFFBE-CA53-42A7-8023-19A8DA6CFDC4}
+name: Update Product Button
+key: update product button
+content-length: 6
+
+Update
+----field----
+field: {A24459E1-6076-4947-97E5-DB6EFC41DF14}
+name: Remove Product Button
+key: remove product button
+content-length: 6
+
+Remove
+----field----
+field: {518173BF-4FAC-4500-BEDB-8ABFF6775DD1}
+name: Cart Is Empty Button
+key: cart is empty button
+content-length: 13
+
+View Products
+----field----
+field: {BD885437-EF6A-49D5-BA14-C371D3632CBD}
+name: Item Count Label
+key: item count label
+content-length: 5
+
+items
+----field----
+field: {87074775-C1F3-44D1-8A58-A908A5A89B54}
+name: Sku Label
+key: sku label
+content-length: 4
+
+SKU:
+----field----
+field: {E47FD133-AFDE-4D5A-9C80-5654433C29E2}
+name: Quantity Label
+key: quantity label
+content-length: 9
+
+Quantity:
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 15
+
+20140313T182629
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 17
+
+default\Anonymous
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+feccb475-8f38-4890-9531-ce4ce47953b4
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20140313T183359:635303324392796369
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {3E431DE1-525E-47A3-B6B0-1CCBEC3A8C98}
+name: __Workflow state
+key: __workflow state
+content-length: 38
+
+{8AD77832-A5A9-4D4C-BF8A-186B21A56204}
+----field----
+field: {001DD393-96C5-490B-924A-B0F25CD9EFD8}
+name: __Lock
+key: __lock
+content-length: 5
+
+<r />

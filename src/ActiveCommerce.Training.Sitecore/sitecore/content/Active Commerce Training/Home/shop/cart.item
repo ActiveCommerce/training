@@ -1,0 +1,107 @@
+----item----
+version: 1
+id: {FC72CADD-E663-4050-89A2-DE3A6B303910}
+database: master
+path: /sitecore/content/Active Commerce Training/Home/shop/cart
+parent: {8814CFC3-E143-4A19-8F3C-A51ED9378B71}
+name: cart
+master: {B0DB2EFD-FFF5-4D6D-ABC9-0C2026B0AD18}
+template: {2DB7D229-1C4B-45E0-B044-C3334C6A7931}
+templatekey: Shopping Cart Page
+
+----field----
+field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
+name: __Sortorder
+key: __sortorder
+content-length: 3
+
+200
+----field----
+field: {F6D8A61C-2F84-4401-BD24-52D2068172BC}
+name: __Originator
+key: __originator
+content-length: 0
+
+
+----field----
+field: {F1A1FE9E-A60C-4DDB-A3A0-BB5B29FE732E}
+name: __Renderings
+key: __renderings
+content-length: 2018
+
+<r xmlns:p="p" xmlns:s="s" p:p="1"><d id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}"><r uid="{B59545BF-CE7F-4DC1-BFFA-4AD0A19BBA83}"><rls><p:d /></rls></r><r uid="{E4A7CBF1-36C4-45ED-B6EC-065CAC2CA953}" s:ds="{DBD1A4B3-C557-42EA-B441-E0A6FC5D7F97}"><rls><p:d /></rls></r><r uid="{9BDD76AD-96A6-4611-A9C5-E701468F98BB}" s:ds="{1DD486C5-0182-4DFB-898C-15CEBECD8793}"><rls><p:d /></rls></r><r uid="{7F3F6651-9277-4D3F-B994-F8B048A667FD}" s:ds="{05532BD6-7B6B-4059-BBBA-E34A85C240A4}" /><r uid="{5ED22631-C715-45E6-9138-FBC11E89B249}" s:ds="{6959C0BB-4C3C-4656-9401-64DA6B8AA881}" /><r uid="{4621EC3C-5A4B-43DB-9F18-7AD7FC3596D1}" s:ds="{0C09D6EA-9BD6-44BD-93AB-B08987437B08}" /><r uid="{C5E62A1C-FF04-4269-B2D8-2959B2A780B6}" s:ds="{5292A5E9-2A69-4BCB-ACE6-FAFC079A22E8}"><rls><p:d /></rls></r><r uid="{E6956925-68FD-4F67-93C7-913B81EA3DF7}" s:ds="{0CCFE8E5-11F5-4A49-901E-6B08F1F22FB8}"><rls><p:d /></rls></r><r uid="{C0D6B24C-A589-4FE3-8F31-F4DB71563F1F}" s:ds="{3EB65620-6EAD-4B89-AE9A-781555E43BD7}"><rls><p:d /></rls></r></d><d id="{38AC48E0-E88C-489C-891B-B3826EC3AAF4}"><r uid="{B59545BF-CE7F-4DC1-BFFA-4AD0A19BBA83}"><rls><p:d /></rls></r><r uid="{E34BF25A-B0C6-4B5C-9998-2663AD0BC48A}"><rls><p:d /></rls></r><r uid="{352D982E-098D-4107-AAFE-04C959F8B535}" s:ds="{0CCFE8E5-11F5-4A49-901E-6B08F1F22FB8}" s:mvt="{1F3ADDD3-F2B1-469A-B061-CF4D0CDEB6AC}"><rls><p:d /></rls></r><r uid="{93C2B3E8-DB6A-49B1-AF24-9F57A34481EA}" s:ds="{3EB65620-6EAD-4B89-AE9A-781555E43BD7}"><rls><p:d /></rls></r><r uid="{9BDD76AD-96A6-4611-A9C5-E701468F98BB}" s:ds="{1DD486C5-0182-4DFB-898C-15CEBECD8793}"><rls><p:d /></rls></r><r uid="{7F3F6651-9277-4D3F-B994-F8B048A667FD}" s:ds="{05532BD6-7B6B-4059-BBBA-E34A85C240A4}" /><r uid="{5ED22631-C715-45E6-9138-FBC11E89B249}" s:ds="{6959C0BB-4C3C-4656-9401-64DA6B8AA881}" /><r uid="{BACCF854-092C-4686-985F-61AC0C1A292A}" s:ds="{0CCFE8E5-11F5-4A49-901E-6B08F1F22FB8}"><rls><p:d /></rls></r><r uid="{4621EC3C-5A4B-43DB-9F18-7AD7FC3596D1}" s:ds="{0C09D6EA-9BD6-44BD-93AB-B08987437B08}" /></d></r>
+----field----
+field: {A4F985D9-98B3-4B52-AAAF-4344F6E747C6}
+name: __Workflow
+key: __workflow
+content-length: 38
+
+{27418690-B217-4D3A-A2E6-091A30B54886}
+----version----
+language: en
+version: 1
+revision: 7ce324d0-4a1d-4ff5-9987-989dc056903b
+
+----field----
+field: {3CB48796-2247-46BE-806C-B0611FA99BC5}
+name: Title
+key: title
+content-length: 13
+
+Shopping Cart
+----field----
+field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
+name: __Display name
+key: __display name
+content-length: 13
+
+Shopping Cart
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 15
+
+20140313T182629
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 17
+
+default\Anonymous
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+7ce324d0-4a1d-4ff5-9987-989dc056903b
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20140313T183339:635303324194586369
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {3E431DE1-525E-47A3-B6B0-1CCBEC3A8C98}
+name: __Workflow state
+key: __workflow state
+content-length: 38
+
+{8AD77832-A5A9-4D4C-BF8A-186B21A56204}
+----field----
+field: {001DD393-96C5-490B-924A-B0F25CD9EFD8}
+name: __Lock
+key: __lock
+content-length: 5
+
+<r />

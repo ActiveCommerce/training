@@ -1,0 +1,72 @@
+----item----
+version: 1
+id: {BE209656-C43D-4FAA-9A15-D243E8968D9F}
+database: master
+path: /sitecore/content/Active Commerce Training/Business Catalog/Notification Options
+parent: {3C4B3B7F-D124-4D79-ABF1-5A604EDD78A3}
+name: Notification Options
+master: {B0DB2EFD-FFF5-4D6D-ABC9-0C2026B0AD18}
+template: {EECFB624-35A8-4770-8844-279F0926EB0B}
+templatekey: Notification Options
+
+----field----
+field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
+name: __Sortorder
+key: __sortorder
+content-length: 3
+
+800
+----field----
+field: {F6D8A61C-2F84-4401-BD24-52D2068172BC}
+name: __Originator
+key: __originator
+content-length: 0
+
+
+----version----
+language: en
+version: 1
+revision: 0acdbc6b-5615-4747-a871-263492f1298d
+
+----field----
+field: {9541E67D-CE8C-4225-803D-33F7F29F09EF}
+name: __Short description
+key: __short description
+content-length: 36
+
+Currently unused by Active Commerce.
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 15
+
+20140313T182652
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 17
+
+default\Anonymous
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+0acdbc6b-5615-4747-a871-263492f1298d
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20140313T182652:635303320124726369
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 17
+
+default\Anonymous
