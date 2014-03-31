@@ -1,9 +1,9 @@
 ----item----
 version: 1
-id: {30E5A6AC-FFA4-4E40-A781-81C508230AFB}
+id: {8B5BA2C5-8AF5-4433-BB0F-C2513C7B7FB1}
 database: master
 path: /sitecore/content/Active Commerce Training/Business Catalog/Order Statuses/Authorized
-parent: {2B8E176A-CDF5-4BA9-9E65-7F6D86834D87}
+parent: {E49F84FF-B768-42A5-9D31-80D294F8095C}
 name: Authorized
 master: {B0DB2EFD-FFF5-4D6D-ABC9-0C2026B0AD18}
 template: {3F593780-BA47-4AA9-B413-597291DDE655}
@@ -29,7 +29,7 @@ name: Available List
 key: available list
 content-length: 77
 
-{D9C44E36-EF3E-4DB8-B451-BAA4EAC858F3}|{8E84C0A6-CCCD-40BE-B68E-EB06513AEC2A}
+{A8755CAB-6BF8-4FCA-BDF2-BAE68A6B884A}|{E6B2C432-9491-4B02-9B12-48AF88E47AF7}
 ----field----
 field: {F6D8A61C-2F84-4401-BD24-52D2068172BC}
 name: __Originator
@@ -47,7 +47,7 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: 0f43f5fe-e53b-4ca2-8ec6-d3b89c59ff56
+revision: 374dcf57-bb1a-434c-b51b-21a620afe3a0
 
 ----field----
 field: {EE4BD860-A144-4869-9E21-FA2441A85864}
@@ -69,28 +69,28 @@ name: __Created
 key: __created
 content-length: 15
 
-20140313T182635
+20140331T170632
 ----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
 key: __created by
-content-length: 17
+content-length: 14
 
-default\Anonymous
+sitecore\admin
 ----field----
 field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
 name: __Revision
 key: __revision
 content-length: 36
 
-0f43f5fe-e53b-4ca2-8ec6-d3b89c59ff56
+374dcf57-bb1a-434c-b51b-21a620afe3a0
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 34
 
-20140313T183337:635303324175416369
+20140331T180655:635318860157143441
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

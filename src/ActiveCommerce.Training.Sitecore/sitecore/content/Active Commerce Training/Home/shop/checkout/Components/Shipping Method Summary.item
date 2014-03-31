@@ -1,9 +1,9 @@
 ----item----
 version: 1
-id: {AD7ABFEE-3C28-4E8A-996C-103DF65CF815}
+id: {BB613927-103D-4734-B7BD-ABF4B62ED591}
 database: master
 path: /sitecore/content/Active Commerce Training/Home/shop/checkout/Components/Shipping Method Summary
-parent: {05D33C9C-CDF2-478A-B0E7-F29CEF1CD4E4}
+parent: {C9594DB4-4E6E-414A-A9AA-64DB10064F2F}
 name: Shipping Method Summary
 master: {B0DB2EFD-FFF5-4D6D-ABC9-0C2026B0AD18}
 template: {541710F1-BD1F-4DE1-9B6B-3ED8424FA77D}
@@ -26,7 +26,7 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: 8ca640e8-f8b5-491d-b2ae-82b6bbdaa115
+revision: e6130e32-9f35-4846-afc8-70b18843038b
 
 ----field----
 field: {3CB48796-2247-46BE-806C-B0611FA99BC5}
@@ -41,28 +41,28 @@ name: __Created
 key: __created
 content-length: 15
 
-20140313T182631
+20140331T170628
 ----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
 key: __created by
-content-length: 17
+content-length: 14
 
-default\Anonymous
+sitecore\admin
 ----field----
 field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
 name: __Revision
 key: __revision
 content-length: 36
 
-8ca640e8-f8b5-491d-b2ae-82b6bbdaa115
+e6130e32-9f35-4846-afc8-70b18843038b
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 34
 
-20140313T183402:635303324423006369
+20140331T180717:635318860376305977
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

@@ -1,0 +1,72 @@
+----item----
+version: 1
+id: {C904DF58-DCB3-4788-83DB-CF5E23F3474E}
+database: master
+path: /sitecore/content/Active Commerce Training/Home/products/Water Bottles/Compare/Color
+parent: {0EDDBD1D-8113-4BDD-9C1C-674896099E73}
+name: Color
+master: {00000000-0000-0000-0000-000000000000}
+template: {5695E873-6700-4336-9048-25CFBA14F6AB}
+templatekey: Compare Field
+
+----field----
+field: {4135D317-4B61-4878-AE8C-187F268334B3}
+name: Field
+key: field
+content-length: 38
+
+{5D5260EF-4D1C-46DC-9DDC-B0F0A36087D0}
+----field----
+field: {A4F985D9-98B3-4B52-AAAF-4344F6E747C6}
+name: __Workflow
+key: __workflow
+content-length: 38
+
+{27418690-B217-4D3A-A2E6-091A30B54886}
+----version----
+language: en
+version: 1
+revision: ed121158-0cb0-4381-80ea-db50e8f37791
+
+----field----
+field: {D424B08D-C7A1-434C-8CF8-70002BF9739F}
+name: Display Name
+key: display name
+content-length: 5
+
+Color
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 15
+
+20140331T184305
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+ed121158-0cb0-4381-80ea-db50e8f37791
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20140331T184316:635318881960997967
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {3E431DE1-525E-47A3-B6B0-1CCBEC3A8C98}
+name: __Workflow state
+key: __workflow state
+content-length: 38
+
+{847A34F1-135D-4728-B5DE-30899218D2B2}

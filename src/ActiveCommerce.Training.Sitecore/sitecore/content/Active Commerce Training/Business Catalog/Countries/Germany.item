@@ -1,9 +1,9 @@
 ----item----
 version: 1
-id: {E9DB6E12-B7E1-401A-816B-56F022DAEF64}
+id: {CABF1DF5-C619-465D-B887-2D644564BFAC}
 database: master
 path: /sitecore/content/Active Commerce Training/Business Catalog/Countries/Germany
-parent: {2B868FCD-E34A-45A7-9978-9A88A17F6735}
+parent: {06E3A5C8-3FA5-4ABD-ACC3-EF4DE6520A12}
 name: Germany
 master: {B0DB2EFD-FFF5-4D6D-ABC9-0C2026B0AD18}
 template: {3B064378-2EE3-4720-B3B5-4DF4EAED91C8}
@@ -40,7 +40,7 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: 39f40330-4b86-48bb-a120-5114ba057d6f
+revision: 0529997b-961d-4f1c-ba3b-9acf4aefb752
 
 ----field----
 field: {EE4BD860-A144-4869-9E21-FA2441A85864}
@@ -55,28 +55,28 @@ name: __Created
 key: __created
 content-length: 15
 
-20140313T182643
+20140331T170641
 ----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
 key: __created by
-content-length: 17
+content-length: 14
 
-default\Anonymous
+sitecore\admin
 ----field----
 field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
 name: __Revision
 key: __revision
 content-length: 36
 
-39f40330-4b86-48bb-a120-5114ba057d6f
+0529997b-961d-4f1c-ba3b-9acf4aefb752
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 34
 
-20140313T183346:635303324265336369
+20140331T180704:635318860246788569
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

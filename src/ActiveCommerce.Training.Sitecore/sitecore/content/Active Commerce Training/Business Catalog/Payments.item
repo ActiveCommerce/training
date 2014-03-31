@@ -1,9 +1,9 @@
 ----item----
 version: 1
-id: {7FBEDEE8-E252-4789-9ED5-589E8F407717}
+id: {696308F9-2773-4F83-B4B4-5ED30D660749}
 database: master
 path: /sitecore/content/Active Commerce Training/Business Catalog/Payments
-parent: {3C4B3B7F-D124-4D79-ABF1-5A604EDD78A3}
+parent: {62C35200-BBD6-451F-B8E7-3C4C8BDE3868}
 name: Payments
 master: {B0DB2EFD-FFF5-4D6D-ABC9-0C2026B0AD18}
 template: {5EF9387C-C18C-4C70-B2B4-17F2F244E63C}
@@ -15,28 +15,28 @@ name: Payment Return Page Url
 key: payment return page url
 content-length: 172
 
-<link linktype="internal" url="/sitecore/content/Active Commerce Training/Home/shop/checkout/return" querystring="" target="" id="{56DACE6C-3BAF-4E97-B5DC-F54E938353A5}" />
+<link linktype="internal" url="/sitecore/content/Active Commerce Training/Home/shop/checkout/return" querystring="" target="" id="{568C4994-8406-4355-BC3B-A6E7B5B92B80}" />
 ----field----
 field: {AA66F545-1C13-4204-BF69-628DC8E9B323}
 name: Payment Succeeded Url
 key: payment succeeded url
 content-length: 164
 
-<link linktype="internal" url="/sitecore/content/Active Commerce Training/Home/shop/receipt" querystring="" target="" id="{40E32E7F-3549-4F22-95EA-85E5100BEB73}" />
+<link linktype="internal" url="/sitecore/content/Active Commerce Training/Home/shop/receipt" querystring="" target="" id="{6CD15AF5-24ED-49D9-A496-686872946F6F}" />
 ----field----
 field: {F6E1AC4E-6FBB-4E32-9F61-101D9019DA31}
 name: Payment Failed Url
 key: payment failed url
 content-length: 171
 
-<link linktype="internal" url="/sitecore/content/Active Commerce Training/Home/shop/checkout/error" querystring="" target="" id="{B3EC4E1B-3CD7-4EC6-A3A0-C669677CD1D2}" />
+<link linktype="internal" url="/sitecore/content/Active Commerce Training/Home/shop/checkout/error" querystring="" target="" id="{33EA2E5C-69D5-45BE-8136-382D31FE1EE5}" />
 ----field----
 field: {CF099339-8167-4F35-95AA-96BE4CDD67E2}
 name: Payment Cancel Url
 key: payment cancel url
 content-length: 161
 
-<link linktype="internal" url="/sitecore/content/Active Commerce Training/Home/shop/cart" querystring="" target="" id="{FC72CADD-E663-4050-89A2-DE3A6B303910}" />
+<link linktype="internal" url="/sitecore/content/Active Commerce Training/Home/shop/cart" querystring="" target="" id="{DE987BAF-8FCF-4BCC-BEBA-15F682FB4BA3}" />
 ----field----
 field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
 name: __Sortorder
@@ -61,7 +61,7 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: 900a9375-228c-4076-88dc-18744bc37058
+revision: 5a99e9d4-74fc-4cc1-a5f4-07eaeb3d37d7
 
 ----field----
 field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
@@ -76,28 +76,21 @@ name: __Created
 key: __created
 content-length: 15
 
-20140313T182652
-----field----
-field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
-name: __Created by
-key: __created by
-content-length: 17
-
-default\Anonymous
+20140331T170656
 ----field----
 field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
 name: __Revision
 key: __revision
 content-length: 36
 
-900a9375-228c-4076-88dc-18744bc37058
+5a99e9d4-74fc-4cc1-a5f4-07eaeb3d37d7
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 34
 
-20140313T183358:635303324387576369
+20140331T180714:635318860345374207
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

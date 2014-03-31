@@ -1,9 +1,9 @@
 ----item----
 version: 1
-id: {90DA268C-1382-43F4-811F-867315D8D771}
+id: {CC21661C-A2D1-42D9-A9D2-2768D99013BE}
 database: master
 path: /sitecore/content/Active Commerce Training/Navigation/Footer/Customer Service
-parent: {6C1C8907-17BA-47A8-B36D-5584C407692C}
+parent: {22C967EA-8D13-4146-93AC-F6E8A3ABF02F}
 name: Customer Service
 master: {B0DB2EFD-FFF5-4D6D-ABC9-0C2026B0AD18}
 template: {7F0C490E-75FE-4644-BEAE-F588A788FB8F}
@@ -33,7 +33,7 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: 2fe302c8-fbb0-4cce-9042-792a0c5299ef
+revision: 6f6983f8-c236-49a0-86dd-5a6f741c852f
 
 ----field----
 field: {040C5B6A-46DD-4FC4-A06C-38ACA963E481}
@@ -48,28 +48,28 @@ name: __Created
 key: __created
 content-length: 15
 
-20140313T182634
+20140331T170631
 ----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
 key: __created by
-content-length: 17
+content-length: 14
 
-default\Anonymous
+sitecore\admin
 ----field----
 field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
 name: __Revision
 key: __revision
 content-length: 36
 
-2fe302c8-fbb0-4cce-9042-792a0c5299ef
+6f6983f8-c236-49a0-86dd-5a6f741c852f
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 34
 
-20140313T183342:635303324222666369
+20140331T180700:635318860209006408
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

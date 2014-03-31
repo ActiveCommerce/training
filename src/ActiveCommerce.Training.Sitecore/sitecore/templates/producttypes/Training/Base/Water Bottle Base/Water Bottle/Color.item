@@ -1,0 +1,79 @@
+----item----
+version: 1
+id: {5D5260EF-4D1C-46DC-9DDC-B0F0A36087D0}
+database: master
+path: /sitecore/templates/producttypes/Training/Base/Water Bottle Base/Water Bottle/Color
+parent: {519AC1C0-6579-4E50-91E2-433B388BD93A}
+name: Color
+master: {00000000-0000-0000-0000-000000000000}
+template: {455A3E98-A627-4B40-8035-E683A0331AC7}
+templatekey: Template field
+
+----field----
+field: {AB162CC0-DC80-4ABF-8871-998EE5D7BA32}
+name: Type
+key: type
+content-length: 8
+
+Droplink
+----field----
+field: {1EB8AE32-E190-44A6-968D-ED904C794EBF}
+name: Source
+key: source
+content-length: 32
+
+/sitecore/commerce/lookup/Colors
+----field----
+field: {FFC4EC50-353B-4968-BD5C-56E262EC2FE1}
+name: Is Product Specification
+key: is product specification
+content-length: 1
+
+1
+----field----
+field: {5D7970DA-EF23-4FD0-AE4E-38EB83FF86DA}
+name: Is Product Option
+key: is product option
+content-length: 1
+
+1
+----field----
+field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
+name: __Sortorder
+key: __sortorder
+content-length: 3
+
+300
+----version----
+language: en
+version: 1
+revision: e0ebae2c-f077-49c7-9a3d-ff6dd0f71bb7
+
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 15
+
+20140331T172206
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+e0ebae2c-f077-49c7-9a3d-ff6dd0f71bb7
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20140331T180434:635318858741722484
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

@@ -1,9 +1,9 @@
 ----item----
 version: 1
-id: {B826B3AC-9D6D-453D-8476-F48C949F45EC}
+id: {5BDFDBE5-252E-4F19-8606-5A9742AD461A}
 database: master
 path: /sitecore/content/Active Commerce Training/Home/shop/cart/Navigation Links/Empty Cart
-parent: {260FBC43-48AE-427C-8912-9159051BB6D1}
+parent: {C7BFAC12-3C99-41EA-88B9-010CAFE6E181}
 name: Empty Cart
 master: {B0DB2EFD-FFF5-4D6D-ABC9-0C2026B0AD18}
 template: {F1E5339F-3A8F-4CE7-9021-E068B64285B1}
@@ -22,7 +22,7 @@ name: Link
 key: link
 content-length: 196
 
-<link text="" linktype="internal" url="/sitecore/content/Active Commerce Training/Home/products" anchor="" title="" class="" querystring="" target="" id="{8F2D3CF8-67E6-42CA-8AF4-E81872E6847B}" />
+<link text="" linktype="internal" url="/sitecore/content/Active Commerce Training/Home/products" anchor="" title="" class="" querystring="" target="" id="{5AB508A8-7A2D-4483-8960-CEC87FF76041}" />
 ----field----
 field: {F6D8A61C-2F84-4401-BD24-52D2068172BC}
 name: __Originator
@@ -40,7 +40,7 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: 28381f84-f673-41ec-a374-f673034a7db7
+revision: 3cd90b98-8ba9-4b55-8df2-9995180f5ff2
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -48,28 +48,21 @@ name: __Created
 key: __created
 content-length: 15
 
-20140313T182630
-----field----
-field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
-name: __Created by
-key: __created by
-content-length: 17
-
-default\Anonymous
+20140331T170626
 ----field----
 field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
 name: __Revision
 key: __revision
 content-length: 36
 
-28381f84-f673-41ec-a374-f673034a7db7
+3cd90b98-8ba9-4b55-8df2-9995180f5ff2
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 34
 
-20140313T183343:635303324237376369
+20140331T180702:635318860221167103
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

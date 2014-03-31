@@ -1,9 +1,9 @@
 ----item----
 version: 1
-id: {A10D13BD-19CA-47D6-8C3B-C3F76C6BC050}
+id: {1E3728DE-E87E-495F-B472-7D5F62D2CC1E}
 database: master
 path: /sitecore/content/Active Commerce Training/Site Settings/MailTemplates
-parent: {5D9B223E-C457-42E8-9415-FF02274071B6}
+parent: {D769C070-247E-4379-A88E-ACD811D2E815}
 name: MailTemplates
 master: {B0DB2EFD-FFF5-4D6D-ABC9-0C2026B0AD18}
 template: {A87A00B1-E6DB-45AB-8B54-636FEC3B5523}
@@ -47,7 +47,7 @@ sitecore|{709F62FE-F2EE-414A-B893-C3FEA72009B4}|5397||
 ----version----
 language: en
 version: 1
-revision: 08679bf5-a6d5-4477-9e4d-5aac9afd3f5c
+revision: 5d0a937a-5ed4-45fe-9a61-5fef0a941693
 
 ----field----
 field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
@@ -62,32 +62,32 @@ name: __Created
 key: __created
 content-length: 15
 
-20140313T182652
+20140331T170656
 ----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
 key: __created by
-content-length: 17
+content-length: 14
 
-default\Anonymous
+sitecore\admin
 ----field----
 field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
 name: __Revision
 key: __revision
 content-length: 36
 
-08679bf5-a6d5-4477-9e4d-5aac9afd3f5c
+5d0a937a-5ed4-45fe-9a61-5fef0a941693
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 34
 
-20140313T182652:635303320129246369
+20140331T170656:635318824165945139
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
 key: __updated by
-content-length: 17
+content-length: 14
 
-default\Anonymous
+sitecore\admin

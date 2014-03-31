@@ -1,9 +1,9 @@
 ----item----
 version: 1
-id: {E8B7AE61-404C-44A0-995A-B83189753A77}
+id: {3DBB5F2B-B81F-452F-BC54-7F324A42DFF5}
 database: master
 path: /sitecore/content/Active Commerce Training/Navigation/Slim Header
-parent: {746160A8-795C-49E1-8F0E-11C3B145DA46}
+parent: {CA4F08E5-AACE-4956-B50C-3CEAAE452814}
 name: Slim Header
 master: {B0DB2EFD-FFF5-4D6D-ABC9-0C2026B0AD18}
 template: {87D5B6C1-A084-4738-BE11-B4E6FE07D894}
@@ -15,7 +15,7 @@ name: Logo Link
 key: logo link
 content-length: 151
 
-<link linktype="internal" url="/sitecore/content/Active Commerce Training/Home" querystring="" target="" id="{73585E7F-9768-4BDB-BB9B-934CB07ED8DE}" />
+<link linktype="internal" url="/sitecore/content/Active Commerce Training/Home" querystring="" target="" id="{6BD15EFF-BAC8-48EA-9C42-22BF250C7F61}" />
 ----field----
 field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
 name: __Sortorder
@@ -40,7 +40,7 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: 5587c09b-6eb0-4444-8efe-8a6d59b379cf
+revision: bfb16141-e8ed-49c6-abe6-09d4e113ab65
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -48,28 +48,28 @@ name: __Created
 key: __created
 content-length: 15
 
-20140313T182634
+20140331T170631
 ----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
 key: __created by
-content-length: 17
+content-length: 14
 
-default\Anonymous
+sitecore\admin
 ----field----
 field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
 name: __Revision
 key: __revision
 content-length: 36
 
-5587c09b-6eb0-4444-8efe-8a6d59b379cf
+bfb16141-e8ed-49c6-abe6-09d4e113ab65
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 34
 
-20140313T183402:635303324428076369
+20140331T180718:635318860380026189
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

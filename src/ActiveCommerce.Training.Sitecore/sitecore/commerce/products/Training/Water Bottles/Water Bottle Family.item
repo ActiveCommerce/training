@@ -1,0 +1,125 @@
+----item----
+version: 1
+id: {70B36B37-4500-48BC-8F24-F11A7707685D}
+database: master
+path: /sitecore/commerce/products/Training/Water Bottles/Water Bottle Family
+parent: {D66C89D0-5C00-4583-A2C7-C6C6840CF7B9}
+name: Water Bottle Family
+master: {00000000-0000-0000-0000-000000000000}
+template: {81BC7FA0-9621-4E7A-AD00-BF07275AE3A5}
+templatekey: Water Bottle Family
+
+----field----
+field: {E2A1CC5E-BC4D-4BD7-A32A-BF973409A1F8}
+name: Product Code
+key: product code
+content-length: 8
+
+FAMILY01
+----field----
+field: {0C57346B-C5D4-435B-8622-A2D7021321CB}
+name: Name
+key: name
+content-length: 19
+
+Water Bottle Family
+----field----
+field: {20F65A24-E83E-44B1-B5C4-C8EC9D77B57E}
+name: SKU
+key: sku
+content-length: 8
+
+FAMILY01
+----field----
+field: {A457165A-E6C0-45AD-91BF-2C7407CB86E5}
+name: Price
+key: price
+content-length: 320
+
+<PriceMatrix><structure><categories><category id="Shop"><categories /><items><item id="Normalprice"><price>8.99</price><quantities /></item><item id="SalePrice"><price>8.5</price><quantities /></item><item id="Memberprice"><price /><quantities /></item></items></category></categories><items /></structure></PriceMatrix>
+----field----
+field: {0F4033C3-6CFA-4D7E-B4DD-1DA98A0F2418}
+name: Weight
+key: weight
+content-length: 1
+
+1
+----field----
+field: {A4F985D9-98B3-4B52-AAAF-4344F6E747C6}
+name: __Workflow
+key: __workflow
+content-length: 38
+
+{27418690-B217-4D3A-A2E6-091A30B54886}
+----version----
+language: en
+version: 1
+revision: 0e424792-7e7d-480c-8950-d6f787b4dcac
+
+----field----
+field: {6AB95C5C-BEA6-41BF-B6E3-B36C3228A5E9}
+name: Title
+key: title
+content-length: 19
+
+Water Bottle Family
+----field----
+field: {80FA7FFE-B869-43DA-AFEE-6800AD479BCE}
+name: Short Description
+key: short description
+content-length: 32
+
+
+		<p>Water Bottle Family</p>
+
+----field----
+field: {2CF05D1B-1B63-4576-8B1B-15C9608D615E}
+name: Description
+key: description
+content-length: 32
+
+
+		<p>Water Bottle Family</p>
+
+----field----
+field: {143B3331-19DA-4B47-9F4C-F221D3BA92E5}
+name: Material
+key: material
+content-length: 38
+
+{C7EBC13B-EB73-4BB1-9DA9-4D7628061600}
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 15
+
+20140331T180136
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+0e424792-7e7d-480c-8950-d6f787b4dcac
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20140331T180721:635318860416048250
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {3E431DE1-525E-47A3-B6B0-1CCBEC3A8C98}
+name: __Workflow state
+key: __workflow state
+content-length: 38
+
+{8AD77832-A5A9-4D4C-BF8A-186B21A56204}

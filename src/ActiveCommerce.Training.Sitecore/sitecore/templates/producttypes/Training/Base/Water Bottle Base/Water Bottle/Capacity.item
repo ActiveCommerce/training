@@ -1,0 +1,79 @@
+----item----
+version: 1
+id: {10A1E051-7DDB-4F4B-B43A-FA04FDC2FFFB}
+database: master
+path: /sitecore/templates/producttypes/Training/Base/Water Bottle Base/Water Bottle/Capacity
+parent: {519AC1C0-6579-4E50-91E2-433B388BD93A}
+name: Capacity
+master: {00000000-0000-0000-0000-000000000000}
+template: {455A3E98-A627-4B40-8035-E683A0331AC7}
+templatekey: Template field
+
+----field----
+field: {AB162CC0-DC80-4ABF-8871-998EE5D7BA32}
+name: Type
+key: type
+content-length: 8
+
+Droplink
+----field----
+field: {1EB8AE32-E190-44A6-968D-ED904C794EBF}
+name: Source
+key: source
+content-length: 47
+
+/sitecore/commerce/lookup/Water Bottle Capacity
+----field----
+field: {FFC4EC50-353B-4968-BD5C-56E262EC2FE1}
+name: Is Product Specification
+key: is product specification
+content-length: 1
+
+1
+----field----
+field: {5D7970DA-EF23-4FD0-AE4E-38EB83FF86DA}
+name: Is Product Option
+key: is product option
+content-length: 1
+
+1
+----field----
+field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
+name: __Sortorder
+key: __sortorder
+content-length: 3
+
+200
+----version----
+language: en
+version: 1
+revision: bfc084c4-d732-477e-b840-08a7b9030088
+
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 15
+
+20140331T172206
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+bfc084c4-d732-477e-b840-08a7b9030088
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20140331T180428:635318858680989010
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

@@ -1,9 +1,9 @@
 ----item----
 version: 1
-id: {86F29AE0-9E3E-4405-9FC1-71FA065F3716}
+id: {34325DE8-D967-45E1-9D89-C4E69C1626C4}
 database: master
 path: /sitecore/content/Active Commerce Training/Home/shop/account/logout/Navigation Links/Logout Successful
-parent: {45B621DB-82BF-4E02-A195-DC986DAF3FA3}
+parent: {B6818988-5C60-48C2-8CE2-FCBF4517AA2D}
 name: Logout Successful
 master: {B0DB2EFD-FFF5-4D6D-ABC9-0C2026B0AD18}
 template: {F1E5339F-3A8F-4CE7-9021-E068B64285B1}
@@ -22,7 +22,7 @@ name: Link
 key: link
 content-length: 151
 
-<link id="{73585E7F-9768-4BDB-BB9B-934CB07ED8DE}" querystring="" url="/sitecore/content/Active Commerce Training/Home" target="" linktype="internal" />
+<link id="{6BD15EFF-BAC8-48EA-9C42-22BF250C7F61}" querystring="" url="/sitecore/content/Active Commerce Training/Home" target="" linktype="internal" />
 ----field----
 field: {F6D8A61C-2F84-4401-BD24-52D2068172BC}
 name: __Originator
@@ -40,7 +40,7 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: 28b9765c-fe69-44b5-9bd8-29dcee1c9cad
+revision: 2a8cf93e-800e-4096-8a36-bad6bfd47eee
 
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
@@ -55,28 +55,28 @@ name: __Created
 key: __created
 content-length: 15
 
-20140313T182632
+20140331T170630
 ----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
 key: __created by
-content-length: 17
+content-length: 14
 
-default\Anonymous
+sitecore\admin
 ----field----
 field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
 name: __Revision
 key: __revision
 content-length: 36
 
-28b9765c-fe69-44b5-9bd8-29dcee1c9cad
+2a8cf93e-800e-4096-8a36-bad6bfd47eee
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 34
 
-20140313T183351:635303324314146369
+20140331T180709:635318860291921150
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

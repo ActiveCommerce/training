@@ -1,9 +1,9 @@
 ----item----
 version: 1
-id: {BB3CA415-D8A0-480C-9E38-C2F3F8B9A6E3}
+id: {C81F0E6F-CB3F-4F16-8A8C-FFE0AC2F89ED}
 database: master
 path: /sitecore/content/Active Commerce Training/Business Catalog/Payments/Mock Integrated Payment
-parent: {7FBEDEE8-E252-4789-9ED5-589E8F407717}
+parent: {696308F9-2773-4F83-B4B4-5ED30D660749}
 name: Mock Integrated Payment
 master: {B0DB2EFD-FFF5-4D6D-ABC9-0C2026B0AD18}
 template: {19B38990-A440-4C72-987E-82EEEA548636}
@@ -40,7 +40,7 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: 6b5d05fb-9f76-46a0-9ed0-eea62b894d2b
+revision: 69e1cc33-46a0-4ef3-94d8-f5237b8dfaae
 
 ----field----
 field: {EE4BD860-A144-4869-9E21-FA2441A85864}
@@ -55,28 +55,28 @@ name: __Created
 key: __created
 content-length: 15
 
-20140313T182652
+20140331T170656
 ----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
 key: __created by
-content-length: 17
+content-length: 14
 
-default\Anonymous
+sitecore\admin
 ----field----
 field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
 name: __Revision
 key: __revision
 content-length: 36
 
-6b5d05fb-9f76-46a0-9ed0-eea62b894d2b
+69e1cc33-46a0-4ef3-94d8-f5237b8dfaae
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 34
 
-20140313T183353:635303324330906369
+20140331T180710:635318860304931894
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

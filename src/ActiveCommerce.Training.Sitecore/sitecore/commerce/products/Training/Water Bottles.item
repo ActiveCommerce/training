@@ -1,0 +1,51 @@
+----item----
+version: 1
+id: {D66C89D0-5C00-4583-A2C7-C6C6840CF7B9}
+database: master
+path: /sitecore/commerce/products/Training/Water Bottles
+parent: {9BE7C9D2-5D9F-4501-9CE5-0C38EF2B26C8}
+name: Water Bottles
+master: {00000000-0000-0000-0000-000000000000}
+template: {AF520323-7586-4D80-92E1-538828E11B70}
+templatekey: Product Category
+
+----field----
+field: {1172F251-DAD4-4EFB-A329-0C63500E4F1E}
+name: __Masters
+key: __masters
+content-length: 77
+
+{5F131491-69F2-4E9A-9754-2173DC89CBDD}|{81BC7FA0-9621-4E7A-AD00-BF07275AE3A5}
+----version----
+language: en
+version: 1
+revision: 38aa8c0f-c7d1-481f-bae1-3c9bdff0e837
+
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 15
+
+20140331T171421
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+38aa8c0f-c7d1-481f-bae1-3c9bdff0e837
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20140331T180128:635318856887026401
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

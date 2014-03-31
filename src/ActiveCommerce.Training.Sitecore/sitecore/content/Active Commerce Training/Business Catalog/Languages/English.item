@@ -1,9 +1,9 @@
 ----item----
 version: 1
-id: {7279ACCE-3CE1-4C57-8082-1300CEAEFDB7}
+id: {6E518F2B-5618-4880-B1CE-5FF92970C924}
 database: master
 path: /sitecore/content/Active Commerce Training/Business Catalog/Languages/English
-parent: {06C32561-D480-4FF6-A1F6-96DE06C8D84E}
+parent: {87DF205F-CA9B-4550-9732-72E58B61CC1B}
 name: English
 master: {B0DB2EFD-FFF5-4D6D-ABC9-0C2026B0AD18}
 template: {A54AA371-F1F9-4255-AC9E-0366A04909A6}
@@ -40,7 +40,7 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: c3f5306c-e582-49f5-8aad-8e3e8b3688aa
+revision: ca511ab4-4f8c-41ff-b746-f0989602c7e1
 
 ----field----
 field: {EE4BD860-A144-4869-9E21-FA2441A85864}
@@ -62,28 +62,21 @@ name: __Created
 key: __created
 content-length: 15
 
-20140313T182652
-----field----
-field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
-name: __Created by
-key: __created by
-content-length: 17
-
-default\Anonymous
+20140331T170656
 ----field----
 field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
 name: __Revision
 key: __revision
 content-length: 36
 
-c3f5306c-e582-49f5-8aad-8e3e8b3688aa
+ca511ab4-4f8c-41ff-b746-f0989602c7e1
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 34
 
-20140313T183343:635303324238476369
+20140331T180702:635318860221577127
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

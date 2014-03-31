@@ -1,9 +1,9 @@
 ----item----
 version: 1
-id: {376FA512-EB97-4ED0-A878-015DA90A18D4}
+id: {10761095-B2DF-4328-832D-9A5DDE52A973}
 database: master
 path: /sitecore/content/Active Commerce Training/Home/shop/account/login/Components/Change Email Form
-parent: {EBBE0293-314B-49CF-A65E-1631C4FA80AD}
+parent: {7D97FE29-7708-4DAD-B2C2-09A98C7EDACF}
 name: Change Email Form
 master: {B0DB2EFD-FFF5-4D6D-ABC9-0C2026B0AD18}
 template: {D5138C2B-301A-4645-B181-89B2249D7CEE}
@@ -26,7 +26,7 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: 2f1ee6ab-028a-470f-a0e8-b2e47805a0a2
+revision: aa2880d9-044a-40d1-b9a6-fcc29671412e
 
 ----field----
 field: {714D006A-C6E3-4C8E-B31B-C024C1946690}
@@ -104,28 +104,21 @@ name: __Created
 key: __created
 content-length: 15
 
-20140313T182632
-----field----
-field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
-name: __Created by
-key: __created by
-content-length: 17
-
-default\Anonymous
+20140331T170629
 ----field----
 field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
 name: __Revision
 key: __revision
 content-length: 36
 
-2f1ee6ab-028a-470f-a0e8-b2e47805a0a2
+aa2880d9-044a-40d1-b9a6-fcc29671412e
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 34
 
-20140313T183339:635303324198216369
+20140331T180657:635318860179074696
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

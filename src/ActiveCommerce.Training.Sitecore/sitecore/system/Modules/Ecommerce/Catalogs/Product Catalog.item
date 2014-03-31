@@ -1,0 +1,126 @@
+----item----
+version: 1
+id: {19E29B79-58CB-4B1B-A2AC-1A38A4E76B5A}
+database: master
+path: /sitecore/system/Modules/Ecommerce/Catalogs/Product Catalog
+parent: {825FE488-3516-4818-A636-91DCE28005C3}
+name: Product Catalog
+master: {00000000-0000-0000-0000-000000000000}
+template: {CD4E1A56-7DB3-4257-8C00-D551D242C891}
+templatekey: Catalog
+
+----field----
+field: {DD092E0F-9139-4509-A44E-52CE24FB32AD}
+name: Templates
+key: templates
+content-length: 896
+
+{0A639D58-C79D-461B-88C2-7981DD619C28}|{E4CDE34B-E4A1-44D3-84BE-9E6FA4B9181E}|{33A92C55-F671-4E78-BC1C-9A657F08A5E2}|{A8BC2058-6614-42BA-8E7B-B461DA4198BA}|{395990BD-C1CE-4CCE-AF7D-BBF9DFC45E01}|{578D5427-29F6-4FA7-9DF7-E719BF257079}|{0BD24282-282E-498B-9D1A-D8D6B6A5853A}|{1F142BEC-2EE1-4DCE-B40A-87E84C527508}|{C1F9BF7B-82DF-414A-894F-DB104FEA7271}|{1B8C7F45-CA86-4E9C-9D49-4B8F5CCCCB8B}|{D3847D5C-EC10-4C4B-9537-47008D38173C}|{08E1792E-F569-479C-9297-B0507873764E}|{F2627387-88AC-40A4-811D-C60D8FFD2D4D}|{7F5AF51E-BAAF-42EF-A2AE-A6D2E7ED9BB5}|{13C281DB-9C5A-4EC9-A077-DA135A9C03E4}|{BCDA5329-348D-4ABB-A729-20D96057BF54}|{549C5369-44F1-4355-998E-851048840BD4}|{9FFB8D98-FA8A-4EA9-9FF9-1DE7BBE8D12F}|{AE9E07EA-3499-4F61-9A9B-B5B7579EB7EF}|{6417FF1E-70DB-48BE-A794-F953AE48E0F2}|{7DD89481-AAFA-4EC9-82BF-2AC3047049B2}|{5F131491-69F2-4E9A-9754-2173DC89CBDD}|{81BC7FA0-9621-4E7A-AD00-BF07275AE3A5}
+----field----
+field: {916599FB-8464-48A6-B530-E4BCDD41C8E1}
+name: Catalog Data Source
+key: catalog data source
+content-length: 100
+
+Sitecore.Ecommerce.Shell.Applications.Catalogs.Models.Search.ProductsSource,Sitecore.Ecommerce.Shell
+----field----
+field: {71D895D7-94B7-4691-A51B-6C833F8ACAB2}
+name: Editor Fields
+key: editor fields
+content-length: 311
+
+{E2A1CC5E-BC4D-4BD7-A32A-BF973409A1F8}|{38D4AC5F-2C70-48AE-BC83-9B21A269BD15}|{20F65A24-E83E-44B1-B5C4-C8EC9D77B57E}|{6AB95C5C-BEA6-41BF-B6E3-B36C3228A5E9}|{A457165A-E6C0-45AD-91BF-2C7407CB86E5}|{B388EF11-6A16-4917-9FC1-FCAC0286A451}|{B63E42AE-A2E0-452B-AF39-F843B9C7B3E0}|{C6FF3C8A-9F84-41DF-B493-FE2303F03C69}
+----version----
+language: en
+version: 1
+revision: 676e343f-7bf2-46e2-a705-8e151bd017e8
+
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 15
+
+20100205T122900
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+676e343f-7bf2-46e2-a705-8e151bd017e8
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20101019T160225:634231009455043766
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----version----
+language: en
+version: 2
+revision: 4ed0a190-9b81-48e8-933f-e20b1a7f8058
+
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 15
+
+20100205T122900
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+4ed0a190-9b81-48e8-933f-e20b1a7f8058
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20140331T180614:635318859749480124
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

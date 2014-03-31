@@ -1,9 +1,9 @@
 ----item----
 version: 1
-id: {EBBE0293-314B-49CF-A65E-1631C4FA80AD}
+id: {7D97FE29-7708-4DAD-B2C2-09A98C7EDACF}
 database: master
 path: /sitecore/content/Active Commerce Training/Home/shop/account/login/Components
-parent: {13B956FA-D0AB-422E-80B7-4CFCB081BF0E}
+parent: {C50ED21B-9D75-4A03-AFCD-A955BD72A712}
 name: Components
 master: {B0DB2EFD-FFF5-4D6D-ABC9-0C2026B0AD18}
 template: {B7F10490-1B99-4BAA-872F-FE6FAB46A844}
@@ -19,7 +19,7 @@ content-length: 0
 ----version----
 language: en
 version: 1
-revision: 01df8f8d-7439-4ae8-b00d-bfe098e90b38
+revision: ad6de06a-bef8-4abf-b386-8902386564a0
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -27,32 +27,32 @@ name: __Created
 key: __created
 content-length: 15
 
-20140313T182632
+20140331T170629
 ----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
 key: __created by
-content-length: 17
+content-length: 14
 
-default\Anonymous
+sitecore\admin
 ----field----
 field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
 name: __Revision
 key: __revision
 content-length: 36
 
-01df8f8d-7439-4ae8-b00d-bfe098e90b38
+ad6de06a-bef8-4abf-b386-8902386564a0
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 34
 
-20140313T182632:635303319923716369
+20140331T170629:635318823897319775
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
 key: __updated by
-content-length: 17
+content-length: 14
 
-default\Anonymous
+sitecore\admin

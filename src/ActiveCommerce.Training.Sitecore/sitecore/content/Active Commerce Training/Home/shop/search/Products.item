@@ -1,9 +1,9 @@
 ----item----
 version: 1
-id: {68FDB3C1-CE96-4D89-84F8-234EE41C1A6E}
+id: {0522E333-2E5B-4FB1-8927-BB90C9062C7A}
 database: master
 path: /sitecore/content/Active Commerce Training/Home/shop/search/Products
-parent: {5B81F927-D996-4471-B0F6-2A05E671E518}
+parent: {B8DEFA62-95DF-40D6-8CD4-963B61F0AF12}
 name: Products
 master: {B0DB2EFD-FFF5-4D6D-ABC9-0C2026B0AD18}
 template: {1C4B5851-C35B-405C-BA1F-E53A7C37B045}
@@ -40,7 +40,7 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: f137c582-cd78-4bed-9f40-ce012df38ff1
+revision: c7f57788-7dd1-417e-8aae-9c874cd1c15a
 
 ----field----
 field: {43C19EE8-3383-4C4C-AC11-80131709ACB7}
@@ -55,28 +55,21 @@ name: __Created
 key: __created
 content-length: 15
 
-20140313T182633
-----field----
-field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
-name: __Created by
-key: __created by
-content-length: 17
-
-default\Anonymous
+20140331T170630
 ----field----
 field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
 name: __Revision
 key: __revision
 content-length: 36
 
-f137c582-cd78-4bed-9f40-ce012df38ff1
+c7f57788-7dd1-417e-8aae-9c874cd1c15a
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 34
 
-20140313T183359:635303324394386369
+20140331T180715:635318860352834634
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

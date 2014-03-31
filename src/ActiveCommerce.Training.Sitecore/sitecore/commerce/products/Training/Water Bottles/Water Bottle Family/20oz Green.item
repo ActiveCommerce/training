@@ -1,0 +1,79 @@
+----item----
+version: 1
+id: {280EB4B2-01DC-44BE-9305-4786F8FA3A6F}
+database: master
+path: /sitecore/commerce/products/Training/Water Bottles/Water Bottle Family/20oz Green
+parent: {70B36B37-4500-48BC-8F24-F11A7707685D}
+name: 20oz Green
+master: {00000000-0000-0000-0000-000000000000}
+template: {E84A3197-A18A-47F4-848A-995840D7A287}
+templatekey: Water Bottle Variant
+
+----field----
+field: {E2A1CC5E-BC4D-4BD7-A32A-BF973409A1F8}
+name: Product Code
+key: product code
+content-length: 12
+
+FAMILY01-20G
+----field----
+field: {20F65A24-E83E-44B1-B5C4-C8EC9D77B57E}
+name: SKU
+key: sku
+content-length: 12
+
+FAMILY01-20G
+----field----
+field: {B63E42AE-A2E0-452B-AF39-F843B9C7B3E0}
+name: Stock
+key: stock
+content-length: 3
+
+100
+----version----
+language: en
+version: 1
+revision: c27d8bdf-b1a2-4644-a80b-b1f86234804e
+
+----field----
+field: {10A1E051-7DDB-4F4B-B43A-FA04FDC2FFFB}
+name: Capacity
+key: capacity
+content-length: 38
+
+{A3028EFA-009D-454E-B137-7F8A25A52370}
+----field----
+field: {5D5260EF-4D1C-46DC-9DDC-B0F0A36087D0}
+name: Color
+key: color
+content-length: 38
+
+{8C6F4068-C964-4EA1-995C-FB74262E15EA}
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 15
+
+20140331T180502
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+c27d8bdf-b1a2-4644-a80b-b1f86234804e
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20140331T180551:635318859516506799
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

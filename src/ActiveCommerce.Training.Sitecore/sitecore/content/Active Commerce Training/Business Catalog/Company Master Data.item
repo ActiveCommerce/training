@@ -1,9 +1,9 @@
 ----item----
 version: 1
-id: {B60A83A6-673F-4855-8591-33A57F588E49}
+id: {EDFDD1F1-84A9-4BF2-A1C8-233081DE3323}
 database: master
 path: /sitecore/content/Active Commerce Training/Business Catalog/Company Master Data
-parent: {3C4B3B7F-D124-4D79-ABF1-5A604EDD78A3}
+parent: {62C35200-BBD6-451F-B8E7-3C4C8BDE3868}
 name: Company Master Data
 master: {B0DB2EFD-FFF5-4D6D-ABC9-0C2026B0AD18}
 template: {B7D42D63-85C8-455D-AAA1-8040FB18FFEA}
@@ -47,7 +47,7 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: 987ea3ba-5ac3-47d8-8445-9917d0d92480
+revision: 426f88e9-31d5-4b2e-a24d-6e57a5660375
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -55,28 +55,21 @@ name: __Created
 key: __created
 content-length: 15
 
-20140313T182652
-----field----
-field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
-name: __Created by
-key: __created by
-content-length: 17
-
-default\Anonymous
+20140331T170656
 ----field----
 field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
 name: __Revision
 key: __revision
 content-length: 36
 
-987ea3ba-5ac3-47d8-8445-9917d0d92480
+426f88e9-31d5-4b2e-a24d-6e57a5660375
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 34
 
-20140313T183341:635303324213056369
+20140331T180659:635318860197195732
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

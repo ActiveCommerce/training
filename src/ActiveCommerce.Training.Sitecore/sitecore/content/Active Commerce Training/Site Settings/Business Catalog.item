@@ -1,9 +1,9 @@
 ----item----
 version: 1
-id: {F4A21718-F5B2-4190-9E13-732517BFED86}
+id: {0264AEDF-DCEC-473A-A30E-AF286D968206}
 database: master
 path: /sitecore/content/Active Commerce Training/Site Settings/Business Catalog
-parent: {5D9B223E-C457-42E8-9415-FF02274071B6}
+parent: {D769C070-247E-4379-A88E-ACD811D2E815}
 name: Business Catalog
 master: {B0DB2EFD-FFF5-4D6D-ABC9-0C2026B0AD18}
 template: {22B7E891-F36A-43E0-9369-B2C7B40056B6}
@@ -15,105 +15,105 @@ name: Products Link
 key: products link
 content-length: 38
 
-{76AA105E-E92E-48D9-B814-868CEF7D5846}
+{9BE7C9D2-5D9F-4501-9CE5-0C38EF2B26C8}
 ----field----
 field: {14D7579B-7DFD-4CD3-BCAB-FAD1A33F668F}
 name: Orders Link
 key: orders link
 content-length: 38
 
-{96DF3076-4230-4E63-B944-D2F247C73243}
+{6159D4F1-8C42-43E4-8A0F-6E403D9EB9F3}
 ----field----
 field: {6BE7A900-0B4A-45AE-A374-3639DF2DDC58}
 name: Order Statuses Link
 key: order statuses link
 content-length: 38
 
-{2B8E176A-CDF5-4BA9-9E65-7F6D86834D87}
+{E49F84FF-B768-42A5-9D31-80D294F8095C}
 ----field----
 field: {97B39D4F-94DB-43D8-A603-152995F70458}
 name: Company Master Data Link
 key: company master data link
 content-length: 38
 
-{B60A83A6-673F-4855-8591-33A57F588E49}
+{EDFDD1F1-84A9-4BF2-A1C8-233081DE3323}
 ----field----
 field: {C13C69B9-A03D-41DF-8287-8BEBAC2A2CE8}
 name: Countries Link
 key: countries link
 content-length: 38
 
-{2B868FCD-E34A-45A7-9978-9A88A17F6735}
+{06E3A5C8-3FA5-4ABD-ACC3-EF4DE6520A12}
 ----field----
 field: {576288C7-3701-4466-B08B-858793E0E059}
 name: Currencies Link
 key: currencies link
 content-length: 38
 
-{EDFC83A6-7E70-4E6A-A1A2-53E64EFC0B5A}
+{ADA52D00-A2D3-40C9-B264-474CA6DD6F1A}
 ----field----
 field: {3EF7802F-1D00-4136-98BC-CF345695B745}
 name: Currency Matrix Link
 key: currency matrix link
 content-length: 38
 
-{8679A92F-302F-46D2-9184-95779DBA03F4}
+{0E799749-A597-48D5-A5B4-AA01A1F00828}
 ----field----
 field: {6D22EB6E-059C-4368-B9FC-C75DAA93790D}
 name: Notification Options Link
 key: notification options link
 content-length: 38
 
-{BE209656-C43D-4FAA-9A15-D243E8968D9F}
+{53EFB303-2EA3-4FCF-92FE-1B2AF5ECFC46}
 ----field----
 field: {0FDC9C37-5F38-467C-9BC3-945FF72BCCA6}
 name: Languages Link
 key: languages link
 content-length: 38
 
-{06C32561-D480-4FF6-A1F6-96DE06C8D84E}
+{87DF205F-CA9B-4550-9732-72E58B61CC1B}
 ----field----
 field: {ECB31A35-19E2-41B6-8B9F-18A2FE8D603F}
 name: Shipping Providers Link
 key: shipping providers link
 content-length: 38
 
-{B2813684-22C9-457E-8994-6C8289E6A373}
+{B5105D2D-F6DA-44EB-A5E0-8C06E9AAC947}
 ----field----
 field: {4F76D0AF-8FD1-4802-8E8A-A4D96C1A514A}
 name: Payment Systems Link
 key: payment systems link
 content-length: 38
 
-{7FBEDEE8-E252-4789-9ED5-589E8F407717}
+{696308F9-2773-4F83-B4B4-5ED30D660749}
 ----field----
 field: {736CCE83-1795-43B7-88F8-CCE602F15D3F}
 name: VAT Regions
 key: vat regions
 content-length: 38
 
-{031232DD-D78A-484E-9B61-9FB3034D85B5}
+{59952757-1457-44E8-BCC9-DE420A3B3AEB}
 ----field----
 field: {EF56E1FF-F543-42DF-92E8-05633D1BBCC2}
 name: VAT Link
 key: vat link
 content-length: 38
 
-{7A877087-DE7C-4EFA-8CE8-3D42CF20CCCE}
+{C7DB9193-D34C-4422-BE8A-F059F07D0359}
 ----field----
 field: {77F45671-E22E-43AC-B297-8A506A28D9F7}
 name: Cart Promotions Link
 key: cart promotions link
 content-length: 38
 
-{A418E506-DB0B-488C-9243-5EEBFEE1CA8D}
+{1B217125-8C66-4FCF-8BB2-F14E0BB14BEC}
 ----field----
 field: {9355EEA8-7D36-4061-BF9D-ECA648567855}
 name: Wish Lists Link
 key: wish lists link
 content-length: 38
 
-{800EEF59-BD85-4116-A9AB-A993D4DCAE9F}
+{3927830B-1E9C-4A6B-8531-B88BC41872F8}
 ----field----
 field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
 name: __Sortorder
@@ -131,7 +131,7 @@ content-length: 0
 ----version----
 language: en
 version: 1
-revision: 2d533972-ed15-4561-9ba1-104f008414df
+revision: 5dc32c59-4a6b-40e8-896a-9b829f167620
 
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
@@ -146,28 +146,28 @@ name: __Created
 key: __created
 content-length: 15
 
-20140313T182652
+20140331T170656
 ----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
 key: __created by
-content-length: 17
+content-length: 14
 
-default\Anonymous
+sitecore\admin
 ----field----
 field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
 name: __Revision
 key: __revision
 content-length: 36
 
-2d533972-ed15-4561-9ba1-104f008414df
+5dc32c59-4a6b-40e8-896a-9b829f167620
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 34
 
-20140313T182846:635303321266156369
+20140331T171437:635318828771078538
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

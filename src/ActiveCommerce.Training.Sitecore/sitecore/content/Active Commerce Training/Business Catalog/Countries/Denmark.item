@@ -1,9 +1,9 @@
 ----item----
 version: 1
-id: {381E9D65-558C-4FBA-BEEB-45C1E02BD31E}
+id: {A67B9D8F-5124-4F41-BB90-D5C8B328B720}
 database: master
 path: /sitecore/content/Active Commerce Training/Business Catalog/Countries/Denmark
-parent: {2B868FCD-E34A-45A7-9978-9A88A17F6735}
+parent: {06E3A5C8-3FA5-4ABD-ACC3-EF4DE6520A12}
 name: Denmark
 master: {B0DB2EFD-FFF5-4D6D-ABC9-0C2026B0AD18}
 template: {3B064378-2EE3-4720-B3B5-4DF4EAED91C8}
@@ -47,7 +47,7 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: eed02550-921d-4215-bb70-841cd2029225
+revision: 9840cb83-60bf-4f12-802a-9da3111cc10c
 
 ----field----
 field: {EE4BD860-A144-4869-9E21-FA2441A85864}
@@ -62,28 +62,21 @@ name: __Created
 key: __created
 content-length: 15
 
-20140313T182642
-----field----
-field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
-name: __Created by
-key: __created by
-content-length: 17
-
-default\Anonymous
+20140331T170640
 ----field----
 field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
 name: __Revision
 key: __revision
 content-length: 36
 
-eed02550-921d-4215-bb70-841cd2029225
+9840cb83-60bf-4f12-802a-9da3111cc10c
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 34
 
-20140313T183342:635303324228196369
+20140331T180701:635318860211536552
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

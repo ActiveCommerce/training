@@ -1,9 +1,9 @@
 ----item----
 version: 1
-id: {8C4C92BE-B6EE-47F3-BD59-35AC6A5B34CF}
+id: {062DC54B-4C26-466A-BF5C-74EA50DCCDE8}
 database: master
 path: /sitecore/content/Active Commerce Training/Business Catalog/Countries/United States/Palau
-parent: {687DF23D-ED1D-4B9E-8409-5F47C32E138F}
+parent: {822FA989-38A6-4599-90EF-DE5D4AB81A3C}
 name: Palau
 master: {B0DB2EFD-FFF5-4D6D-ABC9-0C2026B0AD18}
 template: {226DDD63-9CD8-47B1-B68F-DE1ACBAFB3BB}
@@ -40,7 +40,7 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: f9ea591a-9606-4301-9d97-d01148b06340
+revision: edfe1d02-faf1-4ebe-b617-95a4b2a3573b
 
 ----field----
 field: {EE4BD860-A144-4869-9E21-FA2441A85864}
@@ -55,28 +55,21 @@ name: __Created
 key: __created
 content-length: 15
 
-20140313T182638
-----field----
-field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
-name: __Created by
-key: __created by
-content-length: 17
-
-default\Anonymous
+20140331T170635
 ----field----
 field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
 name: __Revision
 key: __revision
 content-length: 36
 
-f9ea591a-9606-4301-9d97-d01148b06340
+edfe1d02-faf1-4ebe-b617-95a4b2a3573b
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 34
 
-20140313T183357:635303324378976369
+20140331T180714:635318860340353920
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

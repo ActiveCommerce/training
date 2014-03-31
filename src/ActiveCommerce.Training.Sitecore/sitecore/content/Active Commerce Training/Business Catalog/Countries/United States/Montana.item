@@ -1,9 +1,9 @@
 ----item----
 version: 1
-id: {7983261C-4F88-45DB-A589-1B72A0EF3B22}
+id: {5723649A-9C12-4500-BF54-77CC50B2CA4B}
 database: master
 path: /sitecore/content/Active Commerce Training/Business Catalog/Countries/United States/Montana
-parent: {687DF23D-ED1D-4B9E-8409-5F47C32E138F}
+parent: {822FA989-38A6-4599-90EF-DE5D4AB81A3C}
 name: Montana
 master: {B0DB2EFD-FFF5-4D6D-ABC9-0C2026B0AD18}
 template: {226DDD63-9CD8-47B1-B68F-DE1ACBAFB3BB}
@@ -40,7 +40,7 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: fef57a21-df99-48e5-86c2-edcf2571f5cb
+revision: ad0dec2c-5f57-4a6b-8a33-cbb95a00e7d6
 
 ----field----
 field: {EE4BD860-A144-4869-9E21-FA2441A85864}
@@ -55,28 +55,21 @@ name: __Created
 key: __created
 content-length: 15
 
-20140313T182637
-----field----
-field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
-name: __Created by
-key: __created by
-content-length: 17
-
-default\Anonymous
+20140331T170634
 ----field----
 field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
 name: __Revision
 key: __revision
 content-length: 36
 
-fef57a21-df99-48e5-86c2-edcf2571f5cb
+ad0dec2c-5f57-4a6b-8a33-cbb95a00e7d6
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 34
 
-20140313T183353:635303324335946369
+20140331T180710:635318860306691995
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

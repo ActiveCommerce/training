@@ -1,9 +1,9 @@
 ----item----
 version: 1
-id: {B0C8CE8F-9C2C-4107-8B7E-FEA5A6C94480}
+id: {8C50D37D-1F8D-4E3C-B40E-052899D6079E}
 database: master
 path: /sitecore/content/Active Commerce Training/Business Catalog/Currencies/Euro
-parent: {EDFC83A6-7E70-4E6A-A1A2-53E64EFC0B5A}
+parent: {ADA52D00-A2D3-40C9-B264-474CA6DD6F1A}
 name: Euro
 master: {B0DB2EFD-FFF5-4D6D-ABC9-0C2026B0AD18}
 template: {3B4681DD-E900-4A56-B162-CE59358C973D}
@@ -40,7 +40,7 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: 852ead6a-4358-4c4b-8c76-644d7572ad0c
+revision: 06cadeaf-e9d9-480b-9bc8-46ca8f4444d4
 
 ----field----
 field: {EE4BD860-A144-4869-9E21-FA2441A85864}
@@ -55,28 +55,21 @@ name: __Created
 key: __created
 content-length: 15
 
-20140313T182651
-----field----
-field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
-name: __Created by
-key: __created by
-content-length: 17
-
-default\Anonymous
+20140331T170654
 ----field----
 field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
 name: __Revision
 key: __revision
 content-length: 36
 
-852ead6a-4358-4c4b-8c76-644d7572ad0c
+06cadeaf-e9d9-480b-9bc8-46ca8f4444d4
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 34
 
-20140313T183344:635303324245776369
+20140331T180702:635318860228107500
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

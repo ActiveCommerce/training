@@ -1,9 +1,9 @@
 ----item----
 version: 1
-id: {B3EC4E1B-3CD7-4EC6-A3A0-C669677CD1D2}
+id: {33EA2E5C-69D5-45BE-8136-382D31FE1EE5}
 database: master
 path: /sitecore/content/Active Commerce Training/Home/shop/checkout/error
-parent: {9A81F121-9DA9-4B44-9667-EA702B34A493}
+parent: {6795379B-4EC7-451F-AC89-97573FA80947}
 name: error
 master: {B0DB2EFD-FFF5-4D6D-ABC9-0C2026B0AD18}
 template: {CAB89C5C-5F24-42D5-A316-3602A4DABAEC}
@@ -33,7 +33,7 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: aa3b0038-b8b3-4eb9-b4ee-a51497a0728d
+revision: 029bac69-a207-4e9f-8da1-4faed46af77b
 
 ----field----
 field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
@@ -48,28 +48,21 @@ name: __Created
 key: __created
 content-length: 15
 
-20140313T182632
-----field----
-field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
-name: __Created by
-key: __created by
-content-length: 17
-
-default\Anonymous
+20140331T170629
 ----field----
 field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
 name: __Revision
 key: __revision
 content-length: 36
 
-aa3b0038-b8b3-4eb9-b4ee-a51497a0728d
+029bac69-a207-4e9f-8da1-4faed46af77b
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 34
 
-20140313T183344:635303324243146369
+20140331T180702:635318860225497351
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

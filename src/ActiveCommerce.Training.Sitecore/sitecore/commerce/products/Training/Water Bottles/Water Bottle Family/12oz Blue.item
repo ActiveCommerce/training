@@ -1,0 +1,100 @@
+----item----
+version: 1
+id: {9D1CDCBD-C97E-498D-B4DC-8ADE8CB1162D}
+database: master
+path: /sitecore/commerce/products/Training/Water Bottles/Water Bottle Family/12oz Blue
+parent: {70B36B37-4500-48BC-8F24-F11A7707685D}
+name: 12oz Blue
+master: {00000000-0000-0000-0000-000000000000}
+template: {E84A3197-A18A-47F4-848A-995840D7A287}
+templatekey: Water Bottle Variant
+
+----field----
+field: {E2A1CC5E-BC4D-4BD7-A32A-BF973409A1F8}
+name: Product Code
+key: product code
+content-length: 12
+
+FAMILY01-12B
+----field----
+field: {20F65A24-E83E-44B1-B5C4-C8EC9D77B57E}
+name: SKU
+key: sku
+content-length: 12
+
+FAMILY01-12B
+----field----
+field: {B63E42AE-A2E0-452B-AF39-F843B9C7B3E0}
+name: Stock
+key: stock
+content-length: 3
+
+100
+----field----
+field: {A4F985D9-98B3-4B52-AAAF-4344F6E747C6}
+name: __Workflow
+key: __workflow
+content-length: 38
+
+{27418690-B217-4D3A-A2E6-091A30B54886}
+----version----
+language: en
+version: 1
+revision: 5ebc4c6a-d7a4-43c6-b542-499172f4844f
+
+----field----
+field: {10A1E051-7DDB-4F4B-B43A-FA04FDC2FFFB}
+name: Capacity
+key: capacity
+content-length: 38
+
+{A562E91E-5A27-4119-91B7-AE009F96F391}
+----field----
+field: {5D5260EF-4D1C-46DC-9DDC-B0F0A36087D0}
+name: Color
+key: color
+content-length: 38
+
+{1E699571-1E65-4EF7-AA57-894E15C8D4FA}
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 15
+
+20140331T180316
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+5ebc4c6a-d7a4-43c6-b542-499172f4844f
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20140331T180653:635318860139292420
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {3E431DE1-525E-47A3-B6B0-1CCBEC3A8C98}
+name: __Workflow state
+key: __workflow state
+content-length: 38
+
+{8AD77832-A5A9-4D4C-BF8A-186B21A56204}
+----field----
+field: {001DD393-96C5-490B-924A-B0F25CD9EFD8}
+name: __Lock
+key: __lock
+content-length: 5
+
+<r />

@@ -1,0 +1,79 @@
+----item----
+version: 1
+id: {0589A46B-D354-4C97-9EF3-FB028DC48877}
+database: master
+path: /sitecore/commerce/products/Training/Water Bottles/Water Bottle Family/16oz Blue
+parent: {70B36B37-4500-48BC-8F24-F11A7707685D}
+name: 16oz Blue
+master: {00000000-0000-0000-0000-000000000000}
+template: {E84A3197-A18A-47F4-848A-995840D7A287}
+templatekey: Water Bottle Variant
+
+----field----
+field: {E2A1CC5E-BC4D-4BD7-A32A-BF973409A1F8}
+name: Product Code
+key: product code
+content-length: 12
+
+FAMILY01-16B
+----field----
+field: {0C57346B-C5D4-435B-8622-A2D7021321CB}
+name: Name
+key: name
+content-length: 9
+
+16oz Blue
+----field----
+field: {20F65A24-E83E-44B1-B5C4-C8EC9D77B57E}
+name: SKU
+key: sku
+content-length: 12
+
+FAMILY01-16B
+----version----
+language: en
+version: 1
+revision: d17dcfa2-893b-4e91-a117-e9ff08fce216
+
+----field----
+field: {10A1E051-7DDB-4F4B-B43A-FA04FDC2FFFB}
+name: Capacity
+key: capacity
+content-length: 38
+
+{4A6756DB-ABC2-46E8-A3FE-084A3AA7BA8C}
+----field----
+field: {5D5260EF-4D1C-46DC-9DDC-B0F0A36087D0}
+name: Color
+key: color
+content-length: 38
+
+{1E699571-1E65-4EF7-AA57-894E15C8D4FA}
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 15
+
+20140331T180359
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+d17dcfa2-893b-4e91-a117-e9ff08fce216
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20140331T180905:635318861452947557
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
