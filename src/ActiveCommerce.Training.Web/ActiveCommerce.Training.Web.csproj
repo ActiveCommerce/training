@@ -61,12 +61,47 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Config\Include\xActiveCommerce.Sites.zTraining.config" />
+    <Content Include="App_Config\Include\xActiveCommerce.Sites.zTraining.config">
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="skins\training\images\icons\cart.png" />
+    <Content Include="skins\training\scripts\browse-product.js" />
+    <Content Include="skins\training\scripts\product.cart.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="skins\training\images\README.md" />
+    <Content Include="skins\training\scripts\README.md" />
+    <Content Include="skins\training\styles\account.less" />
+    <Content Include="skins\training\styles\account.mobile.less" />
+    <Content Include="skins\training\styles\browse.less" />
+    <Content Include="skins\training\styles\browse.mobile.less" />
+    <Content Include="skins\training\styles\cart.less" />
+    <Content Include="skins\training\styles\cart.mobile.less" />
+    <Content Include="skins\training\styles\checkout.less" />
+    <Content Include="skins\training\styles\checkout.mobile.less" />
+    <Content Include="skins\training\styles\common\mixins.less" />
+    <Content Include="skins\training\styles\common\variables.less" />
+    <Content Include="skins\training\styles\generic-content.less" />
+    <Content Include="skins\training\styles\generic-content.mobile.less" />
+    <Content Include="skins\training\styles\home.less" />
+    <Content Include="skins\training\styles\home.mobile.less" />
+    <Content Include="skins\training\styles\main.less" />
+    <Content Include="skins\training\styles\main.mobile.less" />
+    <Content Include="skins\training\styles\news.less" />
+    <Content Include="skins\training\styles\news.mobile.less" />
+    <Content Include="skins\training\styles\order.less" />
+    <Content Include="skins\training\styles\order.mobile.less" />
+    <Content Include="skins\training\styles\product.less" />
+    <Content Include="skins\training\styles\product.mobile.less" />
+    <Content Include="skins\training\styles\README.md" />
+    <Content Include="skins\training\styles\search.less" />
+    <Content Include="skins\training\styles\search.mobile.less" />
+    <Content Include="skins\training\styles\signin.less" />
+    <Content Include="skins\training\styles\signin.mobile.less" />
+    <Content Include="skins\training\templates\README.md" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

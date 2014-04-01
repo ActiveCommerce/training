@@ -1,0 +1,1 @@
+ActiveCommerce.BrowseProduct.config.productsPerPage = 20;
