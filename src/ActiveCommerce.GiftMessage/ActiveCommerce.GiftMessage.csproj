@@ -53,15 +53,15 @@
       <Private>False</Private>
     </Reference>
     <Reference Include="Castle.Core">
-      <HintPath>..\packages\Castle.Core.3.2.2\lib\net45\Castle.Core.dll</HintPath>
+      <HintPath>$(SitecorePath)\bin\Castle.Core.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Glass.Mapper">
-      <HintPath>..\packages\Glass.Mapper.3.0.10.23\lib\net45\Glass.Mapper.dll</HintPath>
+      <HintPath>$(SitecorePath)\bin\Glass.Mapper.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Glass.Mapper.Sc">
-      <HintPath>..\packages\Glass.Mapper.Sc.3.1.5.24\lib\net45\Glass.Mapper.Sc.dll</HintPath>
+      <HintPath>$(SitecorePath)\bin\Glass.Mapper.Sc.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Microsoft.CSharp" />

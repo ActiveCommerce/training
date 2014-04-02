@@ -1,25 +1,25 @@
 ----item----
 version: 1
-id: {599FB7CE-4458-45A4-90EF-49EC429C205D}
+id: {F1272203-7599-4CDC-B877-529E89C44C8B}
 database: master
-path: /sitecore/commerce/products/Training/Books
-parent: {9BE7C9D2-5D9F-4501-9CE5-0C38EF2B26C8}
-name: Books
+path: /sitecore/layout/Sublayouts/Training/BookTab
+parent: {95AC034C-B072-4339-A6DD-1539CBB8E967}
+name: BookTab
 master: {00000000-0000-0000-0000-000000000000}
-template: {AF520323-7586-4D80-92E1-538828E11B70}
-templatekey: Product Category
+template: {0A98E368-CDB9-4E1E-927C-8E0C24A003FB}
+templatekey: Sublayout
 
 ----field----
-field: {1172F251-DAD4-4EFB-A329-0C63500E4F1E}
-name: __Masters
-key: __masters
-content-length: 38
+field: {E42081B6-8A95-4A11-89CE-DF70ED502F57}
+name: Path
+key: path
+content-length: 26
 
-{7CAA3164-BB54-40B5-923F-C90AB2BCC34A}
+/skins/~SKIN~/BookTab.ascx
 ----version----
 language: en
 version: 1
-revision: b224da3a-dbfc-4383-b8d7-647872fa2f00
+revision: da840199-5c67-4847-b925-97bd15cc3675
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -27,21 +27,28 @@ name: __Created
 key: __created
 content-length: 15
 
-20140313T184318
+20140401T215719
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
 ----field----
 field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
 name: __Revision
 key: __revision
 content-length: 36
 
-b224da3a-dbfc-4383-b8d7-647872fa2f00
+da840199-5c67-4847-b925-97bd15cc3675
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 34
 
-20140401T220836:635319869164937900
+20140401T215731:635319862519207786
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

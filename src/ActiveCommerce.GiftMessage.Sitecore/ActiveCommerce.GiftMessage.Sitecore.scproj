@@ -8,7 +8,7 @@
     <SitecoreAccessGuid>
     </SitecoreAccessGuid>
     <InstallSitecoreConnector>False</InstallSitecoreConnector>
-    <OutputPath>bin\Day1\</OutputPath>
+    <OutputPath>.\Day1\</OutputPath>
   </PropertyGroup>
   <Import Project="..\deploy.targets" Condition="Exists('..\deploy.targets')" />
   <PropertyGroup>
@@ -38,11 +38,9 @@
     <OutputPath>.\Debug\</OutputPath>
     <RecursiveDeployAction>Ignore</RecursiveDeployAction>
     <SitecoreDeployFolder>C:\Sitecore\ActiveCommerceTraining\Website</SitecoreDeployFolder>
-    <SitecoreWebUrl>
-    </SitecoreWebUrl>
-    <SitecoreAccessGuid>
-    </SitecoreAccessGuid>
-    <InstallSitecoreConnector>False</InstallSitecoreConnector>
+    <SitecoreWebUrl>http://activecommercetraining</SitecoreWebUrl>
+    <SitecoreAccessGuid>6620bde8-a0cd-4307-a749-f772a7176c22</SitecoreAccessGuid>
+    <InstallSitecoreConnector>True</InstallSitecoreConnector>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
     <DebugSymbols>false</DebugSymbols>
