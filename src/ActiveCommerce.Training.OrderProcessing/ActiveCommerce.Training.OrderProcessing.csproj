@@ -96,7 +96,7 @@
     <Content Include="Service References\Services\ActiveCommerce.Training.OrderProcessing.Services.Order.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
-    <Content Include="Service References\Services\OrderService.wsdl" />
+    <None Include="Service References\Services\OrderService.wsdl" />
     <Content Include="App_Config\Include\xActiveCommerce.zTraining.OrderProcessing.config" />
     <None Include="Service References\Services\OrderService.xsd">
       <SubType>Designer</SubType>
@@ -113,19 +113,19 @@
     <WCFMetadataStorage Include="Service References\Services\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Service References\Services\OrderService.disco" />
+    <None Include="Service References\Services\OrderService.disco" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Service References\Services\configuration91.svcinfo" />
+    <None Include="Service References\Services\configuration91.svcinfo" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Service References\Services\configuration.svcinfo" />
+    <None Include="Service References\Services\configuration.svcinfo" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Service References\Services\Reference.svcmap">
+    <None Include="Service References\Services\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
-    </Content>
+    </None>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

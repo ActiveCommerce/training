@@ -1,4 +1,6 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
+using System.ServiceModel;
 using Microsoft.Practices.Unity;
 using ActiveCommerce.Addresses;
 using ActiveCommerce.OrderProcessing;
@@ -35,15 +37,25 @@ namespace ActiveCommerce.Training.OrderProcessing
             serviceOrder.TaxTotal = order.Totals.TotalVat;
             serviceOrder.ShippingCost = order.ShippingPrice;
 
-            var client = new Services.OrderServiceClient();
-            var id = client.CreateOrder(serviceOrder);
+            try
+            {
+                var client = new Services.OrderServiceClient();
+                var id = client.CreateOrder(serviceOrder);
+                Sitecore.Diagnostics.Log.Warn("Successfully created order {0}".FormatWith(id), this);
+            }
+            catch (FaultException e)
+            {
+                Sitecore.Diagnostics.Log.Error("Error while sending order data. Error from server was: {0}".FormatWith(e.Message), e, this);
+                args.AddMessage(e.Message);
+                args.Order = null;
+            }
 
             //TODO: Add example of extending order data
             //(order as Training.Web.Orders.Order).ExternalOrderId = id;
             //var orderManager = Sitecore.Ecommerce.Context.Entity.Resolve<IOrderManager<Order>>();
             //orderManager.SaveOrder(order);
 
-            Sitecore.Diagnostics.Log.Warn("Successfully created order {0}".FormatWith(id), this);
+            
         }
 
         protected Services.Address ConvertAddress(AddressInfo address)
