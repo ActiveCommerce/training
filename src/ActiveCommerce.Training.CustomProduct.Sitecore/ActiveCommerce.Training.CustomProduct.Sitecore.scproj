@@ -62,6 +62,7 @@
     <SitecoreItem Include="sitecore\commerce\translation\P\Product-Tab-Book.item">
       <Icon>/temp/IconCache/Applications/32x32/font.png</Icon>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
+      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>
     <SitecoreItem Include="sitecore\layout.item">
       <Icon>/temp/IconCache/Applications/16x16/windows.png</Icon>
@@ -81,6 +82,7 @@
     <SitecoreItem Include="sitecore\layout\Sublayouts\Training\BookTab.item">
       <Icon>/temp/IconCache/Software/16x16/element_selection.png</Icon>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
+      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>
   </ItemGroup>
   <ItemGroup>
