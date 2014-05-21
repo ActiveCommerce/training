@@ -8,12 +8,12 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{091E2482-60C8-4C79-885F-60F3FD70A757}</ProjectGuid>
+    <ProjectGuid>{7AB786B6-85E8-4630-A2DE-C368A0CBBC53}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ActiveCommerce.Training.OrderProcessing</RootNamespace>
-    <AssemblyName>ActiveCommerce.Training.OrderProcessing</AssemblyName>
+    <RootNamespace>ActiveCommerce.Training.OrderBatching</RootNamespace>
+    <AssemblyName>ActiveCommerce.Training.OrderBatching</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <UseIISExpress>true</UseIISExpress>
     <IISExpressSSLPort />
@@ -81,7 +81,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="OrderIntegration.cs" />
+    <Compile Include="OrderExport.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Service References\Services\Reference.cs">
       <AutoGen>True</AutoGen>
@@ -93,7 +93,7 @@
     <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Service References\Services\ActiveCommerce.Training.OrderProcessing.Services.Order.datasource">
+    <Content Include="Service References\Services\ActiveCommerce.Training.OrderBatching.Services.Order.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
     <None Include="Service References\Services\OrderService.wsdl" />
@@ -126,6 +126,12 @@
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ActiveCommerce.Training.OrderExtension\ActiveCommerce.Training.OrderExtension.csproj">
+      <Project>{ad417ffe-6894-4044-8b47-95d2bca95344}</Project>
+      <Name>ActiveCommerce.Training.OrderExtension</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

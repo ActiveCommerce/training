@@ -49,13 +49,6 @@ namespace ActiveCommerce.Training.OrderProcessing
                 args.AddMessage(e.Message);
                 args.Order = null;
             }
-
-            //TODO: Add example of extending order data
-            //(order as Training.Web.Orders.Order).ExternalOrderId = id;
-            //var orderManager = Sitecore.Ecommerce.Context.Entity.Resolve<IOrderManager<Order>>();
-            //orderManager.SaveOrder(order);
-
-            
         }
 
         protected Services.Address ConvertAddress(AddressInfo address)

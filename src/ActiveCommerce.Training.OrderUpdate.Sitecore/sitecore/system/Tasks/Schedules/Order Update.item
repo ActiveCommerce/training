@@ -1,0 +1,86 @@
+----item----
+version: 1
+id: {D8F28363-F5FF-4C35-98F2-EB97F574B418}
+database: master
+path: /sitecore/system/Tasks/Schedules/Order Update
+parent: {A705D262-5714-4880-9962-051E25F1416D}
+name: Order Update
+master: {00000000-0000-0000-0000-000000000000}
+template: {8D00D665-96D6-44AB-B84E-304A79DEA540}
+templatekey: Extended Schedule
+
+----field----
+field: {62E64DBB-0A39-4DD7-BA05-7BD08C5404E0}
+name: Command
+key: command
+content-length: 38
+
+{A93212DC-446F-4B59-BC71-92CE8F8F2CA8}
+----field----
+field: {BBC87939-C5A5-4127-B559-2B227ADA94AB}
+name: Site Context
+key: site context
+content-length: 8
+
+training
+----field----
+field: {7D058206-5E8B-4049-9B8C-1B6FEA32A727}
+name: Database Context
+key: database context
+content-length: 6
+
+master
+----field----
+field: {45AE9C7F-3406-4A1C-96BA-0576C578A6E9}
+name: Arguments
+key: arguments
+content-length: 74
+
+startStatus=%7B8E84C0A6-CCCD-40BE-B68E-EB06513AEC2A%7D&endStatus=Completed
+----version----
+language: en
+version: 1
+revision: f319553a-10dc-4eea-9fb2-2f84952e228a
+
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 15
+
+20140520T225636
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+f319553a-10dc-4eea-9fb2-2f84952e228a
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20140520T225726:635362234461770079
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

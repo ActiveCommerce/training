@@ -8,12 +8,12 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{091E2482-60C8-4C79-885F-60F3FD70A757}</ProjectGuid>
+    <ProjectGuid>{AD417FFE-6894-4044-8B47-95D2BCA95344}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ActiveCommerce.Training.OrderProcessing</RootNamespace>
-    <AssemblyName>ActiveCommerce.Training.OrderProcessing</AssemblyName>
+    <RootNamespace>ActiveCommerce.Training.OrderExtension</RootNamespace>
+    <AssemblyName>ActiveCommerce.Training.OrderExtension</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <UseIISExpress>true</UseIISExpress>
     <IISExpressSSLPort />
@@ -42,6 +42,12 @@
     <Reference Include="ActiveCommerce.Kernel">
       <HintPath>$(SitecorePath)\bin\ActiveCommerce.Kernel.dll</HintPath>
       <Private>False</Private>
+    </Reference>
+    <Reference Include="Glass.Mapper">
+      <HintPath>$(SitecorePath)\bin\Glass.Mapper.dll</HintPath>
+    </Reference>
+    <Reference Include="Glass.Mapper.Sc">
+      <HintPath>$(SitecorePath)\bin\Glass.Mapper.Sc.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="Microsoft.Practices.Unity, Version=1.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
@@ -81,51 +87,16 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="OrderIntegration.cs" />
+    <Compile Include="Order.cs" />
+    <Compile Include="OrderMappingRule.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Service References\Services\Reference.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Compile>
+    <Compile Include="RegisterTypes.cs" />
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Service References\Services\ActiveCommerce.Training.OrderProcessing.Services.Order.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Content>
-    <None Include="Service References\Services\OrderService.wsdl" />
-    <Content Include="App_Config\Include\xActiveCommerce.zTraining.OrderProcessing.config" />
-    <None Include="Service References\Services\OrderService.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Service References\Services\OrderService1.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Service References\Services\OrderService2.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="web.config.example" />
-  </ItemGroup>
-  <ItemGroup>
-    <WCFMetadataStorage Include="Service References\Services\" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Service References\Services\OrderService.disco" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Service References\Services\configuration91.svcinfo" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Service References\Services\configuration.svcinfo" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Service References\Services\Reference.svcmap">
-      <Generator>WCF Proxy Generator</Generator>
-      <LastGenOutput>Reference.cs</LastGenOutput>
-    </None>
+    <Content Include="App_Config\Include\xActiveCommerce.zTraining.OrderExtension.config" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

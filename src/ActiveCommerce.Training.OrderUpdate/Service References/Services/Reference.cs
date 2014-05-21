@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace ActiveCommerce.Training.OrderProcessing.Services {
+namespace ActiveCommerce.Training.OrderUpdate.Services {
     using System.Runtime.Serialization;
     using System;
     
@@ -23,7 +23,7 @@ namespace ActiveCommerce.Training.OrderProcessing.Services {
         private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private ActiveCommerce.Training.OrderProcessing.Services.Address BillingField;
+        private ActiveCommerce.Training.OrderUpdate.Services.Address BillingField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string CustomerEmailField;
@@ -38,13 +38,13 @@ namespace ActiveCommerce.Training.OrderProcessing.Services {
         private System.Guid IdField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private ActiveCommerce.Training.OrderProcessing.Services.OrderLine[] OrderLinesField;
+        private ActiveCommerce.Training.OrderUpdate.Services.OrderLine[] OrderLinesField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private bool ShippedField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private ActiveCommerce.Training.OrderProcessing.Services.Address ShippingField;
+        private ActiveCommerce.Training.OrderUpdate.Services.Address ShippingField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private System.Nullable<decimal> ShippingCostField;
@@ -72,7 +72,7 @@ namespace ActiveCommerce.Training.OrderProcessing.Services {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public ActiveCommerce.Training.OrderProcessing.Services.Address Billing {
+        public ActiveCommerce.Training.OrderUpdate.Services.Address Billing {
             get {
                 return this.BillingField;
             }
@@ -137,7 +137,7 @@ namespace ActiveCommerce.Training.OrderProcessing.Services {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public ActiveCommerce.Training.OrderProcessing.Services.OrderLine[] OrderLines {
+        public ActiveCommerce.Training.OrderUpdate.Services.OrderLine[] OrderLines {
             get {
                 return this.OrderLinesField;
             }
@@ -163,7 +163,7 @@ namespace ActiveCommerce.Training.OrderProcessing.Services {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public ActiveCommerce.Training.OrderProcessing.Services.Address Shipping {
+        public ActiveCommerce.Training.OrderUpdate.Services.Address Shipping {
             get {
                 return this.ShippingField;
             }
@@ -442,31 +442,31 @@ namespace ActiveCommerce.Training.OrderProcessing.Services {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IOrderService/CreateOrder", ReplyAction="http://tempuri.org/IOrderService/CreateOrderResponse")]
         [System.ServiceModel.FaultContractAttribute(typeof(string), Action="http://tempuri.org/IOrderService/CreateOrderStringFault", Name="string", Namespace="http://schemas.microsoft.com/2003/10/Serialization/")]
-        System.Guid CreateOrder(ActiveCommerce.Training.OrderProcessing.Services.Order order);
+        System.Guid CreateOrder(ActiveCommerce.Training.OrderUpdate.Services.Order order);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IOrderService/CreateOrder", ReplyAction="http://tempuri.org/IOrderService/CreateOrderResponse")]
-        System.Threading.Tasks.Task<System.Guid> CreateOrderAsync(ActiveCommerce.Training.OrderProcessing.Services.Order order);
+        System.Threading.Tasks.Task<System.Guid> CreateOrderAsync(ActiveCommerce.Training.OrderUpdate.Services.Order order);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IOrderService/Get", ReplyAction="http://tempuri.org/IOrderService/GetResponse")]
-        ActiveCommerce.Training.OrderProcessing.Services.Order Get(System.Guid id);
+        ActiveCommerce.Training.OrderUpdate.Services.Order Get(System.Guid id);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IOrderService/Get", ReplyAction="http://tempuri.org/IOrderService/GetResponse")]
-        System.Threading.Tasks.Task<ActiveCommerce.Training.OrderProcessing.Services.Order> GetAsync(System.Guid id);
+        System.Threading.Tasks.Task<ActiveCommerce.Training.OrderUpdate.Services.Order> GetAsync(System.Guid id);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IOrderService/GetAll", ReplyAction="http://tempuri.org/IOrderService/GetAllResponse")]
-        ActiveCommerce.Training.OrderProcessing.Services.Order[] GetAll();
+        ActiveCommerce.Training.OrderUpdate.Services.Order[] GetAll();
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IOrderService/GetAll", ReplyAction="http://tempuri.org/IOrderService/GetAllResponse")]
-        System.Threading.Tasks.Task<ActiveCommerce.Training.OrderProcessing.Services.Order[]> GetAllAsync();
+        System.Threading.Tasks.Task<ActiveCommerce.Training.OrderUpdate.Services.Order[]> GetAllAsync();
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public interface IOrderServiceChannel : ActiveCommerce.Training.OrderProcessing.Services.IOrderService, System.ServiceModel.IClientChannel {
+    public interface IOrderServiceChannel : ActiveCommerce.Training.OrderUpdate.Services.IOrderService, System.ServiceModel.IClientChannel {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public partial class OrderServiceClient : System.ServiceModel.ClientBase<ActiveCommerce.Training.OrderProcessing.Services.IOrderService>, ActiveCommerce.Training.OrderProcessing.Services.IOrderService {
+    public partial class OrderServiceClient : System.ServiceModel.ClientBase<ActiveCommerce.Training.OrderUpdate.Services.IOrderService>, ActiveCommerce.Training.OrderUpdate.Services.IOrderService {
         
         public OrderServiceClient() {
         }
@@ -487,27 +487,27 @@ namespace ActiveCommerce.Training.OrderProcessing.Services {
                 base(binding, remoteAddress) {
         }
         
-        public System.Guid CreateOrder(ActiveCommerce.Training.OrderProcessing.Services.Order order) {
+        public System.Guid CreateOrder(ActiveCommerce.Training.OrderUpdate.Services.Order order) {
             return base.Channel.CreateOrder(order);
         }
         
-        public System.Threading.Tasks.Task<System.Guid> CreateOrderAsync(ActiveCommerce.Training.OrderProcessing.Services.Order order) {
+        public System.Threading.Tasks.Task<System.Guid> CreateOrderAsync(ActiveCommerce.Training.OrderUpdate.Services.Order order) {
             return base.Channel.CreateOrderAsync(order);
         }
         
-        public ActiveCommerce.Training.OrderProcessing.Services.Order Get(System.Guid id) {
+        public ActiveCommerce.Training.OrderUpdate.Services.Order Get(System.Guid id) {
             return base.Channel.Get(id);
         }
         
-        public System.Threading.Tasks.Task<ActiveCommerce.Training.OrderProcessing.Services.Order> GetAsync(System.Guid id) {
+        public System.Threading.Tasks.Task<ActiveCommerce.Training.OrderUpdate.Services.Order> GetAsync(System.Guid id) {
             return base.Channel.GetAsync(id);
         }
         
-        public ActiveCommerce.Training.OrderProcessing.Services.Order[] GetAll() {
+        public ActiveCommerce.Training.OrderUpdate.Services.Order[] GetAll() {
             return base.Channel.GetAll();
         }
         
-        public System.Threading.Tasks.Task<ActiveCommerce.Training.OrderProcessing.Services.Order[]> GetAllAsync() {
+        public System.Threading.Tasks.Task<ActiveCommerce.Training.OrderUpdate.Services.Order[]> GetAllAsync() {
             return base.Channel.GetAllAsync();
         }
     }
