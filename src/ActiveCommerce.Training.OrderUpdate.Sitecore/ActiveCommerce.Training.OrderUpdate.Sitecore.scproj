@@ -76,6 +76,7 @@
     <SitecoreItem Include="sitecore\system\Tasks\Commands\Order Update.item">
       <Icon>/temp/IconCache/People/16x16/clock_stop.png</Icon>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
+      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>
     <SitecoreItem Include="sitecore\system\Tasks\Schedules.item">
       <Icon>/temp/IconCache/Applications/16x16/folder.png</Icon>
@@ -85,6 +86,7 @@
     <SitecoreItem Include="sitecore\system\Tasks\Schedules\Order Update.item">
       <Icon>/temp/IconCache/People/32x32/clock.png</Icon>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
+      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\HedgehogDevelopment\SitecoreProject\v9.0\HedgehogDevelopment.SitecoreProject.targets" />

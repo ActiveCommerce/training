@@ -70,6 +70,7 @@
     <SitecoreItem Include="sitecore\system\Modules\Ecommerce\Catalogs\Order Catalog.item">
       <Icon>/temp/IconCache/Business/32x32/table_view.png</Icon>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
+      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>
     <SitecoreItem Include="sitecore\templates.item">
       <Icon>/temp/IconCache/Applications/16x16/form_blue.png</Icon>

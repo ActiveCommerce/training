@@ -29,13 +29,10 @@ namespace ActiveCommerce.Training.ProductImport
 
             using (new SecurityDisabler())
             {
-                using (new DatabaseSwitcher(schedule.Database))
+                using (new ShopContextSwitcher(schedule.SiteContext, schedule.Database))
                 {
-                    using (new ShopContextSwitcher(schedule.SiteContext))
-                    {
-                        Sitecore.Diagnostics.Log.Info("Executing import...", this);
-                        DoImport(file, path, templateId);
-                    }
+                    Sitecore.Diagnostics.Log.Info("Executing import...", this);
+                    DoImport(file, path, templateId);
                 }
             }
         }

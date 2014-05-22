@@ -21,23 +21,20 @@ namespace ActiveCommerce.Training.ProductStockUpdate
 
             using (new SecurityDisabler())
             {
-                using (new DatabaseSwitcher(schedule.Database))
+                using (new ShopContextSwitcher(schedule.SiteContext, schedule.Database))
                 {
-                    using (new ShopContextSwitcher(schedule.SiteContext))
-                    {
-                        Sitecore.Diagnostics.Log.Info("Executing import...", this);
+                    Sitecore.Diagnostics.Log.Info("Executing import...", this);
 
-                        var stockManager = Sitecore.Ecommerce.Context.Entity.Resolve<IProductStockManager>();
-                        var xml = XElement.Load(Sitecore.IO.FileUtil.MapPath(file));
-                        var books = xml.Descendants("book");
-                        foreach (var book in books)
-                        {
-                            long stock = Int64.Parse(book.Element("stock").Value);
-                            stockManager.Update(new ProductStockInfo
-                                                {
-                                                    ProductCode = book.Attribute("id").Value
-                                                }, stock);
-                        }
+                    var stockManager = Sitecore.Ecommerce.Context.Entity.Resolve<IProductStockManager>();
+                    var xml = XElement.Load(Sitecore.IO.FileUtil.MapPath(file));
+                    var books = xml.Descendants("book");
+                    foreach (var book in books)
+                    {
+                        long stock = Int64.Parse(book.Element("stock").Value);
+                        stockManager.Update(new ProductStockInfo
+                                            {
+                                                ProductCode = book.Attribute("id").Value
+                                            }, stock);
                     }
                 }
             }

@@ -27,20 +27,17 @@ namespace ActiveCommerce.Training.OrderUpdate
             var schedule = new ActiveCommerce.SitecoreX.ScheduledTasks.ExtendedScheduleItem(scheduleItem);
             using (new SecurityDisabler())
             {
-                using (new DatabaseSwitcher(schedule.Database))
+                using (new ShopContextSwitcher(schedule.SiteContext, schedule.Database))
                 {
-                    using (new ShopContextSwitcher(schedule.SiteContext))
+                    //otherwise, if we have a preview cookie in place, we can't get to the orders root item
+                    using (new ItemFilteringDisabler())
                     {
-                        //otherwise, if we have a preview cookie in place, we can't get to the orders root item
-                        using (new ItemFilteringDisabler())
-                        {
-                            var startStatus = schedule.Arguments["startStatus"];
+                        var startStatus = schedule.Arguments["startStatus"];
 
-                            //to get an appropriately typed OrderStatus, to set on an order
-                            var endStatus = Sitecore.Ecommerce.Context.Entity.Resolve<OrderStatus>(schedule.Arguments["endStatus"]);
+                        //to get an appropriately typed OrderStatus, to set on an order
+                        var endStatus = Sitecore.Ecommerce.Context.Entity.Resolve<OrderStatus>(schedule.Arguments["endStatus"]);
 
-                            DoUpdate(startStatus, endStatus);
-                        }
+                        DoUpdate(startStatus, endStatus);
                     }
                 }
             }
