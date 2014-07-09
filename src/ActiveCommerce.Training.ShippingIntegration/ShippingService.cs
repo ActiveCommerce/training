@@ -12,6 +12,7 @@
 
         public override decimal GetPrice()
         {
+            //var user = base.Configuration.SelectSingleNode("/training/api/user").Value;
             var client = new Services.ShippingServiceClient();
             return client.GetShippingCost(this.ShippingWeight);
         }
