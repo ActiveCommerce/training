@@ -6,9 +6,6 @@ using System.Web;
 
 namespace ActiveCommerce.Training.CartPersistence.Pipelines.RestoreCart
 {
-    /// <summary>
-    /// TODO: Persisted values don't seem to be saving at the moment?
-    /// </summary>
     public class ReadFromCustomer : IRestoreCartProcessor
     {
         public void Process(RestoreCartArgs args)

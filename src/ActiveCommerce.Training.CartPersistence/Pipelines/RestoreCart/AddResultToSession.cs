@@ -9,7 +9,7 @@ namespace ActiveCommerce.Training.CartPersistence.Pipelines.RestoreCart
     {
         public void Process(RestoreCartArgs args)
         {
-            if (HttpContext.Current == null)
+            if (HttpContext.Current == null || !args.Result.AttemptedRestore)
             {
                 return;
             }

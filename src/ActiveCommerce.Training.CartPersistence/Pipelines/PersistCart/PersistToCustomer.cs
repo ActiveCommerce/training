@@ -5,13 +5,10 @@ using System.Web;
 
 namespace ActiveCommerce.Training.CartPersistence.Pipelines.PersistCart
 {
-    /// <summary>
-    /// TODO: Persisted values don't seem to be saving at the moment?
-    /// </summary>
     public class PersistToCustomer : IPersistCartProcessor
     {
-        public const string CouponCodeKey = "AC_CART_COUPON";
-        public const string CartItemsKey = "AC_CART_ITEMS";
+        public const string CouponCodeKey = "AC Cart Coupon";
+        public const string CartItemsKey = "AC Cart Items";
 
         public void Process(PersistCartArgs args)
         {

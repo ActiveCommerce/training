@@ -1,6 +1,6 @@
 ﻿using Sitecore.Ecommerce.DomainModel.Carts;
 using Sitecore.Ecommerce.DomainModel.Products;
-using Sitecore.Ecommerce.Users;
+using Sitecore.Ecommerce.DomainModel.Users;
 using Sitecore.Pipelines;
 using System;
 using System.Collections.Generic;
@@ -16,7 +16,7 @@ namespace ActiveCommerce.Training.CartPersistence.Pipelines.RestoreCart
         public IProductStockManager StockManager { get; set; }
         public IShoppingCartManager CartManager { get; set; }
         public ActiveCommerce.Carts.ShoppingCart ShoppingCart { get; set; }
-        public CustomerManager<Sitecore.Ecommerce.DomainModel.Users.CustomerInfo> CustomerManager { get; set; }
+        public ICustomerManager<CustomerInfo> CustomerManager { get; set; }
         public IDictionary<string, uint> CartItems { get; set; }
         public string CouponCode { get; set; }
     }

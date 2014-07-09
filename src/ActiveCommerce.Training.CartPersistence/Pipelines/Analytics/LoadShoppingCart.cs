@@ -1,5 +1,5 @@
 ﻿using ActiveCommerce.Training.CartPersistence.Cookies;
-using Sitecore.Ecommerce.DomainModel.Carts;
+using Sitecore.Ecommerce.DomainModel.Users;
 using Sitecore.Pipelines;
 using System;
 using System.Collections.Generic;
@@ -9,7 +9,7 @@ using Microsoft.Practices.Unity;
 using ActiveCommerce.Training.CartPersistence.Pipelines.RestoreCartProduct;
 using Sitecore.Ecommerce.DomainModel.Products;
 using ActiveCommerce.Training.CartPersistence.Pipelines.RestoreCart;
-using Sitecore.Ecommerce.Users;
+using Sitecore.Ecommerce.DomainModel.Carts;
 
 namespace ActiveCommerce.Training.CartPersistence.Pipelines.Analytics
 {
@@ -28,7 +28,7 @@ namespace ActiveCommerce.Training.CartPersistence.Pipelines.Analytics
                 ShoppingCart = Sitecore.Ecommerce.Context.Entity.GetInstance<ShoppingCart>() as ActiveCommerce.Carts.ShoppingCart,
                 StockManager = Sitecore.Ecommerce.Context.Entity.Resolve<IProductStockManager>(),
                 ProductRepository = Sitecore.Ecommerce.Context.Entity.Resolve<IProductRepository>(),
-                CustomerManager = Sitecore.Ecommerce.Context.Entity.Resolve<CustomerManager<Sitecore.Ecommerce.DomainModel.Users.CustomerInfo>>(),
+                CustomerManager = Sitecore.Ecommerce.Context.Entity.Resolve<ICustomerManager<CustomerInfo>>(),
                 Result = new RestoreCartResult()
             };
             RestoreCartPipeline.Run(restoreProductArgs);

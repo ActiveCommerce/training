@@ -23,7 +23,7 @@ namespace ActiveCommerce.Training.CartPersistence.Users
                     ShoppingCart = Sitecore.Ecommerce.Context.Entity.GetInstance<ShoppingCart>() as ActiveCommerce.Carts.ShoppingCart,
                     StockManager = Sitecore.Ecommerce.Context.Entity.Resolve<IProductStockManager>(),
                     ProductRepository = Sitecore.Ecommerce.Context.Entity.Resolve<IProductRepository>(),
-                    CustomerManager = Sitecore.Ecommerce.Context.Entity.Resolve<Sitecore.Ecommerce.Users.CustomerManager<CustomerInfo>>(),
+                    CustomerManager = Sitecore.Ecommerce.Context.Entity.Resolve<ICustomerManager<CustomerInfo>>(),
                     Result = new RestoreCartResult()
                 };
                 RestoreCartPipeline.Run(restoreProductArgs);

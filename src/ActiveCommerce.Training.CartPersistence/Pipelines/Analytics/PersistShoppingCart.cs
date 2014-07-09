@@ -1,7 +1,7 @@
 ﻿using ActiveCommerce.Training.CartPersistence.Cookies;
 using ActiveCommerce.Training.CartPersistence.Pipelines.PersistCart;
 using Sitecore.Ecommerce.DomainModel.Carts;
-using Sitecore.Ecommerce.Users;
+using Sitecore.Ecommerce.DomainModel.Users;
 using Sitecore.Pipelines;
 using Sitecore.Pipelines.HttpRequest;
 using System;
@@ -24,7 +24,7 @@ namespace ActiveCommerce.Training.CartPersistence.Pipelines.Analytics
             var persistCartArgs = new PersistCartArgs
             {
                 ShoppingCart = Sitecore.Ecommerce.Context.Entity.GetInstance<ShoppingCart>() as ActiveCommerce.Carts.ShoppingCart,
-                CustomerManager = Sitecore.Ecommerce.Context.Entity.Resolve<CustomerManager<Sitecore.Ecommerce.DomainModel.Users.CustomerInfo>>()
+                CustomerManager = Sitecore.Ecommerce.Context.Entity.Resolve<ICustomerManager<CustomerInfo>>()
             };
             PersistCartPipeline.Run(persistCartArgs);
         }
