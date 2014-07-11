@@ -11,7 +11,7 @@ namespace ActiveCommerce.Training.CartPersistence.Pipelines.RestoreCart
         {
             if (!string.IsNullOrEmpty(args.CouponCode) && !args.ShoppingCart.CouponCodes.Any())
             {
-                args.ShoppingCart.AddCouponCode(args.CouponCode);
+                args.CouponCode.Split("|".ToCharArray()).ToList().ForEach(c => args.ShoppingCart.AddCouponCode(c));
             }
         }
     }

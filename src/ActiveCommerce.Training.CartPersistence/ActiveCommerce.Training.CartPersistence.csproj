@@ -105,6 +105,7 @@
   <ItemGroup>
     <Compile Include="Carts\CartsUpdatedHandler.cs" />
     <Compile Include="Common\CartPersistenceContext.cs" />
+    <Compile Include="Common\CustomerRestoreStrategy.cs" />
     <Compile Include="Loader\RegisterTypes.cs" />
     <Compile Include="Pipelines\Mvc\LoadShoppingCart.cs" />
     <Compile Include="Pipelines\Mvc\PersistShoppingCart.cs" />

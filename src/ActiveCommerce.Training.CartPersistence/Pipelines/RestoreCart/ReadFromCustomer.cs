@@ -1,4 +1,5 @@
-﻿using ActiveCommerce.Training.CartPersistence.Pipelines.PersistCart;
+﻿using ActiveCommerce.Training.CartPersistence.Common;
+using ActiveCommerce.Training.CartPersistence.Pipelines.PersistCart;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,9 +11,7 @@ namespace ActiveCommerce.Training.CartPersistence.Pipelines.RestoreCart
     {
         public void Process(RestoreCartArgs args)
         {
-            //don't restore customer's cart if they already have one. otherwise, cart could be changed during checkout
-            //TODO: better way to handle this?
-            if (args.ShoppingCart.ShoppingCartLines.Any() || args.ShoppingCart.CouponCodes.Any())
+            if (CartPersistenceContext.CustomerRestoreStrategyGlobalSetting == CustomerRestoreStrategy.None)
             {
                 return;
             }
@@ -21,6 +20,15 @@ namespace ActiveCommerce.Training.CartPersistence.Pipelines.RestoreCart
             if (user == null || string.IsNullOrEmpty(user.NickName) || Sitecore.Context.Domain.IsAnonymousUser(user.NickName))
             {
                 return;
+            }
+            
+            if (CartPersistenceContext.CustomerRestoreStrategyGlobalSetting == CustomerRestoreStrategy.Overwrite)
+            {
+                args.CartItems.Clear();
+                using (args.ShoppingCart.DisableEvents(false))
+                {
+                    args.ShoppingCart.ShoppingCartLines.Clear();
+                }
             }
 
             if (!string.IsNullOrEmpty(user.CustomProperties[PersistToCustomer.CouponCodeKey]))

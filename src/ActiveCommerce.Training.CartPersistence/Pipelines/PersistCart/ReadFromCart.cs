@@ -15,7 +15,7 @@ namespace ActiveCommerce.Training.CartPersistence.Pipelines.PersistCart
             {
                 args.CartItems.Add(line.Product.Code, line.Quantity);
             }
-            args.CouponCode = cart.CouponCodes.FirstOrDefault();
+            args.CouponCode = string.Join("|", cart.CouponCodes);
         }
     }
 }

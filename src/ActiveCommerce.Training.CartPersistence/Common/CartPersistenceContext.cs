@@ -118,5 +118,24 @@ namespace ActiveCommerce.Training.CartPersistence.Common
                 return false;
             }
         }
+
+        /// <summary>
+        /// Property to get the globally defined Customer Restore Strategy.
+        /// </summary>
+        public static CustomerRestoreStrategy CustomerRestoreStrategyGlobalSetting
+        {
+            get
+            {
+                var settingValue = Sitecore.Configuration.Settings.GetSetting("ActiveCommerce.Cart.Persistence.CustomerRestoreStrategy");
+                
+                var enumValue = CustomerRestoreStrategy.None;
+                if (Enum.TryParse(settingValue, true, out enumValue))
+                {
+                    return enumValue;
+                }
+
+                return CustomerRestoreStrategy.None;
+            }
+        }
     }
 }
