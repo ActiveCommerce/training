@@ -15,6 +15,16 @@ namespace ActiveCommerce.Training.CartPersistence.Pipelines.RestoreCart
                 return;
             }
 
+            if (args.ShoppingCart.ShoppingCartLines.Any() && !args.ShoppingCart.ShoppingCartLines.Select(s => s.Product.Code).Except(args.CartItems.Keys).Any())
+            {
+                return;
+            }
+
+            if (args.ShoppingCart.ShoppingCartLines.Any())
+            {
+                args.Result.CartMerged = true;
+            }
+
             var restoreProductArgs = new RestoreCartProductArgs
             {
                 CartManager = args.CartManager,
