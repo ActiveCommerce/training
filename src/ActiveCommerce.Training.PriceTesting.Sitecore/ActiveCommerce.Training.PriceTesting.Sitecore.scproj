@@ -145,6 +145,15 @@
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
+    <SitecoreItem Include="sitecore\system\Settings\Rules\Definitions\Elements\Visit.item">
+      <Icon>/temp/IconCache/core2/32x32/flow_chart.png</Icon>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\system\Settings\Rules\Definitions\Elements\Visit\Campaign was Triggered on Any Request.item">
+      <Icon>/temp/IconCache/Software/32x32/shape_rhomb.png</Icon>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
     <SitecoreItem Include="sitecore\system\Settings\Rules\Definitions\Tags.item">
       <Icon>/temp/IconCache/applications/32x32/bookmarks.png</Icon>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>

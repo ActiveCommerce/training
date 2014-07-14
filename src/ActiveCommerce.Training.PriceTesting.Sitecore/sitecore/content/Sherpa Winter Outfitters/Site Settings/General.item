@@ -180,15 +180,32 @@ content-length: 3
 ----version----
 language: en
 version: 1
-revision: 3bf0331c-0c79-431a-b4f9-f380b2fe43d1
+revision: 4066058e-f8c1-4ed1-a6c9-6088e147c0f3
 
 ----field----
 field: {1A285996-A75A-4F48-ADD7-9BE030AC03AC}
 name: Pricing Rules
 key: pricing rules
-content-length: 839
+content-length: 937
 
-<ruleset><rule uid="{39F408AC-B7CE-4590-BDA9-DA70E1CE7A3A}" name="Maxx Test 1"><conditions><condition id="{D379525C-4DE6-4738-89ED-60CC0B8F91E5}" uid="EE5B1E8710C64074881D15A82DA6766F" CampaignId="{90860CB6-105D-4D86-A918-5C6BF273B8D3}" /></conditions><actions><action id="{CBC2B8A2-71A3-4567-9C53-2583BB1FB970}" uid="5EB479BE5EE6495591E031B878656D36" itemid="{5F971C82-723F-4F2C-966F-96DF06F036E9}" /></actions></rule><rule uid="{CE32D7E1-0BF8-4116-9B5A-A74A7AB6D4AE}" name="Maxx Test 2"><conditions><condition id="{D379525C-4DE6-4738-89ED-60CC0B8F91E5}" uid="2EB35279045B4AAEBACC3363CD5DB301" CampaignId="{DB0DC3A4-DD24-47A9-B5F4-87157B977D3D}" /></conditions><actions><action id="{CBC2B8A2-71A3-4567-9C53-2583BB1FB970}" uid="A15C6F940CEF4848929F55E5E466BE64" itemid="{3AF1620E-4C4D-4D0F-8D60-206DE83562C6}" /></actions></rule></ruleset>
+<ruleset>
+  <rule uid="{39F408AC-B7CE-4590-BDA9-DA70E1CE7A3A}" name="Maxx Test 1">
+    <conditions>
+      <condition id="{12C84735-8293-4CB1-926A-16240E733B5B}" uid="163B47169B4043AE93E65207C2732530" CampaignId="{90860CB6-105D-4D86-A918-5C6BF273B8D3}" />
+    </conditions>
+    <actions>
+      <action id="{CBC2B8A2-71A3-4567-9C53-2583BB1FB970}" uid="5EB479BE5EE6495591E031B878656D36" itemid="{5F971C82-723F-4F2C-966F-96DF06F036E9}" />
+    </actions>
+  </rule>
+  <rule uid="{CE32D7E1-0BF8-4116-9B5A-A74A7AB6D4AE}" name="Maxx Test 2">
+    <conditions>
+      <condition id="{12C84735-8293-4CB1-926A-16240E733B5B}" uid="47E30ACEE55B420A8BC201181759BB16" CampaignId="{DB0DC3A4-DD24-47A9-B5F4-87157B977D3D}" />
+    </conditions>
+    <actions>
+      <action id="{CBC2B8A2-71A3-4567-9C53-2583BB1FB970}" uid="A15C6F940CEF4848929F55E5E466BE64" itemid="{3AF1620E-4C4D-4D0F-8D60-206DE83562C6}" />
+    </actions>
+  </rule>
+</ruleset>
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
@@ -216,14 +233,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-3bf0331c-0c79-431a-b4f9-f380b2fe43d1
+4066058e-f8c1-4ed1-a6c9-6088e147c0f3
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 34
 
-20140702T144504:635399091045780074
+20140714T184952:635409605927638646
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
