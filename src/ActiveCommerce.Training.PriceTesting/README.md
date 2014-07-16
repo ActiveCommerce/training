@@ -18,8 +18,8 @@ https://www.youtube.com/watch?v=u0YQ-Kitkw8
 
 Google vs Sitecore Campaign Behavior
 ========
-Note that Google and Sitecore behave a bit differently when it comes to campaigns. Out of the box, Sitecore will not trigger
-a campaign unless it's the first page of a visit. Google on the other hand, will treat it as if a new visit has started whenever
+Note that Google and Sitecore behave a bit differently when it comes to campaigns. Out of the box, Sitecore will not associate
+a campaign with the visit unless it's the first page of a visit. Google on the other hand, will treat it as if a new visit has started whenever
 a new campaign is triggered (c.f. https://support.google.com/analytics/answer/2731565).
 
 If you want the price rule example (or any other campaign-driven rules) to work if a campaign ID is passed in during an existing
