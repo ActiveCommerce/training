@@ -1,4 +1,5 @@
-﻿using ActiveCommerce.Training.CartPersistence.Pipelines.RestoreCart;
+﻿using ActiveCommerce.Training.CartPersistence.Common;
+using ActiveCommerce.Training.CartPersistence.Pipelines.RestoreCart;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,6 +16,12 @@ namespace ActiveCommerce.Training.CartPersistence.Users
         public override bool LogInCustomer(string nickName, string password)
         {
             var success = base.LogInCustomer(nickName, password);
+
+            if (!CartPersistenceContext.IsActive)
+            {
+                return success;
+            }
+
             if (success)
             {
                 var restoreProductArgs = new RestoreCartArgs
@@ -26,7 +33,9 @@ namespace ActiveCommerce.Training.CartPersistence.Users
                     CustomerManager = Sitecore.Ecommerce.Context.Entity.Resolve<ICustomerManager<CustomerInfo>>(),
                     Result = new RestoreCartResult()
                 };
+                CartPersistenceContext.CartSessionInitialized = false;
                 RestoreCartPipeline.Run(restoreProductArgs);
+                CartPersistenceContext.CartUpdated = true;
             }
             return success;
         }
