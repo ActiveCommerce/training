@@ -82,6 +82,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="OrderIntegration.cs" />
+    <Compile Include="OrderTrace.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Service References\Services\Reference.cs">
       <AutoGen>True</AutoGen>
@@ -96,6 +97,7 @@
     <Content Include="Service References\Services\ActiveCommerce.Training.OrderProcessing.Services.Order.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
+    <Content Include="App_Config\Include\xActiveCommerce.zTraining.OrderTrace.config" />
     <None Include="Service References\Services\OrderService.wsdl" />
     <Content Include="App_Config\Include\xActiveCommerce.zTraining.OrderProcessing.config" />
     <None Include="Service References\Services\OrderService.xsd">
