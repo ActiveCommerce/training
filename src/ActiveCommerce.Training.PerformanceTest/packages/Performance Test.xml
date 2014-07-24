@@ -1,0 +1,71 @@
+<project>
+  <Metadata>
+    <metadata>
+      <PackageName>Performance Test</PackageName>
+      <Author>Active Commerce</Author>
+      <Version />
+      <Revision />
+      <License />
+      <Comment />
+      <Attributes />
+      <Readme />
+      <Publisher />
+      <PostStep />
+      <PackageID />
+    </metadata>
+  </Metadata>
+  <SaveProject>True</SaveProject>
+  <Sources>
+    <xfiles>
+      <Entries>
+        <x-item>/bin/ActiveCommerce.Training.PerformanceTest.dll</x-item>
+        <x-item>/sitecore/admin/performance.aspx</x-item>
+      </Entries>
+      <Converter>
+        <FileToEntryConverter>
+          <Root>/</Root>
+          <Transforms />
+        </FileToEntryConverter>
+      </Converter>
+      <Include />
+      <Exclude />
+      <Name>files</Name>
+    </xfiles>
+    <xitems>
+      <Entries>
+        <x-item>/master/sitecore/content/PerformanceTest/{BFBD5C2F-7BF8-44D6-B6D9-1207A4B2E3C5}/invariant/0</x-item>
+        <x-item>/master/sitecore/content/PerformanceTest/Bucket/{1C8CCF13-1C38-4FAB-9C9D-898D6CBEC35C}/invariant/0</x-item>
+        <x-item>/master/sitecore/content/PerformanceTest/Bucket/2014/{2343DE68-097C-47F3-8507-352538B5BC02}/invariant/0</x-item>
+        <x-item>/master/sitecore/content/PerformanceTest/Bucket/2014/07/{9247B211-FF14-44EF-802A-CFC1615EC5BB}/invariant/0</x-item>
+        <x-item>/master/sitecore/content/PerformanceTest/Bucket/2014/07/23/{F1454FF9-5501-4470-BCED-375D0DE71E10}/invariant/0</x-item>
+        <x-item>/master/sitecore/content/PerformanceTest/Bucket/2014/07/23/14/{0670379E-6EAD-454D-8D9C-B28F3CA3144C}/invariant/0</x-item>
+        <x-item>/master/sitecore/content/PerformanceTest/Bucket/2014/07/23/14/38/{D98C4A59-E088-4EC8-B953-51BD5ADD1480}/invariant/0</x-item>
+        <x-item>/master/sitecore/content/PerformanceTest/Bucket/2014/07/23/14/45/{7FC3E03E-ED67-49AD-BB91-46E502129627}/invariant/0</x-item>
+        <x-item>/master/sitecore/content/PerformanceTest/Bucket/2014/07/23/14/54/{3ACF6F5C-D7DE-4B8C-9E98-016DDB972735}/invariant/0</x-item>
+        <x-item>/master/sitecore/content/PerformanceTest/Bucket/2014/07/23/14/55/{60E9A5E0-0BDA-413B-8652-B628355CC584}/invariant/0</x-item>
+        <x-item>/master/sitecore/content/PerformanceTest/Nonbucket/{468F546B-1ADA-4DCB-96B2-B538138D3C74}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/User Defined/PerformanceItem/__Standard Values/{F363CAC3-C914-4E6B-921B-6A4800261D12}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/User Defined/PerformanceItem/{1D8E9C9B-F494-48E1-B400-EED3CD25833C}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/User Defined/PerformanceItem/PerformanceTest/{D7C3B898-820C-4BD2-9D3E-89640D69A114}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/User Defined/PerformanceItem/PerformanceTest/TestField/{F21D2A4B-8DA1-4445-BA7A-FDED2840EFCA}/invariant/0</x-item>
+      </Entries>
+      <SkipVersions>False</SkipVersions>
+      <Converter>
+        <ItemToEntryConverter>
+          <Transforms />
+        </ItemToEntryConverter>
+      </Converter>
+      <Include />
+      <Exclude />
+      <Name>items</Name>
+    </xitems>
+  </Sources>
+  <Converter>
+    <TrivialConverter>
+      <Transforms />
+    </TrivialConverter>
+  </Converter>
+  <Include />
+  <Exclude />
+  <Name />
+</project>
