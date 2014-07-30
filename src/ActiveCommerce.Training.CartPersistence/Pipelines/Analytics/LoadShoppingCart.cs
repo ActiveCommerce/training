@@ -1,15 +1,12 @@
-﻿using ActiveCommerce.Training.CartPersistence.Cookies;
+﻿using System;
+using ActiveCommerce.Training.CartPersistence.Common;
+using Sitecore.Diagnostics;
 using Sitecore.Ecommerce.DomainModel.Users;
 using Sitecore.Pipelines;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using Microsoft.Practices.Unity;
-using ActiveCommerce.Training.CartPersistence.Pipelines.RestoreCartProduct;
 using Sitecore.Ecommerce.DomainModel.Products;
 using ActiveCommerce.Training.CartPersistence.Pipelines.RestoreCart;
 using Sitecore.Ecommerce.DomainModel.Carts;
+using Microsoft.Practices.Unity;
 
 namespace ActiveCommerce.Training.CartPersistence.Pipelines.Analytics
 {
@@ -17,21 +14,35 @@ namespace ActiveCommerce.Training.CartPersistence.Pipelines.Analytics
     {
         public void Process(PipelineArgs args)
         {
-            if (!Sitecore.Analytics.Tracker.IsActive)
+            try
             {
-                return;
-            }
+                if (!PersistenceActive())
+                {
+                    return;
+                }
 
-            var restoreProductArgs = new RestoreCartArgs
+                var restoreProductArgs = new RestoreCartArgs
+                {
+                    CartManager = Sitecore.Ecommerce.Context.Entity.Resolve<IShoppingCartManager>(),
+                    ShoppingCart =
+                        Sitecore.Ecommerce.Context.Entity.GetInstance<ShoppingCart>() as
+                            ActiveCommerce.Carts.ShoppingCart,
+                    StockManager = Sitecore.Ecommerce.Context.Entity.Resolve<IProductStockManager>(),
+                    ProductRepository = Sitecore.Ecommerce.Context.Entity.Resolve<IProductRepository>(),
+                    CustomerManager = Sitecore.Ecommerce.Context.Entity.Resolve<ICustomerManager<CustomerInfo>>(),
+                    Result = new RestoreCartResult()
+                };
+                RestoreCartPipeline.Run(restoreProductArgs);
+            }
+            catch (Exception e)
             {
-                CartManager = Sitecore.Ecommerce.Context.Entity.Resolve<IShoppingCartManager>(),
-                ShoppingCart = Sitecore.Ecommerce.Context.Entity.GetInstance<ShoppingCart>() as ActiveCommerce.Carts.ShoppingCart,
-                StockManager = Sitecore.Ecommerce.Context.Entity.Resolve<IProductStockManager>(),
-                ProductRepository = Sitecore.Ecommerce.Context.Entity.Resolve<IProductRepository>(),
-                CustomerManager = Sitecore.Ecommerce.Context.Entity.Resolve<ICustomerManager<CustomerInfo>>(),
-                Result = new RestoreCartResult()
-            };
-            RestoreCartPipeline.Run(restoreProductArgs);
+                Log.Error("Error loading shopping cart from persistent store", e, this);
+            }
+        }
+
+        protected virtual bool PersistenceActive()
+        {
+            return CartPersistenceContext.IsActive;
         }
     }
 }

@@ -1,13 +1,10 @@
-﻿using ActiveCommerce.Training.CartPersistence.Cookies;
+﻿using ActiveCommerce.Training.CartPersistence.Common;
 using ActiveCommerce.Training.CartPersistence.Pipelines.PersistCart;
+using Sitecore.Diagnostics;
 using Sitecore.Ecommerce.DomainModel.Carts;
 using Sitecore.Ecommerce.DomainModel.Users;
 using Sitecore.Pipelines;
-using Sitecore.Pipelines.HttpRequest;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 using Microsoft.Practices.Unity;
 
 namespace ActiveCommerce.Training.CartPersistence.Pipelines.Analytics
@@ -16,17 +13,29 @@ namespace ActiveCommerce.Training.CartPersistence.Pipelines.Analytics
     {
         public void Process(PipelineArgs args)
         {
-            if (!Sitecore.Analytics.Tracker.IsActive)
+            try
             {
-                return;
-            }
+                if (!PersistenceActive())
+                {
+                    return;
+                }
 
-            var persistCartArgs = new PersistCartArgs
+                var persistCartArgs = new PersistCartArgs
+                {
+                    ShoppingCart = Sitecore.Ecommerce.Context.Entity.GetInstance<ShoppingCart>() as ActiveCommerce.Carts.ShoppingCart,
+                    CustomerManager = Sitecore.Ecommerce.Context.Entity.Resolve<ICustomerManager<CustomerInfo>>()
+                };
+                PersistCartPipeline.Run(persistCartArgs);
+            }
+            catch (Exception e)
             {
-                ShoppingCart = Sitecore.Ecommerce.Context.Entity.GetInstance<ShoppingCart>() as ActiveCommerce.Carts.ShoppingCart,
-                CustomerManager = Sitecore.Ecommerce.Context.Entity.Resolve<ICustomerManager<CustomerInfo>>()
-            };
-            PersistCartPipeline.Run(persistCartArgs);
+                Log.Error("Error persisting shopping cart", e, this);
+            }
+        }
+
+        protected virtual bool PersistenceActive()
+        {
+            return CartPersistenceContext.IsActive;
         }
     }
 }

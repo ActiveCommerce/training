@@ -13,12 +13,14 @@ namespace ActiveCommerce.Training.CartPersistence
         public const string SessionKey = "AC_RESTORE_CART_RESULT";
 
         public bool AttemptedRestore { get; set; }
+        public bool CartMerged { get; set; }
         public bool Success { get; set; }
         public IList<string> FailedProducts { get; set; }
 
         public RestoreCartResult()
         {
             AttemptedRestore = false;
+            CartMerged = false;
             Success = true;
             FailedProducts = new List<string>();
         }

@@ -11,6 +11,7 @@ namespace ActiveCommerce.Training.CartPersistence.Pipelines.RestoreCart
 {
     public class RestoreCartArgs : PipelineArgs
     {
+        public bool ForceRestore { get; set; }
         public RestoreCartResult Result { get; set; }
         public IProductRepository ProductRepository { get; set; }
         public IProductStockManager StockManager { get; set; }

@@ -49,6 +49,7 @@
     <Reference Include="System.Core" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Http.WebHost, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Web" />
@@ -102,18 +103,27 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Carts\CartUpdatedHandler.cs" />
+    <Compile Include="Common\CartPersistenceContext.cs" />
+    <Compile Include="Common\CustomerRestoreStrategy.cs" />
     <Compile Include="Loader\RegisterTypes.cs" />
+    <Compile Include="Pipelines\Mvc\LoadShoppingCart.cs" />
+    <Compile Include="Pipelines\Mvc\PersistShoppingCart.cs" />
     <Compile Include="Pipelines\PersistCart\CheckArgs.cs" />
+    <Compile Include="Pipelines\PersistCart\CheckCartUpdated.cs" />
     <Compile Include="Pipelines\PersistCart\IPersistCartProcessor.cs" />
     <Compile Include="Pipelines\PersistCart\PersistCartArgs.cs" />
     <Compile Include="Pipelines\PersistCart\PersistCartPipeline.cs" />
     <Compile Include="Pipelines\PersistCart\PersistToCookie.cs" />
     <Compile Include="Pipelines\PersistCart\PersistToCustomer.cs" />
     <Compile Include="Pipelines\PersistCart\ReadFromCart.cs" />
+    <Compile Include="Pipelines\RestoreCart\AttachCartUpdatedHandler.cs" />
     <Compile Include="Pipelines\RestoreCartProduct\CheckArgs.cs" />
     <Compile Include="Pipelines\RestoreCartProduct\CheckProductInCart.cs" />
     <Compile Include="Pipelines\RestoreCart\AddResultToSession.cs" />
     <Compile Include="Pipelines\RestoreCart\CheckArgs.cs" />
+    <Compile Include="Pipelines\RestoreCart\CheckPersistenceInitialized.cs" />
+    <Compile Include="Pipelines\RestoreCart\SetPersistenceInitialized.cs" />
     <Compile Include="Pipelines\RestoreCart\IRestoreCartProcessor.cs" />
     <Compile Include="Pipelines\RestoreCart\ReadFromCookie.cs" />
     <Compile Include="Pipelines\RestoreCart\RestoreCartArgs.cs" />
@@ -121,6 +131,7 @@
     <Compile Include="Pipelines\RestoreCart\RestoreCouponCode.cs" />
     <Compile Include="Pipelines\RestoreCart\ReadFromCustomer.cs" />
     <Compile Include="Pipelines\RestoreCart\RestoreProducts.cs" />
+    <Compile Include="Pipelines\RestoreCart\SetCartUpdatedEvent.cs" />
     <Compile Include="RestoreCartResult.cs" />
     <Compile Include="Cookies\ShoppingCartCookie.cs" />
     <Compile Include="Pipelines\Analytics\LoadShoppingCart.cs" />

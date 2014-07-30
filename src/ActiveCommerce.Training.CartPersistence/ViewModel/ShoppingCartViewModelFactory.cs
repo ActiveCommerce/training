@@ -8,7 +8,7 @@ namespace ActiveCommerce.Training.CartPersistence.ViewModel
 {
     public class ShoppingCartViewModelFactory : ActiveCommerce.Web.Models.Factories.ShoppingCartViewModelFactory
     {
-        public override Web.Models.ShoppingCartViewModel GetViewModel(Carts.ShoppingCart source)
+        public override Web.Models.ShoppingCartViewModel GetViewModel(ActiveCommerce.Carts.ShoppingCart source)
         {
             var model = base.GetViewModel(source);
             if (HttpContext.Current == null)

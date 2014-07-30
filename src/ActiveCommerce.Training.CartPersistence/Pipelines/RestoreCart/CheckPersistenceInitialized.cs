@@ -2,16 +2,18 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using ActiveCommerce.Training.CartPersistence.Common;
 
 namespace ActiveCommerce.Training.CartPersistence.Pipelines.RestoreCart
 {
-    public class RestoreCouponCode : IRestoreCartProcessor
+    public class CheckPersistenceInitialized : IRestoreCartProcessor
     {
         public void Process(RestoreCartArgs args)
         {
-            if (!string.IsNullOrEmpty(args.CouponCode) && !args.ShoppingCart.CouponCodes.Any())
+            if (CartPersistenceContext.PersistenceInitialized && !args.ForceRestore)
             {
-                args.CouponCode.Split("|".ToCharArray()).ToList().ForEach(c => args.ShoppingCart.AddCouponCode(c));
+                args.AbortPipeline();
+                return;
             }
         }
     }
