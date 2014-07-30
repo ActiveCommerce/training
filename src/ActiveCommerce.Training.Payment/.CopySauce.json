@@ -1,0 +1,22 @@
+{
+    "cmd_after_copy": "",
+    "file_exclude_patterns": [
+        "^\\.",
+        ".*\\.cs$"
+    ],
+    "folder_exclude_patterns": [
+        "^\\."
+    ],
+    "folders_to_watch": [
+        "css",
+        "images",
+        "img",
+        "javascript",
+        "js",
+        "layouts",
+        "views",
+        "xsl",
+		"skins"
+    ],
+    "web_root": "C:\\Sitecore\\ActiveCommerceTraining\\Website"
+}

@@ -1,0 +1,100 @@
+----item----
+version: 1
+id: {8208E064-45CE-48CA-ACD5-C88016DC599A}
+database: master
+path: /sitecore/content/Sherpa Winter Outfitters/Business Catalog/Payments
+parent: {8CF215A0-C855-4548-9D14-D4AAB86B08FD}
+name: Payments
+master: {00000000-0000-0000-0000-000000000000}
+template: {5EF9387C-C18C-4C70-B2B4-17F2F244E63C}
+templatekey: Payments
+
+----field----
+field: {7EB2443D-564A-4B3E-B1B8-D32A3A81F58A}
+name: Payment Return Page Url
+key: payment return page url
+content-length: 163
+
+<link linktype="internal" url="/Sherpa Winter Outfitters/Home/shop/checkout/payment/return" querystring="" target="" id="{C0CFEDA8-CBE3-4BCD-A356-EBC76893E88E}" />
+----field----
+field: {AA66F545-1C13-4204-BF69-628DC8E9B323}
+name: Payment Succeeded Url
+key: payment succeeded url
+content-length: 156
+
+<link linktype="internal" url="/Sherpa Winter Outfitters/Home/shop/checkout/receipt" querystring="" target="" id="{17ECCE23-8224-4096-B7BB-A98FA48E4281}" />
+----field----
+field: {F6E1AC4E-6FBB-4E32-9F61-101D9019DA31}
+name: Payment Failed Url
+key: payment failed url
+content-length: 162
+
+<link linktype="internal" url="/Sherpa Winter Outfitters/Home/shop/checkout/payment/error" querystring="" target="" id="{F9093A81-C669-432F-A82E-12E678CE4A93}" />
+----field----
+field: {CF099339-8167-4F35-95AA-96BE4CDD67E2}
+name: Payment Cancel Url
+key: payment cancel url
+content-length: 153
+
+<link linktype="internal" url="/Sherpa Winter Outfitters/Home/shop/checkout/cart" querystring="" target="" id="{3EF91CEF-BCC8-4332-B227-FBBC24C0A78C}" />
+----field----
+field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
+name: __Sortorder
+key: __sortorder
+content-length: 4
+
+1000
+----version----
+language: en
+version: 1
+revision: 2672872f-ff7c-463d-b683-8eea306958bb
+
+----field----
+field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
+name: __Display name
+key: __display name
+content-length: 15
+
+Payment Options
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 15
+
+20090306T011000
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+2672872f-ff7c-463d-b683-8eea306958bb
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20121211T132725:634908292456354647
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
