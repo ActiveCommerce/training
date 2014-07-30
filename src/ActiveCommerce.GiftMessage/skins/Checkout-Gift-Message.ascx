@@ -15,7 +15,7 @@
 
     <ol class="form form-horizontal" ng-form="giftMessageForm" ng-class="{submitted:submitted}">
         <li>
-	        <label for="giftText">Gift Message</label>
+	        <label for="giftText"><%=Editable(x => x.GiftMessage)%></label>
             <textarea ng-model="giftMessage.Text" name="giftText" rows="5" ng-maxlength="500" ng-pattern="/^[a-zA-Z0-9\s\'\.!\?\-]+$/"></textarea>
             <label class="error" ng-show="submitted && giftMessageForm.giftText.$error.maxlength"><%=Translator.Render("Gift-Validation-Maxlength") %></label>
             <label class="error" ng-show="submitted && giftMessageForm.giftText.$error.pattern"><%=Translator.Render("Gift-Validation-Pattern") %></label>
