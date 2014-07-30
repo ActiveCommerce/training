@@ -32,6 +32,11 @@
                 <td><asp:Label id="uxNonBucketEdit" runat="server" /></td>
             </tr>
             <tr>
+                <th>Sitecore Query</th>
+                <td><asp:Label id="uxBucketQuery" runat="server" /></td>
+                <td><asp:Label id="uxNonBucketQuery" runat="server" /></td>
+            </tr>
+            <tr>
                 <th>Delete</th>
                 <td><asp:Label id="uxBucketDelete" runat="server" /></td>
                 <td><asp:Label id="uxNonBucketDlete" runat="server" /></td>

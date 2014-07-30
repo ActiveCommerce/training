@@ -56,48 +56,8 @@
     <Reference Include="System.Configuration" />
     <Reference Include="System.Web.Services" />
     <Reference Include="System.EnterpriseServices" />
-    <Reference Include="Microsoft.Practices.Unity, Version=1.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>$(SitecorePath)\bin\Microsoft.Practices.Unity.dll</HintPath>
-    </Reference>
-    <Reference Include="Sitecore.Ecommerce.DomainModel">
-      <HintPath>$(SitecorePath)\bin\Sitecore.Ecommerce.DomainModel.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Sitecore.Ecommerce.Kernel">
-      <HintPath>$(SitecorePath)\bin\Sitecore.Ecommerce.Kernel.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Sitecore.Ecommerce.Core">
-      <HintPath>$(SitecorePath)\bin\Sitecore.Ecommerce.Core.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
     <Reference Include="Sitecore.Kernel">
       <HintPath>$(SitecorePath)\bin\Sitecore.Kernel.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Sitecore.Analytics">
-      <HintPath>$(SitecorePath)\bin\Sitecore.Analytics.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="ActiveCommerce.Kernel">
-      <HintPath>$(SitecorePath)\bin\ActiveCommerce.Kernel.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="ActiveCommerce.Web">
-      <HintPath>$(SitecorePath)\bin\ActiveCommerce.Web.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Castle.Core">
-      <HintPath>$(SitecorePath)\bin\Castle.Core.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Glass.Mapper">
-      <HintPath>$(SitecorePath)\bin\Glass.Mapper.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Glass.Mapper.Sc">
-      <HintPath>$(SitecorePath)\bin\Glass.Mapper.Sc.dll</HintPath>
       <Private>False</Private>
     </Reference>
   </ItemGroup>
@@ -115,6 +75,7 @@
     <None Include="packages\Performance Test.xml" />
     <Content Include="sitecore\admin\performance.aspx" />
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

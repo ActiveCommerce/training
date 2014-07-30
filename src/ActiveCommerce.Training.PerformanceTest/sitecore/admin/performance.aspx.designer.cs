@@ -85,6 +85,24 @@ namespace ActiveCommerce.Training.Web.sitecore.admin {
         protected global::System.Web.UI.WebControls.Label uxNonBucketEdit;
         
         /// <summary>
+        /// uxBucketQuery control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label uxBucketQuery;
+        
+        /// <summary>
+        /// uxNonBucketQuery control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label uxNonBucketQuery;
+        
+        /// <summary>
         /// uxBucketDelete control.
         /// </summary>
         /// <remarks>
