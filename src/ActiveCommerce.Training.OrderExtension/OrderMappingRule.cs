@@ -28,5 +28,18 @@ namespace ActiveCommerce.Training.OrderExtension
                 TrainingMappingObject.ExternalOrderId = guid;
             }
         }
+
+        [SitecoreField(FieldName = "Purchase Order Number")]
+        public string PurchaseOrderNumber
+        {
+            get
+            {
+                return TrainingMappingObject.PurchaseOrderNumber;
+            }
+            set
+            {
+                TrainingMappingObject.PurchaseOrderNumber = value;
+            }
+        }
     }
 }

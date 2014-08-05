@@ -19,5 +19,7 @@ namespace ActiveCommerce.Training.OrderExtension
         }
 
         public Guid ExternalOrderId { get; set; }
+
+        public string PurchaseOrderNumber { get; set; }
     }
 }
