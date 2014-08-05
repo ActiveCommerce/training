@@ -37,12 +37,14 @@ namespace ActiveCommerce.Training.CartPersistence.Pipelines.RestoreCart
                 }
             }
 
-            if (!string.IsNullOrEmpty(user.CustomProperties[PersistToCustomer.CouponCodeKey]))
+            var customerCoupon = user.CustomProperties[PersistToCustomer.CouponCodeKey];
+            if (!string.IsNullOrEmpty(customerCoupon) && customerCoupon != PersistToCustomer.EmptyCart)
             {
                 args.CouponCode = user.CustomProperties[PersistToCustomer.CouponCodeKey];
             }
 
-            if (!string.IsNullOrEmpty(user.CustomProperties[PersistToCustomer.CartItemsKey]))
+            var customerCart = user.CustomProperties[PersistToCustomer.CartItemsKey];
+            if (!string.IsNullOrEmpty(customerCart) && customerCart != PersistToCustomer.EmptyCart)
             {
                 if (args.CartItems == null)
                 {
