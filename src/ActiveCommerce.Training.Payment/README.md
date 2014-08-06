@@ -57,3 +57,6 @@ the purchase order number can be stored during checkout.
     * `SavePurchaseOrderData` is an order pipeline processor which reads the purchase order number from the `ICheckOut`,
     sets it on the `Order`, and then saves the order. This pipeline processor gets added via _xActiveCommerce.xPayment.config_.
 5. Skinning of the receipt page (_Receipt-Details.ascx_) and receipt email (_Mail-OrderReceipt.ascx_) to display the purchase order number. 
+
+# See also
+* [TDS project](../ActiveCommerce.Training.Payment.Sitecore)

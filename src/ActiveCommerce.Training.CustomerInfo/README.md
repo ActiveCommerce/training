@@ -21,6 +21,9 @@ After populating values in `CustomProperties` or your own `CustomerInfo`, you ne
 Note -- if you're just looking to extend `CustomerInfo`, this example has a lot more than you need. We wanted to
 show a working example, so there's additional work being done here to add a new field to the new account form.
 
+It's also worth noting that you can see the values of custom fields you add in the Sitecore User Manager, which can be accessed
+via the Sitecore Desktop.
+
 # What's in the Customer Info Example
 1. A custom `CustomerInfo` class which adds a *Birthday* property. It's registered in Unity via `RegisterTypes`.
 2. A skinned version of the *Account-Login-NewAccount.ascx* sublayout which adds a new field to account creation, and changes the AngularJS controller which handles this form.
