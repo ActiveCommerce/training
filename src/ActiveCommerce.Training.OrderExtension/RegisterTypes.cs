@@ -1,21 +1,17 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using ActiveCommerce.IoC;
+﻿using ActiveCommerce.IoC;
 using Microsoft.Practices.Unity;
 using Sitecore.Ecommerce.Data;
 using Sitecore.Ecommerce.DomainModel.Orders;
 using Sitecore.Ecommerce.DomainModel.Prices;
 
-namespace ActiveCommerce.Training.OrderBatching
+namespace ActiveCommerce.Training.OrderExtension
 {
     public class RegisterTypes : ITypeRegistration
     {
         public void Process(Microsoft.Practices.Unity.IUnityContainer container)
         {
             //new base order type
-            container.RegisterType(typeof(Order), typeof(ActiveCommerce.Training.OrderExtension.Order), new InjectionMember[] {
+            container.RegisterType(typeof(Sitecore.Ecommerce.DomainModel.Orders.Order), typeof(ActiveCommerce.Training.OrderExtension.Order), new InjectionMember[] {
                 new InjectionConstructor(new object[] {
                     new ResolvedParameter<OrderStatus>("New")
                 }),
