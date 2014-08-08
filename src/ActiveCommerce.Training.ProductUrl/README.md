@@ -5,7 +5,7 @@ uses the product name with the ability to handle variants. It involves creating 
 registering with Unity, and adding the corresponding "Display Product Modes" item in Sitecore.
 
 # Create your ProductUrlProcessor
-1. Creat a new class which subclasses `Sitecore.Ecommerce.Catalogs.ProductUrlProcessor`.
+1. Create a new class which subclasses `Sitecore.Ecommerce.Catalogs.ProductUrlProcessor`.
 2. Implement the 2 required abstract methods `GetProductUrl` and `ResolveProductItem`. See [`ActiveCommerce.Training.ProductUrl.NameAndVariantProductUrlProcessor`](./NameAndVariantProductUrlProcessor.cs). 
 These methods are responsible for mapping to/from a product url and Sitecore item.
 3. Register your processor (`NameAndVariantProductUrlProcessor`) in Unity by creating an implementation of `ITypeRegistration`.
@@ -21,5 +21,5 @@ See [`ActiveCommerce.Training.ProductUrl.RegisterTypes`](./RegisterTypes.cs).
 1. Select this new "Display Product Modes" option for each product catalog 
 (those with a template of '/sitecore/templates/ActiveCommerce/Categorization/Catalog') you wish 
 to use this url format. For example, the default Product catalog at '/sitecore/content/<site>/Home/Products'.
-2. There is "Display Products Mode" field on these items. Select the new option (e.g. "Item Name and Variant"), Save, and publish.
+2. There is a "Display Products Mode" field on these items. Select the new option (e.g. "Item Name and Variant"), save, and publish the item.
 3. The new url formatting will now be used!
