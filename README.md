@@ -103,3 +103,8 @@ and we provide no warranty. Use at your own risk.
 
 [Various Skinning Examples](./src/ActiveCommerce.Training.Web)
 - Skinning/theming scripts, styles, HTML templates, etc.
+
+## Product Urls
+
+[Product Url Examples](./src/ActiveCommerce.Training.ProductUrl)
+- Customizing the format of product urls.
