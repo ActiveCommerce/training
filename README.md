@@ -86,6 +86,8 @@ and we provide no warranty. Use at your own risk.
 [Product Quantity Input](./src/ActiveCommerce.Training.ProductQuantity)
 - Allow a user to specify a product quantity before adding to cart.
 
+[Discount Extensions](./src/ActiveCommerce.Training.Discounts)
+- Custom discount actions, including true BOGO discounts.
 
 ## Customer Data
 
@@ -103,6 +105,7 @@ and we provide no warranty. Use at your own risk.
 
 [Various Skinning Examples](./src/ActiveCommerce.Training.Web)
 - Skinning/theming scripts, styles, HTML templates, etc.
+
 
 ## Product Urls
 

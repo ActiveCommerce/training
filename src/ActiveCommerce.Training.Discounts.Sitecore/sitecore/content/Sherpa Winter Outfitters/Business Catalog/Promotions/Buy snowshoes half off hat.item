@@ -1,0 +1,128 @@
+----item----
+version: 1
+id: {BA69E021-D64A-423E-8E4F-279BB4F80671}
+database: master
+path: /sitecore/content/Sherpa Winter Outfitters/Business Catalog/Promotions/Buy snowshoes half off hat
+parent: {7364FE94-71A5-44E6-9D79-C84A5B2C993A}
+name: Buy snowshoes half off hat
+master: {DB0F30EA-883F-44C0-B265-02101DF05A9C}
+template: {37D5983B-8EBD-4E30-B1A2-B56AB52BDE9D}
+templatekey: Promo Rule
+
+----field----
+field: {85CDC9D4-0FC2-43D5-AF9C-25CB619D94BB}
+name: Discount ID
+key: discount id
+content-length: 12
+
+HALFOFFHAT14
+----field----
+field: {1DFA7498-BF16-42BC-83AC-839267BE78AD}
+name: Coupon Code
+key: coupon code
+content-length: 12
+
+HALFOFFHAT14
+----field----
+field: {AAC38C22-859B-41DD-AA6E-FCFC582E49FE}
+name: Rule
+key: rule
+content-length: 562
+
+<ruleset>
+  <rule uid="{66E45549-8109-4C8C-A1E1-C42FAB3E7DDC}">
+    <actions>
+      <action id="{3527376B-5F2A-4A69-9677-2B5AEF3AAF02}" uid="7A3B5FF3A662422C95FB7FC880080D15" BogoName="BOGO" RequiredProduct="{17A3AF41-3074-4859-893E-CD0ED1C3FA87}" />
+      <action id="{18B03964-22B7-4C93-B7E4-E1626D0FB319}" uid="B4606EBA4AA84729B0D6EDD2D7617463" BogoName="BOGO" itemid="{59126034-2548-4AEC-B574-191512ABE4BE}" value="50" operatorid="{5D015679-CF22-4BA5-8126-146DFB29D66B}" Multiplier="1" MaxCountString="unlimited" />
+    </actions>
+  </rule>
+</ruleset>
+----field----
+field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
+name: __Sortorder
+key: __sortorder
+content-length: 3
+
+300
+----field----
+field: {F6D8A61C-2F84-4401-BD24-52D2068172BC}
+name: __Originator
+key: __originator
+content-length: 0
+
+
+----field----
+field: {A4F985D9-98B3-4B52-AAAF-4344F6E747C6}
+name: __Workflow
+key: __workflow
+content-length: 38
+
+{27418690-B217-4D3A-A2E6-091A30B54886}
+----version----
+language: en
+version: 1
+revision: d5e09009-5442-4f77-8e6d-d9c617d58f3e
+
+----field----
+field: {DB25160E-89FF-4A6B-B634-1267C19EFA0A}
+name: Description
+key: description
+content-length: 12
+
+half off hat
+----field----
+field: {12E9BF9B-E2EF-4C6C-8354-7BC27BC32DA3}
+name: Line Item Description
+key: line item description
+content-length: 12
+
+half off hat
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 15
+
+20141005T141833
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+d5e09009-5442-4f77-8e6d-d9c617d58f3e
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20141005T163442:635481236826885659
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {3E431DE1-525E-47A3-B6B0-1CCBEC3A8C98}
+name: __Workflow state
+key: __workflow state
+content-length: 38
+
+{8AD77832-A5A9-4D4C-BF8A-186B21A56204}
+----field----
+field: {001DD393-96C5-490B-924A-B0F25CD9EFD8}
+name: __Lock
+key: __lock
+content-length: 5
+
+<r />

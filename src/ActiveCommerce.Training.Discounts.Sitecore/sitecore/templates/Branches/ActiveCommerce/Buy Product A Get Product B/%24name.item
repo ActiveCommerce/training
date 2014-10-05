@@ -1,0 +1,58 @@
+----item----
+version: 1
+id: {57A2966B-6185-4C09-A302-5ED494349BE3}
+database: master
+path: /sitecore/templates/Branches/ActiveCommerce/Buy Product A Get Product B/$name
+parent: {DB0F30EA-883F-44C0-B265-02101DF05A9C}
+name: $name
+master: {00000000-0000-0000-0000-000000000000}
+template: {37D5983B-8EBD-4E30-B1A2-B56AB52BDE9D}
+templatekey: Promo Rule
+
+----field----
+field: {AAC38C22-859B-41DD-AA6E-FCFC582E49FE}
+name: Rule
+key: rule
+content-length: 729
+
+<ruleset>  <rule uid="{66E45549-8109-4C8C-A1E1-C42FAB3E7DDC}">    <actions>      <action id="{3527376B-5F2A-4A69-9677-2B5AEF3AAF02}" uid="7A3B5FF3A662422C95FB7FC880080D15" BogoName="BOGO" />   <action id="{94741061-9760-4B47-84C5-BC3DC6373B7C}" uid="4744B3345D1D44BB9D365F93F1DDF79E" BogoName="BOGO" DivideBy="1" />   <action id="{698131C9-9D6A-4DC3-914A-4E619DEF19CE}" uid="E3D7210B1A684F06AC2E462E3ADA1E43" BogoName="BOGO" Multiplier="1" MaxCountString="unlimited" />      <action id="{18B03964-22B7-4C93-B7E4-E1626D0FB319}" uid="B4606EBA4AA84729B0D6EDD2D7617463" BogoName="BOGO" Multiplier="1" MaxCountString="unlimited" value="100" operatorid="{5D015679-CF22-4BA5-8126-146DFB29D66B}" />          </actions>  </rule></ruleset>
+----version----
+language: en
+version: 1
+revision: ce01808f-2711-4cb9-9fed-6854ffbc1e80
+
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 15
+
+20141005T140335
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+ce01808f-2711-4cb9-9fed-6854ffbc1e80
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20141005T160006:635481216068248206
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
