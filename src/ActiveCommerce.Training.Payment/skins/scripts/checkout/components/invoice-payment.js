@@ -7,15 +7,15 @@
         $scope.purchaseOrder = '';
 
         // EVENTS
+        
         //$scope.$on("activated", function (e, args) {
-        //    //must extend the CheckoutViewModel and CheckoutViewModelFactory for this to work
-        //    checkout.get().then(function (state) {
-        //        $scope.giftMessage = state.GiftMessage;
-        //        $scope.giftMessageForm.$setDirty();
-        //    });
+        //    
         //});
 
         $scope.$on("validate", function (e, args) {
+
+            // Only if we're the selected payment
+            if (!$scope.selected) return;
 
             if ($scope.purchaseOrderForm.$invalid) {
                 args.reject(localize.text('Validation-All-Fields'));
@@ -26,6 +26,10 @@
         });
 
         $scope.$on("process", function (e, args) {
+            
+            // Only if we're the selected payment
+            if (!$scope.selected) return;
+
             //pass the update operation back to the event args. must return a promise.
             args.defer(checkout.updatePurchaseOrderNumber($scope.purchaseOrder.Number));
         });
