@@ -1,0 +1,38 @@
+﻿<div class="product" data-analytics-id="${AnalyticsId}">
+	<div class="image">
+		<a href="${Url}"><img src="${ImageSrc}" alt="${Name}" /></a>
+		{{if !IsInStock}}
+		<div class="no-stock">Out of stock<!--TODO:TRANSLATE(Product-Out-Of-Stock)--></div>
+		{{/if}}
+		{{if Id}}
+		<div class="compare">
+			<input type="checkbox" name="${Id}" />
+			<a class="compare-items" href="#">Compare Items<!--TODO:TRANSLATE(Compare-Items)--></a>
+		</div>
+		{{/if}}
+	</div>
+    
+    <a href="${Url}" class="details">
+        <span class="name">${Name}</span>
+        {{if Price}}
+        <span class="price">
+            {{if WasPrice}}<span class="original">${WasPrice}</span> <span class="current">${Price}</span>{{/if}}
+            {{if !WasPrice}}${Price}{{/if}}
+        </span>
+        {{/if}}
+    </a>
+
+    <button onclick="ActiveCommerce.BrowseProduct.addToCart('${Id}'); return false;">Add To Cart</button>
+
+	{{if Colors && Colors.length > 1}}
+	<ul class="swatches">
+		{{each Colors}}
+		<li{{if Selected}} class="selected"{{/if}}><a title="${Name}" style="border-color: ${Border};" href="${ImageSrc}" data-url="${Url}" data-quick-look-url="${QuickLookUrl}"></a></li>
+		{{/each}}
+	</ul>
+	{{/if}}
+	{{if QuickLookUrl}}
+	<div class="quick-look"><a href="${QuickLookUrl}" class="bttn bttn-sm bttn-primary">Quick Look<!--TODO:TRANSLATE(Quick-Look)--></a></div>
+    {{/if}}
+    
+</div>

@@ -69,6 +69,7 @@
     <Content Include="skins\training\images\icons\cart.png" />
     <Content Include="skins\training\scripts\browse-product.js" />
     <Content Include="skins\training\scripts\product.cart.js" />
+    <Content Include="skins\training\templates\browse-product\product.htm" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
