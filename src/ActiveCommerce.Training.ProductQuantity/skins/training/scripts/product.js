@@ -9,9 +9,10 @@
                 val = 1;
             }
             var link = ActiveCommerce.Product.Variants.$elements.addToCart;
-            var url = link.attr('rel');
-            url = url.substring(0, url.lastIndexOf("/")) + '/' + val;
-            link.attr('rel', url);
+            var url = link.attr('rel').split("/");
+            url = url.splice(5, url.length - 4);
+            url.push(val);
+            link.attr('rel', url.join("/"));
         });
     };
 
