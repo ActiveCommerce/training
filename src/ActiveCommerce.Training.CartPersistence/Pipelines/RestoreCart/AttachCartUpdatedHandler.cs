@@ -11,11 +11,11 @@ namespace ActiveCommerce.Training.CartPersistence.Pipelines.RestoreCart
     {
         public void Process(RestoreCartArgs args)
         {
-            if (!CartPersistenceContext.CartUpdatedEventInitialized)
-            {
+            //if (!CartPersistenceContext.CartUpdatedEventInitialized)
+            //{
                 args.ShoppingCart.CartChanged += CartUpdatedHandler.CartUpdated;
                 CartPersistenceContext.CartUpdatedEventInitialized = true;
-            }
+            //}
         }
     }
 }

@@ -8,6 +8,8 @@ namespace ActiveCommerce.Training.CartPersistence
     /// <summary>
     /// TODO: Distinguish unavailable products, no stock products, less stock than requested?
     /// </summary>
+    ///
+    [Serializable]
     public class RestoreCartResult
     {
         public const string SessionKey = "AC_RESTORE_CART_RESULT";
