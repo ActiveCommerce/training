@@ -1,18 +1,20 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using ActiveCommerce.OrderProcessing;
+using ActiveCommerce.Orders.Pipelines;
 
 namespace ActiveCommerce.Training.OrderProcessing
 {
-    public class OrderTrace : IOrderPipelineProcessor
+    public class OrderTrace : OrderPipelineProcessor
     {
         public string Message { get; set; }
 
-        public void Process(OrderPipelineArgs args)
+        protected override bool ContinueOnFailure
         {
-            Sitecore.Diagnostics.Log.Info(string.Format("{0} for Customer {1}", Message, args.Cart.CustomerInfo.CustomerId), this);
+            get { return true; }
+        }
+
+        protected override void DoProcess(OrderPipelineArgs args)
+        {
+            Sitecore.Diagnostics.Log.Info(string.Format("{0} for Customer {1}", Message, args.ShoppingCart.CustomerInfo.CustomerId), this);
         }
     }
 }

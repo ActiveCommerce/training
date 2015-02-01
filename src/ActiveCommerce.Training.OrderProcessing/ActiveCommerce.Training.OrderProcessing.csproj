@@ -49,6 +49,9 @@
       <HintPath>$(SitecorePath)\bin\Microsoft.Practices.Unity.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="Sitecore.Ecommerce.Core">
+      <HintPath>$(SitecorePath)\bin\Sitecore.Ecommerce.Core.dll</HintPath>
+    </Reference>
     <Reference Include="Sitecore.Ecommerce.DomainModel">
       <HintPath>$(SitecorePath)\bin\Sitecore.Ecommerce.DomainModel.dll</HintPath>
       <Private>False</Private>
