@@ -1,5 +1,4 @@
 ﻿* Deploy items and files.
 * Add sublayouts to appropriate placeholder settings
 * Add sublayouts to checkout page via page editor (w/ datasource items)
-* Add order template to order catalog
 * message some gifts!!!

@@ -10,6 +10,8 @@ namespace ActiveCommerce.Training.OrderExtension
     {
         public virtual Guid ExternalOrderId { get; set; }
 
+        public virtual string GiftMessage { get; set; }
+
         public virtual string PurchaseOrderNumber { get; set; }
     }
 }

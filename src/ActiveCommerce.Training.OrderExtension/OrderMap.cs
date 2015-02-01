@@ -12,6 +12,7 @@ namespace ActiveCommerce.Training.OrderExtension
         {
             Table("OrderExtensions");
             Map(x => x.ExternalOrderId);
+            Map(x => x.GiftMessage);
             Map(x => x.PurchaseOrderNumber);
         }
     }
