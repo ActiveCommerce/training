@@ -43,6 +43,9 @@
       <HintPath>$(SitecorePath)\bin\ActiveCommerce.Kernel.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="FluentNHibernate">
+      <HintPath>..\..\..\..\Sitecore\ActiveCommerceTraining\Website\bin\FluentNHibernate.dll</HintPath>
+    </Reference>
     <Reference Include="Glass.Mapper">
       <HintPath>$(SitecorePath)\bin\Glass.Mapper.dll</HintPath>
     </Reference>
@@ -54,6 +57,12 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>$(SitecorePath)\bin\Microsoft.Practices.Unity.dll</HintPath>
       <Private>False</Private>
+    </Reference>
+    <Reference Include="NHibernate">
+      <HintPath>..\..\..\..\Sitecore\ActiveCommerceTraining\Website\bin\NHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.Ecommerce.Core">
+      <HintPath>$(SitecorePath)\bin\Sitecore.Ecommerce.Core.dll</HintPath>
     </Reference>
     <Reference Include="Sitecore.Ecommerce.DomainModel">
       <HintPath>$(SitecorePath)\bin\Sitecore.Ecommerce.DomainModel.dll</HintPath>
@@ -88,7 +97,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Order.cs" />
-    <Compile Include="OrderMappingRule.cs" />
+    <Compile Include="OrderFactory.cs" />
+    <Compile Include="OrderMap.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RegisterTypes.cs" />
   </ItemGroup>
