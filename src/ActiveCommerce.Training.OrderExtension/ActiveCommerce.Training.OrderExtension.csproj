@@ -99,7 +99,9 @@
     <Compile Include="Order.cs" />
     <Compile Include="OrderFactory.cs" />
     <Compile Include="OrderMap.cs" />
+    <Compile Include="PurchaseOrderPaymentMeans.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PurchaseOrderPaymentMeansMap.cs" />
     <Compile Include="RegisterTypes.cs" />
   </ItemGroup>
   <ItemGroup>

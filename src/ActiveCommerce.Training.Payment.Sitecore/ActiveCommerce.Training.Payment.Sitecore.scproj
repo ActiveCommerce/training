@@ -65,6 +65,7 @@
     <SitecoreItem Include="sitecore\commerce\translation\P\Payment-Invoice.item">
       <Icon>/temp/IconCache/Applications/32x32/font.png</Icon>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
+      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>
     <SitecoreItem Include="sitecore\content.item">
       <Icon>/temp/IconCache/People/16x16/cubes_blue.png</Icon>
@@ -89,6 +90,7 @@
     <SitecoreItem Include="sitecore\content\Sherpa Winter Outfitters\Business Catalog\Payments\Invoice Payment.item">
       <Icon>/temp/IconCache/Business/32x32/smartcard.png</Icon>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
+      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>
     <SitecoreItem Include="sitecore\content\Sherpa Winter Outfitters\Home.item">
       <Icon>/temp/IconCache/Network/32x32/home.png</Icon>
@@ -113,10 +115,12 @@
     <SitecoreItem Include="sitecore\content\Sherpa Winter Outfitters\Home\shop\checkout\Components\Invoice Payment Form.item">
       <Icon>/temp/IconCache/Applications/32x32/Document.png</Icon>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
+      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>
     <SitecoreItem Include="sitecore\content\Sherpa Winter Outfitters\Home\shop\checkout\Components\Invoice Payment.item">
       <Icon>/temp/IconCache/Business/32x32/smartcard.png</Icon>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
+      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>
     <SitecoreItem Include="sitecore\layout.item">
       <Icon>/temp/IconCache/Applications/16x16/windows.png</Icon>

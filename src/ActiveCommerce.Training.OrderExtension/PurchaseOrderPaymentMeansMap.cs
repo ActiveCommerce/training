@@ -6,13 +6,11 @@ using FluentNHibernate.Mapping;
 
 namespace ActiveCommerce.Training.OrderExtension
 {
-    public class OrderMap : SubclassMap<Order>
+    public class PurchaseOrderPaymentMeansMap : SubclassMap<PurchaseOrderPaymentMeans>
     {
-        public OrderMap()
+        public PurchaseOrderPaymentMeansMap()
         {
-            Table("OrderExtensions");
-            Map(x => x.ExternalOrderId);
-            Map(x => x.GiftMessage);
+            Map(x => x.PurchaseOrderNumber);
         }
     }
 }
