@@ -11,7 +11,7 @@ using Sitecore.StringExtensions;
 
 namespace ActiveCommerce.Training.OrderProcessing
 {
-    public class OrderIntegration : OrderPipelineProcessor
+    public class OrderIntegration : ActiveCommerce.Orders.Pipelines.OrderPipelineProcessor
     {
         /// <summary>
         /// This tells Active Commerce whether an exception or error in this processor

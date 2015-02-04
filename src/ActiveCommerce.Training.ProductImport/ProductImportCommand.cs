@@ -29,7 +29,7 @@ namespace ActiveCommerce.Training.ProductImport
 
             using (new SecurityDisabler())
             {
-                using (new ShopContextSwitcher(schedule.SiteContext, schedule.Database))
+                using (new ActiveCommerce.ShopContext.ShopContextSwitcher(schedule.SiteContext, schedule.Database))
                 {
                     Sitecore.Diagnostics.Log.Info("Executing import...", this);
                     DoImport(file, path, templateId);
