@@ -20,6 +20,9 @@ and we provide no warranty. Use at your own risk.
 [Product Data Provider](./src/ActiveCommerce.Training.ProductDataProvider)
 - Experimental example of real-time data integration via a Sitecore Data Provider for just specific fields within a product item.
 
+[Product Url Examples](./src/ActiveCommerce.Training.ProductUrl)
+- Customizing the format of product urls.
+
 [Custom Category](./src/ActiveCommerce.Training.CustomCategory)
 - Example of creating a custom category domain object and Sitecore template
 
@@ -59,6 +62,8 @@ and we provide no warranty. Use at your own risk.
 [Invoice Payment](./src/ActiveCommerce.Training.Payment)
 - Extending the payment step of the checkout process and order processing to allow for payment by invoice / purchase order number.
 
+[Checkout via API](./src/ActiveCommerce.Training.CheckoutViaApi)
+- Construct a shopping cart and execute order processing directly through the Active Commerce domain layer.
 
 ## Orders and Order Processing
 
@@ -106,8 +111,7 @@ and we provide no warranty. Use at your own risk.
 [Various Skinning Examples](./src/ActiveCommerce.Training.Web)
 - Skinning/theming scripts, styles, HTML templates, etc.
 
+## NHibernate
 
-## Product Urls
-
-[Product Url Examples](./src/ActiveCommerce.Training.ProductUrl)
-- Customizing the format of product urls.
+[Custom NHibernate Data](./src/ActiveCommerce.Training.NHibernate)
+- Persist a custom object to the Active Commerce database with NHibernate
