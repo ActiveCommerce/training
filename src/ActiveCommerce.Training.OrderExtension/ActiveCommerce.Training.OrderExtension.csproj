@@ -44,7 +44,10 @@
       <Private>False</Private>
     </Reference>
     <Reference Include="FluentNHibernate">
-      <HintPath>..\..\..\..\Sitecore\ActiveCommerceTraining\Website\bin\FluentNHibernate.dll</HintPath>
+      <HintPath>$(SitecorePath)\bin\FluentNHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate">
+        <HintPath>$(SitecorePath)\bin\NHibernate.dll</HintPath>
     </Reference>
     <Reference Include="Glass.Mapper">
       <HintPath>$(SitecorePath)\bin\Glass.Mapper.dll</HintPath>
@@ -57,9 +60,6 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>$(SitecorePath)\bin\Microsoft.Practices.Unity.dll</HintPath>
       <Private>False</Private>
-    </Reference>
-    <Reference Include="NHibernate">
-      <HintPath>..\..\..\..\Sitecore\ActiveCommerceTraining\Website\bin\NHibernate.dll</HintPath>
     </Reference>
     <Reference Include="Sitecore.Ecommerce.Core">
       <HintPath>$(SitecorePath)\bin\Sitecore.Ecommerce.Core.dll</HintPath>
