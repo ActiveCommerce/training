@@ -125,7 +125,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ActiveCommerce.Training.Che
 EndProject
 Project("{CAA73BB0-EF22-4D79-A57E-DF67B3BA9C80}") = "ActiveCommerce.Training.CheckoutViaApi.Sitecore", "ActiveCommerce.Training.CheckoutViaApi.Sitecore\ActiveCommerce.Training.CheckoutViaApi.Sitecore.scproj", "{70D60DE8-3388-4890-BD6A-0F4B2489F73B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ActiveCommerce.Training.NHibernate", "ActiveCommerce.Training.NHibernate\ActiveCommerce.Training.NHibernate.csproj", "{710F1C37-F24F-4AD8-9FB7-BD76AB38F3E9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ActiveCommerce.Training.SimpleReviews", "ActiveCommerce.Training.NHibernate\ActiveCommerce.Training.SimpleReviews.csproj", "{710F1C37-F24F-4AD8-9FB7-BD76AB38F3E9}"
 EndProject
 Project("{CAA73BB0-EF22-4D79-A57E-DF67B3BA9C80}") = "ActiveCommerce.Training.NHibernate.Sitecore", "ActiveCommerce.Training.NHibernate.Sitecore\ActiveCommerce.Training.NHibernate.Sitecore.scproj", "{52F653CF-7FDD-4AB8-B463-9C17C1B5D6D0}"
 EndProject

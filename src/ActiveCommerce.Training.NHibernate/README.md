@@ -1,4 +1,4 @@
-NHibernate Data Storage
+Simple Review System
 ========
 This example shows how to map and persist a custom type in the Active Commerce SQL database with NHibernate. This is useful for user generated content, transactional data, etc.
 

@@ -1,11 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using ActiveCommerce.IoC;
+﻿using ActiveCommerce.IoC;
 using Microsoft.Practices.Unity;
 
-namespace ActiveCommerce.Training.NHibernate.IoC
+namespace ActiveCommerce.Training.SimpleReviews.IoC
 {
     public class RegisterTypes : ITypeRegistration
     {

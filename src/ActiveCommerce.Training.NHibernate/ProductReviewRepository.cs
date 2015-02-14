@@ -1,13 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
+﻿using System.Linq;
 using ActiveCommerce.Data;
 using NHibernate;
 using NHibernate.Linq;
 using Sitecore.Diagnostics;
 
-namespace ActiveCommerce.Training.NHibernate
+namespace ActiveCommerce.Training.SimpleReviews
 {
     public class ProductReviewRepository : IProductReviewRepository
     {

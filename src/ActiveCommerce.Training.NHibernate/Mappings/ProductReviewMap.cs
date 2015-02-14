@@ -1,12 +1,7 @@
-﻿using FluentNHibernate.Mapping;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using FluentNHibernate.Utils;
-using ActiveCommerce.Data.Mappings;
+﻿using ActiveCommerce.Data.Mappings;
+using FluentNHibernate.Mapping;
 
-namespace ActiveCommerce.Training.NHibernate.Mappings
+namespace ActiveCommerce.Training.SimpleReviews.Mappings
 {
     public class ProductReviewMap : ClassMap<ProductReview>
     {

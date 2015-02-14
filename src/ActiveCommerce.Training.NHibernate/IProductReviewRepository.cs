@@ -1,9 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
+﻿using System.Linq;
 
-namespace ActiveCommerce.Training.NHibernate
+namespace ActiveCommerce.Training.SimpleReviews
 {
     public interface IProductReviewRepository
     {

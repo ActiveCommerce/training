@@ -1,12 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.Mvc;
+﻿using System.Web.Mvc;
 using System.Web.Routing;
 using Sitecore.Pipelines;
 
-namespace ActiveCommerce.Training.NHibernate.Mvc
+namespace ActiveCommerce.Training.SimpleReviews.Mvc
 {
     public class RegisterRoutesProcessor
     {
@@ -22,7 +18,7 @@ namespace ActiveCommerce.Training.NHibernate.Mvc
                 "ProductReviews",
                 "productReview/{action}",
                 new { controller = "ProductReview" },
-                new[] { "ActiveCommerce.Training.NHibernate.Controllers" }
+                new[] { "ActiveCommerce.Training.SimpleReviews.Controllers" }
             );
         }
     }
