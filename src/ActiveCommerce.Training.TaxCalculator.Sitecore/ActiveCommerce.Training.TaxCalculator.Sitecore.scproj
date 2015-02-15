@@ -20,6 +20,8 @@
     <Name>ActiveCommerce.Training.TaxCalculator.Sitecore</Name>
     <RootNamespace>ActiveCommerce.Training.TaxCalculator.Sitecore</RootNamespace>
     <SitecoreDatabase>master</SitecoreDatabase>
+    <EnableCodeGeneration>false</EnableCodeGeneration>
+    <AssemblyStatus>Exclude</AssemblyStatus>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -42,9 +44,6 @@
     <AssemblyAttributes Include="AssemblyVersion">
       <Value>$(AssemblyVersion)</Value>
     </AssemblyAttributes>
-  </ItemGroup>
-  <ItemGroup>
-    <ExcludedAssemblies Include="Sitecore.%2a.dll" />
   </ItemGroup>
   <ItemGroup>
     <SitecoreItem Include="sitecore\content.item">
@@ -77,6 +76,10 @@
       <Project>{eb0b46f3-4142-4c37-9d7b-c96ddb61675a}</Project>
       <Name>ActiveCommerce.Training.TaxCalculator</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ExcludedAssemblies Include="Sitecore.%2a.dll" />
+    <ExcludedAssemblies Include="Sitecore.%2a.dll" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\HedgehogDevelopment\SitecoreProject\v9.0\HedgehogDevelopment.SitecoreProject.targets" />
 </Project>

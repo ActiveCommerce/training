@@ -13,5 +13,6 @@ namespace ActiveCommerce.Training.SimpleReviews
         public virtual DateTime ReviewedOn { get; set; }
         public virtual int Rating { get; set; }
         public virtual string Review { get; set; }
+        public virtual bool Approved { get; set; }
     }
 }

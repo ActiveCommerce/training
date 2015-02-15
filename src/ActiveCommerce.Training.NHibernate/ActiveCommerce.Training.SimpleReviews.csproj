@@ -40,6 +40,15 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Sitecore.Mvc">
+      <HintPath>..\..\..\..\Sitecore\ActiveCommerceTraining\Website\bin\Sitecore.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.Speak.Client">
+      <HintPath>..\..\..\..\Sitecore\ActiveCommerceTraining\Website\bin\Sitecore.Speak.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Linq.Dynamic">
+      <HintPath>..\packages\System.Linq.Dynamic.1.0.4\lib\net40\System.Linq.Dynamic.dll</HintPath>
+    </Reference>
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -86,6 +95,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="App\ProductReviewAdminController.cs" />
+    <Compile Include="App\ShopContextFilter.cs" />
     <Compile Include="Controllers\ProductReviewController.cs" />
     <Compile Include="IoC\RegisterTypes.cs" />
     <Compile Include="IProductReviewRepository.cs" />
@@ -97,9 +108,16 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_Config\Include\xActiveCommerce.zTraining.SimpleReviews.config" />
+    <Content Include="sitecore\shell\client\ActiveCommerce\Applications\SimpleReviews\LinqServiceDataSource.js" />
+    <Content Include="sitecore\shell\client\ActiveCommerce\Applications\SimpleReviews\LinqServiceDataSource.test.js" />
+    <Content Include="sitecore\shell\client\ActiveCommerce\Applications\SimpleReviews\LinqServiceDataSource.cshtml" />
+    <Content Include="sitecore\shell\client\ActiveCommerce\Applications\SimpleReviews\Pages\Reviews.js" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="README.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="packages.config" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

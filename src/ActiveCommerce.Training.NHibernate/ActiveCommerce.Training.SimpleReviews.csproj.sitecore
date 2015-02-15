@@ -1,0 +1,8 @@
+﻿<Project>
+  <PropertyGroup>
+    <Site Server="site.activecommerce.training" UserName="sitecore\admin" IsRemoteSitecore="True" />
+  </PropertyGroup>
+  <File Include="sitecore\shell\client\ActiveCommerce\Applications\SimpleReviews\LinqServiceDataSource.cshtml" FileTimestamp="0" FileSize="0" ServerTimestamp="0" ServerFileSize="0">
+    <Item DatabaseName="core">{BD9A016A-166D-48E1-BF3B-F1686E5E078E}</Item>
+  </File>
+</Project>

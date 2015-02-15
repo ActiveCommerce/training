@@ -22,6 +22,7 @@ namespace ActiveCommerce.Training.SimpleReviews.Mappings
             Map(x => x.ReviewedOn).Not.Nullable();
             Map(x => x.Rating).Not.Nullable();
             Map(x => x.Review).Not.Nullable();
+            Map(x => x.Approved).Not.Nullable();
         }
     }
 }
