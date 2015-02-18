@@ -62,8 +62,7 @@
                       where: search,
                       orderBy: options.sorting,
                       pageSize: options.pageSize,
-                      pageIndex: options.pageIndex,
-                      shopContext: "training"
+                      pageIndex: options.pageIndex
                   },
                   context: this,
                   success: function (data) {

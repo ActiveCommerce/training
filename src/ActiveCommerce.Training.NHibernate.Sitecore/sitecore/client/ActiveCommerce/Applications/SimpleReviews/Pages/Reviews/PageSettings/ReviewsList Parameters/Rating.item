@@ -1,10 +1,10 @@
 ----item----
 version: 1
-id: {ADC7280B-5976-424C-9D89-F82F2A72A2D3}
+id: {FEE748CE-CBC2-4747-9154-775B6265DF10}
 database: core
-path: /sitecore/client/ActiveCommerce/Applications/SimpleReviews/Pages/Reviews/PageSettings/ReviewsList Parameters/Approved
+path: /sitecore/client/ActiveCommerce/Applications/SimpleReviews/Pages/Reviews/PageSettings/ReviewsList Parameters/Rating
 parent: {06E12ECC-78AB-404D-ACB0-3187D6BAB9B9}
-name: Approved
+name: Rating
 master: {00000000-0000-0000-0000-000000000000}
 template: {D3CEFE6E-E51B-4A84-B92E-AAF8AA8E8DC8}
 templatekey: ColumnField
@@ -13,9 +13,9 @@ templatekey: ColumnField
 field: {E67F1B1F-3488-4CF4-80AE-BE285C918C2E}
 name: DataField
 key: datafield
-content-length: 8
+content-length: 6
 
-Approved
+Rating
 ----field----
 field: {B2A46AE4-38F9-4538-A2B3-8021083E0E40}
 name: Sortable
@@ -36,19 +36,19 @@ name: __Sortorder
 key: __sortorder
 content-length: 3
 
-150
+100
 ----version----
 language: en
 version: 1
-revision: 8fb59542-6c43-4585-ba4f-178a61a8c5ae
+revision: 93b32a09-50f5-4a97-8a5e-57123f721dd2
 
 ----field----
 field: {2E9FD749-0F47-4397-8BA2-C56C65366BF0}
 name: HeaderText
 key: headertext
-content-length: 9
+content-length: 6
 
-Approved?
+Rating
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
@@ -76,14 +76,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-8fb59542-6c43-4585-ba4f-178a61a8c5ae
+93b32a09-50f5-4a97-8a5e-57123f721dd2
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 34
 
-20150217T154456:635597846961057023
+20150217T154459:635597846997019433
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

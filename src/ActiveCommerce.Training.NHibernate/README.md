@@ -1,8 +1,8 @@
 Simple Review System
 ========
-This example shows how to map and persist a custom type in the Active Commerce SQL database with NHibernate. This is useful for user generated content, transactional data, etc.
+This example shows how to map and persist a custom type in the Active Commerce SQL database with NHibernate, and how to build a simple Sitecore SPEAK application to list and edit that data. This is useful for user generated content, transactional data, etc.
 
-## How is it done?
+## How is the NHibernate mapping and data access done?
 1. `ProductReview`, our custom type which we want to persist. The only thing special here is that all the properties of this class need to be declared `virtual`.
 2. `ProductReviewMap` utilizes Fluent NHibernate to map the properties to SQL. This example shows some basic mapping directives. For more information, check out the [Fluent NHibernate documentation](https://github.com/jagregory/fluent-nhibernate/wiki/Getting-started).
 3. `App_Config\Include\xActiveCommerce.zTraining.NHibernate.config` is a configuration patch that includes the addition of this assembly to the Active Commerce NHibernate configuration. Any Fluent NHibernate mappings in this assembly will be picked up.

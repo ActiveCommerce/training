@@ -14,6 +14,7 @@ namespace ActiveCommerce.Training.SimpleReviews.Controllers
             var review = new ProductReview()
             {
                 ProductCode = ProductCode,
+                ReviewTitle = "Lorem ipsum review dolor sit",
                 ReviewerName = "Testy Tester",
                 ReviewerEmail = "test@activecommerce.com",
                 ReviewedOn = DateTime.Now,

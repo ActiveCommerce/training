@@ -96,6 +96,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App\ProductReviewAdminController.cs" />
+    <Compile Include="App\ProductReviewModel.cs" />
     <Compile Include="App\ShopContextFilter.cs" />
     <Compile Include="Controllers\ProductReviewController.cs" />
     <Compile Include="IoC\RegisterTypes.cs" />
@@ -111,6 +112,7 @@
     <Content Include="sitecore\shell\client\ActiveCommerce\Applications\SimpleReviews\LinqServiceDataSource.js" />
     <Content Include="sitecore\shell\client\ActiveCommerce\Applications\SimpleReviews\LinqServiceDataSource.test.js" />
     <Content Include="sitecore\shell\client\ActiveCommerce\Applications\SimpleReviews\LinqServiceDataSource.cshtml" />
+    <Content Include="sitecore\shell\client\ActiveCommerce\Applications\SimpleReviews\Pages\Edit.js" />
     <Content Include="sitecore\shell\client\ActiveCommerce\Applications\SimpleReviews\Pages\Reviews.js" />
   </ItemGroup>
   <ItemGroup>

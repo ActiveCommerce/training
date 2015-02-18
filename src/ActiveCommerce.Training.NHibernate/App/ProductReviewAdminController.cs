@@ -13,7 +13,7 @@ namespace ActiveCommerce.Training.SimpleReviews.App
         public ActionResult Search(string where, string orderBy, int? pageSize, int? pageIndex)
         {
             var repository = Sitecore.Ecommerce.Context.Entity.Resolve<IProductReviewRepository>();
-            var reviews = repository.GetAll();
+            var reviews = repository.GetAll().Where(x => !x.Hidden);
             if (!string.IsNullOrEmpty(where))
             {
                 reviews = reviews.Where(where);
@@ -37,6 +37,49 @@ namespace ActiveCommerce.Training.SimpleReviews.App
                     TotalCount = count
                 },
                 JsonRequestBehavior.AllowGet);
+        }
+
+        public ActionResult ById(int id)
+        {
+            var repository = Sitecore.Ecommerce.Context.Entity.Resolve<IProductReviewRepository>();
+            var review = repository.GetById(id);
+            return Json(review, JsonRequestBehavior.AllowGet);
+        }
+
+        public ActionResult Save(ProductReviewModel reviewModel)
+        {
+            if (reviewModel == null)
+            {
+                return Json(false);
+            }
+            var repository = Sitecore.Ecommerce.Context.Entity.Resolve<IProductReviewRepository>();
+            var review = repository.GetById(reviewModel.ReviewId);
+            if (review == null)
+            {
+                return Json(false);
+            }
+            review.ProductCode = reviewModel.ProductCode;
+            review.ReviewTitle = reviewModel.ReviewTitle;
+            review.ReviewerName = reviewModel.ReviewerName;
+            review.ReviewerEmail = reviewModel.ReviewerEmail;
+            review.Rating = reviewModel.Rating;
+            review.Review = reviewModel.Review;
+            review.Approved = reviewModel.Approved;
+            repository.Flush();
+            return Json(true);
+        }
+
+        public ActionResult Delete(int reviewId)
+        {
+            var repository = Sitecore.Ecommerce.Context.Entity.Resolve<IProductReviewRepository>();
+            var review = repository.GetById(reviewId);
+            if (review == null)
+            {
+                return Json(false);
+            }
+            review.Hidden = true;
+            repository.Flush();
+            return Json(true);
         }
     }
 }
