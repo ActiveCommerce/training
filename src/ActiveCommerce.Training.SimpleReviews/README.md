@@ -15,3 +15,6 @@ This example shows how to map and persist a custom type in the Active Commerce S
 6. `RegisterTypes` is a standard `ITypeRegistration` implementation used to add our repository to the Unity container.
 7. `ProductReviewController` can be used to test out some of the repository operations.
 8. `RegisterRoutesProcessor` adds our test controller to the MVC route table. It is also patched in within this project's configuration patch.
+
+## How do I build a SPEAK application to manage the data?
+This is covered at a high level in [a series of screencasts](http://www.techphoria414.com/Blog/2015/February/Active_Commerce_32_NHibernate_SPEAK).

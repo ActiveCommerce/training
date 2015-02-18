@@ -113,5 +113,5 @@ and we provide no warranty. Use at your own risk.
 
 ## NHibernate
 
-[Custom NHibernate Data](./src/ActiveCommerce.Training.NHibernate)
-- Persist a custom object to the Active Commerce database with NHibernate
+[Simple Reviews System](./src/ActiveCommerce.Training.SimpleReviews)
+- Persist a custom object to the Active Commerce database with NHibernate and manage the data with Sitecore SPEAK
