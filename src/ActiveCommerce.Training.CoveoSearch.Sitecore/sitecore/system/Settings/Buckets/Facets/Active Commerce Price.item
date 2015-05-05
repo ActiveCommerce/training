@@ -1,0 +1,58 @@
+----item----
+version: 1
+id: {6B6AE52C-F5B4-4046-9119-01AE3A15D1EB}
+database: master
+path: /sitecore/system/Settings/Buckets/Facets/Active Commerce Price
+parent: {0B42DC05-5CF9-4DD5-9A3A-8BDF11BE2B88}
+name: Active Commerce Price
+master: {00000000-0000-0000-0000-000000000000}
+template: {5C125B6D-C481-4C24-B5B9-9A23FE396BF0}
+templatekey: Facet
+
+----field----
+field: {0E23BB51-C071-41B5-9D83-AC410B89B85A}
+name: Parameters
+key: parameters
+content-length: 9
+
+_ac_price
+----version----
+language: en
+version: 1
+revision: 13d0850b-f670-48d2-94d1-73d52bf9d8b6
+
+----field----
+field: {31CA077F-EF38-4980-8A24-05408031B2BC}
+name: Name
+key: name
+content-length: 21
+
+Active Commerce Price
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 15
+
+20150504T173950
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+13d0850b-f670-48d2-94d1-73d52bf9d8b6
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20150504T174003:635663580032906000
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
