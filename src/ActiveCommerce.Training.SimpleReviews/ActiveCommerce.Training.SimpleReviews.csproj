@@ -41,10 +41,10 @@
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="Sitecore.Mvc">
-      <HintPath>..\..\..\..\Sitecore\ActiveCommerceTraining\Website\bin\Sitecore.Mvc.dll</HintPath>
+      <HintPath>$(SitecorePath)\bin\Sitecore.Mvc.dll</HintPath>
     </Reference>
     <Reference Include="Sitecore.Speak.Client">
-      <HintPath>..\..\..\..\Sitecore\ActiveCommerceTraining\Website\bin\Sitecore.Speak.Client.dll</HintPath>
+      <HintPath>$(SitecorePath)\bin\Sitecore.Speak.Client.dll</HintPath>
     </Reference>
     <Reference Include="System.Linq.Dynamic">
       <HintPath>..\packages\System.Linq.Dynamic.1.0.4\lib\net40\System.Linq.Dynamic.dll</HintPath>
