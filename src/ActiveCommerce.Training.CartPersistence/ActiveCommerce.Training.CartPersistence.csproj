@@ -39,7 +39,25 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Castle.Core, Version=3.2.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(SitecorePath)\bin\Castle.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Glass.Mapper, Version=3.0.9.21, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(SitecorePath)\bin\Glass.Mapper.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Practices.Unity, Version=1.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(SitecorePath)\bin\Microsoft.Practices.Unity.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.Analytics.Model">
+      <HintPath>$(SitecorePath)\bin\Sitecore.Analytics.Model.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.Ecommerce.Analytics">
+      <HintPath>$(SitecorePath)\bin\Sitecore.Ecommerce.Analytics.dll</HintPath>
+    </Reference>
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -57,10 +75,6 @@
     <Reference Include="System.Configuration" />
     <Reference Include="System.Web.Services" />
     <Reference Include="System.EnterpriseServices" />
-    <Reference Include="Microsoft.Practices.Unity, Version=1.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>$(SitecorePath)\bin\Microsoft.Practices.Unity.dll</HintPath>
-    </Reference>
     <Reference Include="Sitecore.Ecommerce.DomainModel">
       <HintPath>$(SitecorePath)\bin\Sitecore.Ecommerce.DomainModel.dll</HintPath>
       <Private>False</Private>
@@ -83,26 +97,16 @@
     </Reference>
     <Reference Include="ActiveCommerce.Kernel">
       <HintPath>$(SitecorePath)\bin\ActiveCommerce.Kernel.dll</HintPath>
-      <Private>False</Private>
     </Reference>
     <Reference Include="ActiveCommerce.Web">
       <HintPath>$(SitecorePath)\bin\ActiveCommerce.Web.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Castle.Core">
-      <HintPath>$(SitecorePath)\bin\Castle.Core.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Glass.Mapper">
-      <HintPath>$(SitecorePath)\bin\Glass.Mapper.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Glass.Mapper.Sc">
-      <HintPath>$(SitecorePath)\bin\Glass.Mapper.Sc.dll</HintPath>
-      <Private>False</Private>
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Analytics\Model\IShoppingCart.cs" />
+    <Compile Include="Analytics\Model\IShoppingCartLine.cs" />
+    <Compile Include="Analytics\Model\ShoppingCart.cs" />
+    <Compile Include="Analytics\Model\ShoppingCartLine.cs" />
     <Compile Include="Carts\CartUpdatedHandler.cs" />
     <Compile Include="Common\CartPersistenceContext.cs" />
     <Compile Include="Common\CustomerRestoreStrategy.cs" />
@@ -114,8 +118,10 @@
     <Compile Include="Pipelines\PersistCart\IPersistCartProcessor.cs" />
     <Compile Include="Pipelines\PersistCart\PersistCartArgs.cs" />
     <Compile Include="Pipelines\PersistCart\PersistCartPipeline.cs" />
+    <Compile Include="Pipelines\PersistCart\PersistToContact.cs" />
     <Compile Include="Pipelines\PersistCart\PersistToCookie.cs" />
     <Compile Include="Pipelines\PersistCart\PersistToCustomer.cs" />
+    <Compile Include="Pipelines\PersistCart\PersistToSharedSession.cs" />
     <Compile Include="Pipelines\PersistCart\ReadFromCart.cs" />
     <Compile Include="Pipelines\RestoreCart\AttachCartUpdatedHandler.cs" />
     <Compile Include="Pipelines\RestoreCartProduct\CheckArgs.cs" />
@@ -123,6 +129,8 @@
     <Compile Include="Pipelines\RestoreCart\AddResultToSession.cs" />
     <Compile Include="Pipelines\RestoreCart\CheckArgs.cs" />
     <Compile Include="Pipelines\RestoreCart\CheckPersistenceInitialized.cs" />
+    <Compile Include="Pipelines\RestoreCart\ReadFromContact.cs" />
+    <Compile Include="Pipelines\RestoreCart\RestoreFromSharedSession.cs" />
     <Compile Include="Pipelines\RestoreCart\SetPersistenceInitialized.cs" />
     <Compile Include="Pipelines\RestoreCart\IRestoreCartProcessor.cs" />
     <Compile Include="Pipelines\RestoreCart\ReadFromCookie.cs" />
