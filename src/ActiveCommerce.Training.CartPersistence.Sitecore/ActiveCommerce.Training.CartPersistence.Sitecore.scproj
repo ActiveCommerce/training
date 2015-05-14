@@ -65,10 +65,12 @@
     <SitecoreItem Include="sitecore\commerce\translation\C\Cart-Restore-Failure.item">
       <Icon>/temp/IconCache/Applications/32x32/font.png</Icon>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
+      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>
     <SitecoreItem Include="sitecore\commerce\translation\C\Cart-Restore-Success.item">
       <Icon>/temp/IconCache/Applications/32x32/font.png</Icon>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
+      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>
   </ItemGroup>
   <ItemGroup>

@@ -15,7 +15,7 @@ The persistence and restoration processes have been abstracted into Sitecore pip
 
 Be sure to also reference the two associated TDS projects for needed Sitecore items.
 
-Experimental, use at your own risk. The solution currently has the following limitations:
+The solution currently has the following limitations:
 * Only persists cart items, their quantity, and coupon code. However out of the box, this should be all that is needed.
 * May not handle products which have been flagged as "hidden" since the time the cart was persisted.
 * The message to the user regarding failed restoration of products is non-specific regarding what products failed.
