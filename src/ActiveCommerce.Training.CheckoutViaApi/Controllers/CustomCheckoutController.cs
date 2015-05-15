@@ -11,12 +11,14 @@ using ActiveCommerce.Payment;
 using ActiveCommerce.Products;
 using Microsoft.Practices.Unity;
 using Sitecore.Ecommerce.DomainModel.Addresses;
+using Sitecore.Ecommerce.DomainModel.Carts;
 using Sitecore.Ecommerce.DomainModel.Data;
 using Sitecore.Ecommerce.DomainModel.Prices;
 using Sitecore.Ecommerce.DomainModel.Shippings;
 using Sitecore.Ecommerce.Products;
 using PaymentSystem = Sitecore.Ecommerce.DomainModel.Payments.PaymentSystem;
 using ShoppingCart = Sitecore.Ecommerce.DomainModel.Carts.ShoppingCart;
+using ShoppingCartLine = ActiveCommerce.Carts.ShoppingCartLine;
 
 namespace ActiveCommerce.Training.CheckoutViaApi.Controllers
 {
@@ -45,6 +47,15 @@ namespace ActiveCommerce.Training.CheckoutViaApi.Controllers
                 Product = product,
                 Quantity = 1
             });
+
+            /*
+             * We can also use the ShoppingCartManager to add to cart, which will enforce availability business rules.
+             * It also gracefully handles products already in the cart (increments quantity).
+             * If using a non-session cart, you'll need to let the cart manager know to use it instead by populating the ShoppingCart property.
+             */
+            var cartManager = Sitecore.Ecommerce.Context.Entity.Resolve<IShoppingCartManager>();
+            (cartManager as ShoppingCartManager).ShoppingCart = cart;
+            cartManager.AddProduct(productCode, 1);
 
             //construct a "virtual" cart line not based on a repository product
             cart.ShoppingCartLines.Add(new ShoppingCartLine
