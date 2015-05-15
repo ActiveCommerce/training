@@ -1,9 +1,9 @@
 ----item----
 version: 1
-id: {9FE68996-562F-4FF5-879F-B284B3003E5D}
+id: {7F6CBDF7-E1E0-4542-8B0F-1F9920A0BFE8}
 database: master
 path: /sitecore/content/Active Commerce Training/Home/shop/checkout/Steps
-parent: {6795379B-4EC7-451F-AC89-97573FA80947}
+parent: {D1CF9556-8836-44AC-9665-4C8DBDC64A43}
 name: Steps
 master: {B0DB2EFD-FFF5-4D6D-ABC9-0C2026B0AD18}
 template: {B7F10490-1B99-4BAA-872F-FE6FAB46A844}
@@ -26,7 +26,7 @@ content-length: 0
 ----version----
 language: en
 version: 1
-revision: 098937fc-2e9d-4173-a4ef-454fb0461979
+revision: cd81bfd2-453d-4377-a31c-5a5829e2fef1
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -34,7 +34,7 @@ name: __Created
 key: __created
 content-length: 15
 
-20140331T170627
+20150515T151736
 ----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
@@ -48,14 +48,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-098937fc-2e9d-4173-a4ef-454fb0461979
+cd81bfd2-453d-4377-a31c-5a5829e2fef1
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 34
 
-20140331T170627:635318823874938495
+20150515T151736:635672998563787816
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

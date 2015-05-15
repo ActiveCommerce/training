@@ -1,9 +1,9 @@
 ----item----
 version: 1
-id: {5BDFDBE5-252E-4F19-8606-5A9742AD461A}
+id: {D6C55B13-99E7-4CE9-A0D4-C37CE8BB2056}
 database: master
 path: /sitecore/content/Active Commerce Training/Home/shop/cart/Navigation Links/Empty Cart
-parent: {C7BFAC12-3C99-41EA-88B9-010CAFE6E181}
+parent: {3CEA8E08-7F54-4D28-AE55-701317983D37}
 name: Empty Cart
 master: {B0DB2EFD-FFF5-4D6D-ABC9-0C2026B0AD18}
 template: {F1E5339F-3A8F-4CE7-9021-E068B64285B1}
@@ -22,7 +22,7 @@ name: Link
 key: link
 content-length: 196
 
-<link text="" linktype="internal" url="/sitecore/content/Active Commerce Training/Home/products" anchor="" title="" class="" querystring="" target="" id="{5AB508A8-7A2D-4483-8960-CEC87FF76041}" />
+<link text="" linktype="internal" url="/sitecore/content/Active Commerce Training/Home/products" anchor="" title="" class="" querystring="" target="" id="{318AF7F5-997C-486B-B065-381571A31E6E}" />
 ----field----
 field: {F6D8A61C-2F84-4401-BD24-52D2068172BC}
 name: __Originator
@@ -40,7 +40,7 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: 3cd90b98-8ba9-4b55-8df2-9995180f5ff2
+revision: 282e3eb0-dd08-4e65-aa55-a35dbb42dfaf
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -48,21 +48,21 @@ name: __Created
 key: __created
 content-length: 15
 
-20140331T170626
+20150515T151735
 ----field----
 field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
 name: __Revision
 key: __revision
 content-length: 36
 
-3cd90b98-8ba9-4b55-8df2-9995180f5ff2
+282e3eb0-dd08-4e65-aa55-a35dbb42dfaf
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 34
 
-20140331T180702:635318860221167103
+20150515T151805:635672998858596756
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -76,11 +76,4 @@ name: __Workflow state
 key: __workflow state
 content-length: 38
 
-{8AD77832-A5A9-4D4C-BF8A-186B21A56204}
-----field----
-field: {001DD393-96C5-490B-924A-B0F25CD9EFD8}
-name: __Lock
-key: __lock
-content-length: 5
-
-<r />
+{847A34F1-135D-4728-B5DE-30899218D2B2}

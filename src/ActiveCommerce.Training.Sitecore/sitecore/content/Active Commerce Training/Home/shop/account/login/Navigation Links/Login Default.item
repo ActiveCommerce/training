@@ -1,9 +1,9 @@
 ----item----
 version: 1
-id: {53E66D15-8038-4FD3-B51D-CE9A684D6B0E}
+id: {7AF347E3-FFFB-422C-8375-C15A203A72EA}
 database: master
 path: /sitecore/content/Active Commerce Training/Home/shop/account/login/Navigation Links/Login Default
-parent: {420F8078-F623-43BF-9C2F-0715EC9E31AC}
+parent: {2FF6A78A-9699-4463-9632-415C187EA2B0}
 name: Login Default
 master: {B0DB2EFD-FFF5-4D6D-ABC9-0C2026B0AD18}
 template: {F1E5339F-3A8F-4CE7-9021-E068B64285B1}
@@ -22,7 +22,7 @@ name: Link
 key: link
 content-length: 173
 
-<link id="{BD1DEF58-55C6-4582-A387-4233FFBD3B65}" querystring="" url="/sitecore/content/Active Commerce Training/Home/shop/account/detailss" target="" linktype="internal" />
+<link id="{93D4C8C6-88E5-476E-A5B6-5A509B2FC20F}" querystring="" url="/sitecore/content/Active Commerce Training/Home/shop/account/detailss" target="" linktype="internal" />
 ----field----
 field: {F6D8A61C-2F84-4401-BD24-52D2068172BC}
 name: __Originator
@@ -40,7 +40,7 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: 75bffefa-2285-4adb-9205-005d03f3a9cb
+revision: 1add7541-71c8-4bf8-b6d7-fe83f21183a8
 
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
@@ -55,7 +55,7 @@ name: __Created
 key: __created
 content-length: 15
 
-20140331T170630
+20150515T151738
 ----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
@@ -69,14 +69,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-75bffefa-2285-4adb-9205-005d03f3a9cb
+1add7541-71c8-4bf8-b6d7-fe83f21183a8
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 34
 
-20140331T180708:635318860288250940
+20150515T151806:635672998861397052
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -90,11 +90,4 @@ name: __Workflow state
 key: __workflow state
 content-length: 38
 
-{8AD77832-A5A9-4D4C-BF8A-186B21A56204}
-----field----
-field: {001DD393-96C5-490B-924A-B0F25CD9EFD8}
-name: __Lock
-key: __lock
-content-length: 5
-
-<r />
+{847A34F1-135D-4728-B5DE-30899218D2B2}

@@ -1,0 +1,58 @@
+----item----
+version: 1
+id: {0599F243-C846-4E53-BA85-44D2A98228EE}
+database: master
+path: /sitecore/content/Active Commerce Training/Business Catalog/States/Failed/SubstateCombinations
+parent: {7F9F2402-E235-4B75-B66E-8E7135D3E386}
+name: SubstateCombinations
+master: {B0DB2EFD-FFF5-4D6D-ABC9-0C2026B0AD18}
+template: {3919EB9F-6722-4445-98AA-A9F0DEFB9817}
+templatekey: Substate Combinations Container
+
+----field----
+field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
+name: __Sortorder
+key: __sortorder
+content-length: 3
+
+200
+----field----
+field: {F6D8A61C-2F84-4401-BD24-52D2068172BC}
+name: __Originator
+key: __originator
+content-length: 0
+
+
+----version----
+language: en
+version: 1
+revision: 52ad1aa7-6803-40fb-83a0-0a32cefe1cb7
+
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 15
+
+20150515T151742
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+52ad1aa7-6803-40fb-83a0-0a32cefe1cb7
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20150515T151742:635672998621816172
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

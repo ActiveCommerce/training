@@ -1,9 +1,9 @@
 ----item----
 version: 1
-id: {420F8078-F623-43BF-9C2F-0715EC9E31AC}
+id: {2FF6A78A-9699-4463-9632-415C187EA2B0}
 database: master
 path: /sitecore/content/Active Commerce Training/Home/shop/account/login/Navigation Links
-parent: {C50ED21B-9D75-4A03-AFCD-A955BD72A712}
+parent: {3ABCD7C1-08FB-430E-BB5F-3FC528D8EC0C}
 name: Navigation Links
 master: {B0DB2EFD-FFF5-4D6D-ABC9-0C2026B0AD18}
 template: {E85B457D-FFB6-45CA-BBA7-F4F082734E52}
@@ -19,7 +19,7 @@ content-length: 0
 ----version----
 language: en
 version: 1
-revision: 9c96fddb-9dd5-4ac8-b0fe-8677bd26d3cc
+revision: 9fbadbab-1155-491c-9a6f-3a8e3b6678c9
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -27,7 +27,7 @@ name: __Created
 key: __created
 content-length: 15
 
-20140331T170630
+20150515T151738
 ----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
@@ -41,14 +41,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-9c96fddb-9dd5-4ac8-b0fe-8677bd26d3cc
+9fbadbab-1155-491c-9a6f-3a8e3b6678c9
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 34
 
-20140331T170630:635318823900109935
+20150515T151738:635672998582456456
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

@@ -1,0 +1,65 @@
+----item----
+version: 1
+id: {E604F0B1-567A-4A81-AB10-E8745DAFABFE}
+database: master
+path: /sitecore/content/Active Commerce Training/Business Catalog/States/Suspicious/FollowingStates/Cancelled
+parent: {14355E3C-642D-4B5E-B569-B97F104C9754}
+name: Cancelled
+master: {B0DB2EFD-FFF5-4D6D-ABC9-0C2026B0AD18}
+template: {AB83D7CA-E135-40BB-931F-8EB9E19714B6}
+templatekey: Following State Link
+
+----field----
+field: {7A8606E7-7968-40BB-933E-BBF0A9744CB1}
+name: Following State
+key: following state
+content-length: 38
+
+{33CA9004-2672-4833-9223-32FEB1B02289}
+----field----
+field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
+name: __Sortorder
+key: __sortorder
+content-length: 3
+
+200
+----field----
+field: {F6D8A61C-2F84-4401-BD24-52D2068172BC}
+name: __Originator
+key: __originator
+content-length: 0
+
+
+----version----
+language: en
+version: 1
+revision: b076219b-06cf-4b4b-a367-51a5e5380143
+
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 15
+
+20150515T151741
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+b076219b-06cf-4b4b-a367-51a5e5380143
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20150515T151806:635672998864664064
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

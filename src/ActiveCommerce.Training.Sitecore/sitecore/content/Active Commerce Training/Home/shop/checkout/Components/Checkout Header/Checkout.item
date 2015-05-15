@@ -1,9 +1,9 @@
 ----item----
 version: 1
-id: {D5BA60AA-D18C-4623-86B8-AC95576FA08C}
+id: {F0682974-B355-40C2-8CC8-B7925A620695}
 database: master
 path: /sitecore/content/Active Commerce Training/Home/shop/checkout/Components/Checkout Header/Checkout
-parent: {21991133-93BE-463E-9A15-DA3567A5EB0F}
+parent: {207A53E8-BAD2-4F85-A2D4-7743E100D7F9}
 name: Checkout
 master: {B0DB2EFD-FFF5-4D6D-ABC9-0C2026B0AD18}
 template: {F1E5339F-3A8F-4CE7-9021-E068B64285B1}
@@ -15,7 +15,7 @@ name: Link
 key: link
 content-length: 201
 
-<link text="" linktype="internal" url="/sitecore/content/Active Commerce Training/Home/shop/checkout" anchor="" title="" class="" querystring="" target="" id="{6795379B-4EC7-451F-AC89-97573FA80947}" />
+<link text="" linktype="internal" url="/sitecore/content/Active Commerce Training/Home/shop/checkout" anchor="" title="" class="" querystring="" target="" id="{D1CF9556-8836-44AC-9665-4C8DBDC64A43}" />
 ----field----
 field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
 name: __Sortorder
@@ -40,7 +40,7 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: 608cf350-490c-4fbf-8557-ba2db3de594a
+revision: 753b1fe5-1035-406c-8744-fa9d2ba8e7a1
 
 ----field----
 field: {8BDB8323-A373-40E8-8FCB-4938C13E23C6}
@@ -55,7 +55,7 @@ name: __Created
 key: __created
 content-length: 15
 
-20140331T170628
+20150515T151736
 ----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
@@ -69,14 +69,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-608cf350-490c-4fbf-8557-ba2db3de594a
+753b1fe5-1035-406c-8744-fa9d2ba8e7a1
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 34
 
-20140331T180658:635318860183004920
+20150515T151806:635672998860308048
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -90,11 +90,4 @@ name: __Workflow state
 key: __workflow state
 content-length: 38
 
-{8AD77832-A5A9-4D4C-BF8A-186B21A56204}
-----field----
-field: {001DD393-96C5-490B-924A-B0F25CD9EFD8}
-name: __Lock
-key: __lock
-content-length: 5
-
-<r />
+{847A34F1-135D-4728-B5DE-30899218D2B2}

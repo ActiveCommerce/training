@@ -1,9 +1,9 @@
 ----item----
 version: 1
-id: {956C7142-819D-450B-8564-4655BD718196}
+id: {31F71CA4-4225-49CD-9717-61154641C82C}
 database: master
 path: /sitecore/content/Active Commerce Training/Navigation/Header/Products
-parent: {81DFEFAB-B710-4419-93BE-FA4E5A72B73C}
+parent: {26405F6B-94AE-4B0E-BE59-4AC2587C23FF}
 name: Products
 master: {B0DB2EFD-FFF5-4D6D-ABC9-0C2026B0AD18}
 template: {9FADACA1-D7E5-4A7D-BD16-C7BE2210F214}
@@ -15,7 +15,7 @@ name: Link
 key: link
 content-length: 160
 
-<link linktype="internal" url="/sitecore/content/Active Commerce Training/Home/products" querystring="" target="" id="{5AB508A8-7A2D-4483-8960-CEC87FF76041}" />
+<link linktype="internal" url="/sitecore/content/Active Commerce Training/Home/products" querystring="" target="" id="{318AF7F5-997C-486B-B065-381571A31E6E}" />
 ----field----
 field: {F6D8A61C-2F84-4401-BD24-52D2068172BC}
 name: __Originator
@@ -33,7 +33,7 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: dd2f547e-2512-417c-af1e-420410aa271e
+revision: f924008c-1b83-4607-91df-fec28b46880e
 
 ----field----
 field: {D9B360D6-1527-4E7C-94E1-4CF03E5E49D9}
@@ -48,7 +48,7 @@ name: __Created
 key: __created
 content-length: 15
 
-20140331T170631
+20150515T151739
 ----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
@@ -62,14 +62,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-dd2f547e-2512-417c-af1e-420410aa271e
+f924008c-1b83-4607-91df-fec28b46880e
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 34
 
-20140331T180715:635318860352394609
+20150515T151806:635672998862330484
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -83,11 +83,4 @@ name: __Workflow state
 key: __workflow state
 content-length: 38
 
-{8AD77832-A5A9-4D4C-BF8A-186B21A56204}
-----field----
-field: {001DD393-96C5-490B-924A-B0F25CD9EFD8}
-name: __Lock
-key: __lock
-content-length: 5
-
-<r />
+{847A34F1-135D-4728-B5DE-30899218D2B2}

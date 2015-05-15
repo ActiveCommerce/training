@@ -1,9 +1,9 @@
 ----item----
 version: 1
-id: {DFAE1DFC-A82B-44E5-8B4B-1357E9359386}
+id: {DB86AC69-1796-4D90-8299-00BCC0EDB301}
 database: master
 path: /sitecore/content/Active Commerce Training/Navigation/Slim Footer
-parent: {CA4F08E5-AACE-4956-B50C-3CEAAE452814}
+parent: {25BD6E30-C8C2-4BD5-862C-4D06B689BC1F}
 name: Slim Footer
 master: {B0DB2EFD-FFF5-4D6D-ABC9-0C2026B0AD18}
 template: {C5672E78-FF1F-40DF-A7D2-1B0F1DB5FFA6}
@@ -33,7 +33,7 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: 49c56430-51f2-47ab-8335-ca4048dc8fc0
+revision: 396f77d1-3b90-4f48-a96b-fae0c8df63f2
 
 ----field----
 field: {DDEE0980-52DC-4579-B05F-F19DB05E5BA3}
@@ -55,7 +55,7 @@ name: __Created
 key: __created
 content-length: 15
 
-20140331T170631
+20150515T151739
 ----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
@@ -69,14 +69,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-49c56430-51f2-47ab-8335-ca4048dc8fc0
+396f77d1-3b90-4f48-a96b-fae0c8df63f2
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 34
 
-20140331T180717:635318860379526161
+20150515T151739:635672998599258232
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -90,11 +90,4 @@ name: __Workflow state
 key: __workflow state
 content-length: 38
 
-{8AD77832-A5A9-4D4C-BF8A-186B21A56204}
-----field----
-field: {001DD393-96C5-490B-924A-B0F25CD9EFD8}
-name: __Lock
-key: __lock
-content-length: 5
-
-<r />
+{847A34F1-135D-4728-B5DE-30899218D2B2}

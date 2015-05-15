@@ -1,9 +1,9 @@
 ----item----
 version: 1
-id: {10761095-B2DF-4328-832D-9A5DDE52A973}
+id: {C7D4E9C7-35AA-4589-97B6-398DEB794207}
 database: master
 path: /sitecore/content/Active Commerce Training/Home/shop/account/login/Components/Change Email Form
-parent: {7D97FE29-7708-4DAD-B2C2-09A98C7EDACF}
+parent: {87385172-19B9-4F11-BB1F-C19F87A844B4}
 name: Change Email Form
 master: {B0DB2EFD-FFF5-4D6D-ABC9-0C2026B0AD18}
 template: {D5138C2B-301A-4645-B181-89B2249D7CEE}
@@ -26,7 +26,7 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: aa2880d9-044a-40d1-b9a6-fcc29671412e
+revision: 9dbbb85d-8b7b-47f7-9a6c-5dce0d64c8a3
 
 ----field----
 field: {714D006A-C6E3-4C8E-B31B-C024C1946690}
@@ -104,21 +104,21 @@ name: __Created
 key: __created
 content-length: 15
 
-20140331T170629
+20150515T151738
 ----field----
 field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
 name: __Revision
 key: __revision
 content-length: 36
 
-aa2880d9-044a-40d1-b9a6-fcc29671412e
+9dbbb85d-8b7b-47f7-9a6c-5dce0d64c8a3
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 34
 
-20140331T180657:635318860179074696
+20150515T151738:635672998580434020
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -132,11 +132,4 @@ name: __Workflow state
 key: __workflow state
 content-length: 38
 
-{8AD77832-A5A9-4D4C-BF8A-186B21A56204}
-----field----
-field: {001DD393-96C5-490B-924A-B0F25CD9EFD8}
-name: __Lock
-key: __lock
-content-length: 5
-
-<r />
+{847A34F1-135D-4728-B5DE-30899218D2B2}

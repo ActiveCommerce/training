@@ -1,0 +1,72 @@
+----item----
+version: 1
+id: {594D434C-C70A-4FB5-AFF7-23C10F6E09C9}
+database: master
+path: /sitecore/content/Active Commerce Training/Business Catalog/States/Processing/SubstateCombinations/001010
+parent: {C6E4D851-9DAF-40A1-B41F-560B82D73A92}
+name: 001010
+master: {B0DB2EFD-FFF5-4D6D-ABC9-0C2026B0AD18}
+template: {64D41CC9-9E5C-41D1-8385-B1E4F5D786FB}
+templatekey: Substate Condition
+
+----field----
+field: {FA95A318-544D-4CCB-AB38-ED646A6BF062}
+name: Substates
+key: substates
+content-length: 77
+
+{D465B39E-6025-4808-BDB2-1589A55EFF88}|{030A1E6E-87F6-4516-9E56-BC76A42632BC}
+----field----
+field: {F6D8A61C-2F84-4401-BD24-52D2068172BC}
+name: __Originator
+key: __originator
+content-length: 0
+
+
+----version----
+language: en
+version: 1
+revision: c822190a-5c6c-4ffd-8512-4e7bed72b447
+
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 15
+
+20150515T151741
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+c822190a-5c6c-4ffd-8512-4e7bed72b447
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20150515T151806:635672998864041776
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

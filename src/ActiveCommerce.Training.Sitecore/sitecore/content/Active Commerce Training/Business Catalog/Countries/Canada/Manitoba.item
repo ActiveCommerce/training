@@ -1,9 +1,9 @@
 ----item----
 version: 1
-id: {27E01FC7-823B-49EB-835C-7D2AA90BE0F8}
+id: {59EBBFEB-CD21-4A5C-B682-4F30B3D67B62}
 database: master
 path: /sitecore/content/Active Commerce Training/Business Catalog/Countries/Canada/Manitoba
-parent: {4109F0EE-59F3-4B58-A0C2-4A9CDF88A5F8}
+parent: {B0D88241-CA99-4DE9-A2D1-BB2FFD53D1BA}
 name: Manitoba
 master: {B0DB2EFD-FFF5-4D6D-ABC9-0C2026B0AD18}
 template: {226DDD63-9CD8-47B1-B68F-DE1ACBAFB3BB}
@@ -40,7 +40,7 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: 8fcacee2-3276-49da-9279-087c22b31db6
+revision: 1c70fef5-d193-4db1-a511-6bebe0688603
 
 ----field----
 field: {EE4BD860-A144-4869-9E21-FA2441A85864}
@@ -55,21 +55,21 @@ name: __Created
 key: __created
 content-length: 15
 
-20140331T170638
+20150515T151748
 ----field----
 field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
 name: __Revision
 key: __revision
 content-length: 36
 
-8fcacee2-3276-49da-9279-087c22b31db6
+1c70fef5-d193-4db1-a511-6bebe0688603
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 34
 
-20140331T180709:635318860298381519
+20150515T151748:635672998689489992
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -83,7 +83,7 @@ name: __Workflow state
 key: __workflow state
 content-length: 38
 
-{8AD77832-A5A9-4D4C-BF8A-186B21A56204}
+{847A34F1-135D-4728-B5DE-30899218D2B2}
 ----field----
 field: {001DD393-96C5-490B-924A-B0F25CD9EFD8}
 name: __Lock

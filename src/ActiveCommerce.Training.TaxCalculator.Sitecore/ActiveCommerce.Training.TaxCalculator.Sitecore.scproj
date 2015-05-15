@@ -69,6 +69,7 @@
     <SitecoreItem Include="sitecore\content\Active Commerce Training\Business Catalog\VAT Regions\Training Tax Calculator.item">
       <Icon>/temp/IconCache/business/32x32/courthouse.png</Icon>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
+      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>
   </ItemGroup>
   <ItemGroup>

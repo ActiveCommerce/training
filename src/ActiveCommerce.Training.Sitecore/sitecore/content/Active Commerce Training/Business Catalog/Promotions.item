@@ -1,9 +1,9 @@
 ----item----
 version: 1
-id: {1B217125-8C66-4FCF-8BB2-F14E0BB14BEC}
+id: {0197AF78-81FD-4DF0-9C25-2E08EC538506}
 database: master
 path: /sitecore/content/Active Commerce Training/Business Catalog/Promotions
-parent: {62C35200-BBD6-451F-B8E7-3C4C8BDE3868}
+parent: {C2461784-47D9-431E-B808-64D17187F9BE}
 name: Promotions
 master: {B0DB2EFD-FFF5-4D6D-ABC9-0C2026B0AD18}
 template: {A87A00B1-E6DB-45AB-8B54-636FEC3B5523}
@@ -33,7 +33,7 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: c045ce99-0996-4097-8161-dbdad254a9de
+revision: 6390cb28-4e97-4307-84c3-640e97530f81
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -41,7 +41,7 @@ name: __Created
 key: __created
 content-length: 15
 
-20140331T170631
+20150515T151740
 ----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
@@ -55,14 +55,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-c045ce99-0996-4097-8161-dbdad254a9de
+6390cb28-4e97-4307-84c3-640e97530f81
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 34
 
-20140331T170631:635318823919951069
+20150515T151740:635672998600191664
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

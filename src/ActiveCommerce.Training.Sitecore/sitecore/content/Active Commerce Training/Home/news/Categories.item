@@ -1,9 +1,9 @@
 ----item----
 version: 1
-id: {F1A28339-E45B-462C-A992-0F9144E72493}
+id: {8B289452-3761-4C63-B558-4F662764DFFD}
 database: master
 path: /sitecore/content/Active Commerce Training/Home/news/Categories
-parent: {851CAC86-FC04-4E75-A2D8-611152119336}
+parent: {011DA064-942C-49B1-A634-2BD4CB93A43E}
 name: Categories
 master: {B0DB2EFD-FFF5-4D6D-ABC9-0C2026B0AD18}
 template: {A87A00B1-E6DB-45AB-8B54-636FEC3B5523}
@@ -26,7 +26,7 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: a8726efc-9c85-4aa0-ba0c-0c1b0e05b200
+revision: 9d3389f1-7c04-4412-816a-fa06d98403e8
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -34,7 +34,7 @@ name: __Created
 key: __created
 content-length: 15
 
-20140331T170630
+20150515T151739
 ----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
@@ -48,14 +48,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-a8726efc-9c85-4aa0-ba0c-0c1b0e05b200
+9d3389f1-7c04-4412-816a-fa06d98403e8
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 34
 
-20140331T170630:635318823908930439
+20150515T151739:635672998590546200
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

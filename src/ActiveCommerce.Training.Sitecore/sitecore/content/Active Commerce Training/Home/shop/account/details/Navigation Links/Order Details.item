@@ -1,9 +1,9 @@
 ----item----
 version: 1
-id: {68C38B44-6F77-4626-AF4A-667F3768D54E}
+id: {5AD6A556-F27C-4AF1-A089-CDB3C5F97EDE}
 database: master
 path: /sitecore/content/Active Commerce Training/Home/shop/account/details/Navigation Links/Order Details
-parent: {56E8FBC0-5820-4D3E-9448-DD1951165B72}
+parent: {969AC45F-FCB2-4128-9C6D-9CEBC2547850}
 name: Order Details
 master: {B0DB2EFD-FFF5-4D6D-ABC9-0C2026B0AD18}
 template: {F1E5339F-3A8F-4CE7-9021-E068B64285B1}
@@ -22,7 +22,7 @@ name: Link
 key: link
 content-length: 178
 
-<link id="{FCC5148D-5F32-42BA-88EE-FE26AC0A7A70}" querystring="" url="/sitecore/content/Active Commerce Training/Home/shop/account/details/order" target="" linktype="internal" />
+<link id="{37C0C95A-35B0-468D-B0C8-49381B4CD682}" querystring="" url="/sitecore/content/Active Commerce Training/Home/shop/account/details/order" target="" linktype="internal" />
 ----field----
 field: {F6D8A61C-2F84-4401-BD24-52D2068172BC}
 name: __Originator
@@ -40,7 +40,7 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: 9dda9561-707a-4379-8e3e-d8be74eddf83
+revision: 66ae9b18-c266-4a2d-8607-81e82e343895
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -48,21 +48,21 @@ name: __Created
 key: __created
 content-length: 15
 
-20140331T170630
+20150515T151738
 ----field----
 field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
 name: __Revision
 key: __revision
 content-length: 36
 
-9dda9561-707a-4379-8e3e-d8be74eddf83
+66ae9b18-c266-4a2d-8607-81e82e343895
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 34
 
-20140331T180713:635318860335143622
+20150515T151806:635672998861708196
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -76,11 +76,4 @@ name: __Workflow state
 key: __workflow state
 content-length: 38
 
-{8AD77832-A5A9-4D4C-BF8A-186B21A56204}
-----field----
-field: {001DD393-96C5-490B-924A-B0F25CD9EFD8}
-name: __Lock
-key: __lock
-content-length: 5
-
-<r />
+{847A34F1-135D-4728-B5DE-30899218D2B2}

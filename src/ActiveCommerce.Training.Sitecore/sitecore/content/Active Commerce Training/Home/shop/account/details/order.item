@@ -1,9 +1,9 @@
 ----item----
 version: 1
-id: {FCC5148D-5F32-42BA-88EE-FE26AC0A7A70}
+id: {37C0C95A-35B0-468D-B0C8-49381B4CD682}
 database: master
 path: /sitecore/content/Active Commerce Training/Home/shop/account/details/order
-parent: {BD1DEF58-55C6-4582-A387-4233FFBD3B65}
+parent: {93D4C8C6-88E5-476E-A5B6-5A509B2FC20F}
 name: order
 master: {B0DB2EFD-FFF5-4D6D-ABC9-0C2026B0AD18}
 template: {B52C135C-3385-47DE-B809-71B91482E75E}
@@ -26,7 +26,7 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: 7367ab3f-c809-4e5a-b6de-d89fe0d67023
+revision: 1cb1ee14-337a-4059-9c5f-d94264675552
 
 ----field----
 field: {3CB48796-2247-46BE-806C-B0611FA99BC5}
@@ -36,26 +36,19 @@ content-length: 13
 
 Order Details
 ----field----
-field: {CA15E1F5-65D5-4CEE-9DB4-4DC4B92B1F68}
+field: {35F30126-A070-4E55-8978-E59AB4A4F5A6}
 name: Shipping Address
 key: shipping address
 content-length: 16
 
 Shipping Address
 ----field----
-field: {7B28797D-D867-4976-8B18-4C9CD529CCE1}
+field: {4BCF16F1-F930-49B8-8646-EFBACFF85F2B}
 name: Billing Address
 key: billing address
 content-length: 15
 
 Billing Address
-----field----
-field: {E3C1145B-3B2D-4E36-B1E2-DAACB65BC1E9}
-name: Payment Method
-key: payment method
-content-length: 14
-
-Payment Method
 ----field----
 field: {14AEED2F-8377-4C58-AA71-5ECB3D6C5302}
 name: Order Summary
@@ -63,6 +56,13 @@ key: order summary
 content-length: 13
 
 Order Summary
+----field----
+field: {4A33A5BC-6049-441F-AB27-F6F35145686A}
+name: Payment Method
+key: payment method
+content-length: 14
+
+Payment Method
 ----field----
 field: {B25B7D1A-BCAE-42C5-BA94-C587213EA024}
 name: View All Orders
@@ -97,21 +97,21 @@ name: __Created
 key: __created
 content-length: 15
 
-20140331T170630
+20150515T151738
 ----field----
 field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
 name: __Revision
 key: __revision
 content-length: 36
 
-7367ab3f-c809-4e5a-b6de-d89fe0d67023
+1cb1ee14-337a-4059-9c5f-d94264675552
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 34
 
-20140331T180713:635318860334403580
+20150515T151738:635672998586190184
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -125,11 +125,4 @@ name: __Workflow state
 key: __workflow state
 content-length: 38
 
-{8AD77832-A5A9-4D4C-BF8A-186B21A56204}
-----field----
-field: {001DD393-96C5-490B-924A-B0F25CD9EFD8}
-name: __Lock
-key: __lock
-content-length: 5
-
-<r />
+{847A34F1-135D-4728-B5DE-30899218D2B2}

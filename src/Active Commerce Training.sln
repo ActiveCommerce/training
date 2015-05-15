@@ -17,7 +17,7 @@ Project("{CAA73BB0-EF22-4D79-A57E-DF67B3BA9C80}") = "ActiveCommerce.Training.Shi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ActiveCommerce.Training.Web", "ActiveCommerce.Training.Web\ActiveCommerce.Training.Web.csproj", "{0E21B3B1-03F5-44E7-B498-E5F19BD785E6}"
 EndProject
-Project("{CAA73BB0-EF22-4D79-A57E-DF67B3BA9C80}") = "ActiveCommerce.Training.Sitecore", "ActiveCommerce.Training.Sitecore\ActiveCommerce.Training.Sitecore.scproj", "{C4BDDC75-0FC7-44E0-9D82-01D8419E57DD}"
+Project("{CAA73BB0-EF22-4D79-A57E-DF67B3BA9C80}") = "ActiveCommerce.Training.Web.Sitecore", "ActiveCommerce.Training.Sitecore\ActiveCommerce.Training.Web.Sitecore.scproj", "{C4BDDC75-0FC7-44E0-9D82-01D8419E57DD}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ActiveCommerce.Training.ProductImport", "ActiveCommerce.Training.ProductImport\ActiveCommerce.Training.ProductImport.csproj", "{CAFD761C-A3D1-4089-9BBC-C0DF64E2F053}"
 EndProject

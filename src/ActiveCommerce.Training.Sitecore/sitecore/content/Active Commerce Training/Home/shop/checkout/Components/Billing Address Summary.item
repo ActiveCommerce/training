@@ -1,9 +1,9 @@
 ----item----
 version: 1
-id: {216652F8-1D12-4E07-A4F1-D43F4F35814A}
+id: {E23105EB-ED7C-4A8D-8390-43CC53538EF0}
 database: master
 path: /sitecore/content/Active Commerce Training/Home/shop/checkout/Components/Billing Address Summary
-parent: {C9594DB4-4E6E-414A-A9AA-64DB10064F2F}
+parent: {1A371194-30BE-426E-BF67-526C3FD7468C}
 name: Billing Address Summary
 master: {B0DB2EFD-FFF5-4D6D-ABC9-0C2026B0AD18}
 template: {541710F1-BD1F-4DE1-9B6B-3ED8424FA77D}
@@ -26,7 +26,7 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: 1c8845d7-b81f-49f9-a6cd-b2d5322db295
+revision: 351307a3-5273-4955-b262-97f862e90fc0
 
 ----field----
 field: {3CB48796-2247-46BE-806C-B0611FA99BC5}
@@ -41,7 +41,7 @@ name: __Created
 key: __created
 content-length: 15
 
-20140331T170628
+20150515T151736
 ----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
@@ -55,14 +55,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-1c8845d7-b81f-49f9-a6cd-b2d5322db295
+351307a3-5273-4955-b262-97f862e90fc0
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 34
 
-20140331T180656:635318860164063837
+20150515T151736:635672998567210400
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -76,11 +76,4 @@ name: __Workflow state
 key: __workflow state
 content-length: 38
 
-{8AD77832-A5A9-4D4C-BF8A-186B21A56204}
-----field----
-field: {001DD393-96C5-490B-924A-B0F25CD9EFD8}
-name: __Lock
-key: __lock
-content-length: 5
-
-<r />
+{847A34F1-135D-4728-B5DE-30899218D2B2}

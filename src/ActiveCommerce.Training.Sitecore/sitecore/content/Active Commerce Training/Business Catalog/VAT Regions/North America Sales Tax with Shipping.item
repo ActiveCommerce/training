@@ -1,9 +1,9 @@
 ----item----
 version: 1
-id: {4877F38B-A48E-46F3-A36B-5A1DFAD73B84}
+id: {39E152BF-5510-4058-B66D-EBACB9182BDD}
 database: master
 path: /sitecore/content/Active Commerce Training/Business Catalog/VAT Regions/North America Sales Tax with Shipping
-parent: {59952757-1457-44E8-BCC9-DE420A3B3AEB}
+parent: {30D65DAB-177A-446E-A330-3C7C4FFE8F36}
 name: North America Sales Tax with Shipping
 master: {B0DB2EFD-FFF5-4D6D-ABC9-0C2026B0AD18}
 template: {E2B59108-59E0-4502-89D3-A62A83A84327}
@@ -47,7 +47,7 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: a62a1a73-6325-49bb-aa7b-6dc2d713a9b9
+revision: 2d57e91e-c4a8-4a52-92bc-3227937a9f18
 
 ----field----
 field: {EE4BD860-A144-4869-9E21-FA2441A85864}
@@ -62,21 +62,21 @@ name: __Created
 key: __created
 content-length: 15
 
-20140331T170632
+20150515T151742
 ----field----
 field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
 name: __Revision
 key: __revision
 content-length: 36
 
-a62a1a73-6325-49bb-aa7b-6dc2d713a9b9
+2d57e91e-c4a8-4a52-92bc-3227937a9f18
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 34
 
-20140331T180712:635318860325203054
+20150515T151742:635672998622438460
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -90,11 +90,4 @@ name: __Workflow state
 key: __workflow state
 content-length: 38
 
-{8AD77832-A5A9-4D4C-BF8A-186B21A56204}
-----field----
-field: {001DD393-96C5-490B-924A-B0F25CD9EFD8}
-name: __Lock
-key: __lock
-content-length: 5
-
-<r />
+{847A34F1-135D-4728-B5DE-30899218D2B2}

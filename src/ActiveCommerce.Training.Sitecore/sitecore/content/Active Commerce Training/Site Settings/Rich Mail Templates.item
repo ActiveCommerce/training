@@ -1,9 +1,9 @@
 ----item----
 version: 1
-id: {1A8A2A6A-4531-40E4-B80B-62D2A330E4E5}
+id: {111BDCCB-D2E2-4D1E-9E7E-63FE5B69AA6D}
 database: master
 path: /sitecore/content/Active Commerce Training/Site Settings/Rich Mail Templates
-parent: {D769C070-247E-4379-A88E-ACD811D2E815}
+parent: {C220FAEB-5DFA-47F5-B0A9-7779069502AB}
 name: Rich Mail Templates
 master: {B0DB2EFD-FFF5-4D6D-ABC9-0C2026B0AD18}
 template: {A87A00B1-E6DB-45AB-8B54-636FEC3B5523}
@@ -47,7 +47,7 @@ ar|extranet\Everyone|pe|-item:read|
 ----version----
 language: en
 version: 1
-revision: 50e35776-c48e-4847-bbd4-c66ac4f615b3
+revision: 6f2d356e-2c3d-4d91-b241-040b6021ccc7
 
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
@@ -62,7 +62,7 @@ name: __Created
 key: __created
 content-length: 15
 
-20140331T170656
+20150515T151805
 ----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
@@ -76,14 +76,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-50e35776-c48e-4847-bbd4-c66ac4f615b3
+6f2d356e-2c3d-4d91-b241-040b6021ccc7
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 34
 
-20140331T170656:635318824167855249
+20150515T151805:635672998855640888
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

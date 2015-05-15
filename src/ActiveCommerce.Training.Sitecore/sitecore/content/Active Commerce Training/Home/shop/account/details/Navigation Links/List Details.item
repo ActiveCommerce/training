@@ -1,9 +1,9 @@
 ----item----
 version: 1
-id: {16D0A1FD-AB6D-4756-9B11-BBD03951D47A}
+id: {34F110F8-E778-4CA0-B73F-4599763BCA74}
 database: master
 path: /sitecore/content/Active Commerce Training/Home/shop/account/details/Navigation Links/List Details
-parent: {56E8FBC0-5820-4D3E-9448-DD1951165B72}
+parent: {969AC45F-FCB2-4128-9C6D-9CEBC2547850}
 name: List Details
 master: {B0DB2EFD-FFF5-4D6D-ABC9-0C2026B0AD18}
 template: {F1E5339F-3A8F-4CE7-9021-E068B64285B1}
@@ -22,7 +22,7 @@ name: Link
 key: link
 content-length: 177
 
-<link id="{B4E33F3F-6972-4019-92AC-F3C3B91376DD}" querystring="" url="/sitecore/content/Active Commerce Training/Home/shop/account/details/list" target="" linktype="internal" />
+<link id="{311A1B2C-1E70-42BC-94C6-D544C016CFA1}" querystring="" url="/sitecore/content/Active Commerce Training/Home/shop/account/details/list" target="" linktype="internal" />
 ----field----
 field: {F6D8A61C-2F84-4401-BD24-52D2068172BC}
 name: __Originator
@@ -40,7 +40,7 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: 614cc892-9b54-43b2-a135-ea2fa72d0b09
+revision: d1bbb574-492c-4de4-959c-303cca195dc3
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -48,7 +48,7 @@ name: __Created
 key: __created
 content-length: 15
 
-20140331T170630
+20150515T151738
 ----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
@@ -62,14 +62,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-614cc892-9b54-43b2-a135-ea2fa72d0b09
+d1bbb574-492c-4de4-959c-303cca195dc3
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 34
 
-20140331T180708:635318860284370718
+20150515T151806:635672998861708196
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -83,11 +83,4 @@ name: __Workflow state
 key: __workflow state
 content-length: 38
 
-{8AD77832-A5A9-4D4C-BF8A-186B21A56204}
-----field----
-field: {001DD393-96C5-490B-924A-B0F25CD9EFD8}
-name: __Lock
-key: __lock
-content-length: 5
-
-<r />
+{847A34F1-135D-4728-B5DE-30899218D2B2}

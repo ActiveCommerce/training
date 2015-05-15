@@ -1,9 +1,9 @@
 ----item----
 version: 1
-id: {7720C25E-B240-4920-81F7-78CEDF57D8FF}
+id: {DE4E2014-A8D9-46A4-8C7C-BCE202FF5659}
 database: master
 path: /sitecore/content/Active Commerce Training/Site Settings/MailTemplates/Order Processing Error
-parent: {1E3728DE-E87E-495F-B472-7D5F62D2CC1E}
+parent: {F03AB7C8-500D-4199-8AB0-521C001F810B}
 name: Order Processing Error
 master: {B0DB2EFD-FFF5-4D6D-ABC9-0C2026B0AD18}
 template: {D21A3FBA-DCC2-429F-8301-03122C9F5F1C}
@@ -33,7 +33,7 @@ content-length: 0
 ----version----
 language: en
 version: 1
-revision: 417f1106-336b-4622-a648-3db0bf2046bc
+revision: bbe93b9e-b261-4389-a5b8-403ae1176312
 
 ----field----
 field: {0D460F03-34DF-444A-9C76-7997F0069155}
@@ -46,29 +46,43 @@ Order Processing Error: {Error}
 field: {27E74DE9-CC60-4CC4-BF45-C164A3099187}
 name: Body
 key: body
-content-length: 467
+content-length: 856
 
 <p>There was a serious error during order processing. Details are below.</p>
 <table>
     <tbody>
         <tr>
-            <th>Step</th>
-            <td>{Step}</td>
-        </tr>
-        <tr>
-            <th>Error</th>
-            <td>{Error}</td>
-        </tr>
-        <tr>
-            <th>Order Number</th>
+            <th align="left">Order Number</th>
             <td>{OrderNumber}</td>
         </tr>
         <tr>
-            <th>Customer</th>
+            <th align="left">Customer</th>
             <td>{Customer}</td>
+        </tr>
+        <tr>
+            <th align="left">Step</th>
+            <td>{Step}</td>
+        </tr>
+        <tr>
+            <th align="left">Error</th>
+            <td>{Error}</td>
         </tr>
     </tbody>
 </table>
+<br/>
+<table>
+    <tbody>
+        <tr><th align="left">Messages</th></tr>
+        <tr><td><pre>{Messages}</pre></td></tr>
+    </tbody>
+</table>
+<table>
+    <tbody>
+        <tr><th align="left">Exceptions</th></tr>
+        <tr><td><pre>{Exceptions}</pre></td></tr>
+    </tbody>
+</table>
+<p>Additional details can be found in the log.</p>
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
@@ -82,7 +96,7 @@ name: __Created
 key: __created
 content-length: 15
 
-20140331T170656
+20150515T151805
 ----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
@@ -96,14 +110,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-417f1106-336b-4622-a648-3db0bf2046bc
+bbe93b9e-b261-4389-a5b8-403ae1176312
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 34
 
-20140331T170656:635318824167385222
+20150515T151805:635672998855174172
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

@@ -1,9 +1,9 @@
 ----item----
 version: 1
-id: {476AE054-E2E4-4382-887F-D198A07FF964}
+id: {B47E1132-D10E-4F2F-8BAA-61773794FD28}
 database: master
 path: /sitecore/content/Active Commerce Training/Home/shop/cart/Navigation Links/Login
-parent: {C7BFAC12-3C99-41EA-88B9-010CAFE6E181}
+parent: {3CEA8E08-7F54-4D28-AE55-701317983D37}
 name: Login
 master: {B0DB2EFD-FFF5-4D6D-ABC9-0C2026B0AD18}
 template: {F1E5339F-3A8F-4CE7-9021-E068B64285B1}
@@ -22,7 +22,7 @@ name: Link
 key: link
 content-length: 207
 
-<link text="" linktype="internal" url="/sitecore/content/Active Commerce Training/Home/shop/checkout-login" anchor="" title="" class="" querystring="" target="" id="{EF7FA430-620D-4D21-8CD6-3DE27B59C4F1}" />
+<link text="" linktype="internal" url="/sitecore/content/Active Commerce Training/Home/shop/checkout-login" anchor="" title="" class="" querystring="" target="" id="{D5B4ED02-CEBE-40F7-A1CB-4D15AA9485A0}" />
 ----field----
 field: {F6D8A61C-2F84-4401-BD24-52D2068172BC}
 name: __Originator
@@ -40,7 +40,7 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: c7fd2781-ccf1-43d2-b791-ec1e2d9a8fa7
+revision: 62fa20ce-681c-4cd8-a4e3-47aa957c409e
 
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
@@ -55,7 +55,7 @@ name: __Created
 key: __created
 content-length: 15
 
-20140331T170626
+20150515T151735
 ----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
@@ -69,14 +69,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-c7fd2781-ccf1-43d2-b791-ec1e2d9a8fa7
+62fa20ce-681c-4cd8-a4e3-47aa957c409e
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 34
 
-20140331T180708:635318860285290771
+20150515T151805:635672998858596756
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -90,11 +90,4 @@ name: __Workflow state
 key: __workflow state
 content-length: 38
 
-{8AD77832-A5A9-4D4C-BF8A-186B21A56204}
-----field----
-field: {001DD393-96C5-490B-924A-B0F25CD9EFD8}
-name: __Lock
-key: __lock
-content-length: 5
-
-<r />
+{847A34F1-135D-4728-B5DE-30899218D2B2}

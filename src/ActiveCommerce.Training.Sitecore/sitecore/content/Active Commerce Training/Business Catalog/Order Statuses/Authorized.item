@@ -1,9 +1,9 @@
 ----item----
 version: 1
-id: {8B5BA2C5-8AF5-4433-BB0F-C2513C7B7FB1}
+id: {21A6D32C-0ECF-4A03-9F37-34328A3356F4}
 database: master
 path: /sitecore/content/Active Commerce Training/Business Catalog/Order Statuses/Authorized
-parent: {E49F84FF-B768-42A5-9D31-80D294F8095C}
+parent: {848B6F75-1276-4BBC-8B69-0B9A1EF8BE4C}
 name: Authorized
 master: {B0DB2EFD-FFF5-4D6D-ABC9-0C2026B0AD18}
 template: {3F593780-BA47-4AA9-B413-597291DDE655}
@@ -29,7 +29,7 @@ name: Available List
 key: available list
 content-length: 77
 
-{A8755CAB-6BF8-4FCA-BDF2-BAE68A6B884A}|{E6B2C432-9491-4B02-9B12-48AF88E47AF7}
+{E2996496-9CF9-498E-B672-93EE46C266AF}|{BC140AF3-CB6D-4732-A600-51E278E49526}
 ----field----
 field: {F6D8A61C-2F84-4401-BD24-52D2068172BC}
 name: __Originator
@@ -47,7 +47,7 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: 374dcf57-bb1a-434c-b51b-21a620afe3a0
+revision: 7ff443e8-b188-4963-9961-244837952df4
 
 ----field----
 field: {EE4BD860-A144-4869-9E21-FA2441A85864}
@@ -69,7 +69,7 @@ name: __Created
 key: __created
 content-length: 15
 
-20140331T170632
+20150515T151742
 ----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
@@ -83,14 +83,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-374dcf57-bb1a-434c-b51b-21a620afe3a0
+7ff443e8-b188-4963-9961-244837952df4
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 34
 
-20140331T180655:635318860157143441
+20150515T151806:635672998864819636
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -104,11 +104,4 @@ name: __Workflow state
 key: __workflow state
 content-length: 38
 
-{8AD77832-A5A9-4D4C-BF8A-186B21A56204}
-----field----
-field: {001DD393-96C5-490B-924A-B0F25CD9EFD8}
-name: __Lock
-key: __lock
-content-length: 5
-
-<r />
+{847A34F1-135D-4728-B5DE-30899218D2B2}

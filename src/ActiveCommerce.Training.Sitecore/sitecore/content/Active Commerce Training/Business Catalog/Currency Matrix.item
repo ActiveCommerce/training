@@ -1,9 +1,9 @@
 ----item----
 version: 1
-id: {0E799749-A597-48D5-A5B4-AA01A1F00828}
+id: {F4E3916F-DC09-4D7C-98E5-E6BA4E7A885F}
 database: master
 path: /sitecore/content/Active Commerce Training/Business Catalog/Currency Matrix
-parent: {62C35200-BBD6-451F-B8E7-3C4C8BDE3868}
+parent: {C2461784-47D9-431E-B808-64D17187F9BE}
 name: Currency Matrix
 master: {B0DB2EFD-FFF5-4D6D-ABC9-0C2026B0AD18}
 template: {813E9906-B18E-4CBA-8E29-6F19F0A6D00C}
@@ -26,7 +26,7 @@ content-length: 0
 ----version----
 language: en
 version: 1
-revision: 49f8a378-fd8b-454d-9c88-9066a2cd85c9
+revision: 1cd1d44b-8e2a-42b9-b629-25f5b3e902ed
 
 ----field----
 field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
@@ -41,21 +41,21 @@ name: __Created
 key: __created
 content-length: 15
 
-20140331T170655
+20150515T151804
 ----field----
 field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
 name: __Revision
 key: __revision
 content-length: 36
 
-49f8a378-fd8b-454d-9c88-9066a2cd85c9
+1cd1d44b-8e2a-42b9-b629-25f5b3e902ed
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 34
 
-20140331T170655:635318824157174638
+20150515T151804:635672998843972988
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

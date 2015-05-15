@@ -1,9 +1,9 @@
 ----item----
 version: 1
-id: {35B669EE-0267-4B30-8BDD-39D8E5890A56}
+id: {C6566983-EEA0-4DFB-9C03-0115DDA8C00F}
 database: master
 path: /sitecore/content/Active Commerce Training/Home/shop/checkout/Navigation Links/Receipt
-parent: {7315605B-4844-4BE0-B640-241C8790C9F5}
+parent: {123F20C0-7415-43F1-A092-CB653A301AD2}
 name: Receipt
 master: {B0DB2EFD-FFF5-4D6D-ABC9-0C2026B0AD18}
 template: {F1E5339F-3A8F-4CE7-9021-E068B64285B1}
@@ -22,7 +22,7 @@ name: Link
 key: link
 content-length: 200
 
-<link text="" linktype="internal" url="/sitecore/content/Active Commerce Training/Home/shop/receipt" anchor="" title="" class="" querystring="" target="" id="{6CD15AF5-24ED-49D9-A496-686872946F6F}" />
+<link text="" linktype="internal" url="/sitecore/content/Active Commerce Training/Home/shop/receipt" anchor="" title="" class="" querystring="" target="" id="{39854575-13AC-444B-927C-5E49B7EE906C}" />
 ----field----
 field: {F6D8A61C-2F84-4401-BD24-52D2068172BC}
 name: __Originator
@@ -40,7 +40,7 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: c0f894ce-40c8-4e8a-853c-44987a69759e
+revision: 135def14-9451-42ea-9e15-3955ea519d52
 
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
@@ -55,7 +55,7 @@ name: __Created
 key: __created
 content-length: 15
 
-20140331T170629
+20150515T151737
 ----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
@@ -69,14 +69,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-c0f894ce-40c8-4e8a-853c-44987a69759e
+135def14-9451-42ea-9e15-3955ea519d52
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 34
 
-20140331T180715:635318860356574848
+20150515T151806:635672998860774764
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -90,11 +90,4 @@ name: __Workflow state
 key: __workflow state
 content-length: 38
 
-{8AD77832-A5A9-4D4C-BF8A-186B21A56204}
-----field----
-field: {001DD393-96C5-490B-924A-B0F25CD9EFD8}
-name: __Lock
-key: __lock
-content-length: 5
-
-<r />
+{847A34F1-135D-4728-B5DE-30899218D2B2}

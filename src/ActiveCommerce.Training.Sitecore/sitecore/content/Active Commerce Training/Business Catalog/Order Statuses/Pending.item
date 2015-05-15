@@ -1,9 +1,9 @@
 ----item----
 version: 1
-id: {6C9A9E6E-7EE8-4823-A1AB-95C95D7593B1}
+id: {82D8E3B3-FCCF-4569-A3BC-AA56A51C492B}
 database: master
 path: /sitecore/content/Active Commerce Training/Business Catalog/Order Statuses/Pending
-parent: {E49F84FF-B768-42A5-9D31-80D294F8095C}
+parent: {848B6F75-1276-4BBC-8B69-0B9A1EF8BE4C}
 name: Pending
 master: {B0DB2EFD-FFF5-4D6D-ABC9-0C2026B0AD18}
 template: {3F593780-BA47-4AA9-B413-597291DDE655}
@@ -29,7 +29,7 @@ name: Available List
 key: available list
 content-length: 116
 
-{E6B2C432-9491-4B02-9B12-48AF88E47AF7}|{A8755CAB-6BF8-4FCA-BDF2-BAE68A6B884A}|{9D53AD99-F4BC-42A4-8F02-D2364AD0E2B9}
+{BC140AF3-CB6D-4732-A600-51E278E49526}|{E2996496-9CF9-498E-B672-93EE46C266AF}|{8CDE9491-CA65-4735-BB3A-8F26F3263062}
 ----field----
 field: {06D5295C-ED2F-4A54-9BF2-26228D113318}
 name: __Icon
@@ -61,7 +61,7 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: b77ccebd-9d83-4d63-ad97-11ac9542f29d
+revision: 6ce02502-5612-48bf-8fa3-9a4bc9b5ca7e
 
 ----field----
 field: {EE4BD860-A144-4869-9E21-FA2441A85864}
@@ -76,21 +76,21 @@ name: __Created
 key: __created
 content-length: 15
 
-20140331T170632
+20150515T151742
 ----field----
 field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
 name: __Revision
 key: __revision
 content-length: 36
 
-b77ccebd-9d83-4d63-ad97-11ac9542f29d
+6ce02502-5612-48bf-8fa3-9a4bc9b5ca7e
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 34
 
-20140331T180714:635318860345994243
+20150515T151806:635672998865597496
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -104,11 +104,4 @@ name: __Workflow state
 key: __workflow state
 content-length: 38
 
-{8AD77832-A5A9-4D4C-BF8A-186B21A56204}
-----field----
-field: {001DD393-96C5-490B-924A-B0F25CD9EFD8}
-name: __Lock
-key: __lock
-content-length: 5
-
-<r />
+{847A34F1-135D-4728-B5DE-30899218D2B2}

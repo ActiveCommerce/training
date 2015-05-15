@@ -1,9 +1,9 @@
 ----item----
 version: 1
-id: {8C50D37D-1F8D-4E3C-B40E-052899D6079E}
+id: {5D02B2FB-9939-4545-A7B7-CFA7E51D4BE5}
 database: master
 path: /sitecore/content/Active Commerce Training/Business Catalog/Currencies/Euro
-parent: {ADA52D00-A2D3-40C9-B264-474CA6DD6F1A}
+parent: {0FF26B76-65E3-40CF-8A0A-941B1C8F0499}
 name: Euro
 master: {B0DB2EFD-FFF5-4D6D-ABC9-0C2026B0AD18}
 template: {3B4681DD-E900-4A56-B162-CE59358C973D}
@@ -40,7 +40,7 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: 06cadeaf-e9d9-480b-9bc8-46ca8f4444d4
+revision: 5a199e53-2fd2-4d66-944d-9f02c2e8863d
 
 ----field----
 field: {EE4BD860-A144-4869-9E21-FA2441A85864}
@@ -55,21 +55,21 @@ name: __Created
 key: __created
 content-length: 15
 
-20140331T170654
+20150515T151803
 ----field----
 field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
 name: __Revision
 key: __revision
 content-length: 36
 
-06cadeaf-e9d9-480b-9bc8-46ca8f4444d4
+5a199e53-2fd2-4d66-944d-9f02c2e8863d
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 34
 
-20140331T180702:635318860228107500
+20150515T151803:635672998831838372
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -83,11 +83,4 @@ name: __Workflow state
 key: __workflow state
 content-length: 38
 
-{8AD77832-A5A9-4D4C-BF8A-186B21A56204}
-----field----
-field: {001DD393-96C5-490B-924A-B0F25CD9EFD8}
-name: __Lock
-key: __lock
-content-length: 5
-
-<r />
+{847A34F1-135D-4728-B5DE-30899218D2B2}

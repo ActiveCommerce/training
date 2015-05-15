@@ -1,0 +1,72 @@
+----item----
+version: 1
+id: {5DF513CC-372E-40F0-9DB8-5EE74C108690}
+database: master
+path: /sitecore/content/Active Commerce Training/Business Catalog/States/Open
+parent: {515BF5EA-63A9-4B59-90C2-A5E431855FDF}
+name: Open
+master: {B0DB2EFD-FFF5-4D6D-ABC9-0C2026B0AD18}
+template: {6D7C46BA-67C1-4A48-9552-18CB5EE438A3}
+templatekey: State
+
+----field----
+field: {3E7F1303-5304-401E-8617-784CE649202D}
+name: Code
+key: code
+content-length: 4
+
+Open
+----field----
+field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
+name: __Sortorder
+key: __sortorder
+content-length: 3
+
+200
+----field----
+field: {F6D8A61C-2F84-4401-BD24-52D2068172BC}
+name: __Originator
+key: __originator
+content-length: 0
+
+
+----version----
+language: en
+version: 1
+revision: e8417957-8512-46d7-b00b-9796751c1cd6
+
+----field----
+field: {20C04472-E5FE-45D9-82B0-D3E8D08DEF7B}
+name: Name
+key: name
+content-length: 4
+
+Open
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 15
+
+20150515T151740
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+e8417957-8512-46d7-b00b-9796751c1cd6
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20150515T151740:635672998604080964
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

@@ -1,9 +1,9 @@
 ----item----
 version: 1
-id: {ADA52D00-A2D3-40C9-B264-474CA6DD6F1A}
+id: {0FF26B76-65E3-40CF-8A0A-941B1C8F0499}
 database: master
 path: /sitecore/content/Active Commerce Training/Business Catalog/Currencies
-parent: {62C35200-BBD6-451F-B8E7-3C4C8BDE3868}
+parent: {C2461784-47D9-431E-B808-64D17187F9BE}
 name: Currencies
 master: {B0DB2EFD-FFF5-4D6D-ABC9-0C2026B0AD18}
 template: {D3301BD3-153B-40BE-8D65-BE07701B3FD3}
@@ -26,7 +26,7 @@ content-length: 0
 ----version----
 language: en
 version: 1
-revision: a9adbd7e-8ec9-4e25-891c-6a5145d8dd79
+revision: 6f0b3164-f2fe-4bd2-9938-2627c0d52abe
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -34,21 +34,21 @@ name: __Created
 key: __created
 content-length: 15
 
-20140331T170654
+20150515T151803
 ----field----
 field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
 name: __Revision
 key: __revision
 content-length: 36
 
-a9adbd7e-8ec9-4e25-891c-6a5145d8dd79
+6f0b3164-f2fe-4bd2-9938-2627c0d52abe
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 34
 
-20140331T170654:635318824141323731
+20150515T151803:635672998830438224
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

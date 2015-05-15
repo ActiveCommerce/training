@@ -1,9 +1,9 @@
 ----item----
 version: 1
-id: {BD1DEF58-55C6-4582-A387-4233FFBD3B65}
+id: {93D4C8C6-88E5-476E-A5B6-5A509B2FC20F}
 database: master
 path: /sitecore/content/Active Commerce Training/Home/shop/account/details
-parent: {CBCFB214-864C-46F3-9C72-DE6D4FE731F7}
+parent: {A976D75D-730F-4CB8-AC54-315667AC15B1}
 name: details
 master: {B0DB2EFD-FFF5-4D6D-ABC9-0C2026B0AD18}
 template: {43A0F891-0530-4134-8304-97C8D83D5822}
@@ -33,7 +33,7 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: c632b7a2-719e-47bc-8df4-37f992242154
+revision: c756d39c-a50e-4826-b147-3d7b5cc62b76
 
 ----field----
 field: {3CB48796-2247-46BE-806C-B0611FA99BC5}
@@ -55,21 +55,21 @@ name: __Created
 key: __created
 content-length: 15
 
-20140331T170630
+20150515T151738
 ----field----
 field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
 name: __Revision
 key: __revision
 content-length: 36
 
-c632b7a2-719e-47bc-8df4-37f992242154
+c756d39c-a50e-4826-b147-3d7b5cc62b76
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 34
 
-20140331T180701:635318860216366829
+20150515T151738:635672998584323320
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -83,11 +83,4 @@ name: __Workflow state
 key: __workflow state
 content-length: 38
 
-{8AD77832-A5A9-4D4C-BF8A-186B21A56204}
-----field----
-field: {001DD393-96C5-490B-924A-B0F25CD9EFD8}
-name: __Lock
-key: __lock
-content-length: 5
-
-<r />
+{847A34F1-135D-4728-B5DE-30899218D2B2}

@@ -1,9 +1,9 @@
 ----item----
 version: 1
-id: {D936ABB3-C68C-4443-B16A-312018F5354D}
+id: {94A2C2D0-3E46-44C9-BA87-C720D87EEA24}
 database: master
 path: /sitecore/content/Active Commerce Training/Business Catalog/Countries/United States/Alaska
-parent: {822FA989-38A6-4599-90EF-DE5D4AB81A3C}
+parent: {3649B9F4-F3FD-47EE-A66F-8A4CDEB893C0}
 name: Alaska
 master: {B0DB2EFD-FFF5-4D6D-ABC9-0C2026B0AD18}
 template: {226DDD63-9CD8-47B1-B68F-DE1ACBAFB3BB}
@@ -40,7 +40,7 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: 3bdebd2e-35dc-43f2-be16-6a80d100b595
+revision: 81932f5d-8921-42c9-a5f4-2cb07a990314
 
 ----field----
 field: {EE4BD860-A144-4869-9E21-FA2441A85864}
@@ -55,21 +55,21 @@ name: __Created
 key: __created
 content-length: 15
 
-20140331T170632
+20150515T151743
 ----field----
 field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
 name: __Revision
 key: __revision
 content-length: 36
 
-3bdebd2e-35dc-43f2-be16-6a80d100b595
+81932f5d-8921-42c9-a5f4-2cb07a990314
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 34
 
-20140331T180654:635318860148472945
+20150515T151743:635672998633484072
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -83,11 +83,4 @@ name: __Workflow state
 key: __workflow state
 content-length: 38
 
-{8AD77832-A5A9-4D4C-BF8A-186B21A56204}
-----field----
-field: {001DD393-96C5-490B-924A-B0F25CD9EFD8}
-name: __Lock
-key: __lock
-content-length: 5
-
-<r />
+{847A34F1-135D-4728-B5DE-30899218D2B2}

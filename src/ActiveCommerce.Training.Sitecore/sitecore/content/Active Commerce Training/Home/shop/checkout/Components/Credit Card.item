@@ -1,9 +1,9 @@
 ----item----
 version: 1
-id: {FAFE24B9-170B-4DB1-8AA4-880E63BD075E}
+id: {DC544F7F-3D5E-4E9D-B3A3-59410EE5CBD4}
 database: master
 path: /sitecore/content/Active Commerce Training/Home/shop/checkout/Components/Credit Card
-parent: {C9594DB4-4E6E-414A-A9AA-64DB10064F2F}
+parent: {1A371194-30BE-426E-BF67-526C3FD7468C}
 name: Credit Card
 master: {B0DB2EFD-FFF5-4D6D-ABC9-0C2026B0AD18}
 template: {19D1FFF1-BBC3-41DA-AB58-76F7B340DB7B}
@@ -26,7 +26,7 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: a62aeadc-939e-44e5-b606-01fe6d5d2c8f
+revision: 293149a5-bef1-4088-a1e6-9f9de8e6c824
 
 ----field----
 field: {3CB48796-2247-46BE-806C-B0611FA99BC5}
@@ -55,7 +55,7 @@ name: __Created
 key: __created
 content-length: 15
 
-20140331T170629
+20150515T151737
 ----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
@@ -69,14 +69,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-a62aeadc-939e-44e5-b606-01fe6d5d2c8f
+293149a5-bef1-4088-a1e6-9f9de8e6c824
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 34
 
-20140331T180700:635318860207206305
+20150515T151737:635672998573744424
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -90,11 +90,4 @@ name: __Workflow state
 key: __workflow state
 content-length: 38
 
-{8AD77832-A5A9-4D4C-BF8A-186B21A56204}
-----field----
-field: {001DD393-96C5-490B-924A-B0F25CD9EFD8}
-name: __Lock
-key: __lock
-content-length: 5
-
-<r />
+{847A34F1-135D-4728-B5DE-30899218D2B2}

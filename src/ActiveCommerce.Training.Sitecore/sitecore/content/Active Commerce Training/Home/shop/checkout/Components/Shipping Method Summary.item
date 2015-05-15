@@ -1,9 +1,9 @@
 ----item----
 version: 1
-id: {BB613927-103D-4734-B7BD-ABF4B62ED591}
+id: {E75A4B83-167D-4B0F-B173-BDF3CBB3ED9C}
 database: master
 path: /sitecore/content/Active Commerce Training/Home/shop/checkout/Components/Shipping Method Summary
-parent: {C9594DB4-4E6E-414A-A9AA-64DB10064F2F}
+parent: {1A371194-30BE-426E-BF67-526C3FD7468C}
 name: Shipping Method Summary
 master: {B0DB2EFD-FFF5-4D6D-ABC9-0C2026B0AD18}
 template: {541710F1-BD1F-4DE1-9B6B-3ED8424FA77D}
@@ -26,7 +26,7 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: e6130e32-9f35-4846-afc8-70b18843038b
+revision: 5e16f82a-7aea-4f9c-b69d-45b148f1f118
 
 ----field----
 field: {3CB48796-2247-46BE-806C-B0611FA99BC5}
@@ -41,7 +41,7 @@ name: __Created
 key: __created
 content-length: 15
 
-20140331T170628
+20150515T151737
 ----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
@@ -55,14 +55,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-e6130e32-9f35-4846-afc8-70b18843038b
+5e16f82a-7aea-4f9c-b69d-45b148f1f118
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 34
 
-20140331T180717:635318860376305977
+20150515T151737:635672998572810992
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -76,11 +76,4 @@ name: __Workflow state
 key: __workflow state
 content-length: 38
 
-{8AD77832-A5A9-4D4C-BF8A-186B21A56204}
-----field----
-field: {001DD393-96C5-490B-924A-B0F25CD9EFD8}
-name: __Lock
-key: __lock
-content-length: 5
-
-<r />
+{847A34F1-135D-4728-B5DE-30899218D2B2}
