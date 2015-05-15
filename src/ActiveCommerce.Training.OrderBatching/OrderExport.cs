@@ -4,6 +4,7 @@ using System.Linq;
 using System.ServiceModel;
 using ActiveCommerce.Orders;
 using ActiveCommerce.Orders.Management;
+using ActiveCommerce.Orders.States;
 using ActiveCommerce.ShopContext;
 using ActiveCommerce.SitecoreX;
 using Microsoft.Practices.Unity;
