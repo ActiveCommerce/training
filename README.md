@@ -29,6 +29,9 @@ and we provide no warranty. Use at your own risk.
 
 ## Product Stock
 
+[Product Stock Extension](./src/ActiveCommerce.Training.ProductStockExtension)
+- Example of extending the stock data stored in the Active Commerce database, allowing that data to be edited in the Content Editor, and using that data to implement new stock business rules.
+
 [Product Stock Update](./src/ActiveCommerce.Training.ProductStockUpdate)
 - Example of updating product stock data on a scheduled/batched basis.
 

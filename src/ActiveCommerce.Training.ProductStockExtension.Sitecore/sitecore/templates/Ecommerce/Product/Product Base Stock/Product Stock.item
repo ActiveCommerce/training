@@ -1,0 +1,281 @@
+----item----
+version: 1
+id: {76906055-1F71-4AD2-B308-DE6029DD64F4}
+database: master
+path: /sitecore/templates/Ecommerce/Product/Product Base Stock/Product Stock
+parent: {DDF12595-B4C7-45F3-A696-7F9F88C99951}
+name: Product Stock
+master: {00000000-0000-0000-0000-000000000000}
+template: {E269FBB5-3750-427A-9149-7AA950B49301}
+templatekey: Template section
+
+----field----
+field: {06D5295C-ED2F-4A54-9BF2-26228D113318}
+name: __Icon
+key: __icon
+content-length: 26
+
+Business/32x32/up_down.png
+----field----
+field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
+name: __Sortorder
+key: __sortorder
+content-length: 1
+
+4
+----version----
+language: da
+version: 1
+revision: c3b664ff-4bd9-47af-bf96-bf8e7b151f88
+
+----field----
+field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
+name: __Display name
+key: __display name
+content-length: 12
+
+Produktlager
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 18
+
+sitecore\Anonymous
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 34
+
+20150514T102000:635671956002116064
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 18
+
+sitecore\Anonymous
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+c3b664ff-4bd9-47af-bf96-bf8e7b151f88
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20150514T102135:635671956952565164
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 18
+
+sitecore\Anonymous
+----version----
+language: de-DE
+version: 1
+revision: 18c1c917-e250-465f-9dd0-7a9d01e7ce57
+
+----field----
+field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
+name: __Display name
+key: __display name
+content-length: 14
+
+Produktbestand
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 18
+
+sitecore\Anonymous
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 34
+
+20150514T102250:635671957704755975
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 18
+
+sitecore\Anonymous
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+18c1c917-e250-465f-9dd0-7a9d01e7ce57
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20150514T102348:635671958283431503
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 18
+
+sitecore\Anonymous
+----version----
+language: en
+version: 1
+revision: 1bfe65ce-4a77-402a-a30b-ff39b7108b71
+
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 15
+
+20100408T145900
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+1bfe65ce-4a77-402a-a30b-ff39b7108b71
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20120930T152036:634846152367631562
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----version----
+language: en
+version: 2
+revision: 06731ea3-ffc6-483d-8dc8-478d8d562965
+
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 15
+
+20100408T145900
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+06731ea3-ffc6-483d-8dc8-478d8d562965
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20150518T142741:635675560611026136
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----version----
+language: ja-JP
+version: 1
+revision: 1f38c847-0d51-4f7f-a621-c020fce5505e
+
+----field----
+field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
+name: __Display name
+key: __display name
+content-length: 4
+
+製品在庫
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 18
+
+sitecore\Anonymous
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 34
+
+20150514T102443:635671958833423499
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 18
+
+sitecore\Anonymous
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+1f38c847-0d51-4f7f-a621-c020fce5505e
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20150514T102541:635671959415311370
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 18
+
+sitecore\Anonymous
