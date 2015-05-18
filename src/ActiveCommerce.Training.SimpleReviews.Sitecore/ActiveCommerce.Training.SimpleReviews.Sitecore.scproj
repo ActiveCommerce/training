@@ -6,8 +6,8 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>52f653cf-7fdd-4ab8-b463-9c17c1b5d6d0</ProjectGuid>
     <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
-    <SourceWebPhysicalPath>..\ActiveCommerce.Training.NHibernate</SourceWebPhysicalPath>
-    <SourceWebProject>{710f1c37-f24f-4ad8-9fb7-bd76ab38f3e9}|ActiveCommerce.Training.NHibernate\ActiveCommerce.Training.SimpleReviews.csproj</SourceWebProject>
+    <SourceWebPhysicalPath>..\ActiveCommerce.Training.SimpleReviews</SourceWebPhysicalPath>
+    <SourceWebProject>{710f1c37-f24f-4ad8-9fb7-bd76ab38f3e9}|ActiveCommerce.Training.SimpleReviews\ActiveCommerce.Training.SimpleReviews.csproj</SourceWebProject>
     <SourceWebVirtualPath>/ActiveCommerce.Training.SimpleReviews.csproj</SourceWebVirtualPath>
     <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
     <EnableUpdateable>true</EnableUpdateable>
@@ -45,13 +45,10 @@
     </AssemblyAttributes>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ActiveCommerce.Training.NHibernate\ActiveCommerce.Training.SimpleReviews.csproj">
+    <ProjectReference Include="..\ActiveCommerce.Training.SimpleReviews\ActiveCommerce.Training.SimpleReviews.csproj">
       <Project>{710f1c37-f24f-4ad8-9fb7-bd76ab38f3e9}</Project>
       <Name>ActiveCommerce.Training.SimpleReviews</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <ExcludedAssemblies Include="Sitecore.%2a.dll" />
   </ItemGroup>
   <ItemGroup>
     <SitecoreItem Include="sitecore\client.item">
@@ -210,6 +207,9 @@
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>
+  </ItemGroup>
+  <ItemGroup>
+    <ExcludedAssemblies Include="Sitecore.%2a.dll" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\HedgehogDevelopment\SitecoreProject\v9.0\HedgehogDevelopment.SitecoreProject.targets" />
 </Project>
