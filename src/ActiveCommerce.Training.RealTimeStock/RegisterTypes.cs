@@ -7,7 +7,7 @@ namespace ActiveCommerce.Training.RealTimeStock
     {
         public void Process(Microsoft.Practices.Unity.IUnityContainer container)
         {
-            container.RegisterType<Sitecore.Ecommerce.DomainModel.Products.IProductStockManager, ProductStockManager>();
+            container.RegisterType<ActiveCommerce.Products.Stock.IProductStockManager, ProductStockManager>();
         }
 
         public int SortOrder
