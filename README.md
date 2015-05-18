@@ -50,8 +50,8 @@ and we provide no warranty. Use at your own risk.
 [Price Comparison](./src/ActiveCommerce.Training.ComparePrice)
 - Allow display of price within product comparison tables
 
-[Price Testing POC](./src/ActiveCommerce.Training.PriceTesting)
-- Experimental example of implementing pricing rules to allow A/B testing of product pricing.
+[Pricing Rules Example](./src/ActiveCommerce.Training.PriceRules)
+- Demonstrates how you can manipulate product pricing using the Sitecore Rules Engine
 
 [Custom Tax Calculator](./src/ActiveCommerce.Training.TaxCalculator)
 - Example of implementing a custom tax calculator in order to implement custom tax logic or integrate with an external tax service.
