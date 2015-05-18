@@ -4,9 +4,9 @@ using ActiveCommerce.ShopContext;
 using Sitecore.Data;
 using Sitecore.Data.Items;
 using Sitecore.Ecommerce;
-using Sitecore.Ecommerce.DomainModel.Products;
 using Sitecore.SecurityModel;
 using Sitecore.Tasks;
+using Sitecore.Ecommerce.DomainModel.Products;
 
 namespace ActiveCommerce.Training.ProductStockUpdate
 {
@@ -25,7 +25,7 @@ namespace ActiveCommerce.Training.ProductStockUpdate
                 {
                     Sitecore.Diagnostics.Log.Info("Executing import...", this);
 
-                    var stockManager = Sitecore.Ecommerce.Context.Entity.Resolve<IProductStockManager>();
+                    var stockManager = Sitecore.Ecommerce.Context.Entity.Resolve<ActiveCommerce.Products.Stock.IProductStockManager>();
                     var xml = XElement.Load(Sitecore.IO.FileUtil.MapPath(file));
                     var books = xml.Descendants("book");
                     foreach (var book in books)

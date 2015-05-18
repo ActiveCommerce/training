@@ -20,6 +20,8 @@
     <Name>ActiveCommerce.Training.ProductStockUpdate.Sitecore</Name>
     <RootNamespace>ActiveCommerce.Training.ProductStockUpdate.Sitecore</RootNamespace>
     <SitecoreDatabase>master</SitecoreDatabase>
+    <EnableCodeGeneration>false</EnableCodeGeneration>
+    <AssemblyStatus>Exclude</AssemblyStatus>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -51,9 +53,6 @@
     <AssemblyAttributes Include="AssemblyVersion">
       <Value>$(AssemblyVersion)</Value>
     </AssemblyAttributes>
-  </ItemGroup>
-  <ItemGroup>
-    <ExcludedAssemblies Include="Sitecore.%2a.dll" />
   </ItemGroup>
   <ItemGroup>
     <SitecoreItem Include="sitecore\system.item">
@@ -92,6 +91,10 @@
       <Project>{abc8de14-1d71-4519-adc3-897aabb646fc}</Project>
       <Name>ActiveCommerce.Training.ProductStockUpdate</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ExcludedAssemblies Include="Sitecore.%2a.dll" />
+    <ExcludedAssemblies Include="Sitecore.%2a.dll" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\HedgehogDevelopment\SitecoreProject\v9.0\HedgehogDevelopment.SitecoreProject.targets" />
 </Project>
