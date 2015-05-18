@@ -19,11 +19,12 @@
 })(ActiveCommerce.Product.init);
 
 
-ActiveCommerce.Product.Variants.updateDisplay = (function (baseUpdateDisplay) {
-
-    return function () {
-        baseUpdateDisplay();
-        // Force a call to quatity change to ensure it stays in the rel attribute
-        $('#options-qty').change();
+ActiveCommerce.Product.Variants.onVariantSelected = (function (baseOnVariantSelected) {
+    return function (match) {
+        baseOnVariantSelected(match);
+        // Force a call to quantity change to ensure it stays in the rel attribute
+        if (match.Code) {
+            $('#options-qty').change();
+        }
     };
-})(ActiveCommerce.Product.Variants.updateDisplay);
+})(ActiveCommerce.Product.Variants.onVariantSelected);

@@ -17,9 +17,11 @@
         <% } %>
     </ol>
 
-    <% 
-        Bundles.AddInlineScript("ActiveCommerce.Product.Variants.store = " + ViewModel.Variants.ToJSON() + ";");
-    %>
+    <script type="text/javascript">
+        extend('ActiveCommerce.Product.Variants.serverConfig', {
+            store: <%= ViewModel.Variants.ToJSON() %>
+        });
+    </script>
     <% } %>
 
 	<div id="btn-add-to-cart">
