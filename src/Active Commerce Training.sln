@@ -75,9 +75,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ActiveCommerce.Training.Cus
 EndProject
 Project("{CAA73BB0-EF22-4D79-A57E-DF67B3BA9C80}") = "ActiveCommerce.Training.CustomCategory.Sitecore", "ActiveCommerce.Training.CustomCategory.Sitecore\ActiveCommerce.Training.CustomCategory.Sitecore.scproj", "{F9E3A877-697C-4392-B135-AE020A2203D7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ActiveCommerce.Training.PriceTesting", "ActiveCommerce.Training.PriceTesting\ActiveCommerce.Training.PriceTesting.csproj", "{30508475-7050-46AD-8300-A2AC85252DA4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ActiveCommerce.Training.PriceRules", "ActiveCommerce.Training.PriceRules\ActiveCommerce.Training.PriceRules.csproj", "{30508475-7050-46AD-8300-A2AC85252DA4}"
 EndProject
-Project("{CAA73BB0-EF22-4D79-A57E-DF67B3BA9C80}") = "ActiveCommerce.Training.PriceTesting.Sitecore", "ActiveCommerce.Training.PriceTesting.Sitecore\ActiveCommerce.Training.PriceTesting.Sitecore.scproj", "{5A85C68F-9F00-4B28-ACCC-5545B09C7EA4}"
+Project("{CAA73BB0-EF22-4D79-A57E-DF67B3BA9C80}") = "ActiveCommerce.Training.PriceRules.Sitecore", "ActiveCommerce.Training.PriceRules.Sitecore\ActiveCommerce.Training.PriceRules.Sitecore.scproj", "{5A85C68F-9F00-4B28-ACCC-5545B09C7EA4}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ActiveCommerce.Training.CartPersistence", "ActiveCommerce.Training.CartPersistence\ActiveCommerce.Training.CartPersistence.csproj", "{66B2B39E-ECCC-4F3F-A77F-BC3B5DA8D7B6}"
 EndProject

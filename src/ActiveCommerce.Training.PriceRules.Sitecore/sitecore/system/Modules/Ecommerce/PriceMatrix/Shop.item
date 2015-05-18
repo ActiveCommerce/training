@@ -1,0 +1,241 @@
+----item----
+version: 1
+id: {9E27C3BD-173C-435D-9408-FE6429272156}
+database: master
+path: /sitecore/system/Modules/Ecommerce/PriceMatrix/Shop
+parent: {2D79A1A7-730C-4576-87C0-A812D9D79E73}
+name: Shop
+master: {00000000-0000-0000-0000-000000000000}
+template: {86E22553-EECA-4623-9509-32A784B8E88D}
+templatekey: PriceMatrix Site
+
+----field----
+field: {709C81F4-70F6-4C8B-9374-A1686EFAF5A9}
+name: DefaultPrice
+key: defaultprice
+content-length: 38
+
+{E56621DF-52DA-447F-9531-38CA5AF55BF5}
+----version----
+language: da
+version: 1
+revision: 2051e5ae-f43d-41dd-9105-be114c4517c8
+
+----field----
+field: {386C1B51-2AA9-4B00-93A8-B524FF6B3209}
+name: Title
+key: title
+content-length: 5
+
+Shop:
+----field----
+field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
+name: __Display name
+key: __display name
+content-length: 4
+
+Shop
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 34
+
+20150514T102007:635671956076502720
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 18
+
+sitecore\Anonymous
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+2051e5ae-f43d-41dd-9105-be114c4517c8
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20150514T102138:635671956981770074
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 18
+
+sitecore\Anonymous
+----version----
+language: de-DE
+version: 1
+revision: 30baa8ba-c048-49e6-948c-169c663942bd
+
+----field----
+field: {386C1B51-2AA9-4B00-93A8-B524FF6B3209}
+name: Title
+key: title
+content-length: 5
+
+Shop:
+----field----
+field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
+name: __Display name
+key: __display name
+content-length: 4
+
+Shop
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 34
+
+20150514T102301:635671957811282549
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 18
+
+sitecore\Anonymous
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+30baa8ba-c048-49e6-948c-169c663942bd
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20150514T102352:635671958323034122
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 18
+
+sitecore\Anonymous
+----version----
+language: en
+version: 1
+revision: 6fbe806b-ff24-421f-b008-0d8594b73e5e
+
+----field----
+field: {386C1B51-2AA9-4B00-93A8-B524FF6B3209}
+name: Title
+key: title
+content-length: 5
+
+Shop:
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 15
+
+20081004T124258
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+6fbe806b-ff24-421f-b008-0d8594b73e5e
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20090317T121647:633728890074621250
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {001DD393-96C5-490B-924A-B0F25CD9EFD8}
+name: __Lock
+key: __lock
+content-length: 5
+
+<r />
+----version----
+language: ja-JP
+version: 1
+revision: 90969c82-2cf4-4516-8e0b-c1a65ce367c3
+
+----field----
+field: {386C1B51-2AA9-4B00-93A8-B524FF6B3209}
+name: Title
+key: title
+content-length: 5
+
+ショップ：
+----field----
+field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
+name: __Display name
+key: __display name
+content-length: 4
+
+ショップ
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 34
+
+20150514T102455:635671958952707006
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 18
+
+sitecore\Anonymous
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+90969c82-2cf4-4516-8e0b-c1a65ce367c3
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20150514T102545:635671959456140590
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 18
+
+sitecore\Anonymous

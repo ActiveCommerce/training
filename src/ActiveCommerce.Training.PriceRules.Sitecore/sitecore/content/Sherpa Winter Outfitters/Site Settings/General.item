@@ -1,0 +1,254 @@
+----item----
+version: 1
+id: {47F7B60F-924A-4ACC-95A8-94BF4A70F253}
+database: master
+path: /sitecore/content/Sherpa Winter Outfitters/Site Settings/General
+parent: {94B6D47A-8E33-474F-9EED-DD59A444B241}
+name: General
+master: {00000000-0000-0000-0000-000000000000}
+template: {545AE26F-5475-43DE-91A4-3CB609F23D53}
+templatekey: General Settings
+
+----field----
+field: {DDFC0F05-E638-4D88-8B63-CD8E81304A16}
+name: Default VAT region
+key: default vat region
+content-length: 38
+
+{C1354E5A-B173-476E-90C6-AA998C265F50}
+----field----
+field: {CB047C90-BA98-4949-9B34-672EBB762F71}
+name: Default Country
+key: default country
+content-length: 38
+
+{297C71E8-8457-4EC6-A119-A028B5EEABD4}
+----field----
+field: {8B0A8F08-9628-4BC9-9DDB-7338C7EE5F91}
+name: Price Format String
+key: price format string
+content-length: 5
+
+{0:C}
+----field----
+field: {BA466EB0-F722-43A5-9C69-D2A33305BE41}
+name: Master Currency
+key: master currency
+content-length: 38
+
+{1CA7C332-E166-4C33-8842-D667179CC660}
+----field----
+field: {7C796AFA-04AF-442E-B877-4CBEFD440868}
+name: Display Currency
+key: display currency
+content-length: 38
+
+{1CA7C332-E166-4C33-8842-D667179CC660}
+----field----
+field: {C5F995F0-8249-4AAC-9E4E-189B425E3A26}
+name: Display currency on prices
+key: display currency on prices
+content-length: 0
+
+
+----field----
+field: {3276AEB1-4FC3-4499-BC26-6674FEDB06FE}
+name: Display order status
+key: display order status
+content-length: 1
+
+1
+----field----
+field: {6D0B68EC-4D6B-418B-80F1-81C2A94E7F44}
+name: Show color swatches
+key: show color swatches
+content-length: 1
+
+1
+----field----
+field: {0C2BDE50-AD1F-4F7D-8EAF-63BF118F1B29}
+name: Display Wish Lists
+key: display wish lists
+content-length: 1
+
+1
+----field----
+field: {FA87B494-7D78-4DE5-947E-8D239264C06B}
+name: Main Login Link
+key: main login link
+content-length: 38
+
+{9735E3AF-AE27-4E2E-9437-550ED3E49100}
+----field----
+field: {5173E58C-EFF1-4828-B390-2991E3E5B737}
+name: Password Reminder Link
+key: password reminder link
+content-length: 38
+
+{9735E3AF-AE27-4E2E-9437-550ED3E49100}
+----field----
+field: {2DC4C967-91A3-49D2-B0F7-44EFF55CAC9B}
+name: New User Account Link
+key: new user account link
+content-length: 38
+
+{9735E3AF-AE27-4E2E-9437-550ED3E49100}
+----field----
+field: {F40A33C0-1492-4F88-8343-C8CCBDEA06F1}
+name: My Page Link
+key: my page link
+content-length: 38
+
+{60A5951B-35B1-43F1-B71D-4D06697A4BA8}
+----field----
+field: {D2E5012C-21BC-4A47-9919-93BCD39D8F2B}
+name: Search Page Link
+key: search page link
+content-length: 38
+
+{7337B7EA-07C8-4E98-963E-289655261014}
+----field----
+field: {8329A9EB-3D31-4E15-8E45-DD30BD299091}
+name: Product Compare Link
+key: product compare link
+content-length: 38
+
+{B90A4DF4-A176-4479-98EF-DAC17D954D57}
+----field----
+field: {228E31B8-6ACF-4FE7-8A52-6FF32BD21A58}
+name: Product Quick Look Link
+key: product quick look link
+content-length: 38
+
+{9121B9BD-3F20-4478-976C-4623613C1140}
+----field----
+field: {C865A64C-8DD9-4584-B5F3-BDBB3191B759}
+name: Main Logout Link
+key: main logout link
+content-length: 38
+
+{B4995961-A92C-4DDD-B4FC-41E0A7C0F7E7}
+----field----
+field: {5CEFAF2D-0782-48BD-8B7F-EEB5C607ADA0}
+name: Shopping Cart Link
+key: shopping cart link
+content-length: 38
+
+{3EF91CEF-BCC8-4332-B227-FBBC24C0A78C}
+----field----
+field: {7142AE1D-7191-497D-A3F4-81AAF1B0715B}
+name: Mail Templates Link
+key: mail templates link
+content-length: 38
+
+{F70644F9-41FE-4480-965D-CB014BA40BDE}
+----field----
+field: {B1459446-AE11-49CB-9102-A0A9B0F5A899}
+name: Default Customer Roles
+key: default customer roles
+content-length: 17
+
+extranet\Customer
+----field----
+field: {B13C1082-DE5F-4481-934E-227C56AE217D}
+name: Google Analytics ID
+key: google analytics id
+content-length: 13
+
+UA-25775122-1
+----field----
+field: {06D5295C-ED2F-4A54-9BF2-26228D113318}
+name: __Icon
+key: __icon
+content-length: 28
+
+Applications/16x16/gears.png
+----field----
+field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
+name: __Sortorder
+key: __sortorder
+content-length: 3
+
+300
+----version----
+language: en
+version: 1
+revision: cdf3574a-5a8d-433e-823d-5c28bab59ee5
+
+----field----
+field: {1A285996-A75A-4F48-ADD7-9BE030AC03AC}
+name: Pricing Rules
+key: pricing rules
+content-length: 1588
+
+<ruleset>
+  <rule uid="{39F408AC-B7CE-4590-BDA9-DA70E1CE7A3A}" name="Maxx Test 1">
+    <conditions>
+      <condition id="{D379525C-4DE6-4738-89ED-60CC0B8F91E5}" uid="269405FA643D4327B305F042267F5007" CampaignId="{8A4DEF77-1802-45D4-B61A-992B6656F7EF}" />
+    </conditions>
+    <actions>
+      <action id="{CBC2B8A2-71A3-4567-9C53-2583BB1FB970}" uid="5EB479BE5EE6495591E031B878656D36" itemid="{5F971C82-723F-4F2C-966F-96DF06F036E9}" />
+    </actions>
+  </rule>
+  <rule uid="{CE32D7E1-0BF8-4116-9B5A-A74A7AB6D4AE}" name="Maxx Test 2">
+    <conditions>
+      <condition id="{D379525C-4DE6-4738-89ED-60CC0B8F91E5}" uid="CCC52155DA6949CEB1DB0B8CDA57EC9A" CampaignId="{6F2AB183-87DB-47FB-A440-7330A1DB12EE}" />
+    </conditions>
+    <actions>
+      <action id="{CBC2B8A2-71A3-4567-9C53-2583BB1FB970}" uid="A15C6F940CEF4848929F55E5E466BE64" itemid="{3AF1620E-4C4D-4D0F-8D60-206DE83562C6}" />
+    </actions>
+  </rule>
+  <rule uid="{75BE5129-489D-4EF1-B252-0FB5FDF92AE7}" name="Discount Snowshoes for VIPs">
+    <conditions>
+      <and uid="6EC0E23271F446A8892B2BCD39FF32A9">
+        <condition id="{B88D5A83-A909-4BC5-90E7-7A8804348CFA}" uid="026DB2E2034C4AA5B1D76EEFBC36F653" value="extranet\SherpaVIP" />
+        <condition id="{5DE6D53E-EA62-4D17-8BDD-FEBCD80AC07B}" uid="7162F06178FC4159A49DA9CFD2D31F67" templateid="{549C5369-44F1-4355-998E-851048840BD4}" />
+      </and>
+    </conditions>
+    <actions>
+      <action id="{BA3126C8-EF9D-4804-8388-5230F2C826C6}" uid="A3FD8A3F662741BC9E5CCD79FB13DC12" DiscountPercentage="10" />
+    </actions>
+  </rule>
+</ruleset>
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 15
+
+20090311T230000
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+cdf3574a-5a8d-433e-823d-5c28bab59ee5
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20150517T183820:635674847002260000
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
