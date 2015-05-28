@@ -1,9 +1,9 @@
 ----item----
 version: 1
-id: {6CD15AF5-24ED-49D9-A496-686872946F6F}
+id: {39854575-13AC-444B-927C-5E49B7EE906C}
 database: master
 path: /sitecore/content/Active Commerce Training/Home/shop/receipt
-parent: {2C940707-45AA-4DE2-B63A-ACC64850695E}
+parent: {94025C18-8BE6-45F1-8DC6-FC3C18D61E5A}
 name: receipt
 master: {B0DB2EFD-FFF5-4D6D-ABC9-0C2026B0AD18}
 template: {C9834BED-EFC4-4805-A66B-888588F71025}
@@ -29,7 +29,7 @@ name: __Renderings
 key: __renderings
 content-length: 195
 
-<r xmlns:p="p" xmlns:s="s" p:p="1"><d id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}"><r uid="{FD957308-24CB-4844-854B-DA206CFE83D5}" s:ds="{21991133-93BE-463E-9A15-DA3567A5EB0F}" s:par="" /></d></r>
+<r xmlns:p="p" xmlns:s="s" p:p="1"><d id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}"><r uid="{FD957308-24CB-4844-854B-DA206CFE83D5}" s:ds="{207A53E8-BAD2-4F85-A2D4-7743E100D7F9}" s:par="" /></d></r>
 ----field----
 field: {A4F985D9-98B3-4B52-AAAF-4344F6E747C6}
 name: __Workflow
@@ -40,7 +40,7 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: 2db21df9-16d3-4042-b2b7-abbdecdb569d
+revision: cef5ed36-1b46-4ab7-96c3-b6a8da69b42c
 
 ----field----
 field: {3CB48796-2247-46BE-806C-B0611FA99BC5}
@@ -49,13 +49,6 @@ key: title
 content-length: 7
 
 Receipt
-----field----
-field: {0C20F1F8-D3B6-4627-AAF8-947F932E4B84}
-name: Thank You
-key: thank you
-content-length: 25
-
-Thank You For Your Order!
 ----field----
 field: {35F30126-A070-4E55-8978-E59AB4A4F5A6}
 name: Shipping Address
@@ -71,12 +64,26 @@ content-length: 15
 
 Billing Address
 ----field----
+field: {14AEED2F-8377-4C58-AA71-5ECB3D6C5302}
+name: Order Summary
+key: order summary
+content-length: 13
+
+Order Summary
+----field----
 field: {4A33A5BC-6049-441F-AB27-F6F35145686A}
 name: Payment Method
 key: payment method
 content-length: 14
 
 Payment Method
+----field----
+field: {0C20F1F8-D3B6-4627-AAF8-947F932E4B84}
+name: Thank You
+key: thank you
+content-length: 25
+
+Thank You For Your Order!
 ----field----
 field: {87166707-AD5E-4841-B40E-C8FBD99722C4}
 name: Order Reference
@@ -118,7 +125,7 @@ name: __Created
 key: __created
 content-length: 15
 
-20140331T170629
+20150515T151737
 ----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
@@ -132,14 +139,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-2db21df9-16d3-4042-b2b7-abbdecdb569d
+cef5ed36-1b46-4ab7-96c3-b6a8da69b42c
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 34
 
-20140331T180715:635318860358984986
+20150518T102917:635675417570487793
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

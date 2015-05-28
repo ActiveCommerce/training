@@ -1,9 +1,9 @@
 ----item----
 version: 1
-id: {C2019EBD-9946-428B-83F8-365A69165F19}
+id: {18EF955A-6E95-4055-86E1-1DCF71C6C7A5}
 database: master
 path: /sitecore/content/Active Commerce Training/Home/shop/checkout-login/Components/Guest Checkout
-parent: {D25CA18E-714B-49B3-8549-8431629EA48D}
+parent: {1550D8EB-8609-4F66-BD7A-F504B6286977}
 name: Guest Checkout
 master: {B0DB2EFD-FFF5-4D6D-ABC9-0C2026B0AD18}
 template: {E01643EC-7E51-47DD-AFFD-111260E9DEB2}
@@ -26,7 +26,7 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: 279a36b1-2a8d-4887-9934-f8256bafb28b
+revision: d8db18cc-ddbf-4940-b449-2f873fb50329
 
 ----field----
 field: {25F2D09E-98B5-47EC-B840-755459B6611F}
@@ -62,21 +62,21 @@ name: __Created
 key: __created
 content-length: 15
 
-20140331T170627
+20150515T151736
 ----field----
 field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
 name: __Revision
 key: __revision
 content-length: 36
 
-279a36b1-2a8d-4887-9934-f8256bafb28b
+d8db18cc-ddbf-4940-b449-2f873fb50329
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 34
 
-20140331T180705:635318860253038926
+20150518T102908:635675417485113453
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

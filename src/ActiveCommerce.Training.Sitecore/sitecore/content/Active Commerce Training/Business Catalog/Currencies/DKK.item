@@ -1,9 +1,9 @@
 ----item----
 version: 1
-id: {C76B0DED-DC15-48E7-9399-D159B27A62A0}
+id: {47BC2F38-B66E-4A36-8A13-4F23966274F5}
 database: master
 path: /sitecore/content/Active Commerce Training/Business Catalog/Currencies/DKK
-parent: {ADA52D00-A2D3-40C9-B264-474CA6DD6F1A}
+parent: {0FF26B76-65E3-40CF-8A0A-941B1C8F0499}
 name: DKK
 master: {B0DB2EFD-FFF5-4D6D-ABC9-0C2026B0AD18}
 template: {3B4681DD-E900-4A56-B162-CE59358C973D}
@@ -40,7 +40,7 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: e100afa1-c90c-4bb2-8255-5903c61a8db0
+revision: 3b1c86fb-6e18-41d4-8142-1ed3e5afddab
 
 ----field----
 field: {EE4BD860-A144-4869-9E21-FA2441A85864}
@@ -55,21 +55,21 @@ name: __Created
 key: __created
 content-length: 15
 
-20140331T170654
+20150515T151803
 ----field----
 field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
 name: __Revision
 key: __revision
 content-length: 36
 
-e100afa1-c90c-4bb2-8255-5903c61a8db0
+3b1c86fb-6e18-41d4-8142-1ed3e5afddab
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 34
 
-20140331T180701:635318860218056925
+20150518T102906:635675417461933746
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

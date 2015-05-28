@@ -1,23 +1,26 @@
-﻿using System;
+﻿using System.Web.UI;
+using ActiveCommerce.Web.Models;
+using System;
+using ActiveCommerce.Web.skins;
+using Glass.Mapper.Sc.Web.Ui;
 
 namespace ActiveCommerce.Training.CustomProduct.skins.training
 {
-    public partial class BookTab : ActiveCommerce.Web.skins.ProductDetails_Base, ActiveCommerce.Web.skins.ITabControl
+    public partial class BookTab : AbstractGlassUserControl, ITabControl, IProductDetailsControl
     {
+        public virtual ActiveCommerce.Products.Product Model { get; set; }
+        public virtual ProductViewModel ViewModel { get; set; }
+
         protected BookProduct Book
         {
             get
             {
-                return Model as BookProduct;
-            }
-        }
-
-        protected void Page_Load(object sender, EventArgs e)
-        {
-            base.Page_Load(sender, e);
-            if (Model == null)
-            {
-                this.Visible = false;
+                var book = Model as BookProduct;
+                if (book == null)
+                {
+                    throw new Exception("Product isn't a book -- double check your Unity registration for your custom product type!");
+                }
+                return book;
             }
         }
 
@@ -30,5 +33,6 @@ namespace ActiveCommerce.Training.CustomProduct.skins.training
         {
             get { return "Product-Tab-Book"; }
         }
+
     }
 }

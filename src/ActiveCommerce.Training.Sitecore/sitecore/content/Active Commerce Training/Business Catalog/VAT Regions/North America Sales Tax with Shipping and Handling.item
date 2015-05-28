@@ -1,9 +1,9 @@
 ----item----
 version: 1
-id: {EFD44EEE-4508-43BE-A35E-777449AFDFE5}
+id: {F8D278F8-A84A-4BC8-869E-53EA9FE16EE0}
 database: master
 path: /sitecore/content/Active Commerce Training/Business Catalog/VAT Regions/North America Sales Tax with Shipping and Handling
-parent: {59952757-1457-44E8-BCC9-DE420A3B3AEB}
+parent: {30D65DAB-177A-446E-A330-3C7C4FFE8F36}
 name: North America Sales Tax with Shipping and Handling
 master: {B0DB2EFD-FFF5-4D6D-ABC9-0C2026B0AD18}
 template: {E2B59108-59E0-4502-89D3-A62A83A84327}
@@ -47,7 +47,7 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: a72a6841-43c2-439f-8f5d-a9b9a0c52f56
+revision: af7a2d1e-6adc-4a68-8071-face30c9feb1
 
 ----field----
 field: {EE4BD860-A144-4869-9E21-FA2441A85864}
@@ -62,21 +62,21 @@ name: __Created
 key: __created
 content-length: 15
 
-20140331T170632
+20150515T151742
 ----field----
 field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
 name: __Revision
 key: __revision
 content-length: 36
 
-a72a6841-43c2-439f-8f5d-a9b9a0c52f56
+af7a2d1e-6adc-4a68-8071-face30c9feb1
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 34
 
-20140331T180712:635318860325653079
+20150518T102914:635675417548322343
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

@@ -8,6 +8,7 @@ using Microsoft.Practices.Unity;
 using Sitecore.Ecommerce.DomainModel.Carts;
 using Sitecore.Ecommerce.DomainModel.Products;
 using Sitecore.Ecommerce.DomainModel.Users;
+using Sitecore.Security.Accounts;
 
 namespace ActiveCommerce.Training.CartPersistence.Users
 {
@@ -16,6 +17,14 @@ namespace ActiveCommerce.Training.CartPersistence.Users
         public override bool LogInCustomer(string nickName, string password)
         {
             var success = base.LogInCustomer(nickName, password);
+
+            if (success)
+            {
+                //identify user in order to enable shared session and persistence in contact facet
+                var userName = Sitecore.Context.Domain.GetFullName(nickName);
+                var user = User.FromName(userName, true);
+                Sitecore.Analytics.Tracker.Current.Session.Identify(user.Profile.Email);
+            }
 
             if (!CartPersistenceContext.IsActive)
             {

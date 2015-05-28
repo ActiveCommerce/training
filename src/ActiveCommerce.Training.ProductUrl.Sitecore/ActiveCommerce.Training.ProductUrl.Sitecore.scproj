@@ -29,7 +29,7 @@
     <RecursiveDeployAction>Ignore</RecursiveDeployAction>
     <InstallSitecoreConnector>True</InstallSitecoreConnector>
     <DisableFileDeployment>False</DisableFileDeployment>
-    <SitecoreAccessGuid>97be8256-49ff-4404-a6ac-7869b6f5c1a5</SitecoreAccessGuid>
+    <SitecoreAccessGuid>6620bde8-a0cd-4307-a749-f772a7176c22</SitecoreAccessGuid>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
     <DebugSymbols>false</DebugSymbols>
@@ -76,6 +76,7 @@
     </SitecoreItem>
     <SitecoreItem Include="sitecore\system\Modules\Ecommerce\System\Display Product Modes\Resolve Products By Item Name and Variant.item">
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
+      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\HedgehogDevelopment\SitecoreProject\v9.0\HedgehogDevelopment.SitecoreProject.targets" />

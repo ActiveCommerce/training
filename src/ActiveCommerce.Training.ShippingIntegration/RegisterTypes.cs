@@ -10,13 +10,8 @@ namespace ActiveCommerce.Training.ShippingIntegration
     {
         public void Process(Microsoft.Practices.Unity.IUnityContainer container)
         {
-            container.RegisterType<ActiveCommerce.Shipping.IShippingService, ActiveCommerce.Training.ShippingIntegration.ShippingService>("training",
-                new InjectionMember[] {
-                    new InjectionProperty("Configuration"),
-                    new InjectionProperty("Destination"),
-                    new InjectionProperty("ShippingWeight")
-                }
-            );
+            container.RegisterType<ActiveCommerce.Shipping.IShippingService,
+                ActiveCommerce.Training.ShippingIntegration.ShippingService>("training");
         }
 
         public int SortOrder

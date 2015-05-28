@@ -20,11 +20,17 @@ and we provide no warranty. Use at your own risk.
 [Product Data Provider](./src/ActiveCommerce.Training.ProductDataProvider)
 - Experimental example of real-time data integration via a Sitecore Data Provider for just specific fields within a product item.
 
+[Product Url Examples](./src/ActiveCommerce.Training.ProductUrl)
+- Customizing the format of product urls.
+
 [Custom Category](./src/ActiveCommerce.Training.CustomCategory)
 - Example of creating a custom category domain object and Sitecore template
 
 
 ## Product Stock
+
+[Product Stock Extension](./src/ActiveCommerce.Training.ProductStockExtension)
+- Example of extending the stock data stored in the Active Commerce database, allowing that data to be edited in the Content Editor, and using that data to implement new stock business rules.
 
 [Product Stock Update](./src/ActiveCommerce.Training.ProductStockUpdate)
 - Example of updating product stock data on a scheduled/batched basis.
@@ -44,8 +50,8 @@ and we provide no warranty. Use at your own risk.
 [Price Comparison](./src/ActiveCommerce.Training.ComparePrice)
 - Allow display of price within product comparison tables
 
-[Price Testing POC](./src/ActiveCommerce.Training.PriceTesting)
-- Experimental example of implementing pricing rules to allow A/B testing of product pricing.
+[Pricing Rules Example](./src/ActiveCommerce.Training.PriceRules)
+- Demonstrates how you can manipulate product pricing using the Sitecore Rules Engine
 
 [Custom Tax Calculator](./src/ActiveCommerce.Training.TaxCalculator)
 - Example of implementing a custom tax calculator in order to implement custom tax logic or integrate with an external tax service.
@@ -59,6 +65,8 @@ and we provide no warranty. Use at your own risk.
 [Invoice Payment](./src/ActiveCommerce.Training.Payment)
 - Extending the payment step of the checkout process and order processing to allow for payment by invoice / purchase order number.
 
+[Checkout via API](./src/ActiveCommerce.Training.CheckoutViaApi)
+- Construct a shopping cart and execute order processing directly through the Active Commerce domain layer.
 
 ## Orders and Order Processing
 
@@ -106,8 +114,7 @@ and we provide no warranty. Use at your own risk.
 [Various Skinning Examples](./src/ActiveCommerce.Training.Web)
 - Skinning/theming scripts, styles, HTML templates, etc.
 
+## NHibernate
 
-## Product Urls
-
-[Product Url Examples](./src/ActiveCommerce.Training.ProductUrl)
-- Customizing the format of product urls.
+[Simple Reviews System](./src/ActiveCommerce.Training.SimpleReviews)
+- Persist a custom object to the Active Commerce database with NHibernate and manage the data with Sitecore SPEAK

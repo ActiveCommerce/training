@@ -26,7 +26,9 @@ namespace ActiveCommerce.Training.CartPersistence.Loader
                 new InjectionMember[] {
                     new InjectionProperty("EstimatedCosts", true),
                     new InjectionProperty("ShopContext"),
-                    new InjectionProperty("PriceFormatter")
+                    new InjectionProperty("PriceFormatter"),
+                    new InjectionProperty("CartProductViewModelFactory"),
+                    new InjectionProperty("RelatedProductViewModelFactory")
                 }
             );
         }

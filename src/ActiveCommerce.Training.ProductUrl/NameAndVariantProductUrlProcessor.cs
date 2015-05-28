@@ -1,4 +1,5 @@
-﻿using System.Web;
+﻿using System.Linq;
+using System.Web;
 using ActiveCommerce.Extensions;
 using ActiveCommerce.Products;
 using Sitecore.Data;
@@ -72,18 +73,10 @@ namespace ActiveCommerce.Training.ProductUrl
             {
                 SearchRoot = item.ID.ToString()
             };
+            query.AppendField(Sitecore.ContentSearch.BuiltinFields.AllTemplates, TemplateIDs.ProductBase.ToString(), MatchVariant.Exactly);
+            query.AppendCondition(QueryCondition.And);
             query.AppendField("_name", name, MatchVariant.Exactly);
-
-            Item result;
-            foreach (Item current in this.SearchProvider.Search(query, Sitecore.Context.Database))
-            {
-                if (ProductRepositoryUtil.IsBasedOnTemplate(current.Template, new ID(this.ProductTemplateId)))
-                {
-                    result = current;
-                    return result;
-                }
-            }
-            return null;
+            return SearchProvider.Search(query, Sitecore.Context.Database).FirstOrDefault();
         }
     }
 }

@@ -8,18 +8,9 @@ namespace ActiveCommerce.Training.OrderExtension
 {
     public class Order : ActiveCommerce.Orders.Order
     {
-        public Order(OrderStatus status) : base(status)
-        {
+        public virtual Guid ExternalOrderId { get; set; }
 
-        }
+        public virtual string GiftMessage { get; set; }
 
-        public Order() : base()
-        {
-            
-        }
-
-        public Guid ExternalOrderId { get; set; }
-
-        public string PurchaseOrderNumber { get; set; }
     }
 }

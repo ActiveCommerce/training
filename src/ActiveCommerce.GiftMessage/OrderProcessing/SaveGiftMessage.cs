@@ -1,26 +1,26 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 using ActiveCommerce.GiftMessage.CheckOut;
-using ActiveCommerce.OrderProcessing;
-using Sitecore.Ecommerce.DomainModel.Orders;
+using ActiveCommerce.Orders.Pipelines;
 using Sitecore.Ecommerce;
+using ActiveCommerce.Orders.Management;
+using ActiveCommerce.Training.OrderExtension;
 
 namespace ActiveCommerce.GiftMessage.OrderProcessing
 {
-    public class SaveGiftMessage : IOrderPipelineProcessor
+    public class SaveGiftMessage : OrderPipelineProcessor
     {
-        public void Process(OrderPipelineArgs args)
+        protected override bool ContinueOnFailure
         {
-            var order = args.Order as ActiveCommerce.GiftMessage.Orders.Order;
+            get { return true; }
+        }
+
+        protected override void DoProcess(OrderPipelineArgs args)
+        {
+            var order = args.Order as ActiveCommerce.Training.OrderExtension.Order;
             var checkout = args.CheckOut as IGiftMessage;
             if (order != null && checkout != null)
             {
                 order.GiftMessage = checkout.GiftMessage;
-
-                var orderManager = Sitecore.Ecommerce.Context.Entity.Resolve<IOrderManager<Order>>();
-                orderManager.SaveOrder(order);
             }
         }
     }

@@ -1,9 +1,9 @@
 ----item----
 version: 1
-id: {F5930A3D-AF17-4494-9294-38DBAD095E89}
+id: {F123BB2B-15C4-4B82-B2A4-E89E7690FC36}
 database: master
 path: /sitecore/content/Active Commerce Training/Home/shop/cart/Components/Continue Shopping
-parent: {EA0D2690-6E7B-47E8-B306-0D9DE245BD65}
+parent: {3D38AD0E-C1F3-4CB8-AE3C-760E919C75AD}
 name: Continue Shopping
 master: {B0DB2EFD-FFF5-4D6D-ABC9-0C2026B0AD18}
 template: {34538F20-B858-4371-88F4-2D9B80FA7641}
@@ -26,7 +26,7 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: 71b3db34-e19b-4f4d-bf93-0f67bfdb4b12
+revision: d4e44da0-c19d-4b6c-81d5-96bb7e246b19
 
 ----field----
 field: {725B37DF-2B8B-46BD-8F5C-F314B9D94E59}
@@ -41,21 +41,21 @@ name: __Created
 key: __created
 content-length: 15
 
-20140331T170626
+20150515T151735
 ----field----
 field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
 name: __Revision
 key: __revision
 content-length: 36
 
-71b3db34-e19b-4f4d-bf93-0f67bfdb4b12
+d4e44da0-c19d-4b6c-81d5-96bb7e246b19
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 34
 
-20140331T180700:635318860204336140
+20150518T102904:635675417441121665
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

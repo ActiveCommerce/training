@@ -7,7 +7,7 @@
     <ProjectGuid>eb673097-3fe9-42bb-b741-5e297cfb1125</ProjectGuid>
     <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
     <SourceWebPhysicalPath>..\ActiveCommerce.Training.CartPersistence</SourceWebPhysicalPath>
-    <SourceWebProject>{66b2b39e-eccc-4f3f-a77f-bc3b5da8d7b6}|ActiveCommerce.Training.CartPersistence\ActiveCommerce.Training.CartPersistence.csproj</SourceWebProject>
+    <SourceWebProject>{66b2b39e-eccc-4f3f-a77f-bc3b5da8d7b6}|..\..\active-commerce-training\src\ActiveCommerce.Training.CartPersistence\ActiveCommerce.Training.CartPersistence.csproj</SourceWebProject>
     <SourceWebVirtualPath>/ActiveCommerce.Training.CartPersistence.csproj</SourceWebVirtualPath>
     <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
     <EnableUpdateable>true</EnableUpdateable>
@@ -20,6 +20,8 @@
     <Name>ActiveCommerce.Training.CartPersistence.Sitecore</Name>
     <RootNamespace>ActiveCommerce.Training.CartPersistence.Sitecore</RootNamespace>
     <SitecoreDatabase>master</SitecoreDatabase>
+    <EnableCodeGeneration>false</EnableCodeGeneration>
+    <AssemblyStatus>Exclude</AssemblyStatus>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -44,9 +46,6 @@
     </AssemblyAttributes>
   </ItemGroup>
   <ItemGroup>
-    <ExcludedAssemblies Include="Sitecore.%2a.dll" />
-  </ItemGroup>
-  <ItemGroup>
     <SitecoreItem Include="sitecore\commerce.item">
       <Icon>/temp/IconCache/activecommerce-icons/32x32/logo-orange.png</Icon>
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
@@ -65,10 +64,12 @@
     <SitecoreItem Include="sitecore\commerce\translation\C\Cart-Restore-Failure.item">
       <Icon>/temp/IconCache/Applications/32x32/font.png</Icon>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
+      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>
     <SitecoreItem Include="sitecore\commerce\translation\C\Cart-Restore-Success.item">
       <Icon>/temp/IconCache/Applications/32x32/font.png</Icon>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
+      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>
   </ItemGroup>
   <ItemGroup>
@@ -76,6 +77,10 @@
       <Project>{66b2b39e-eccc-4f3f-a77f-bc3b5da8d7b6}</Project>
       <Name>ActiveCommerce.Training.CartPersistence</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ExcludedAssemblies Include="Sitecore.%2a.dll" />
+    <ExcludedAssemblies Include="Sitecore.%2a.dll" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\HedgehogDevelopment\SitecoreProject\v9.0\HedgehogDevelopment.SitecoreProject.targets" />
 </Project>

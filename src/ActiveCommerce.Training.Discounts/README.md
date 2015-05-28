@@ -1,6 +1,14 @@
 Custom Discounts Examples
 ========
 
+# Limited Use Discounts
+This example shows how you can implement use limits on promotions, either overall or by customer.
+
+## What's in this example
+1. `LimitUse` and `LimitUsePerCustomer` custom rule conditions (and associated rule definitions in the [TDS project](../ActiveCommerce.Training.Discounts.Sitecore)) which query the orders database to check whether a promotion has been used more than X times, or X times for the current customer.
+2. Extensions to the `ShoppingCartViewModel` and `ShoppingCartViewModelFactory` to allow us to display messaging (put in session by the custom conditions) regarding the reason why the discount wasn't applied (i.e. it has execeeded allowed uses).
+
+
 # Buy One Get One (BOGO) Discount Actions
 This example includes three promotion/discount actions which allow the creation of true "buy one get one" (BOGO) style promotions,
 including buy-one-get-one (same or different products), buy-one-get-one-half-off, buy-X-get-Y, and more.

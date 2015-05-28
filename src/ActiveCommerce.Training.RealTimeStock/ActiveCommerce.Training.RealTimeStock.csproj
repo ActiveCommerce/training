@@ -46,7 +46,7 @@
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="Microsoft.Practices.Unity, Version=1.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\Sitecore\ActiveCommerceTraining\Website\bin\Microsoft.Practices.Unity.dll</HintPath>
+      <HintPath>$(SitecorePath)\bin\Microsoft.Practices.Unity.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Sitecore.Ecommerce.DomainModel">
@@ -55,6 +55,10 @@
     </Reference>
     <Reference Include="Sitecore.Ecommerce.Kernel">
       <HintPath>$(SitecorePath)\bin\Sitecore.Ecommerce.Kernel.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sitecore.Ecommerce.Core">
+      <HintPath>$(SitecorePath)\bin\Sitecore.Ecommerce.Core.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Sitecore.Kernel">

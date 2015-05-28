@@ -1,0 +1,127 @@
+----item----
+version: 1
+id: {9C9641C3-14AD-457F-8E3B-1DF4F312DE0C}
+database: core
+path: /sitecore/client/ActiveCommerce/Applications/SimpleReviews/Pages/Edit
+parent: {8EF96428-0BB2-4A9C-B09D-9ECF1DC029E3}
+name: Edit
+master: {997B7345-919E-4D6A-828C-4DD8541E9D3B}
+template: {C63C943A-CB4D-45D6-880C-208BD29DAE1A}
+templatekey: Speak-TaskPage
+
+----field----
+field: {5E642935-A6FC-48E9-B039-FE1136CED488}
+name: Theme
+key: theme
+content-length: 6
+
+Oxford
+----field----
+field: {F6D8A61C-2F84-4401-BD24-52D2068172BC}
+name: __Originator
+key: __originator
+content-length: 0
+
+
+----field----
+field: {F1A1FE9E-A60C-4DDB-A3A0-BB5B29FE732E}
+name: __Renderings
+key: __renderings
+content-length: 9612
+
+<r>
+  <d id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}" l="{4F72A793-BDBC-4262-9523-6AADD8FEA487}">
+    <r id="{DAFAFFB8-74AF-4141-A96A-70B16834CEC6}" par="PageCodeScriptFileName=%2fsitecore%2fshell%2fclient%2fActiveCommerce%2fApplications%2fSimpleReviews%2fPages%2fEdit.js" ph="Page.Code" uid="{237256AA-9D30-463E-9ED1-90CFF092FCF6}" />
+    <r id="{56A04392-9E0E-4609-AE9A-ACD28C7F749B}" ph="Page.Body" uid="{6B43485A-C2BD-4987-B043-1640D85DC31F}" />
+    <r id="{5AE97C0C-EE88-4564-A363-4FA11C01C90A}" ph="GlobalHeader" uid="{532C7DCD-29E7-4C34-9910-FC283D61A026}" />
+    <r id="{7A69C522-7E99-4630-A25A-5D571505862A}" par="ImageUrl=%2525252525252fsitecore%2525252525252fshell%2525252525252fclient%2525252525252fSpeak%2525252525252fAssets%2525252525252fimg%2525252525252fspeak-logo.png&amp;Id=GlobalLogo" ph="GlobalHeader.StartButton" uid="{A340B9F2-9FD0-4767-9B0B-62D7C8B0E5C7}" />
+    <r id="{EC86834B-890C-405C-BB36-CA25044909E1}" ph="GlobalFooter" uid="{C01DD5BD-DFC2-425B-A301-43AE8363B443}" />
+    <r id="{93CEEFCD-2DE1-40AF-AE9A-EBBFBCCC522F}" ph="ApplicationHeader" uid="{1E240370-226C-40E4-9C54-7FE8630DF74A}" />
+    <r id="{7717EB6C-9F90-4C58-826D-5E87722A0318}" par="Id=HeaderTitle&amp;Text=Edit+Review" ph="ApplicationHeader.Title" uid="{1DC97590-77EC-4F75-A687-D86F7D22CAAA}" />
+    <r id="{26541BC4-C62D-4F2F-BE3F-A4E2195FEE0F}" ph="ApplicationContent" uid="{B84F6AF6-5A63-4D51-AEC7-1A92BEAFB025}" />
+    <r id="{913AB005-2527-4C2D-9827-FB3A8DFB135C}" par="Click=javascript%3awindow.location.replace(%27%2fsitecore%2fclient%2fActiveCommerce%2fApplications%2fSimpleReviews%2fPages%2fReviews%27)&amp;Id=BackButton&amp;ButtonType=Inverse&amp;Text=Back" ph="ColumnBackButton.Content" uid="{AE8771F4-E5FC-483E-8FCF-FB2817CE4CC2}" />
+    <r id="{913AB005-2527-4C2D-9827-FB3A8DFB135C}" par="Click=javascript%3aapp.save()&amp;Id=SaveButton&amp;ButtonType=Primary&amp;Text=Save" ph="ColumnSave.Content" uid="{AE8771F4-E5FC-483E-8FCF-FB2817CE4CC2}" />
+    <r id="{910155C7-3881-4A56-90FB-D126490EDE55}" par="Id=MessageBar" ph="ApplicationContent.Main" uid="{0F590545-3134-408A-822E-7A698FC9D598}" />
+    <r id="{F6C9F461-FCAF-47DC-AA01-C8C64C2EFFB8}" par="Id=ButtonBorder&amp;UsePadding=1&amp;ShowBorder=0" ph="ApplicationContent.Main" uid="{134304A9-805B-4DD5-AC9E-BE1C27DACEE0}" />
+    <r id="{C4393722-39FA-4869-9582-3A8EB8983A0D}" par="UsePadding=0&amp;Id=RowButtons" ph="ButtonBorder.Content" uid="{FC17DFD6-7247-4DF4-9D43-8812FF833C73}" />
+    <r id="{C4393722-39FA-4869-9582-3A8EB8983A0D}" par="UsePadding=1&amp;Id=RowAccordion" ph="ApplicationContent.Main" uid="{150641AA-8F8D-4AAD-9092-21E5E55E989B}" />
+    <r id="{442BD093-FBAD-4E36-BC08-489E16C82D08}" par="Id=FormAccordion&amp;Header=Edit+Review+Details" ph="RowAccordion.Content" uid="{02D46D98-5E34-4958-8258-2958BF219AC9}" />
+    <r id="{A3E869BC-ABF8-462E-9B55-FB881B6491A1}" par="Id=ReviewForm" ph="FormAccordion.Body" uid="{1CEF2AD6-758F-450D-B37E-A238D7C1AD38}" />
+    <r id="{5CB208F6-1860-426B-8221-FAA85B329848}" par="Id=ColumnBackButton&amp;GridColumns=6" ph="RowButtons.Content" uid="{E01D7322-0CE3-4992-8C2E-02264065F7E3}" />
+    <r id="{5CB208F6-1860-426B-8221-FAA85B329848}" par="Id=ColumnSave&amp;GridColumns=2&amp;ContentAlign=Right" ph="RowButtons.Content" uid="{454EC880-EC62-4223-A1D8-32465EE55A4A}" />
+    <r id="{5CB208F6-1860-426B-8221-FAA85B329848}" par="Id=ReviewedOnLabelColumn&amp;GridColumns=1" ph="ReviewedOnRow.Content" uid="{7BE6227C-0B70-40B8-8ABF-35B2BC8F7732}" />
+    <r id="{C4393722-39FA-4869-9582-3A8EB8983A0D}" par="UsePadding=1&amp;Id=ReviewedOnRow&amp;IsVisible=1" ph="ReviewForm.Content" uid="{FC04686E-26AE-4C65-B1C9-A12978A1BFDA}" />
+    <r id="{C4393722-39FA-4869-9582-3A8EB8983A0D}" par="UsePadding=1&amp;Id=ApprovedRow" ph="ReviewForm.Content" uid="{EAB662E6-5FF7-4A70-A2AE-4686F481A441}" />
+    <r id="{C4393722-39FA-4869-9582-3A8EB8983A0D}" par="UsePadding=1&amp;Id=ProductCodeRow" ph="ReviewForm.Content" uid="{CF98CB45-9A4D-4456-87DD-B2D79C1C3AFF}" />
+    <r id="{98316BB6-F3F5-4E6F-81F0-79F173D151D8}" par="Id=ProductCodeLabel&amp;Text=Product+Code&amp;Target=ProductCodeTextBox" ph="ProductCodeRow.Content" uid="{C112199D-9BEA-45A3-9DF8-FAB97D64B894}" />
+    <r id="{57F86E9A-1844-45CE-BF8A-62900AE17A92}" par="Id=ProductCodeTextBox&amp;IsEnabled=True&amp;IsVisible=1" ph="ProductCodeRow.Content" uid="{FBCBF368-BAD7-4E23-A8C9-2FAB0512DCB3}" />
+    <r id="{C4393722-39FA-4869-9582-3A8EB8983A0D}" par="UsePadding=1&amp;Id=ReviewTitleRow" ph="ReviewForm.Content" uid="{CD4B098F-8AE5-4103-81AE-1E413156D0C4}" />
+    <r id="{98316BB6-F3F5-4E6F-81F0-79F173D151D8}" par="Id=ReviewTitleLabel&amp;Text=Review+Title" ph="ReviewTitleRow.Content" uid="{8CD7688B-5EC7-457D-8FE1-777C0C6220A8}" />
+    <r id="{57F86E9A-1844-45CE-BF8A-62900AE17A92}" par="Id=ReviewTitleTextBox&amp;IsEnabled=True&amp;IsVisible=1" ph="ReviewTitleRow.Content" uid="{51208556-C313-4DCC-A2EB-24C493FDC228}" />
+    <r id="{C4393722-39FA-4869-9582-3A8EB8983A0D}" par="UsePadding=1&amp;Id=ReviewerNameRow" ph="ReviewForm.Content" uid="{80CE7168-BEF3-4462-8910-BCB89A9A29A8}" />
+    <r id="{98316BB6-F3F5-4E6F-81F0-79F173D151D8}" par="Id=ReviewerNameLabel&amp;Text=Reviewer+Name" ph="ReviewerNameRow.Content" uid="{B5A772EA-39FF-4FFD-BAEE-3043F3C6437A}" />
+    <r id="{57F86E9A-1844-45CE-BF8A-62900AE17A92}" par="Id=ReviewerNameTextBox&amp;IsEnabled=True&amp;IsVisible=1" ph="ReviewerNameRow.Content" uid="{2FCB88CA-73BF-407E-B765-CAD588CF7EED}" />
+    <r id="{C4393722-39FA-4869-9582-3A8EB8983A0D}" par="UsePadding=1&amp;Id=ReviewerEmailRow" ph="ReviewForm.Content" uid="{54725E9E-797B-4805-BFE0-B4B2DC9DCFDD}" />
+    <r id="{98316BB6-F3F5-4E6F-81F0-79F173D151D8}" par="Id=ReviewerEmailLabel&amp;Text=Reviewer+Email" ph="ReviewerEmailRow.Content" uid="{1F6F3A97-5073-4006-B9F3-A9A0F0618857}" />
+    <r id="{57F86E9A-1844-45CE-BF8A-62900AE17A92}" par="Id=ReviewerEmailTextBox&amp;IsEnabled=True&amp;IsVisible=1" ph="ReviewerEmailRow.Content" uid="{AD765FED-2F89-412F-A205-D9902661E296}" />
+    <r id="{C4393722-39FA-4869-9582-3A8EB8983A0D}" par="UsePadding=1&amp;Id=RatingRow" ph="ReviewForm.Content" uid="{4046FA32-6579-4213-BA05-34AB584900C7}" />
+    <r id="{98316BB6-F3F5-4E6F-81F0-79F173D151D8}" par="Id=ReviewedOnLabel&amp;Text=Reviewed+On" ph="ReviewedOnLabelColumn.Content" uid="{ACFE8C3B-A80F-4F36-8DD3-291560036052}" />
+    <r id="{98316BB6-F3F5-4E6F-81F0-79F173D151D8}" par="Id=RatingLabel&amp;Text=Rating" ph="RatingRow.Content" uid="{6B1A603F-EEF3-4CC4-AD90-0919D37AB5B8}" />
+    <r id="{98316BB6-F3F5-4E6F-81F0-79F173D151D8}" par="Id=ApprovedLabel&amp;Text=Approved%3f" ph="ApprovedRow.Content" uid="{CED8E17A-B0BD-4DB9-877F-C5341B480310}" />
+    <r id="{3824DAB6-745A-468A-9D75-044591E72FB5}" par="Id=ApprovedCheckBox" ph="ApprovedRow.Content" uid="{4378B32F-F5FA-4B06-99B3-75055B380049}" />
+    <r id="{C4393722-39FA-4869-9582-3A8EB8983A0D}" par="UsePadding=1&amp;Id=ReviewRow" ph="ReviewForm.Content" uid="{55224977-C307-4FE7-9BE7-47354BEF9366}" />
+    <r id="{98316BB6-F3F5-4E6F-81F0-79F173D151D8}" par="Id=ReviewLabel&amp;Text=Review+Text" ph="ReviewRow.Content" uid="{831A698E-FB34-49C2-9E6B-8F1CD47DEDA5}" />
+    <r id="{9918B36C-92ED-4EB8-A95A-009E2523C672}" par="Rows=5&amp;Id=ReviewTextArea&amp;IsVisible=1&amp;IsEnabled=True&amp;Columns=60" ph="ReviewRow.Content" uid="{DE2805BC-D23D-41F2-9E9F-D2675CA75ED7}" />
+    <r id="{7E49DE99-146A-4F62-8555-A731AAB7427B}" par="Id=RatingSlider&amp;Step=1&amp;Type=Single&amp;Maximum=5&amp;Minimum=1" ph="RatingColumn.Content" uid="{B7DAB0AA-4460-4E70-9E06-F57CBBC65992}" />
+    <r id="{7717EB6C-9F90-4C58-826D-5E87722A0318}" par="Id=ReviewedOnText&amp;TextType=LargeValue&amp;Text=1%2f1%2f2015" ph="ReviewedOnValueColumn.Content" uid="{35C48FA2-1B62-4442-9ADF-F166D7F8E531}" />
+    <r id="{5CB208F6-1860-426B-8221-FAA85B329848}" par="Id=RatingColumn&amp;GridColumns=5" ph="RatingRow.Content" uid="{2E8D1B82-E709-4FA0-9E98-EFD97C1997C6}" />
+    <r id="{5CB208F6-1860-426B-8221-FAA85B329848}" par="Id=ReviewedOnValueColumn&amp;GridColumns=3" ph="ReviewedOnRow.Content" uid="{AF74966A-4EDC-4665-B02D-0FC532DD9FD5}" />
+    <r id="{7717EB6C-9F90-4C58-826D-5E87722A0318}" par="Id=ReviewIdHidden&amp;IsVisible=0" ph="ReviewForm.Header" uid="{EB57CD41-09D5-493B-A19E-D34A3CA00E05}" />
+    <r id="{B60FB581-44D1-4372-86A2-D6E494F020E1}" par="Id=ConfirmDeleteDialog&amp;MaxHeight=100px&amp;Size=Small" ph="ApplicationContent" uid="{C87C9C01-44EB-454D-ACB9-9A733F28D01A}" />
+    <r id="{7717EB6C-9F90-4C58-826D-5E87722A0318}" par="Id=ConfirmDeleteText&amp;TextType=LargeLabel&amp;Text=Are+you+sure+you+want+to+delete+this+review%3f" ph="ConfirmDeleteDialog.Content" uid="{95CACEFB-F257-4D4A-983B-5482DBAA481F}" />
+    <r id="{913AB005-2527-4C2D-9827-FB3A8DFB135C}" par="Click=javascript%3aapp.deleteReview()&amp;Id=ConfirmDeleteYesButton&amp;ButtonType=Primary&amp;Text=Yes%2c+delete+it" ph="ConfirmDeleteDialog.Actions" uid="{9C74C649-169A-4C9D-887A-BD74CDF0541F}" />
+    <r id="{913AB005-2527-4C2D-9827-FB3A8DFB135C}" par="Click=hide%3aConfirmDeleteDialog&amp;Id=ConfirmDeleteNoButton&amp;ButtonType=Default&amp;Text=No%2c+don%27t+delete+it" ph="ConfirmDeleteDialog.Actions" uid="{B56DE867-D71C-4C6C-AB95-46D24F22F899}" />
+    <r id="{5CB208F6-1860-426B-8221-FAA85B329848}" par="Id=ColumnDelete&amp;ContentAlign=Right" ph="RowButtons.Content" uid="{DCCE5C26-6C1A-440D-9D4D-F01FAC141CD2}" />
+    <r id="{913AB005-2527-4C2D-9827-FB3A8DFB135C}" par="Click=show%3aConfirmDeleteDialog&amp;Id=DeleteButton&amp;ButtonType=Inverse&amp;Text=Delete" ph="ColumnDelete.Content" uid="{11D0AA60-E7CB-46C8-8A9F-6C13C23F03AC}" />
+  </d>
+</r>
+----version----
+language: en
+version: 1
+revision: 676a5a8e-c6a6-4efb-a5e6-89d5c12bb9d4
+
+----field----
+field: {7205A57F-93B4-413A-AA9A-6B16BBC59565}
+name: BrowserTitle
+key: browsertitle
+content-length: 11
+
+Edit Review
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 15
+
+20150217T101809
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+676a5a8e-c6a6-4efb-a5e6-89d5c12bb9d4
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20150217T185941:635597963813862457
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

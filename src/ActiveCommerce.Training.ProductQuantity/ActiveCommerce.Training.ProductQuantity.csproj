@@ -59,10 +59,12 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
-    <Content Include="skins\training\ProductDetails-PurchaseOptions.ascx" />
-    <Content Include="skins\training\scripts\product.js" />
+    <Content Include="README.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="skins\sherpa\ProductDetails-PurchaseOptions.ascx" />
+    <Content Include="skins\sherpa\scripts\product.js" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

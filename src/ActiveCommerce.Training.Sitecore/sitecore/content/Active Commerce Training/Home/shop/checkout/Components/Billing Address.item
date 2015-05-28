@@ -1,9 +1,9 @@
 ----item----
 version: 1
-id: {E942BE6B-1DE5-49F9-A26D-313BB958EC89}
+id: {3049D981-44FD-44EE-BE27-A35812BC53BF}
 database: master
 path: /sitecore/content/Active Commerce Training/Home/shop/checkout/Components/Billing Address
-parent: {C9594DB4-4E6E-414A-A9AA-64DB10064F2F}
+parent: {1A371194-30BE-426E-BF67-526C3FD7468C}
 name: Billing Address
 master: {B0DB2EFD-FFF5-4D6D-ABC9-0C2026B0AD18}
 template: {9EED7CAD-6CAA-4897-899F-1AD4E882296A}
@@ -26,7 +26,7 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: 04ee166a-8b44-418c-b267-5bc5b0b2aaef
+revision: 5727f5f0-0263-446f-8318-2a17b74a696b
 
 ----field----
 field: {3CB48796-2247-46BE-806C-B0611FA99BC5}
@@ -41,7 +41,7 @@ name: __Created
 key: __created
 content-length: 15
 
-20140331T170628
+20150515T151737
 ----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
@@ -55,14 +55,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-04ee166a-8b44-418c-b267-5bc5b0b2aaef
+5727f5f0-0263-446f-8318-2a17b74a696b
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 34
 
-20140331T180656:635318860163233789
+20150518T102901:635675417417719325
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

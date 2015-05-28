@@ -1,9 +1,9 @@
 ----item----
 version: 1
-id: {5FEE1A72-7FE5-42E2-9A43-B958CA8CA533}
+id: {ABC48ADA-28E8-4AC6-935A-60A1847AEB0C}
 database: master
 path: /sitecore/content/Active Commerce Training/Business Catalog/Countries/Canada/Northwest Territories
-parent: {4109F0EE-59F3-4B58-A0C2-4A9CDF88A5F8}
+parent: {B0D88241-CA99-4DE9-A2D1-BB2FFD53D1BA}
 name: Northwest Territories
 master: {B0DB2EFD-FFF5-4D6D-ABC9-0C2026B0AD18}
 template: {226DDD63-9CD8-47B1-B68F-DE1ACBAFB3BB}
@@ -40,7 +40,7 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: 86678b17-6f2e-49f9-8645-5163494e9f61
+revision: 688432a5-b447-4e7a-898c-af8a7bf1230f
 
 ----field----
 field: {EE4BD860-A144-4869-9E21-FA2441A85864}
@@ -55,21 +55,21 @@ name: __Created
 key: __created
 content-length: 15
 
-20140331T170638
+20150515T151749
 ----field----
 field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
 name: __Revision
 key: __revision
 content-length: 36
 
-86678b17-6f2e-49f9-8645-5163494e9f61
+688432a5-b447-4e7a-898c-af8a7bf1230f
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 34
 
-20140331T180712:635318860328143222
+20150518T102915:635675417550802881
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

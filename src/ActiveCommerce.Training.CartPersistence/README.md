@@ -1,6 +1,6 @@
 Cart Persistence POC
 ========
-This a proof of concept example which demonstrates how you might implement persistent carts in Active Commerce.
+This example demonstrates how you might implement persistent carts in Active Commerce.
 
 The example as-is handles the following use cases:
 * A customer whose session expires
@@ -11,11 +11,17 @@ The example as-is handles the following use cases:
 * Various cart merging strategies when a user logs in (see configuration for options)
 * Only restoring/persisting cart if needed (e.g. on first request and when cart changes)
 
+Available persistence options:
+* Cookie
+* Customer Profile / Sitecore Security Database
+* xDB Shared Session (experimental, disabled by default)
+* xDB Contact Facet (experimental, disabled by default)
+
 The persistence and restoration processes have been abstracted into Sitecore pipelines to make them more extensible. This could include additional persistence options, such as a SQL database.
 
 Be sure to also reference the two associated TDS projects for needed Sitecore items.
 
-Experimental, use at your own risk. The solution currently has the following limitations:
+The solution currently has the following limitations:
 * Only persists cart items, their quantity, and coupon code. However out of the box, this should be all that is needed.
 * May not handle products which have been flagged as "hidden" since the time the cart was persisted.
 * The message to the user regarding failed restoration of products is non-specific regarding what products failed.

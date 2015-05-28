@@ -1,9 +1,9 @@
 ----item----
 version: 1
-id: {680C3D08-2C54-4F77-A2BE-CAFD834E4146}
+id: {9AC17E7B-7F33-48D7-9D32-FA45046567E7}
 database: master
 path: /sitecore/content/Active Commerce Training/Home/shop/cart/Components/Coupon Code
-parent: {EA0D2690-6E7B-47E8-B306-0D9DE245BD65}
+parent: {3D38AD0E-C1F3-4CB8-AE3C-760E919C75AD}
 name: Coupon Code
 master: {B0DB2EFD-FFF5-4D6D-ABC9-0C2026B0AD18}
 template: {078CFEFA-FF84-4A27-A8DC-6AD01A765F7C}
@@ -26,7 +26,7 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: b48166cf-a5ff-4b36-b998-0305c4607c3a
+revision: 8db12e98-05b0-4c9c-ade6-1699594fa06d
 
 ----field----
 field: {F3A1145A-1DE5-46F4-8BBF-83A4C54C5744}
@@ -62,21 +62,21 @@ name: __Created
 key: __created
 content-length: 15
 
-20140331T170626
+20150515T151735
 ----field----
 field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
 name: __Revision
 key: __revision
 content-length: 36
 
-b48166cf-a5ff-4b36-b998-0305c4607c3a
+8db12e98-05b0-4c9c-ade6-1699594fa06d
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 34
 
-20140331T180700:635318860206316254
+20150518T102904:635675417442381791
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

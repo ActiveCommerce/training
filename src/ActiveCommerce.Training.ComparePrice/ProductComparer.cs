@@ -16,7 +16,7 @@ namespace ActiveCommerce.Training.ComparePrice
             var product = base.ProductRepository.Get<ProductBaseData>(item[ActiveCommerce.TemplateFields.ProductCode]);
             if (field.FieldName.Equals("price", StringComparison.InvariantCultureIgnoreCase))
             {
-                var totals = product.GetProductTotals();
+                var totals = product.GetDisplayTotals();
                 return new[] { new CompareValue { Value = totals.PriceDisplay } };
             }
             return base.GetValues(item, field);

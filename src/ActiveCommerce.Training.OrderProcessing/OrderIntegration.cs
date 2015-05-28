@@ -1,64 +1,70 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.ServiceModel;
+using ActiveCommerce.Orders;
+using ActiveCommerce.Orders.Pipelines;
 using Microsoft.Practices.Unity;
 using ActiveCommerce.Addresses;
-using ActiveCommerce.OrderProcessing;
 using Sitecore.Ecommerce.DomainModel.Orders;
 using Sitecore.StringExtensions;
 
 namespace ActiveCommerce.Training.OrderProcessing
 {
-    public class OrderIntegration : IOrderPipelineProcessor
+    public class OrderIntegration : ActiveCommerce.Orders.Pipelines.OrderPipelineProcessor
     {
-        public void Process(OrderPipelineArgs args)
+        /// <summary>
+        /// This tells Active Commerce whether an exception or error in this processor
+        /// should be considered fatal.
+        /// </summary>
+        protected override bool ContinueOnFailure
+        {
+            get { return false; }
+        }
+
+        protected override void DoProcess(OrderPipelineArgs args)
         {
             var order = args.Order;
 
-            var serviceOrder = new Services.Order();
-            serviceOrder.CustomerEmail = order.CustomerInfo.Email;
-            serviceOrder.CustomerName = order.CustomerInfo.BillingAddress.Name + " " +
-                                        order.CustomerInfo.BillingAddress.Name2;
-            serviceOrder.Billing =
-                ConvertAddress((ActiveCommerce.Addresses.AddressInfo) order.CustomerInfo.BillingAddress);
-            serviceOrder.Shipping =
-                ConvertAddress((ActiveCommerce.Addresses.AddressInfo) order.CustomerInfo.ShippingAddress);
+            var serviceOrder = new Services.Order
+            {
+                CustomerEmail = order.BuyerCustomerParty.Party.Contact.ElectronicMail,
+                CustomerName = order.BuyerCustomerParty.Party.PartyName,
+                Billing = ConvertAddress((Address)order.BuyerCustomerParty.Party.PostalAddress),
+                Shipping = ConvertAddress((Address)order.DefaultDelivery.DeliveryParty.PostalAddress)
+            };
             var lines = new List<Services.OrderLine>();
             foreach (var line in order.OrderLines)
             {
-                var newLine = new Services.OrderLine();
-                newLine.ProductId = line.Product.Code;
-                newLine.Price = line.Totals.PriceExVat;
-                newLine.Quantity = line.Quantity;
+                var newLine = new Services.OrderLine
+                {
+                    ProductId = line.LineItem.Item.Code,
+                    Price = line.LineItem.Price.PriceAmount.Value,
+                    Quantity = (uint)line.LineItem.Quantity
+                };
                 lines.Add(newLine);
             }
             serviceOrder.OrderLines = lines.ToArray();
-            serviceOrder.Total = order.Totals.TotalPriceIncVat;
-            serviceOrder.TaxTotal = order.Totals.TotalVat;
-            serviceOrder.ShippingCost = order.ShippingPrice;
+            serviceOrder.Total = order.AnticipatedMonetaryTotal.TaxInclusiveAmount.Value;
+            serviceOrder.TaxTotal = order.TaxTotal.TaxAmount.Value;
+            var shippingCharges = order.AllowanceCharge.Cast<AllowanceCharge>().Where(x => x.ChargeIndicator && x.ShippingIndicator);
+            serviceOrder.ShippingCost = shippingCharges.Sum(x => x.Amount.Value);
 
-            try
-            {
-                var client = new Services.OrderServiceClient();
-                var id = client.CreateOrder(serviceOrder);
-                Sitecore.Diagnostics.Log.Warn("Successfully created order {0}".FormatWith(id), this);
-            }
-            catch (FaultException e)
-            {
-                Sitecore.Diagnostics.Log.Error("Error while sending order data. Error from server was: {0}".FormatWith(e.Message), e, this);
-                args.AddMessage(e.Message);
-                args.Order = null;
-            }
+            var client = new Services.OrderServiceClient();
+            var id = client.CreateOrder(serviceOrder);
+            Sitecore.Diagnostics.Log.Warn("Successfully exported order {0}".FormatWith(id), this);
         }
 
-        protected Services.Address ConvertAddress(AddressInfo address)
+        protected Services.Address ConvertAddress(ActiveCommerce.Orders.Address address)
         {
-            var newAddress = new Services.Address();
-            newAddress.AddressLine = address.Address;
-            newAddress.City = address.City;
-            newAddress.State = address.State;
-            newAddress.Country = address.Country.Code;
-            newAddress.Zip = address.Zip;
+            var newAddress = new Services.Address
+            {
+                AddressLine = address.AddressLine,
+                City = address.CityName,
+                State = address.CountrySubentity,
+                Country = address.CountryCode,
+                Zip = address.PostalZone
+            };
             return newAddress;
         }
     }

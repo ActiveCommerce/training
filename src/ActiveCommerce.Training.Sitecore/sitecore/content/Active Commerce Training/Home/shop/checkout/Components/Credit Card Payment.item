@@ -1,9 +1,9 @@
 ----item----
 version: 1
-id: {591F9A6C-A828-4315-BD87-8FE1BA20EDE4}
+id: {88CD7588-A9A3-4017-A3B4-7A97B8BA446D}
 database: master
 path: /sitecore/content/Active Commerce Training/Home/shop/checkout/Components/Credit Card Payment
-parent: {C9594DB4-4E6E-414A-A9AA-64DB10064F2F}
+parent: {1A371194-30BE-426E-BF67-526C3FD7468C}
 name: Credit Card Payment
 master: {B0DB2EFD-FFF5-4D6D-ABC9-0C2026B0AD18}
 template: {9B619AF8-0F82-489E-BCDA-FEC73FE9EF28}
@@ -15,7 +15,7 @@ name: Payment Option
 key: payment option
 content-length: 38
 
-{C81F0E6F-CB3F-4F16-8A8C-FFE0AC2F89ED}
+{48DBBD39-492C-49A3-80B6-07325D2BB950}
 ----field----
 field: {F6D8A61C-2F84-4401-BD24-52D2068172BC}
 name: __Originator
@@ -33,7 +33,7 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: 166da3f5-14ae-4d22-bb06-8e23e4d49cf1
+revision: 1a702aab-f109-473f-a92b-2093826a07ca
 
 ----field----
 field: {3CB48796-2247-46BE-806C-B0611FA99BC5}
@@ -48,7 +48,7 @@ name: __Created
 key: __created
 content-length: 15
 
-20140331T170628
+20150515T151737
 ----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
@@ -62,14 +62,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-166da3f5-14ae-4d22-bb06-8e23e4d49cf1
+1a702aab-f109-473f-a92b-2093826a07ca
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 34
 
-20140331T180700:635318860207756336
+20150518T102904:635675417443411894
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

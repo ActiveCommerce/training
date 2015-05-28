@@ -1,0 +1,65 @@
+----item----
+version: 1
+id: {5A7CE9E8-055E-4621-A62A-9212808DEA03}
+database: master
+path: /sitecore/content/Active Commerce Training/Business Catalog/States/Processing/FollowingStates/Complete
+parent: {04578A5F-1188-4399-84DF-8C50E4E13071}
+name: Complete
+master: {B0DB2EFD-FFF5-4D6D-ABC9-0C2026B0AD18}
+template: {AB83D7CA-E135-40BB-931F-8EB9E19714B6}
+templatekey: Following State Link
+
+----field----
+field: {7A8606E7-7968-40BB-933E-BBF0A9744CB1}
+name: Following State
+key: following state
+content-length: 38
+
+{AC67AEFE-D465-4485-988C-3CF3CEEC9DB4}
+----field----
+field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
+name: __Sortorder
+key: __sortorder
+content-length: 3
+
+100
+----field----
+field: {F6D8A61C-2F84-4401-BD24-52D2068172BC}
+name: __Originator
+key: __originator
+content-length: 0
+
+
+----version----
+language: en
+version: 1
+revision: 732489cd-ccc9-46b7-9783-a1b6bfb3e524
+
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 15
+
+20150515T151740
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+732489cd-ccc9-46b7-9783-a1b6bfb3e524
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20150515T151806:635672998863419488
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

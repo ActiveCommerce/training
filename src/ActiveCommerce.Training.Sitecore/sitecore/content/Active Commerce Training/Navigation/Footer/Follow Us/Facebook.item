@@ -1,9 +1,9 @@
 ----item----
 version: 1
-id: {649878CF-73FD-4797-BA86-4EFF68E63364}
+id: {13269CCA-B9F8-4BB3-BDD4-C6CBAFCD6A34}
 database: master
 path: /sitecore/content/Active Commerce Training/Navigation/Footer/Follow Us/Facebook
-parent: {B018A0BE-0BDC-413B-9724-FFDECEC98D94}
+parent: {DC9901AD-DEA7-4E11-B819-6354AEC70D84}
 name: Facebook
 master: {B0DB2EFD-FFF5-4D6D-ABC9-0C2026B0AD18}
 template: {9FADACA1-D7E5-4A7D-BD16-C7BE2210F214}
@@ -33,7 +33,7 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: c76ec239-66e1-4723-a922-5f91f04b217f
+revision: 13998acb-5590-423b-9dc0-9c5195232ad1
 
 ----field----
 field: {D9B360D6-1527-4E7C-94E1-4CF03E5E49D9}
@@ -48,7 +48,7 @@ name: __Created
 key: __created
 content-length: 15
 
-20140331T170631
+20150515T151739
 ----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
@@ -62,14 +62,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-c76ec239-66e1-4723-a922-5f91f04b217f
+13998acb-5590-423b-9dc0-9c5195232ad1
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 34
 
-20140331T180702:635318860228717535
+20150518T102906:635675417468387255
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

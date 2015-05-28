@@ -1,9 +1,9 @@
 ----item----
 version: 1
-id: {6997900D-049F-468E-ABB3-A1F76C79C40D}
+id: {7E3E0526-D9BD-4BCA-8E4C-40FF9BF49EA6}
 database: master
 path: /sitecore/content/Active Commerce Training/Navigation/Footer/Products
-parent: {22C967EA-8D13-4146-93AC-F6E8A3ABF02F}
+parent: {C8F1CE50-79A4-4051-844A-5701072E4F99}
 name: Products
 master: {B0DB2EFD-FFF5-4D6D-ABC9-0C2026B0AD18}
 template: {7F0C490E-75FE-4644-BEAE-F588A788FB8F}
@@ -26,7 +26,7 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: 468272ba-4521-49e1-ae4e-9946eac24b21
+revision: 4495fe18-bca2-4819-96ae-59b47be8f864
 
 ----field----
 field: {040C5B6A-46DD-4FC4-A06C-38ACA963E481}
@@ -41,7 +41,7 @@ name: __Created
 key: __created
 content-length: 15
 
-20140331T170631
+20150515T151739
 ----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
@@ -55,14 +55,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-468272ba-4521-49e1-ae4e-9946eac24b21
+4495fe18-bca2-4819-96ae-59b47be8f864
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 34
 
-20140331T180715:635318860353324662
+20150518T102916:635675417566144361
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

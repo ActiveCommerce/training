@@ -96,7 +96,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_Config\Include\xActiveCommerce.zTraining.ProductDataProvider.config" />
-    <None Include="Readme.txt" />
+    <None Include="README.md" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

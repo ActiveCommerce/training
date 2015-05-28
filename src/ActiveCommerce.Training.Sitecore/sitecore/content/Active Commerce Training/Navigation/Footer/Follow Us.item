@@ -1,9 +1,9 @@
 ----item----
 version: 1
-id: {B018A0BE-0BDC-413B-9724-FFDECEC98D94}
+id: {DC9901AD-DEA7-4E11-B819-6354AEC70D84}
 database: master
 path: /sitecore/content/Active Commerce Training/Navigation/Footer/Follow Us
-parent: {22C967EA-8D13-4146-93AC-F6E8A3ABF02F}
+parent: {C8F1CE50-79A4-4051-844A-5701072E4F99}
 name: Follow Us
 master: {B0DB2EFD-FFF5-4D6D-ABC9-0C2026B0AD18}
 template: {7F0C490E-75FE-4644-BEAE-F588A788FB8F}
@@ -33,7 +33,7 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: 8ffd627e-75ac-4ce4-a4bc-aca34c0fe565
+revision: b197247a-ae73-4997-aec1-84188ef945a6
 
 ----field----
 field: {040C5B6A-46DD-4FC4-A06C-38ACA963E481}
@@ -48,7 +48,7 @@ name: __Created
 key: __created
 content-length: 15
 
-20140331T170631
+20150515T151739
 ----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
@@ -62,14 +62,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-8ffd627e-75ac-4ce4-a4bc-aca34c0fe565
+b197247a-ae73-4997-aec1-84188ef945a6
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 34
 
-20140331T180703:635318860238288082
+20150518T102907:635675417475559895
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

@@ -1,14 +1,21 @@
 ----item----
 version: 1
-id: {E49F84FF-B768-42A5-9D31-80D294F8095C}
+id: {848B6F75-1276-4BBC-8B69-0B9A1EF8BE4C}
 database: master
 path: /sitecore/content/Active Commerce Training/Business Catalog/Order Statuses
-parent: {62C35200-BBD6-451F-B8E7-3C4C8BDE3868}
+parent: {C2461784-47D9-431E-B808-64D17187F9BE}
 name: Order Statuses
 master: {B0DB2EFD-FFF5-4D6D-ABC9-0C2026B0AD18}
 template: {A87A00B1-E6DB-45AB-8B54-636FEC3B5523}
 templatekey: Folder
 
+----field----
+field: {39C4902E-9960-4469-AEEF-E878E9C8218F}
+name: __Hidden
+key: __hidden
+content-length: 1
+
+1
 ----field----
 field: {06D5295C-ED2F-4A54-9BF2-26228D113318}
 name: __Icon
@@ -40,7 +47,7 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: fde8415c-4196-4369-88ba-f5eb3eabd56b
+revision: cd1a5d84-56a5-4200-8277-86ee853ce69c
 
 ----field----
 field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
@@ -55,7 +62,7 @@ name: __Created
 key: __created
 content-length: 15
 
-20140331T170632
+20150515T151742
 ----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
@@ -69,14 +76,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-fde8415c-4196-4369-88ba-f5eb3eabd56b
+cd1a5d84-56a5-4200-8277-86ee853ce69c
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 34
 
-20140331T170632:635318823922751230
+20150515T151742:635672998623994180
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

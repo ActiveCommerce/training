@@ -1,9 +1,9 @@
 ----item----
 version: 1
-id: {4A0195D3-2FB9-445D-8B84-4130D80FB24C}
+id: {394F25AA-4101-41B0-A3C7-E0BC9E6492E8}
 database: master
 path: /sitecore/content/Active Commerce Training/Home/shop/checkout/Components/Shipping Address Summary
-parent: {C9594DB4-4E6E-414A-A9AA-64DB10064F2F}
+parent: {1A371194-30BE-426E-BF67-526C3FD7468C}
 name: Shipping Address Summary
 master: {B0DB2EFD-FFF5-4D6D-ABC9-0C2026B0AD18}
 template: {541710F1-BD1F-4DE1-9B6B-3ED8424FA77D}
@@ -26,7 +26,7 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: 85675262-6463-404b-af2a-ecc1a3b4101d
+revision: 1f47cad4-d675-45af-a78d-6e5ef862b729
 
 ----field----
 field: {3CB48796-2247-46BE-806C-B0611FA99BC5}
@@ -41,7 +41,7 @@ name: __Created
 key: __created
 content-length: 15
 
-20140331T170628
+20150515T151737
 ----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
@@ -55,14 +55,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-85675262-6463-404b-af2a-ecc1a3b4101d
+1f47cad4-d675-45af-a78d-6e5ef862b729
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 34
 
-20140331T180717:635318860374095850
+20150518T102918:635675417581894283
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

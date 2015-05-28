@@ -3,11 +3,16 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using ActiveCommerce.Web.Models;
 
 namespace ActiveCommerce.Training.CartPersistence.ViewModel
 {
     public class ShoppingCartViewModelFactory : ActiveCommerce.Web.Models.Factories.ShoppingCartViewModelFactory
     {
+        public ShoppingCartViewModelFactory(ShoppingCartViewModel viewModel) : base(viewModel)
+        {
+        }
+
         public override Web.Models.ShoppingCartViewModel GetViewModel(ActiveCommerce.Carts.ShoppingCart source)
         {
             var model = base.GetViewModel(source);

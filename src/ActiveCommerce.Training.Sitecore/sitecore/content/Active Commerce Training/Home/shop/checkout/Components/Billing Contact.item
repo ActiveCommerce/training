@@ -1,9 +1,9 @@
 ----item----
 version: 1
-id: {1DF47F8B-E32B-45C4-A4EC-F4603BBBFB1F}
+id: {F52B18D5-C1DF-4BCF-9754-0F41B8F21393}
 database: master
 path: /sitecore/content/Active Commerce Training/Home/shop/checkout/Components/Billing Contact
-parent: {C9594DB4-4E6E-414A-A9AA-64DB10064F2F}
+parent: {1A371194-30BE-426E-BF67-526C3FD7468C}
 name: Billing Contact
 master: {B0DB2EFD-FFF5-4D6D-ABC9-0C2026B0AD18}
 template: {1E1EBF45-FFB0-48C0-86C3-E384A36EDF37}
@@ -26,7 +26,7 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: 9d5b0f76-f88e-413b-b603-c0a283bd067a
+revision: 7172f1cf-b5dc-4a1b-abf6-5f704caf7d4b
 
 ----field----
 field: {3CB48796-2247-46BE-806C-B0611FA99BC5}
@@ -41,7 +41,7 @@ name: __Created
 key: __created
 content-length: 15
 
-20140331T170628
+20150515T151736
 ----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
@@ -55,14 +55,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-9d5b0f76-f88e-413b-b603-c0a283bd067a
+7172f1cf-b5dc-4a1b-abf6-5f704caf7d4b
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 34
 
-20140331T180656:635318860164713874
+20150518T102901:635675417418349388
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

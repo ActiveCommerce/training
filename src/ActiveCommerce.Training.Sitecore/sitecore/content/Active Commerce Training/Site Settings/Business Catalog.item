@@ -1,9 +1,9 @@
 ----item----
 version: 1
-id: {0264AEDF-DCEC-473A-A30E-AF286D968206}
+id: {728FCCA0-5D3F-4E80-97F7-D231526FC00F}
 database: master
 path: /sitecore/content/Active Commerce Training/Site Settings/Business Catalog
-parent: {D769C070-247E-4379-A88E-ACD811D2E815}
+parent: {C220FAEB-5DFA-47F5-B0A9-7779069502AB}
 name: Business Catalog
 master: {B0DB2EFD-FFF5-4D6D-ABC9-0C2026B0AD18}
 template: {22B7E891-F36A-43E0-9369-B2C7B40056B6}
@@ -22,98 +22,91 @@ name: Orders Link
 key: orders link
 content-length: 38
 
-{6159D4F1-8C42-43E4-8A0F-6E403D9EB9F3}
+{2833E755-E075-4120-B0D3-27FB26439CA2}
 ----field----
 field: {6BE7A900-0B4A-45AE-A374-3639DF2DDC58}
 name: Order Statuses Link
 key: order statuses link
 content-length: 38
 
-{E49F84FF-B768-42A5-9D31-80D294F8095C}
+{515BF5EA-63A9-4B59-90C2-A5E431855FDF}
 ----field----
 field: {97B39D4F-94DB-43D8-A603-152995F70458}
 name: Company Master Data Link
 key: company master data link
 content-length: 38
 
-{EDFDD1F1-84A9-4BF2-A1C8-233081DE3323}
+{F297B95E-5657-48C2-825F-9C7DAA98A891}
 ----field----
 field: {C13C69B9-A03D-41DF-8287-8BEBAC2A2CE8}
 name: Countries Link
 key: countries link
 content-length: 38
 
-{06E3A5C8-3FA5-4ABD-ACC3-EF4DE6520A12}
+{D0027CAF-63D4-4A0B-8CD8-8DE307E40B93}
 ----field----
 field: {576288C7-3701-4466-B08B-858793E0E059}
 name: Currencies Link
 key: currencies link
 content-length: 38
 
-{ADA52D00-A2D3-40C9-B264-474CA6DD6F1A}
+{0FF26B76-65E3-40CF-8A0A-941B1C8F0499}
 ----field----
 field: {3EF7802F-1D00-4136-98BC-CF345695B745}
 name: Currency Matrix Link
 key: currency matrix link
 content-length: 38
 
-{0E799749-A597-48D5-A5B4-AA01A1F00828}
+{F4E3916F-DC09-4D7C-98E5-E6BA4E7A885F}
 ----field----
 field: {6D22EB6E-059C-4368-B9FC-C75DAA93790D}
 name: Notification Options Link
 key: notification options link
 content-length: 38
 
-{53EFB303-2EA3-4FCF-92FE-1B2AF5ECFC46}
+{DF02A5BA-C6CF-4C3F-A5C0-0F62355BFE8A}
 ----field----
 field: {0FDC9C37-5F38-467C-9BC3-945FF72BCCA6}
 name: Languages Link
 key: languages link
 content-length: 38
 
-{87DF205F-CA9B-4550-9732-72E58B61CC1B}
+{5B2284AC-B2AD-4268-A2ED-9AC25D5B0143}
 ----field----
 field: {ECB31A35-19E2-41B6-8B9F-18A2FE8D603F}
 name: Shipping Providers Link
 key: shipping providers link
 content-length: 38
 
-{B5105D2D-F6DA-44EB-A5E0-8C06E9AAC947}
+{B2D3CBA3-B42E-4A27-B4CE-A0CC246A454E}
 ----field----
 field: {4F76D0AF-8FD1-4802-8E8A-A4D96C1A514A}
 name: Payment Systems Link
 key: payment systems link
 content-length: 38
 
-{696308F9-2773-4F83-B4B4-5ED30D660749}
+{F5FE6CEA-70E0-4399-B5AB-55907A25ED99}
 ----field----
 field: {736CCE83-1795-43B7-88F8-CCE602F15D3F}
 name: VAT Regions
 key: vat regions
 content-length: 38
 
-{59952757-1457-44E8-BCC9-DE420A3B3AEB}
+{30D65DAB-177A-446E-A330-3C7C4FFE8F36}
 ----field----
 field: {EF56E1FF-F543-42DF-92E8-05633D1BBCC2}
 name: VAT Link
 key: vat link
 content-length: 38
 
-{C7DB9193-D34C-4422-BE8A-F059F07D0359}
+{AE4598AC-E115-4BFF-BB11-5660CDDB3A23}
 ----field----
 field: {77F45671-E22E-43AC-B297-8A506A28D9F7}
 name: Cart Promotions Link
 key: cart promotions link
 content-length: 38
 
-{1B217125-8C66-4FCF-8BB2-F14E0BB14BEC}
-----field----
-field: {9355EEA8-7D36-4061-BF9D-ECA648567855}
-name: Wish Lists Link
-key: wish lists link
-content-length: 38
-
-{3927830B-1E9C-4A6B-8531-B88BC41872F8}
+{0197AF78-81FD-4DF0-9C25-2E08EC538506}
 ----field----
 field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
 name: __Sortorder
@@ -131,7 +124,7 @@ content-length: 0
 ----version----
 language: en
 version: 1
-revision: 5dc32c59-4a6b-40e8-896a-9b829f167620
+revision: fbb14538-4a2b-48d4-884f-5ad94c96dd78
 
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
@@ -146,7 +139,7 @@ name: __Created
 key: __created
 content-length: 15
 
-20140331T170656
+20150515T151805
 ----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
@@ -160,14 +153,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-5dc32c59-4a6b-40e8-896a-9b829f167620
+fbb14538-4a2b-48d4-884f-5ad94c96dd78
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 34
 
-20140331T171437:635318828771078538
+20150515T151920:635672999607487393
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

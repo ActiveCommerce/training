@@ -111,7 +111,13 @@
     <Compile Include="BuyOneGetOne\CountRequiredProduct.cs" />
     <Compile Include="BuyOneGetOne\DiscountProduct.cs" />
     <Compile Include="BuyOneGetOne\DivideCount.cs" />
+    <Compile Include="DiscountMessages.cs" />
+    <Compile Include="LimitedUse\LimitUse.cs" />
+    <Compile Include="LimitedUse\LimitUsePerCustomer.cs" />
+    <Compile Include="Loader\RegisterTypes.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewModel\ShoppingCartViewModel.cs" />
+    <Compile Include="ViewModel\ShoppingCartViewModelFactory.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="images\Buy2Get1.png" />

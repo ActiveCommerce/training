@@ -1,9 +1,9 @@
 ----item----
 version: 1
-id: {52BDE8AA-6949-403D-8055-33A8F470EA70}
+id: {A475F2FE-6942-4A70-ACEC-0AEC38DA0B44}
 database: master
 path: /sitecore/content/Active Commerce Training/Home/shop/checkout/Components/Account Exists
-parent: {C9594DB4-4E6E-414A-A9AA-64DB10064F2F}
+parent: {1A371194-30BE-426E-BF67-526C3FD7468C}
 name: Account Exists
 master: {B0DB2EFD-FFF5-4D6D-ABC9-0C2026B0AD18}
 template: {502F2DE2-D262-431D-8EA0-D82025B6E188}
@@ -26,7 +26,7 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: fd3497af-3997-4d58-894d-dd048685d24a
+revision: 30a56b24-3a19-49c9-8cb7-06f55f01258d
 
 ----field----
 field: {3CB48796-2247-46BE-806C-B0611FA99BC5}
@@ -55,7 +55,7 @@ name: __Created
 key: __created
 content-length: 15
 
-20140331T170628
+20150515T151737
 ----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
@@ -69,14 +69,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-fd3497af-3997-4d58-894d-dd048685d24a
+30a56b24-3a19-49c9-8cb7-06f55f01258d
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 34
 
-20140331T180654:635318860147152870
+20150518T102900:635675417407118265
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

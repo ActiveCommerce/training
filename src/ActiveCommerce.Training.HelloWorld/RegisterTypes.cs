@@ -7,12 +7,7 @@ namespace ActiveCommerce.Training.HelloWorld
     {
         public void Process(Microsoft.Practices.Unity.IUnityContainer container)
         {
-            container.RegisterType<Sitecore.Ecommerce.DomainModel.Carts.IShoppingCartManager, ActiveCommerce.Training.HelloWorld.ShoppingCartManager>(
-                new InjectionMember[] {
-                    new InjectionProperty("ProductRepository"),
-                    new InjectionProperty("ProductPriceManager")
-                }
-            );
+            container.RegisterType<Sitecore.Ecommerce.DomainModel.Carts.IShoppingCartManager, ActiveCommerce.Training.HelloWorld.ShoppingCartManager>();
         }
 
         public int SortOrder
