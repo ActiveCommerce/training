@@ -9,6 +9,11 @@ This is an example of skinning the Coveo Search Interface and adding custom comp
 4. `ProductImage` is a computed field that stores the main product image URI. In this example, it's hardcoded to 166x166 but this is potentially another configuration value you could add.
 5. `xActiveCommerce.zTraining.CoveoSearch.config` configures the computed fields.
 
+## Walkthrough Recording
+This example was presented as part of the May 2015 Milwaukee Sitecore Meetup. You can watch a recording of this presentation on YouTube:
+
+[![May 2015 Milwaukee Sitecore Meetup](http://img.youtube.com/vi/dSoT9wCXiBs/3.jpg)](https://youtu.be/dSoT9wCXiBs?t=1h18m49s)
+
 ## See also
 * [Coveo Developer's Community - Customizing a Search Interface](https://developers.coveo.com/display/public/SC201505/Customizing+a+Search+Interface)
 * [TDS project](../ActiveCommerce.Training.CoveoSearch.Sitecore)
