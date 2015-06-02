@@ -87,7 +87,7 @@ Project("{CAA73BB0-EF22-4D79-A57E-DF67B3BA9C80}") = "ActiveCommerce.Training.Car
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ActiveCommerce.Training.InvoicePayment", "ActiveCommerce.Training.InvoicePayment\ActiveCommerce.Training.InvoicePayment.csproj", "{D0E25F60-1148-456E-A9B7-EB37F87AB2EE}"
 EndProject
-Project("{CAA73BB0-EF22-4D79-A57E-DF67B3BA9C80}") = "ActiveCommerce.Training.Payment.Sitecore", "ActiveCommerce.Training.InvoicePayment.Sitecore\ActiveCommerce.Training.InvoicePayment.Sitecore.scproj", "{B12B1ABE-54F8-4A45-93EC-676609861E92}"
+Project("{CAA73BB0-EF22-4D79-A57E-DF67B3BA9C80}") = "ActiveCommerce.Training.InvoicePayment.Sitecore", "ActiveCommerce.Training.InvoicePayment.Sitecore\ActiveCommerce.Training.InvoicePayment.Sitecore.scproj", "{B12B1ABE-54F8-4A45-93EC-676609861E92}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ActiveCommerce.Training.CustomerInfo", "ActiveCommerce.Training.CustomerInfo\ActiveCommerce.Training.CustomerInfo.csproj", "{CB01D210-1C6A-4C65-B8FE-4372F09C1F5A}"
 EndProject
@@ -128,6 +128,10 @@ EndProject
 Project("{CAA73BB0-EF22-4D79-A57E-DF67B3BA9C80}") = "ActiveCommerce.Training.ProductStockExtension.Sitecore", "ActiveCommerce.Training.ProductStockExtension.Sitecore\ActiveCommerce.Training.ProductStockExtension.Sitecore.scproj", "{D0D0D97F-508C-4894-BFAC-7DE090AC9E04}"
 EndProject
 Project("{CAA73BB0-EF22-4D79-A57E-DF67B3BA9C80}") = "ActiveCommerce.Training.CoveoSearch.Sitecore", "ActiveCommerce.Training.CoveoSearch.Sitecore\ActiveCommerce.Training.CoveoSearch.Sitecore.scproj", "{414C7375-F563-49CB-A5B5-3AC35AE97D04}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ActiveCommerce.Training.OnsitePayment", "ActiveCommerce.Training.OnsitePayment\ActiveCommerce.Training.OnsitePayment.csproj", "{A096D5F4-E4A2-43B5-86AA-A6988ADE732E}"
+EndProject
+Project("{CAA73BB0-EF22-4D79-A57E-DF67B3BA9C80}") = "ActiveCommerce.Training.OnsitePayment.Sitecore", "ActiveCommerce.Training.OnsitePayment.Sitecore\ActiveCommerce.Training.OnsitePayment.Sitecore.scproj", "{B585A80A-E3DD-4140-970E-3DF1EE7159AD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -609,6 +613,26 @@ Global
 		{414C7375-F563-49CB-A5B5-3AC35AE97D04}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{414C7375-F563-49CB-A5B5-3AC35AE97D04}.Release|Any CPU.Build.0 = Release|Any CPU
 		{414C7375-F563-49CB-A5B5-3AC35AE97D04}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{A096D5F4-E4A2-43B5-86AA-A6988ADE732E}.Day1|Any CPU.ActiveCfg = Debug|Any CPU
+		{A096D5F4-E4A2-43B5-86AA-A6988ADE732E}.Day1|Any CPU.Build.0 = Debug|Any CPU
+		{A096D5F4-E4A2-43B5-86AA-A6988ADE732E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A096D5F4-E4A2-43B5-86AA-A6988ADE732E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A096D5F4-E4A2-43B5-86AA-A6988ADE732E}.Debug-SC7|Any CPU.ActiveCfg = Debug|Any CPU
+		{A096D5F4-E4A2-43B5-86AA-A6988ADE732E}.Debug-SC7|Any CPU.Build.0 = Debug|Any CPU
+		{A096D5F4-E4A2-43B5-86AA-A6988ADE732E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A096D5F4-E4A2-43B5-86AA-A6988ADE732E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B585A80A-E3DD-4140-970E-3DF1EE7159AD}.Day1|Any CPU.ActiveCfg = Day1|Any CPU
+		{B585A80A-E3DD-4140-970E-3DF1EE7159AD}.Day1|Any CPU.Build.0 = Day1|Any CPU
+		{B585A80A-E3DD-4140-970E-3DF1EE7159AD}.Day1|Any CPU.Deploy.0 = Day1|Any CPU
+		{B585A80A-E3DD-4140-970E-3DF1EE7159AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B585A80A-E3DD-4140-970E-3DF1EE7159AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B585A80A-E3DD-4140-970E-3DF1EE7159AD}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{B585A80A-E3DD-4140-970E-3DF1EE7159AD}.Debug-SC7|Any CPU.ActiveCfg = Debug|Any CPU
+		{B585A80A-E3DD-4140-970E-3DF1EE7159AD}.Debug-SC7|Any CPU.Build.0 = Debug|Any CPU
+		{B585A80A-E3DD-4140-970E-3DF1EE7159AD}.Debug-SC7|Any CPU.Deploy.0 = Debug|Any CPU
+		{B585A80A-E3DD-4140-970E-3DF1EE7159AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B585A80A-E3DD-4140-970E-3DF1EE7159AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B585A80A-E3DD-4140-970E-3DF1EE7159AD}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

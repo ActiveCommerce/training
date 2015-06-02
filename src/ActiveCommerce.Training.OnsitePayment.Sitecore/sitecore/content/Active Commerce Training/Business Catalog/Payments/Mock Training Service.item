@@ -1,0 +1,116 @@
+----item----
+version: 1
+id: {B611E9B5-4609-419D-AF92-86C3D83C8458}
+database: master
+path: /sitecore/content/Active Commerce Training/Business Catalog/Payments/Mock Training Service
+parent: {F5FE6CEA-70E0-4399-B5AB-55907A25ED99}
+name: Mock Training Service
+master: {00000000-0000-0000-0000-000000000000}
+template: {19B38990-A440-4C72-987E-82EEEA548636}
+templatekey: Payment
+
+----field----
+field: {221F40EE-7B31-4173-B163-9F7E8F53EA05}
+name: Code
+key: code
+content-length: 11
+
+MockService
+----field----
+field: {3AD47898-202D-4B9B-A3AA-8585AA29FECF}
+name: Name
+key: name
+content-length: 21
+
+Mock Training Service
+----field----
+field: {E4018E4F-3A74-41B0-833C-A31D5BE5F930}
+name: Username
+key: username
+content-length: 6
+
+hubert
+----field----
+field: {3517C279-60FC-45D2-9C94-A79DBA3677FA}
+name: Password
+key: password
+content-length: 10
+
+comberdale
+----field----
+field: {79EB3626-2D6F-4A37-8867-7E68381F7467}
+name: Payment Provider Url
+key: payment provider url
+content-length: 90
+
+<link linktype="external" url="http://mock.activecommerce.training" anchor="" target="" />
+----field----
+field: {A1D0577D-5E3A-4AFA-ADB5-C68F0B2E7C99}
+name: Settings
+key: settings
+content-length: 72
+
+<settings>
+   <setting name="authorizeOnly">true</setting>
+</settings>
+----field----
+field: {A4F985D9-98B3-4B52-AAAF-4344F6E747C6}
+name: __Workflow
+key: __workflow
+content-length: 38
+
+{27418690-B217-4D3A-A2E6-091A30B54886}
+----version----
+language: en
+version: 1
+revision: 5a00eb97-0d0c-4954-9dd6-705c23437764
+
+----field----
+field: {EE4BD860-A144-4869-9E21-FA2441A85864}
+name: Title
+key: title
+content-length: 21
+
+Mock Training Service
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 15
+
+20150602T134410
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+5a00eb97-0d0c-4954-9dd6-705c23437764
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20150602T135027:635688498272770000
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {3E431DE1-525E-47A3-B6B0-1CCBEC3A8C98}
+name: __Workflow state
+key: __workflow state
+content-length: 38
+
+{8AD77832-A5A9-4D4C-BF8A-186B21A56204}
+----field----
+field: {001DD393-96C5-490B-924A-B0F25CD9EFD8}
+name: __Lock
+key: __lock
+content-length: 5
+
+<r />

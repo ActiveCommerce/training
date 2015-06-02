@@ -62,6 +62,9 @@ and we provide no warranty. Use at your own risk.
 [Checkout Extension - Gift Message](./src/ActiveCommerce.GiftMessage)
 - Example of extending the data collected during checkout. There is a detailed overview of this example in the *Active Commerce Developer's Cookbook*
 
+[Payment Gateway Integration](./src/ActiveCommerce.Training.OnsitePayment)
+- Example of integrating with a new payment gateway for onsite / integrated payment.
+
 [Invoice Payment](./src/ActiveCommerce.Training.InvoicePayment)
 - Extending the payment step of the checkout process and order processing to allow for payment by invoice / purchase order number.
 
