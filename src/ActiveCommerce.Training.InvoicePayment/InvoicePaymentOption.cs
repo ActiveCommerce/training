@@ -1,13 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using ActiveCommerce.Training.Payment.CheckOut;
+using ActiveCommerce.Training.InvoicePayment.CheckOut;
+using Microsoft.Practices.Unity;
 using Sitecore.Ecommerce.DomainModel.CheckOuts;
 using Sitecore.Ecommerce.DomainModel.Payments;
-using Microsoft.Practices.Unity;
 
-namespace ActiveCommerce.Training.Payment
+namespace ActiveCommerce.Training.InvoicePayment
 {
     public class InvoicePaymentOption : Sitecore.Ecommerce.DomainModel.Payments.PaymentProvider
     {

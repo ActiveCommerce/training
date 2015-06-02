@@ -1,12 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.Mvc;
-using ActiveCommerce.Training.Payment.CheckOut;
+﻿using System.Web.Mvc;
+using ActiveCommerce.Training.InvoicePayment.CheckOut;
 using Sitecore.Ecommerce.DomainModel.CheckOuts;
 
-namespace ActiveCommerce.Training.Payment.Controllers
+namespace ActiveCommerce.Training.InvoicePayment.Controllers
 {
     public class CheckoutController : ActiveCommerce.Web.Controllers.CheckoutController
     {

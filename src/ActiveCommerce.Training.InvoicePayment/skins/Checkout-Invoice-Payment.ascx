@@ -1,4 +1,4 @@
-﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="Checkout-Invoice-Payment.ascx.cs" Inherits="ActiveCommerce.Training.Payment.skins.Checkout_Invoice_Payment" %>
+﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="Checkout-Invoice-Payment.ascx.cs" Inherits="ActiveCommerce.Training.InvoicePayment.skins.Checkout_Invoice_Payment" %>
 
 <div ng-controller="InvoicePaymentCtrl" class="checkout-component">
     

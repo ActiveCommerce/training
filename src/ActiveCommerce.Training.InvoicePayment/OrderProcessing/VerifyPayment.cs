@@ -1,16 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using ActiveCommerce.Carts;
-using ActiveCommerce.Orders;
+﻿using ActiveCommerce.Orders;
 using ActiveCommerce.Orders.Pipelines;
-using ActiveCommerce.Payment;
+using ActiveCommerce.Training.InvoicePayment.CheckOut;
 using ActiveCommerce.Training.OrderExtension;
-using ActiveCommerce.Training.Payment.CheckOut;
 using Sitecore.Ecommerce.DomainModel.CheckOuts;
 
-namespace ActiveCommerce.Training.Payment.OrderProcessing
+namespace ActiveCommerce.Training.InvoicePayment.OrderProcessing
 {
     public class VerifyPayment : ActiveCommerce.Orders.Pipelines.CompleteOrderProcessing.VerifyPayment
     {

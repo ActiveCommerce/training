@@ -104,6 +104,9 @@
     <Content Include="skins\training\styles\signin.less" />
     <Content Include="skins\training\styles\signin.mobile.less" />
     <Content Include="skins\training\templates\README.md" />
+    <Content Include="App_Config\Include\xActiveCommerce.zTrainingSkin.config">
+      <SubType>Designer</SubType>
+    </Content>
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

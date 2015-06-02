@@ -1,9 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 
-namespace ActiveCommerce.Training.Payment.CheckOut
+namespace ActiveCommerce.Training.InvoicePayment.CheckOut
 {
     [Serializable]
     public class CheckOut : ActiveCommerce.CheckOuts.CheckOut, IInvoicePayment

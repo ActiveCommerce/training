@@ -6,9 +6,9 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>b12b1abe-54f8-4a45-93ec-676609861e92</ProjectGuid>
     <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
-    <SourceWebPhysicalPath>..\ActiveCommerce.Training.Payment</SourceWebPhysicalPath>
-    <SourceWebProject>{d0e25f60-1148-456e-a9b7-eb37f87ab2ee}|ActiveCommerce.Training.Payment\ActiveCommerce.Training.Payment.csproj</SourceWebProject>
-    <SourceWebVirtualPath>/ActiveCommerce.Training.Payment.csproj</SourceWebVirtualPath>
+    <SourceWebPhysicalPath>..\ActiveCommerce.Training.InvoicePayment</SourceWebPhysicalPath>
+    <SourceWebProject>{d0e25f60-1148-456e-a9b7-eb37f87ab2ee}|ActiveCommerce.Training.InvoicePayment\ActiveCommerce.Training.InvoicePayment.csproj</SourceWebProject>
+    <SourceWebVirtualPath>/ActiveCommerce.Training.InvoicePayment.csproj</SourceWebVirtualPath>
     <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
     <EnableUpdateable>true</EnableUpdateable>
     <UseMerge>true</UseMerge>
@@ -20,6 +20,8 @@
     <Name>ActiveCommerce.Training.Payment.Sitecore</Name>
     <RootNamespace>ActiveCommerce.Training.Payment.Sitecore</RootNamespace>
     <SitecoreDatabase>master</SitecoreDatabase>
+    <EnableCodeGeneration>false</EnableCodeGeneration>
+    <AssemblyStatus>Exclude</AssemblyStatus>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -42,9 +44,6 @@
     <AssemblyAttributes Include="AssemblyVersion">
       <Value>$(AssemblyVersion)</Value>
     </AssemblyAttributes>
-  </ItemGroup>
-  <ItemGroup>
-    <ExcludedAssemblies Include="Sitecore.%2a.dll" />
   </ItemGroup>
   <ItemGroup>
     <SitecoreItem Include="sitecore\commerce.item">
@@ -169,10 +168,14 @@
     </SitecoreItem>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ActiveCommerce.Training.Payment\ActiveCommerce.Training.Payment.csproj">
+    <ProjectReference Include="..\ActiveCommerce.Training.InvoicePayment\ActiveCommerce.Training.InvoicePayment.csproj">
       <Project>{d0e25f60-1148-456e-a9b7-eb37f87ab2ee}</Project>
-      <Name>ActiveCommerce.Training.Payment</Name>
+      <Name>ActiveCommerce.Training.InvoicePayment</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ExcludedAssemblies Include="Sitecore.%2a.dll" />
+    <ExcludedAssemblies Include="Sitecore.%2a.dll" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\HedgehogDevelopment\SitecoreProject\v9.0\HedgehogDevelopment.SitecoreProject.targets" />
 </Project>

@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace ActiveCommerce.Training.Payment.skins
+namespace ActiveCommerce.Training.InvoicePayment.skins
 {
 
 

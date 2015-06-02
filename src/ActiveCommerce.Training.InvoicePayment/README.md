@@ -59,4 +59,4 @@ the purchase order number can be stored during checkout.
 5. Skinning of the receipt page (_Receipt-Details.ascx_) and receipt email (_Mail-OrderReceipt.ascx_) to display the purchase order number. 
 
 # See also
-* [TDS project](../ActiveCommerce.Training.Payment.Sitecore)
+* [TDS project](../ActiveCommerce.Training.InvoicePayment.Sitecore)
