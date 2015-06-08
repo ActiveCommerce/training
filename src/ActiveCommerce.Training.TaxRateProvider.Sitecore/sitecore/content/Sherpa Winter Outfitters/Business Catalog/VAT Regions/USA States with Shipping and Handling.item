@@ -1,0 +1,114 @@
+----item----
+version: 1
+id: {C1354E5A-B173-476E-90C6-AA998C265F50}
+database: master
+path: /sitecore/content/Sherpa Winter Outfitters/Business Catalog/VAT Regions/USA States with Shipping and Handling
+parent: {928620CE-82AE-4E6E-8CC8-3779E4709931}
+name: USA States with Shipping and Handling
+master: {00000000-0000-0000-0000-000000000000}
+template: {E2B59108-59E0-4502-89D3-A62A83A84327}
+templatekey: North America Tax Calculator
+
+----field----
+field: {221F40EE-7B31-4173-B163-9F7E8F53EA05}
+name: Code
+key: code
+content-length: 33
+
+USA-States-with-Shipping-Handling
+----field----
+field: {3AD47898-202D-4B9B-A3AA-8585AA29FECF}
+name: Name
+key: name
+content-length: 36
+
+USA State Sales Tax, via tax service
+----field----
+field: {597D6281-8617-4AEB-9BC4-93AB42D3FBA4}
+name: VATCalculator
+key: vatcalculator
+content-length: 27
+
+NorthAmericaShippingAddress
+----field----
+field: {239E4678-E2B7-42BC-B079-E868D712597B}
+name: RateProvider
+key: rateprovider
+content-length: 8
+
+training
+----field----
+field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
+name: __Sortorder
+key: __sortorder
+content-length: 3
+
+500
+----version----
+language: en
+version: 1
+revision: ec72f0e5-7de2-4bcc-893a-ad24116cd45f
+
+----field----
+field: {EE4BD860-A144-4869-9E21-FA2441A85864}
+name: Title
+key: title
+content-length: 19
+
+USA State Sales Tax
+----field----
+field: {DBD655DC-1C74-4B81-AE51-A5065BB9D75E}
+name: Basis
+key: basis
+content-length: 38
+
+{F8AA394E-CAE2-4819-A83B-24B9B370E7E2}
+----field----
+field: {A24EED6C-045D-4994-B38E-BF8DDA981CEA}
+name: Locations
+key: locations
+content-length: 155
+
+{26FAF21A-91AF-46B3-9381-5C2CABCD65B7}|{8102047B-1C8F-48F3-B52C-D993CB2AF7E2}|{E95665D8-85A6-47C5-B1F4-C737F3F1F33E}|{74EA59BB-591F-4C48-846F-E9D276E1F619}
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 15
+
+20100113T101000
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+ec72f0e5-7de2-4bcc-893a-ad24116cd45f
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20150608T112747:635693596674626840
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

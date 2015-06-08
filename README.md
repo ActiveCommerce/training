@@ -56,6 +56,8 @@ and we provide no warranty. Use at your own risk.
 [Custom Tax Calculator](./src/ActiveCommerce.Training.TaxCalculator)
 - Example of implementing a custom tax calculator in order to implement custom tax logic or integrate with an external tax service.
 
+[Custom Tax Rate Provider](./src/ActiveCommerce.Training.TaxRateProvider)
+- Example of implementing a custom tax rate provider. This example could be used (with testing) as-is for very simple U.S. sales tax scenarios. See provided README.
 
 ## Checkout
 
