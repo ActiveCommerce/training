@@ -61,6 +61,9 @@ and we provide no warranty. Use at your own risk.
 
 ## Checkout
 
+[Address Validator](./src/ActiveCommerce.Training.AddressValidator)
+- Example of implementing a custom address validator for the checkout process.
+
 [Checkout Extension - Gift Message](./src/ActiveCommerce.GiftMessage)
 - Example of extending the data collected during checkout. There is a detailed overview of this example in the *Active Commerce Developer's Cookbook*
 
