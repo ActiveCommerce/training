@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+    <system.serviceModel>
+        <behaviors>
+            <serviceBehaviors>
+                <behavior name="">
+                    <serviceMetadata httpGetEnabled="true" httpsGetEnabled="true" />
+                    <serviceDebug includeExceptionDetailInFaults="false" />
+                </behavior>
+            </serviceBehaviors>
+        </behaviors>
+        <serviceHostingEnvironment aspNetCompatibilityEnabled="true"
+            multipleSiteBindingsEnabled="true" />
+    </system.serviceModel>
+</configuration>
