@@ -10,7 +10,7 @@ using Sitecore.StringExtensions;
 
 namespace ActiveCommerce.Training.ProductDataProvider
 {
-    public class DataProvider : Sitecore.Data.DataProviders.DataProvider
+    public class XmlDataProvider : Sitecore.Data.DataProviders.DataProvider
     {
         protected HashSet<ID> Templates = new HashSet<ID>();
 
@@ -24,7 +24,7 @@ namespace ActiveCommerce.Training.ProductDataProvider
             }
         }
 
-        public DataProvider()
+        public XmlDataProvider()
         {
             this.CacheOptions.DisableAll = true;
         }

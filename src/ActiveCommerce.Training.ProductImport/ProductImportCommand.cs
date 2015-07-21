@@ -70,16 +70,16 @@ namespace ActiveCommerce.Training.ProductImport
                     productItem["EAN"] = id;
                     productItem["SKU"] = id;
                     productItem["Title"] = book.Element("title").Value;
-                    productItem["Genre"] = book.Element("genre").Value;
+                    //productItem["Genre"] = book.Element("genre").Value;
                     productItem["Short Description"] = book.Element("description").Value;
                     productItem["Description"] = book.Element("description").Value;
-                    productItem["Author"] = book.Element("author").Value;
+                    //productItem["Author"] = book.Element("author").Value;
                     productItem["Weight"] = book.Element("weight").Value;
 
                     //update publish date
-                    var dateField = (DateField)productItem.Fields["Publish Date"];
-                    var dateValue = DateTime.ParseExact(book.Element("publish_date").Value, "yyyy-MM-dd", CultureInfo.InvariantCulture);
-                    dateField.Value = Sitecore.DateUtil.ToIsoDate(dateValue);
+                    //var dateField = (DateField)productItem.Fields["Publish Date"];
+                    //var dateValue = DateTime.ParseExact(book.Element("publish_date").Value, "yyyy-MM-dd", CultureInfo.InvariantCulture);
+                    //dateField.Value = Sitecore.DateUtil.ToIsoDate(dateValue);
 
                     //update pricing
                     var priceXml = XElement.Parse(productItem["Price"].ToString());

@@ -88,9 +88,19 @@
       <HintPath>$(SitecorePath)\bin\Glass.Mapper.Sc.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="MongoDB.Driver.dll">
+      <HintPath>$(SitecorePath)\bin\MongoDB.Driver.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="MongoDB.Bson.dll">
+      <HintPath>$(SitecorePath)\bin\MongoDB.Bson.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DataProvider.cs" />
+    <Compile Include="MongoDataProvider.cs" />
+    <Compile Include="MongoOplogCacheClearer.cs" />
+    <Compile Include="XmlDataProvider.cs" />
     <Compile Include="FieldIDs.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
