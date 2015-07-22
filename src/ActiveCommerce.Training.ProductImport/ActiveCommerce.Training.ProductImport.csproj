@@ -62,6 +62,14 @@
       <HintPath>$(SitecorePath)\bin\Sitecore.Kernel.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="MongoDB.Driver.dll">
+      <HintPath>$(SitecorePath)\bin\MongoDB.Driver.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="MongoDB.Bson.dll">
+      <HintPath>$(SitecorePath)\bin\MongoDB.Bson.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -80,6 +88,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="MongoProductImportCommand.cs" />
     <Compile Include="ProductImportCommand.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

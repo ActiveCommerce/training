@@ -1,0 +1,79 @@
+----item----
+version: 1
+id: {8CAC4104-A030-4596-BB45-F955C768318C}
+database: master
+path: /sitecore/content/Active Commerce Training/Home/products/Books
+parent: {318AF7F5-997C-486B-B065-381571A31E6E}
+name: Books
+master: {00000000-0000-0000-0000-000000000000}
+template: {581EAC31-2AF6-47E6-A08D-400889033005}
+templatekey: Category
+
+----field----
+field: {39BB71D9-E6B4-4F50-BFAC-1C586724D3B9}
+name: Search Text Boxes
+key: search text boxes
+content-length: 44
+
+_path={599FB7CE-4458-45A4-90EF-49EC429C205D}
+----field----
+field: {4423D09D-E95A-4827-B12D-E682BE2DE834}
+name: Product Selection Method
+key: product selection method
+content-length: 38
+
+{38BA5509-99AC-486A-93A1-EA775DC490F6}
+----field----
+field: {A4F985D9-98B3-4B52-AAAF-4344F6E747C6}
+name: __Workflow
+key: __workflow
+content-length: 38
+
+{27418690-B217-4D3A-A2E6-091A30B54886}
+----version----
+language: en
+version: 1
+revision: f11af29b-a300-4349-bd20-3187b12905f5
+
+----field----
+field: {F6418178-2CE2-4997-B4C2-E4EFB95B1F13}
+name: Title
+key: title
+content-length: 5
+
+Books
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20150721T174640Z
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+f11af29b-a300-4349-bd20-3187b12905f5
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 35
+
+20150721T180438:635730986783903239Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {3E431DE1-525E-47A3-B6B0-1CCBEC3A8C98}
+name: __Workflow state
+key: __workflow state
+content-length: 38
+
+{8AD77832-A5A9-4D4C-BF8A-186B21A56204}

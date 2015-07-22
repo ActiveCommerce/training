@@ -1,0 +1,100 @@
+----item----
+version: 1
+id: {03EF6E56-76D9-43FF-BC7D-97B3D846BE5D}
+database: master
+path: /sitecore/content/Active Commerce Training/Home
+parent: {94B3142A-C82E-4BE9-94E9-68A0EC1A8691}
+name: Home
+master: {B0DB2EFD-FFF5-4D6D-ABC9-0C2026B0AD18}
+template: {E91896C4-3765-46D9-B8BD-0431FDEC8DBB}
+templatekey: Site Root
+
+----field----
+field: {F5EBEC31-CE2F-4E4A-A5F5-BA87D932D02E}
+name: Product Detail Presentation Storage
+key: product detail presentation storage
+content-length: 38
+
+{EFF8120B-BE40-448C-A564-0333CFA5E3FA}
+----field----
+field: {1B9A8258-C1F1-4034-888A-E15602BDDEFD}
+name: Display Products Mode
+key: display products mode
+content-length: 38
+
+{7ED1F128-BAD2-4210-872A-705CB3E3E678}
+----field----
+field: {F6D8A61C-2F84-4401-BD24-52D2068172BC}
+name: __Originator
+key: __originator
+content-length: 0
+
+
+----field----
+field: {A4F985D9-98B3-4B52-AAAF-4344F6E747C6}
+name: __Workflow
+key: __workflow
+content-length: 38
+
+{27418690-B217-4D3A-A2E6-091A30B54886}
+----version----
+language: en
+version: 1
+revision: c795c1dc-83da-464d-b5f1-f0259d76d330
+
+----field----
+field: {42A77B74-0549-44AA-9B9E-A1E3A93D13D0}
+name: Title
+key: title
+content-length: 4
+
+Home
+----field----
+field: {42724112-1616-4D2C-9E6E-DEBFD0C56894}
+name: Title Suffix
+key: title suffix
+content-length: 27
+
+ - Active Commerce Training
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 15
+
+20150515T151735
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+c795c1dc-83da-464d-b5f1-f0259d76d330
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20150518T102908:635675417488450723
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {3E431DE1-525E-47A3-B6B0-1CCBEC3A8C98}
+name: __Workflow state
+key: __workflow state
+content-length: 38
+
+{8AD77832-A5A9-4D4C-BF8A-186B21A56204}

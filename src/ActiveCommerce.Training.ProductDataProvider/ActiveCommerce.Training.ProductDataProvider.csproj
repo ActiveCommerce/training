@@ -76,6 +76,14 @@
       <HintPath>$(SitecorePath)\bin\ActiveCommerce.Web.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="Sitecore.Ecommerce.Kernel">
+      <HintPath>$(SitecorePath)\bin\Sitecore.Ecommerce.Kernel.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sitecore.Ecommerce.DomainModel">
+      <HintPath>$(SitecorePath)\bin\Sitecore.Ecommerce.DomainModel.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="Castle.Core">
       <HintPath>$(SitecorePath)\bin\Castle.Core.dll</HintPath>
       <Private>False</Private>

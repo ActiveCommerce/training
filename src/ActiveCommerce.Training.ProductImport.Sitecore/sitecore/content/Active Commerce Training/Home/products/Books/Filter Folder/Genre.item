@@ -1,0 +1,86 @@
+----item----
+version: 1
+id: {A64784E6-ECF8-4965-B6EF-2B8FF5D3C22F}
+database: master
+path: /sitecore/content/Active Commerce Training/Home/products/Books/Filter Folder/Genre
+parent: {DFB4B636-004D-46E7-BC2F-0CFB665F5558}
+name: Genre
+master: {00000000-0000-0000-0000-000000000000}
+template: {68AEE0D6-A4F7-45BC-8396-5B19C18588BB}
+templatekey: Filter Field
+
+----field----
+field: {2A93CD33-1DE2-41C6-97D4-CCADC61BF852}
+name: Field
+key: field
+content-length: 38
+
+{DBFDFB2C-7D0F-4F7D-98F6-B7021C1ED1A2}
+----field----
+field: {A4F985D9-98B3-4B52-AAAF-4344F6E747C6}
+name: __Workflow
+key: __workflow
+content-length: 38
+
+{27418690-B217-4D3A-A2E6-091A30B54886}
+----version----
+language: en
+version: 1
+revision: 2363651c-3fe5-4f8b-b467-ac7fa1ca1a6c
+
+----field----
+field: {4EAE1A68-2591-4E5D-AA2E-3B14FFB69EC5}
+name: Display Name
+key: display name
+content-length: 5
+
+Genre
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20150721T174837Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+2363651c-3fe5-4f8b-b467-ac7fa1ca1a6c
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 35
+
+20150721T180441:635730986815255822Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {3E431DE1-525E-47A3-B6B0-1CCBEC3A8C98}
+name: __Workflow state
+key: __workflow state
+content-length: 38
+
+{8AD77832-A5A9-4D4C-BF8A-186B21A56204}
+----field----
+field: {001DD393-96C5-490B-924A-B0F25CD9EFD8}
+name: __Lock
+key: __lock
+content-length: 5
+
+<r />

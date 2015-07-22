@@ -2,8 +2,12 @@
 using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
+using System.Text;
 using System.Threading;
 using System.Web;
+using System.Xml;
+using System.Xml.Serialization;
+using Glass.Mapper.Sc.CodeFirst;
 using MongoDB.Bson;
 using MongoDB.Driver;
 using MongoDB.Driver.Builders;
@@ -11,12 +15,26 @@ using Sitecore.Caching;
 using Sitecore.Data;
 using Sitecore.Data.DataProviders;
 using Sitecore.Data.Items;
+using Sitecore.Diagnostics.PerformanceCounters;
+using Sitecore.Ecommerce.PriceMatrix;
 using Sitecore.StringExtensions;
 
 namespace ActiveCommerce.Training.ProductDataProvider
 {
     public class MongoDataProvider : Sitecore.Data.DataProviders.DataProvider
     {
+        private static class FieldIds
+        {
+            public static ID Ean = ID.Parse(ActiveCommerce.Products.Constants.FieldIds.Product.EAN);
+            public static ID Sku = ID.Parse(ActiveCommerce.Products.Constants.FieldIds.Product.SKU);
+            public static ID Title = ID.Parse(ActiveCommerce.Products.Constants.FieldIds.Product.Title);
+            public static ID ShortDescription = ID.Parse(ActiveCommerce.Products.Constants.FieldIds.Product.ShortDescription);
+            public static ID Description = ID.Parse(ActiveCommerce.Products.Constants.FieldIds.Product.Description);
+            public static ID Weight = ID.Parse(ActiveCommerce.Products.Constants.FieldIds.Product.Weight);
+            public static ID Price = ID.Parse(ActiveCommerce.Products.Constants.FieldIds.Product.Price);
+            public static ID Hidden = ID.Parse(ActiveCommerce.Products.Constants.FieldIds.Product.Hidden);
+        }
+
         private static volatile MongoOplogCacheClearer _cacheClearer;
         private static readonly object _lockObj = new object();
 
@@ -81,6 +99,8 @@ namespace ActiveCommerce.Training.ProductDataProvider
 
         public override FieldList GetItemFields(ItemDefinition itemDefinition, VersionUri versionUri, Sitecore.Data.DataProviders.CallContext context)
         {
+            var fields = new FieldList();
+
             if (!Templates.Contains(itemDefinition.TemplateID))
             {
                 return null;
@@ -103,19 +123,41 @@ namespace ActiveCommerce.Training.ProductDataProvider
             var book = collection.FindOne(query);
             if (book == null)
             {
-                //TODO: flag product as hidden?
-                return null;
-            }
-
-            //first time seeing this product -- link it in the MongoDB
-            if (!book.Contains("sitecoreId"))
-            {
-                collection.Update(query, Update.Set("sitecoreId", itemDefinition.ID.ToShortID().ToString()));
+                fields.Add(FieldIds.Hidden, "1");
+                //TODO: return empty values for other fields
+                return fields;
             }
 
             //map fields
-            //TODO: more dynamic field mapping
-            var fields = new FieldList();
+            //TODO: more dynamic field mapping, via config?
+
+            //base product fields
+            fields.Add(FieldIds.Ean, productCode);
+            fields.Add(FieldIds.Sku, productCode);
+            fields.Add(FieldIds.Title, book["title"].AsString);
+            fields.Add(FieldIds.ShortDescription, book["description"].AsString);
+            fields.Add(FieldIds.Description, book["description"].AsString);
+            fields.Add(FieldIds.Weight, book["weight"].AsString);
+
+            //pricing is a little more work
+            var priceCategoryItem = new CategoryItem("Normalprice", book["price"].AsString);
+            var priceCategory = new Category("Shop");
+            priceCategory.AddItem(priceCategoryItem);
+            var priceMatrix = new PriceMatrix();
+            priceMatrix.AddCategory(priceCategory);
+            var serializer = new XmlSerializer(priceMatrix.GetType());
+            var priceOutput = new StringBuilder();
+            var xmlSettings = new XmlWriterSettings
+            {
+                OmitXmlDeclaration = true
+            };
+            var xmlWriter = XmlWriter.Create(priceOutput, xmlSettings);
+            var namespaces = new XmlSerializerNamespaces();
+            namespaces.Add(string.Empty, string.Empty);
+            serializer.Serialize(xmlWriter, priceMatrix, namespaces);
+            fields.Add(FieldIds.Price, priceOutput.ToString());
+
+            //book fields
             fields.Add(FieldIDs.Author, book["author"].AsString);
             fields.Add(FieldIDs.Genre, book["genre"].AsString);
             var dateValue = DateTime.ParseExact(book["publishDate"].AsString, "yyyy-MM-dd", CultureInfo.InvariantCulture);

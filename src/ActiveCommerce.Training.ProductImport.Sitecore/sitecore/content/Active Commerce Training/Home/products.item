@@ -1,0 +1,79 @@
+----item----
+version: 1
+id: {318AF7F5-997C-486B-B065-381571A31E6E}
+database: master
+path: /sitecore/content/Active Commerce Training/Home/products
+parent: {03EF6E56-76D9-43FF-BC7D-97B3D846BE5D}
+name: products
+master: {B0DB2EFD-FFF5-4D6D-ABC9-0C2026B0AD18}
+template: {5EC74478-47A2-4631-81E2-C345950161DE}
+templatekey: Catalog
+
+----field----
+field: {1B9A8258-C1F1-4034-888A-E15602BDDEFD}
+name: Display Products Mode
+key: display products mode
+content-length: 38
+
+{7ED1F128-BAD2-4210-872A-705CB3E3E678}
+----field----
+field: {27AECC59-2405-44CF-B3F4-5C7404895637}
+name: Show color swatches
+key: show color swatches
+content-length: 1
+
+1
+----field----
+field: {F6D8A61C-2F84-4401-BD24-52D2068172BC}
+name: __Originator
+key: __originator
+content-length: 0
+
+
+----version----
+language: en
+version: 1
+revision: e7668c32-5eee-4617-ae14-ccb4916010bb
+
+----field----
+field: {42A77B74-0549-44AA-9B9E-A1E3A93D13D0}
+name: Title
+key: title
+content-length: 8
+
+Products
+----field----
+field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
+name: __Display name
+key: __display name
+content-length: 8
+
+Products
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 15
+
+20150515T151738
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+e7668c32-5eee-4617-ae14-ccb4916010bb
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20150515T151738:635672998589768340
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
