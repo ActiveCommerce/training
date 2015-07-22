@@ -17,6 +17,10 @@ namespace ActiveCommerce.Training.PriceRules.Prices
                 Sitecore.Diagnostics.Log.Warn("GetPricingRulePrice: General Settings did not resolve to correct type", this);
                 return;
             }
+            if (settings.PricingRules == null)
+            {
+                return;
+            }
 
             var ruleContext = new PricingRuleContext
                               {
