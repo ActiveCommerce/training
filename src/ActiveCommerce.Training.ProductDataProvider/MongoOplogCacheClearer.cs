@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using MongoDB.Bson;
 using MongoDB.Driver;
+using MongoDB.Driver.Builders;
 using Sitecore.Data;
 using Sitecore.Data.Events;
 using Sitecore.Diagnostics;
@@ -44,7 +45,8 @@ namespace ActiveCommerce.Training.ProductDataProvider
                 var server = client.GetServer();
                 var mongoDatabase = server.GetDatabase(LOCAL);
                 var opLog = mongoDatabase.GetCollection(OPLOG);
-                var queryDoc = new QueryDocument("ns", string.Format("{0}.{1}", _mongoDatabase, _mongoCollection));
+                var queryCollection = string.Format("{0}.{1}", _mongoDatabase, _mongoCollection);
+                var queryDoc = new QueryDocument("ns", queryCollection);
                 var query = opLog.Find(queryDoc)
                                 .SetFlags(QueryFlags.AwaitData | QueryFlags.NoCursorTimeout | QueryFlags.TailableCursor);
                 var cursor = new MongoCursorEnumerator<BsonDocument>(query);
@@ -52,12 +54,39 @@ namespace ActiveCommerce.Training.ProductDataProvider
                 {
                     if (cursor.MoveNext())
                     {
-                        var updated = cursor.Current["o"].AsBsonDocument;
-                        if (!updated.Contains("sitecoreId"))
+                        var document = cursor.Current;
+                        if (document["op"].AsString == "d")
+                        {
+                            //need to find the update that set the sitecore id
+                            Sitecore.Diagnostics.Log.Info("MongoOplogCacheClearer: Product deleted, seeking Sitecore id", this);
+                            var deleted = document["o"].AsBsonDocument;
+                            var findDeleted = Query.And(new[]
+                            {
+                                Query.EQ("op", "u"),
+                                Query.EQ("ns", queryCollection),
+                                Query.EQ("o2._id", deleted["_id"].AsObjectId),
+                                Query.Exists("o.$set.sitecoreId")
+                            });
+
+                            var deletedResults = opLog.Find(findDeleted).SetSortOrder(SortBy.Descending("ts"));
+                            if (!deletedResults.Any())
+                            {
+                                continue;
+                            }
+                            document = deletedResults.First();
+                            document = document["o"].AsBsonDocument;
+                            document = document["$set"].AsBsonDocument;
+                        }
+                        else
+                        {
+                            document = document["o"].AsBsonDocument;
+                        }
+
+                        if (!document.Contains("sitecoreId"))
                         {
                             continue;
                         }
-                        var id = Sitecore.Data.ShortID.Parse(updated["sitecoreId"].AsString).ToID();
+                        var id = Sitecore.Data.ShortID.Parse(document["sitecoreId"].AsString).ToID();
                         foreach (var database in _databases)
                         {
                             var item = database.GetItem(id);
