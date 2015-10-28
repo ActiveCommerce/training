@@ -20,6 +20,9 @@ and we provide no warranty. Use at your own risk.
 [Product Data Provider](./src/ActiveCommerce.Training.ProductDataProvider)
 - Experimental example of real-time data integration via a Sitecore Data Provider for just specific fields within a product item.
 
+[Product Link Provider](./src/ActiveCommerce.Training.ProductLinkProvider)
+- Example of a custom link provider to allow products to be used in links more generically (e.g. Generic Link field, Rich Text links), while maintaining product url resolution.
+
 [Product Url Examples](./src/ActiveCommerce.Training.ProductUrl)
 - Customizing the format of product urls.
 
