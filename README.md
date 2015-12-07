@@ -108,6 +108,9 @@ and we provide no warranty. Use at your own risk.
 [Discount Extensions](./src/ActiveCommerce.Training.Discounts)
 - Custom discount actions, including true BOGO discounts.
 
+[Estimate Shipping](./src/ActiveCommerce.Training.EstimateShipping)
+- Allow user to estimate shipping costs by zip code
+
 ## Customer Data
 
 [Customer Info Extension](./src/ActiveCommerce.Training.CustomerInfo)
