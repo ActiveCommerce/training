@@ -112,17 +112,17 @@ namespace ActiveCommerce.Training.CheckoutViaApi.Controllers
             cart.CustomerInfo.Email = "test@tester.com";
             cart.CustomerInfo.Phone = billing.Phone;
 
-            var paymentSystemProvider = Sitecore.Ecommerce.Context.Entity.Resolve<IEntityProvider<PaymentSystem>>();
-            var paymentSystem = paymentSystemProvider.Get("MockIntegratedPayment");
-            cart.PaymentSystem = paymentSystem;
-
-            cart.CreditCardInfo = new CreditCardInfo
+            var paymentFactory = Sitecore.Ecommerce.Context.Entity.Resolve<ActiveCommerce.Payments.PaymentFactory>();
+            var payment = paymentFactory.Create("MockIntegratedPayment");
+            payment.Details = new ActiveCommerce.Payments.CreditCardInfo
             {
                 CardType = "Visa",
                 CardNumber = "4111111111111111",
                 ExpirationDate = new DateTime(2020, 11, 1),
                 SecurityCode = "111"
             };
+            payment.Amount = (cart.Totals as ActiveCommerce.Prices.OrderTotals).BalanceDue;
+            cart.PrimaryPayment = payment;
 
             var orderProcessingArgs = new OrderProcessingArgs
             {
@@ -141,7 +141,7 @@ namespace ActiveCommerce.Training.CheckoutViaApi.Controllers
                     return new EmptyResult();
 
                 case OrderProcessingStatus.Succeeded:
-                    cart.CreditCardInfo = null;
+                    cart.PrimaryPayment = null;
                     return Json("Success!", JsonRequestBehavior.AllowGet);
 
                 case OrderProcessingStatus.PaymentFailed:
