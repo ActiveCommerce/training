@@ -1,0 +1,72 @@
+----item----
+version: 1
+id: {C46FD3C2-3D6B-4CDF-AF66-D3820BB72235}
+database: master
+path: /sitecore/system/Modules/Active Commerce/sort/Sort by Rating
+parent: {A4E728F4-1734-418C-956E-4FD879B4FF13}
+name: Sort by Rating
+master: {00000000-0000-0000-0000-000000000000}
+template: {726BAEC6-5CDE-40E4-A269-92ACF73A857B}
+templatekey: Rating Sort
+
+----field----
+field: {A4F985D9-98B3-4B52-AAAF-4344F6E747C6}
+name: __Workflow
+key: __workflow
+content-length: 38
+
+{27418690-B217-4D3A-A2E6-091A30B54886}
+----version----
+language: en
+version: 1
+revision: 9d5eec9c-ac72-4327-abed-7c7d021251f0
+
+----field----
+field: {528D4153-42CA-4CE8-8B84-D98D9B9CDD44}
+name: Display Value
+key: display value
+content-length: 14
+
+Sort by Rating
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20160204T184246Z
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+9d5eec9c-ac72-4327-abed-7c7d021251f0
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20160204T184254Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {3E431DE1-525E-47A3-B6B0-1CCBEC3A8C98}
+name: __Workflow state
+key: __workflow state
+content-length: 38
+
+{8AD77832-A5A9-4D4C-BF8A-186B21A56204}
+----field----
+field: {001DD393-96C5-490B-924A-B0F25CD9EFD8}
+name: __Lock
+key: __lock
+content-length: 5
+
+<r />

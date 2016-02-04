@@ -15,7 +15,7 @@ namespace ActiveCommerce.Training.SimpleReviews
         //session will be closed for us when Unity container is disposed on request end
         protected ISession Session
         {
-            get { return _session ?? (_session = _sessionBuilder.OpenWriteSession()); }
+            get { return _session == null || !_session.IsOpen ? (_session = _sessionBuilder.OpenWriteSession()) : _session; }
         }
 
         //session builder and shop context will be injected by Unity container

@@ -29,6 +29,8 @@ and we provide no warranty. Use at your own risk.
 [Custom Category](./src/ActiveCommerce.Training.CustomCategory)
 - Example of creating a custom category domain object and Sitecore template
 
+[Custom Product Sort](./src/ActiveCommerce.Training.SimpleReviews)
+- Example of a 'Sort by Rating' custom product sort option
 
 ## Product Stock
 

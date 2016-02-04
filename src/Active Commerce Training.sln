@@ -119,7 +119,7 @@ Project("{CAA73BB0-EF22-4D79-A57E-DF67B3BA9C80}") = "ActiveCommerce.Training.Che
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ActiveCommerce.Training.SimpleReviews", "ActiveCommerce.Training.SimpleReviews\ActiveCommerce.Training.SimpleReviews.csproj", "{710F1C37-F24F-4AD8-9FB7-BD76AB38F3E9}"
 EndProject
-Project("{CAA73BB0-EF22-4D79-A57E-DF67B3BA9C80}") = "ActiveCommerce.Training.SimpleReviews.Sitecore", "ActiveCommerce.Training.SimpleReviews.Sitecore\ActiveCommerce.Training.SimpleReviews.Sitecore.scproj", "{52F653CF-7FDD-4AB8-B463-9C17C1B5D6D0}"
+Project("{CAA73BB0-EF22-4D79-A57E-DF67B3BA9C80}") = "ActiveCommerce.Training.SimpleReviews.Sitecore.Core", "ActiveCommerce.Training.SimpleReviews.Sitecore.Core\ActiveCommerce.Training.SimpleReviews.Sitecore.Core.scproj", "{52F653CF-7FDD-4AB8-B463-9C17C1B5D6D0}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ActiveCommerce.Training.ProductStockExtension", "ActiveCommerce.Training.ProductStockExtension\ActiveCommerce.Training.ProductStockExtension.csproj", "{ECCC0EFE-FABA-4860-943C-301BD46FC32E}"
 EndProject
@@ -172,6 +172,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ActiveCommerce.Training.ProductLinkProvider", "ActiveCommerce.Training.ProductLinkProvider\ActiveCommerce.Training.ProductLinkProvider.csproj", "{D49209B4-5BFB-4F7E-B146-776D11ABF4F5}"
 EndProject
 Project("{CAA73BB0-EF22-4D79-A57E-DF67B3BA9C80}") = "ActiveCommerce.Training.ProductLinkProvider.Sitecore", "ActiveCommerce.Training.ProductLinkProvider.Sitecore\ActiveCommerce.Training.ProductLinkProvider.Sitecore.scproj", "{66E0D718-D486-41AE-9E95-F1B658756BA5}"
+EndProject
+Project("{CAA73BB0-EF22-4D79-A57E-DF67B3BA9C80}") = "ActiveCommerce.Training.SimpleReviews.Sitecore", "ActiveCommerce.Training.SimpleReviews.Sitecore\ActiveCommerce.Training.SimpleReviews.Sitecore.scproj", "{A2E5E719-D856-4576-8EDD-4D0066FDBBB3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -773,6 +775,16 @@ Global
 		{66E0D718-D486-41AE-9E95-F1B658756BA5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{66E0D718-D486-41AE-9E95-F1B658756BA5}.Release|Any CPU.Build.0 = Release|Any CPU
 		{66E0D718-D486-41AE-9E95-F1B658756BA5}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{A2E5E719-D856-4576-8EDD-4D0066FDBBB3}.Day1|Any CPU.ActiveCfg = Day1|Any CPU
+		{A2E5E719-D856-4576-8EDD-4D0066FDBBB3}.Day1|Any CPU.Build.0 = Day1|Any CPU
+		{A2E5E719-D856-4576-8EDD-4D0066FDBBB3}.Day1|Any CPU.Deploy.0 = Day1|Any CPU
+		{A2E5E719-D856-4576-8EDD-4D0066FDBBB3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2E5E719-D856-4576-8EDD-4D0066FDBBB3}.Debug-SC7|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2E5E719-D856-4576-8EDD-4D0066FDBBB3}.Debug-SC7|Any CPU.Build.0 = Debug|Any CPU
+		{A2E5E719-D856-4576-8EDD-4D0066FDBBB3}.Debug-SC7|Any CPU.Deploy.0 = Debug|Any CPU
+		{A2E5E719-D856-4576-8EDD-4D0066FDBBB3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A2E5E719-D856-4576-8EDD-4D0066FDBBB3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A2E5E719-D856-4576-8EDD-4D0066FDBBB3}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -846,5 +858,6 @@ Global
 		{C59E8A7E-A50D-420C-84CD-CA7EADAB44D4} = {41253BFE-606D-41D3-9B30-343475CC3F26}
 		{D49209B4-5BFB-4F7E-B146-776D11ABF4F5} = {40DE0EDB-DC39-49AA-B08A-025F3D9D1F2C}
 		{66E0D718-D486-41AE-9E95-F1B658756BA5} = {40DE0EDB-DC39-49AA-B08A-025F3D9D1F2C}
+		{A2E5E719-D856-4576-8EDD-4D0066FDBBB3} = {4DFD956C-083A-4E7D-9AF6-EFE048354754}
 	EndGlobalSection
 EndGlobal

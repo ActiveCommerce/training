@@ -1,4 +1,5 @@
 ﻿using ActiveCommerce.IoC;
+using ActiveCommerce.Training.SimpleReviews.Extensions.Helpers;
 using Microsoft.Practices.Unity;
 
 namespace ActiveCommerce.Training.SimpleReviews.IoC
@@ -13,6 +14,7 @@ namespace ActiveCommerce.Training.SimpleReviews.IoC
              * properly Disposed.
              */
             container.RegisterType<IProductReviewRepository, ProductReviewRepository>();
+            container.RegisterType<ProductHelper, ProductHelper>(new HierarchicalLifetimeManager());
         }
 
         public int SortOrder
