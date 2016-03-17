@@ -114,9 +114,10 @@
     <Compile Include="Loader\RegisterTypes.cs" />
     <Compile Include="Prices\RunPricingRules.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Rules\ApplyDiscountAction.cs" />
+    <Compile Include="Rules\Actions\ApplyDiscountAction.cs" />
+    <Compile Include="Rules\Conditions\ProductCategoryCondition.cs" />
     <Compile Include="Rules\PricingRuleContext.cs" />
-    <Compile Include="Rules\SetPriceLevelAction.cs" />
+    <Compile Include="Rules\Actions\SetPriceLevelAction.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_Config\Include\xActiveCommerce.zTraining.PriceRules.config">

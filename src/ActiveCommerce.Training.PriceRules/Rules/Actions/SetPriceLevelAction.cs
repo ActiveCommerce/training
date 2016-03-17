@@ -2,7 +2,7 @@
 using Sitecore.Rules.Actions;
 using Sitecore.StringExtensions;
 
-namespace ActiveCommerce.Training.PriceRules.Rules
+namespace ActiveCommerce.Training.PriceRules.Rules.Actions
 {
     public class SetPriceLevelAction<T> : RuleAction<T> where T : PricingRuleContext
     {

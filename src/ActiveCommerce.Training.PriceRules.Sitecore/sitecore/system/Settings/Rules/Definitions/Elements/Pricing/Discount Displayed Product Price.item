@@ -1,10 +1,10 @@
 ----item----
 version: 1
-id: {CBC2B8A2-71A3-4567-9C53-2583BB1FB970}
+id: {BA3126C8-EF9D-4804-8388-5230F2C826C6}
 database: master
-path: /sitecore/system/Settings/Rules/Definitions/Elements/Pricing Actions/Set Price Matrix Name
+path: /sitecore/system/Settings/Rules/Definitions/Elements/Pricing/Discount Displayed Product Price
 parent: {961B9CA0-926E-4D01-9E08-74A1D53D4401}
-name: Set Price Matrix Name
+name: Discount Displayed Product Price
 master: {00000000-0000-0000-0000-000000000000}
 template: {F90052A5-B4E6-4E6D-9812-1E1B88A6FCEA}
 templatekey: Action
@@ -15,19 +15,19 @@ name: Type
 key: type
 content-length: 96
 
-ActiveCommerce.Training.PriceRules.Rules.SetPriceLevelAction, ActiveCommerce.Training.PriceRules
+ActiveCommerce.Training.PriceRules.Rules.ApplyDiscountAction, ActiveCommerce.Training.PriceRules
 ----version----
 language: en
 version: 1
-revision: bd64e4e7-79d5-4537-a7e0-135bfa45cbfd
+revision: 84f874d4-f8e2-4571-8332-551406c00696
 
 ----field----
 field: {EEB36A3B-40D9-4AF5-862A-DE257B84DCA3}
 name: Text
 key: text
-content-length: 100
+content-length: 89
 
-use the [itemid,Tree,root=/sitecore/system/Modules/Ecommerce/PriceMatrix/Shop,specified] price level
+discount displayed product price by [value,,,amount]  [operatorid,DiscountOperator,,unit]
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
@@ -41,7 +41,7 @@ name: __Created
 key: __created
 content-length: 15
 
-20140702T134841
+20150517T183122
 ----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
@@ -55,14 +55,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-bd64e4e7-79d5-4537-a7e0-135bfa45cbfd
+84f874d4-f8e2-4571-8332-551406c00696
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 34
+content-length: 16
 
-20150517T183050:635674842508190000
+20160317T180644Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
