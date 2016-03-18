@@ -2,7 +2,7 @@
 version: 1
 id: {D57D57B6-1F4C-46FB-9A5F-63FA279039D1}
 database: master
-path: /sitecore/system/Settings/Rules/Definitions/Elements/Pricing Actions/Visibility
+path: /sitecore/system/Settings/Rules/Definitions/Elements/Pricing/Visibility
 parent: {961B9CA0-926E-4D01-9E08-74A1D53D4401}
 name: Visibility
 master: {9A72C539-DBF8-4DAD-96D3-A298FC04ADD6}
