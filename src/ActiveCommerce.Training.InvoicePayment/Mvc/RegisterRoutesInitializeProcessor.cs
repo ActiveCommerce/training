@@ -13,15 +13,11 @@ namespace ActiveCommerce.Training.InvoicePayment.Mvc
 
         public static void RegisterRoutes(RouteCollection routes)
         {
-            //remove existing checkout controller
-            routes.Remove(routes["Checkout"]);
-
-            //map our extended controller
             routes.MapRoute(
-                "Checkout",
-                "ac/checkout/{action}",
-                new { controller = "Checkout", action = "Index" },
-                new[] { "ActiveCommerce.Training.Payment.Controllers" }
+                "InvoicePayment",
+                "ac/invoicepayment/{action}",
+                new { controller = "InvoicePayment" },
+                new[] { "ActiveCommerce.Training.InvoicePayment.Controllers" }
             );
         }
     }

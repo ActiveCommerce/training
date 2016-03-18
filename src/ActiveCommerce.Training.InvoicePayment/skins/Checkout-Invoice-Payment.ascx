@@ -18,6 +18,7 @@
         <li>
 	        <label for="purchaseOrderNumber"><%=Editable(x => x.PurchaseOrderNumber)%></label>
             <input type="tel" ng-model="purchaseOrder.Number" name="purchaseOrderNumber" pattern="[0-9]*" ng-maxlength="500" restrict-numeric required />
+            <label class="error" ng-show="submitted && purchaseOrderForm.purchaseOrderNumber.$error.required"><%=Translator.Render("Validation-Required") %></label>
             <label class="error" ng-show="submitted && purchaseOrderForm.purchaseOrderNumber.$error.maxlength"><%=Translator.Render("Invoice-Validation-Maxlength") %></label>
             <label class="error" ng-show="submitted && purchaseOrderForm.purchaseOrderNumber.$error.pattern"><%=Translator.Render("Invoice-Validation-Pattern") %></label>
         </li>

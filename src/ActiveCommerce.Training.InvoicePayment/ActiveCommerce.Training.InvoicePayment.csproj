@@ -109,17 +109,16 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CheckOut\CheckOut.cs" />
-    <Compile Include="CheckOut\IInvoicePayment.cs" />
     <Compile Include="Content\InvoicePaymentCheckoutComponent.cs" />
-    <Compile Include="Controllers\CheckoutController.cs" />
-    <Compile Include="InvoicePaymentOption.cs" />
-    <Compile Include="Loader\RegisterTypes.cs" />
+    <Compile Include="Controllers\InvoicePaymentController.cs" />
+    <Compile Include="IoC\RegisterTypes.cs" />
     <Compile Include="Mvc\RegisterRoutesInitializeProcessor.cs" />
-    <Compile Include="OrderProcessing\VerifyPayment.cs" />
+    <Compile Include="Payments\InvoicePaymentDetails.cs" />
+    <Compile Include="Payments\InvoicePaymentOption.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="skins\Checkout-Invoice-Payment.ascx.cs">
       <DependentUpon>Checkout-Invoice-Payment.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="skins\Checkout-Invoice-Payment.ascx.designer.cs">
       <DependentUpon>Checkout-Invoice-Payment.ascx</DependentUpon>
@@ -133,12 +132,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_Config\Include\xActiveCommerce.xInvoicePayment.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\ActiveCommerce.Training.OrderExtension\ActiveCommerce.Training.OrderExtension.csproj">
-      <Project>{ad417ffe-6894-4044-8b47-95d2bca95344}</Project>
-      <Name>ActiveCommerce.Training.OrderExtension</Name>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Content Include="README.md" />

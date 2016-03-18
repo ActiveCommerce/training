@@ -53,17 +53,15 @@
     </SitecoreItem>
     <SitecoreItem Include="sitecore\commerce\translation.item">
       <Icon>/temp/IconCache/People/16x16/book_red.png</Icon>
-      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+      <ItemDeployment>DeployOnce</ItemDeployment>
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\commerce\translation\P.item">
-      <Icon>/temp/IconCache/Applications/32x32/folder_red.png</Icon>
-      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    <SitecoreItem Include="sitecore\commerce\translation\I.item">
+      <ItemDeployment>DeployOnce</ItemDeployment>
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\commerce\translation\P\Payment-Invoice.item">
-      <Icon>/temp/IconCache/Applications/32x32/font.png</Icon>
-      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    <SitecoreItem Include="sitecore\commerce\translation\I\Invoice-Payment-Description.item">
+      <ItemDeployment>DeployOnce</ItemDeployment>
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>
     <SitecoreItem Include="sitecore\content.item">
@@ -128,18 +126,18 @@
     </SitecoreItem>
     <SitecoreItem Include="sitecore\layout\Sublayouts.item">
       <Icon>/temp/IconCache/Software/16x16/elements_selection.png</Icon>
-      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+      <ItemDeployment>DeployOnce</ItemDeployment>
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>
     <SitecoreItem Include="sitecore\layout\Sublayouts\Training.item">
       <Icon>/temp/IconCache/Applications/16x16/folder.png</Icon>
-      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+      <ItemDeployment>DeployOnce</ItemDeployment>
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>
     <SitecoreItem Include="sitecore\layout\Sublayouts\Training\Checkout - Invoice Payment.item">
       <Icon>/temp/IconCache/Software/16x16/element_selection.png</Icon>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
-      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>
     <SitecoreItem Include="sitecore\templates.item">
       <Icon>/temp/IconCache/Applications/16x16/form_blue.png</Icon>
@@ -155,6 +153,10 @@
       <Icon>/temp/IconCache/Applications/16x16/form_blue.png</Icon>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\templates\Training\Invoice Payment Component\__Standard Values.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
     <SitecoreItem Include="sitecore\templates\Training\Invoice Payment Component\Invoice Payment.item">
       <Icon>/temp/IconCache/Applications/32x32/Document.png</Icon>

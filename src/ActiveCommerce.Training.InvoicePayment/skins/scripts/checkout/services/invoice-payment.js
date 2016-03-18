@@ -5,8 +5,8 @@
     .config(["$provide", function($provide) {
         $provide.decorator('checkout', ['$delegate', '$http', function ($delegate, $http) {
 
-            $delegate.updatePurchaseOrderNumber = function (purchaseOrderNumber, config) {
-                return $http.post('/ac/checkout/UpdatePurchaseOrderNumber', { purchaseOrderNumber: purchaseOrderNumber }, config);
+            $delegate.updatePurchaseOrderNumber = function (code, purchaseOrderNumber, config) {
+                return $http.post('/ac/invoicepayment/UpdatePurchaseOrderNumber', { code: code, purchaseOrderNumber: purchaseOrderNumber }, config);
             };
             
             return $delegate;

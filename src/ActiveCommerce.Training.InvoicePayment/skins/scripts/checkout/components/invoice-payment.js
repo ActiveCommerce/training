@@ -27,11 +27,11 @@
 
         $scope.$on("process", function (e, args) {
             
-            // Only if we're the selected payment
-            if (!$scope.selected) return;
+            //check if we need to handle
+            if ($scope.enabled === false || $scope.selected === false) return;
 
             //pass the update operation back to the event args. must return a promise.
-            args.defer(checkout.updatePurchaseOrderNumber($scope.purchaseOrder.Number));
+            args.defer(checkout.updatePurchaseOrderNumber($scope.code, $scope.purchaseOrder.Number));
         });
 
 
