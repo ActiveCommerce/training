@@ -1,10 +1,10 @@
 ----item----
 version: 1
-id: {3B29CA96-1F91-4AEF-8BF6-C41F5C374B0F}
+id: {02E5E424-5105-419A-9103-3D69D6B0C8B3}
 database: master
-path: /sitecore/commerce/translation/P
+path: /sitecore/commerce/translation/I
 parent: {56F9EACC-8E56-435C-B09B-7A316A331D48}
-name: P
+name: I
 master: {00000000-0000-0000-0000-000000000000}
 template: {8F3745BB-7E36-4EC5-B1C3-914C65DD9985}
 templatekey: Dictionary Folder
@@ -12,7 +12,7 @@ templatekey: Dictionary Folder
 ----version----
 language: en
 version: 1
-revision: 06d10db8-61a1-4929-9fa2-9d9f34ec41cb
+revision: ce68df37-287a-4830-95c9-a1ef7014b667
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -20,25 +20,25 @@ name: __Created
 key: __created
 content-length: 15
 
-20110617T140534
+20110617T140434
 ----field----
 field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
 name: __Revision
 key: __revision
 content-length: 36
 
-06d10db8-61a1-4929-9fa2-9d9f34ec41cb
+ce68df37-287a-4830-95c9-a1ef7014b667
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 34
 
-20110617T140534:634439163340939037
+20110617T140434:634439162741289037
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
 key: __updated by
-content-length: 19
+content-length: 14
 
-sitecore\nwesselman
+sitecore\admin

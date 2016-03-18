@@ -1,16 +1,13 @@
 ﻿using ActiveCommerce.IoC;
+using ActiveCommerce.Training.InvoicePayment.Payments;
 using Microsoft.Practices.Unity;
-using Sitecore.Ecommerce.DomainModel.CheckOuts;
 
-namespace ActiveCommerce.Training.InvoicePayment.Loader
+namespace ActiveCommerce.Training.InvoicePayment.IoC
 {
     public class RegisterTypes : ITypeRegistration
     {
         public void Process(Microsoft.Practices.Unity.IUnityContainer container)
         {
-            //checkout data holder (session-based)
-            container.RegisterType<ICheckOut, CheckOut.CheckOut>();
-
             //payment provider
             container.RegisterType(typeof(Sitecore.Ecommerce.DomainModel.Payments.PaymentProvider),
                                    typeof(InvoicePaymentOption), "InvoicePayment");

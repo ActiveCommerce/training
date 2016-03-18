@@ -1,0 +1,74 @@
+<project>
+  <Metadata>
+    <metadata>
+      <PackageName>Active Commerce Training - Invoice Payment</PackageName>
+      <Author />
+      <Version />
+      <Revision />
+      <License />
+      <Comment />
+      <Attributes />
+      <Readme />
+      <Publisher />
+      <PostStep />
+      <PackageID />
+    </metadata>
+  </Metadata>
+  <SaveProject>True</SaveProject>
+  <Sources>
+    <xfiles>
+      <Entries>
+        <x-item>/App_Config/Include/xActiveCommerce.xInvoicePayment.config</x-item>
+        <x-item>/bin/ActiveCommerce.Training.InvoicePayment.dll</x-item>
+        <x-item>/skins/Checkout-Invoice-Payment.ascx</x-item>
+        <x-item>/skins/scripts/checkout/components/invoice-payment.js</x-item>
+        <x-item>/skins/scripts/checkout/services/invoice-payment.js</x-item>
+      </Entries>
+      <Converter>
+        <FileToEntryConverter>
+          <Root>/</Root>
+          <Transforms>
+            <InstallerConfigurationTransform>
+              <Options>
+                <BehaviourOptions>
+                  <ItemMode>Undefined</ItemMode>
+                  <ItemMergeMode>Undefined</ItemMergeMode>
+                </BehaviourOptions>
+              </Options>
+            </InstallerConfigurationTransform>
+          </Transforms>
+        </FileToEntryConverter>
+      </Converter>
+      <Include />
+      <Exclude />
+      <Name>Files</Name>
+    </xfiles>
+    <xitems>
+      <Entries>
+        <x-item>/master/sitecore/commerce/translation/I/Invoice-Payment-Description/{E6E99975-8C0D-4109-A5E8-1B22E2D4A593}/invariant/0</x-item>
+        <x-item>/master/sitecore/layout/Sublayouts/Training/Checkout - Invoice Payment/{713963A7-090F-461C-8F85-003228E6264F}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Training/Invoice Payment Component/__Standard Values/{E74EC1AC-483C-4ADF-BAB1-86D7A3913EA1}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Training/Invoice Payment Component/{4F4DC16F-B3DF-4B6F-A1DC-022640AAC839}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Training/Invoice Payment Component/Invoice Payment/{E01B8A72-B601-47C1-9673-25A4B11ECC1D}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Training/Invoice Payment Component/Invoice Payment/PO Number/{BD7B6A99-5D52-4C00-B1DB-82F5EFB866F8}/invariant/0</x-item>
+      </Entries>
+      <SkipVersions>False</SkipVersions>
+      <Converter>
+        <ItemToEntryConverter>
+          <Transforms />
+        </ItemToEntryConverter>
+      </Converter>
+      <Include />
+      <Exclude />
+      <Name>Items</Name>
+    </xitems>
+  </Sources>
+  <Converter>
+    <TrivialConverter>
+      <Transforms />
+    </TrivialConverter>
+  </Converter>
+  <Include />
+  <Exclude />
+  <Name />
+</project>

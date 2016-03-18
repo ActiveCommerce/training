@@ -1,10 +1,10 @@
 ----item----
 version: 1
-id: {0F4AD07C-C23E-442C-BF9C-48B0C092F0C5}
+id: {E6E99975-8C0D-4109-A5E8-1B22E2D4A593}
 database: master
-path: /sitecore/commerce/translation/P/Payment-Invoice
-parent: {3B29CA96-1F91-4AEF-8BF6-C41F5C374B0F}
-name: Payment-Invoice
+path: /sitecore/commerce/translation/I/Invoice-Payment-Description
+parent: {02E5E424-5105-419A-9103-3D69D6B0C8B3}
+name: Invoice-Payment-Description
 master: {00000000-0000-0000-0000-000000000000}
 template: {819F1459-A930-45E4-975B-9165028E6A58}
 templatekey: Dictionary Entry
@@ -13,9 +13,9 @@ templatekey: Dictionary Entry
 field: {580C75A8-C01A-4580-83CB-987776CEB3AF}
 name: Key
 key: key
-content-length: 15
+content-length: 27
 
-Payment-Invoice
+Invoice-Payment-Description
 ----field----
 field: {A4F985D9-98B3-4B52-AAAF-4344F6E747C6}
 name: __Workflow
@@ -26,43 +26,36 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: aceff150-b181-41ab-a59f-b15ce0611d78
+revision: eb560a94-df92-4e9a-bed9-6de23b87df3a
 
 ----field----
 field: {2BA3454A-9A9C-4CDF-A9F8-107FD484EB6E}
 name: Phrase
 key: phrase
-content-length: 21
+content-length: 13
 
-Purchase Order Number
+PO Number {0}
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
-content-length: 15
+content-length: 16
 
-20140805T125649
-----field----
-field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
-name: __Created by
-key: __created by
-content-length: 14
-
-sitecore\admin
+20160318T155837Z
 ----field----
 field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
 name: __Revision
 key: __revision
 content-length: 36
 
-aceff150-b181-41ab-a59f-b15ce0611d78
+eb560a94-df92-4e9a-bed9-6de23b87df3a
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 34
+content-length: 16
 
-20140805T125705:635428402254026029
+20160318T165752Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

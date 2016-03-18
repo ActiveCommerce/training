@@ -16,10 +16,24 @@ key: __base template
 content-length: 38
 
 {541710F1-BD1F-4DE1-9B6B-3ED8424FA77D}
+----field----
+field: {F7D48A55-2158-4F02-9356-756654404F73}
+name: __Standard values
+key: __standard values
+content-length: 38
+
+{E74EC1AC-483C-4ADF-BAB1-86D7A3913EA1}
+----field----
+field: {06D5295C-ED2F-4A54-9BF2-26228D113318}
+name: __Icon
+key: __icon
+content-length: 31
+
+Applications/32x32/contract.png
 ----version----
 language: en
 version: 1
-revision: 54ce99cc-2cf0-44a6-87c0-725868df21ba
+revision: 53d3b73a-bf9e-4f09-a313-90ba135fa9cd
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -41,14 +55,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-54ce99cc-2cf0-44a6-87c0-725868df21ba
+53d3b73a-bf9e-4f09-a313-90ba135fa9cd
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 34
+content-length: 16
 
-20140724T191622:635418261826495361
+20160318T155619Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
