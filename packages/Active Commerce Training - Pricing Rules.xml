@@ -42,12 +42,23 @@
     </xfiles>
     <xitems>
       <Entries>
+        <x-item>/master/sitecore/templates/Training/General Settings/{545AE26F-5475-43DE-91A4-3CB609F23D53}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Training/General Settings/Prices and Currencies/{8FB7C2CD-E341-4688-929E-2448F55A3895}/invariant/0</x-item>
         <x-item>/master/sitecore/templates/Training/General Settings/Prices and Currencies/Pricing Rules/{1A285996-A75A-4F48-ADD7-9BE030AC03AC}/invariant/0</x-item>
       </Entries>
       <SkipVersions>False</SkipVersions>
       <Converter>
         <ItemToEntryConverter>
-          <Transforms />
+          <Transforms>
+            <InstallerConfigurationTransform>
+              <Options>
+                <BehaviourOptions>
+                  <ItemMode>Undefined</ItemMode>
+                  <ItemMergeMode>Undefined</ItemMergeMode>
+                </BehaviourOptions>
+              </Options>
+            </InstallerConfigurationTransform>
+          </Transforms>
         </ItemToEntryConverter>
       </Converter>
       <Include />
