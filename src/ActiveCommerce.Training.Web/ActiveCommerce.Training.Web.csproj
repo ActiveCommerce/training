@@ -61,20 +61,16 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Config\Include\xActiveCommerce.Sites.zTraining.config">
+    <None Include="App_Config\Include\xActiveCommerce.Sites.zTraining.config">
       <SubType>Designer</SubType>
-    </Content>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Content Include="EndSession.aspx" />
-    <Content Include="skins\training\images\icons\cart.png" />
     <Content Include="skins\training\scripts\browse-product.js" />
     <Content Include="skins\training\scripts\product.cart.js" />
-    <Content Include="skins\training\templates\browse-product\product.htm" />
-    <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="skins\training\images\README.md" />
     <Content Include="skins\training\scripts\README.md" />
     <Content Include="skins\training\styles\account.less" />
     <Content Include="skins\training\styles\account.mobile.less" />
@@ -103,10 +99,17 @@
     <Content Include="skins\training\styles\search.mobile.less" />
     <Content Include="skins\training\styles\signin.less" />
     <Content Include="skins\training\styles\signin.mobile.less" />
-    <Content Include="skins\training\templates\README.md" />
-    <Content Include="App_Config\Include\xActiveCommerce.zTrainingSkin.config">
+    <None Include="App_Config\Include\xActiveCommerce.zTrainingSkin.config">
       <SubType>Designer</SubType>
-    </Content>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Web.Day1.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

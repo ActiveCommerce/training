@@ -52,6 +52,8 @@ namespace ActiveCommerce.Training.OrderProcessing
 
             var client = new Services.OrderServiceClient();
             var id = client.CreateOrder(serviceOrder);
+            (order as ActiveCommerce.Training.OrderExtension.Order).ExternalOrderId = id;
+            args.OrderManager.Save();
             Sitecore.Diagnostics.Log.Warn("Successfully exported order {0}".FormatWith(id), this);
         }
 

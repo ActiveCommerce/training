@@ -1,0 +1,115 @@
+----item----
+version: 1
+id: {BD7816D8-0A5D-416E-98A6-E3957E7E505D}
+database: master
+path: /sitecore/system/Modules/PowerShell/Script Library/Active Commerce/Toolbox/Book Import
+parent: {CD416B3C-A14E-40E7-91E8-6FE00494E991}
+name: Book Import
+master: {00000000-0000-0000-0000-000000000000}
+template: {DD22F1B3-BD87-4DB2-9E7D-F7A496888D43}
+templatekey: PowerShell Script
+
+----field----
+field: {B1A94FF0-6897-47C0-9C51-AA6ACB80B1F0}
+name: Script
+key: script
+content-length: 2835
+
+$importPath = "$SitecoreDataFolder\productimports"
+if (-not (Test-Path $importPath))
+{
+    New-Item $importPath -type directory   
+}
+
+$importFile = Receive-File -Path $importPath -Title "Book Data Import" -Description "Please provide the XML file containing book data."
+[xml]$bookXml = Get-Content $importFile -Encoding UTF8
+$books = $bookXml.catalog.book
+$books | ft
+
+$first = $books | select -first 1
+if (-not $books -or -not $first.id -or -not $first.title)
+{
+    Show-Alert "This file does not appear to be a valid book XML."
+    Remove-Item $importFile
+    Exit
+}
+
+$result = Read-Variable -Parameters `
+    @{ Name="ShopContext"; Title="Shop Name"; Options=(Get-AcSites -Dictionary) },
+    @{ Name="ImportRoot"; Title="Import Root Item"; Tooltip="Location for any new products"; Root="/sitecore/commerce/products"; Editor="item" },
+    @{ Name="ImportTemplate"; Title="Import Template"; Tooltip="Sitecore template for any new products"; Root="/sitecore/templates/producttypes"; Editor="item" } `
+    -Description "Specify parameters for the product import" `
+    -Title "Export Options" -Width 650 -Height 400 -OkButtonName "Start Import" -CancelButtonName "Abort" -ShowHints
+
+Switch-AcShopContext -Site $ShopContext -ScriptBlock {
+    foreach ($book in $books) {
+        Write-Host "Importing $($book.id)"
+        $item = $null
+        $product = Get-AcProduct $book.id
+        if ($product) {
+            Write-Host "Found existing product!"
+            $item = Get-Item master: -ID $product.ID
+        } else {
+            Write-Host "Product not found, will create."
+            $itemName = [Sitecore.Data.Items.ItemUtil]::ProposeValidItemName($book.title, "Product")
+            $item = New-Item -ItemType $ImportTemplate.Paths.FullPath -Name $itemName -Path $ImportRoot.ProviderPath
+        }
+        
+        $item.Editing.BeginEdit()
+        $item["Product Code"] =  $book.id
+        $item["EAN"] = $book.id
+        $item["SKU"] = $book.id
+        $item["Title"] = $book.title
+        $item["Genre"] = $book.genre
+        $item["Short Description"] = $book.description.Trim()
+        $item["Description"] = $book.description.Trim()
+        $item["Author"] = $book.author
+        $item["Weight"] = $book.weight
+        $item["Publish Date"] = [Sitecore.DateUtil]::ToIsoDate((Get-Date -date $book.publish_date))
+        
+        #update pricing XML at /PriceMatrix/structure/categories/category[@id="Shop"]/items/item[@id="Normalprice"]/price
+        [xml]$priceXml = $item["Price"]
+        $priceXml.PriceMatrix.structure.categories.category | ? { $_.id -eq "Shop"} | % { $_.items.item } | ? { $_.id -eq "Normalprice" } | % { $_.price = $book.price }
+        $item["Price"] = $priceXml.OuterXml
+        
+        $item.Editing.EndEdit() | Out-Null
+    }
+}
+
+
+
+
+
+----version----
+language: en
+version: 1
+revision: b1ca3d63-3789-43a7-ac31-206fe69c9bbb
+
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20160322T211316Z
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+b1ca3d63-3789-43a7-ac31-206fe69c9bbb
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20160322T231620Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

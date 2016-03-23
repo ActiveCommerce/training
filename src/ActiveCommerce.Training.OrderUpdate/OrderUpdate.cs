@@ -55,7 +55,7 @@ namespace ActiveCommerce.Training.OrderUpdate
                         {
                             order.DefaultDelivery.TrackingID = serviceOrder.TrackingUrl;
                             order.State = endState;
-                            orderManager.Save(order);
+                            orderManager.Save();
                         }
                     }
                 }

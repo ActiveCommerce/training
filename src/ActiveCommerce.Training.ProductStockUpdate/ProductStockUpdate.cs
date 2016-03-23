@@ -14,10 +14,8 @@ namespace ActiveCommerce.Training.ProductStockUpdate
     {
         public void UpdateStock(Item[] itemArray, CommandItem commandItem, ScheduleItem scheduleItem)
         {
-            var repository = Sitecore.Ecommerce.Context.Entity.Resolve<IProductRepository>();
             var schedule = new ActiveCommerce.SitecoreX.ScheduledTasks.ExtendedScheduleItem(scheduleItem);
             var file = schedule.Arguments["file"];
-
 
             using (new SecurityDisabler())
             {
