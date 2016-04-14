@@ -1,0 +1,6 @@
+﻿* Deploy items and files
+* Update database using /sitecore/admin/databaseutility.aspx
+* Add sublayouts to appropriate placeholder settings
+* Add sublayouts to checkout page via page editor (w/ datasource items)
+* Create test giftcards by navigating to /sitecore/admin/giftcardutility.aspx
+* Check out and pay using gift cards
