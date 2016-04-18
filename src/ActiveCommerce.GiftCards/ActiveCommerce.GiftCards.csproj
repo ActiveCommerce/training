@@ -127,8 +127,6 @@
     <Compile Include="Data\IGiftCardRepository.cs" />
     <Compile Include="Data\Mappings\GiftCardMap.cs" />
     <Compile Include="IoC\RegisterTypes.cs" />
-    <Compile Include="Model\CheckoutViewModel.cs" />
-    <Compile Include="Model\Factories\CheckoutViewModelFactory.cs" />
     <Compile Include="Mvc\RegisterRoutesInitializeProcessor.cs" />
     <Compile Include="Payments\GiftCardInfo.cs" />
     <Compile Include="Payments\GiftCardManager.cs" />
