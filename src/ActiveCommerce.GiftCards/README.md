@@ -7,11 +7,20 @@ Included with the payment provider are classes for managing and storing gift car
 GiftCardPaymentProvider
 GiftCardManager
 GiftCardRepository
+GiftCardInfo
+giftcardutility.aspx
+Checkout-Gift-Card.ascx and corresponding javascript
+
 
 1. `GiftCardPaymentProvider` is an example of a payment provider for gift cards, responsible for accepting payments
 2. `GiftCardManager` is an example of a gift card manager, responsible for basic gift card operations
 3. `GiftCardRepository` is a repository for saving and retrieving gift cards
 4. `RegisterTypes` registers all types above in Unity.  The GiftCardPaymentProvider is registred with a name that is referenced when setting up the payment provider in Sitecore.
+5. `GiftCardInfo` represents a gift card which has a number, balance, PIN, and description
+6. `giftcardutility.aspx`is a page which will create a set of test gift cards
+7. _Checkout-Gift-Card.ascx_ is the sublayout responsible for displaying the payment form during checkout
+7.1 The javascript files are the Angular code responsible for interacting with the front-end `checkout` service and the back end gift card controller at /ac/giftcard/
+
 
 ## How to use this example
 1. In Sitecore, use the Installation Wizard to install the Active Commerce Gift Cards plugin.
