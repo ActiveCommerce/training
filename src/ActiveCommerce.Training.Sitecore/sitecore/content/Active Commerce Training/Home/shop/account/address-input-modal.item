@@ -1,13 +1,13 @@
 ----item----
 version: 1
-id: {3A1B3104-6EEA-46A9-B6C9-0B6E0E84BCBA}
+id: {85A2C72E-B4B8-434A-8D21-A7DBE5492B86}
 database: master
-path: /sitecore/content/Active Commerce Training/Home/shop/checkout/Actions/Place Order
-parent: {30D6EE4A-F848-4031-AFEC-B2669FAD7B0D}
-name: Place Order
-master: {B0DB2EFD-FFF5-4D6D-ABC9-0C2026B0AD18}
-template: {69F942BE-9E32-49BD-932B-D8473ED9D907}
-templatekey: Checkout Step Action
+path: /sitecore/content/Active Commerce Training/Home/shop/account/address-input-modal
+parent: {A976D75D-730F-4CB8-AC54-315667AC15B1}
+name: address-input-modal
+master: {00000000-0000-0000-0000-000000000000}
+template: {A806C84C-3AEF-45C0-B850-852D2C1A8684}
+templatekey: Address Input Modal
 
 ----field----
 field: {F6D8A61C-2F84-4401-BD24-52D2068172BC}
@@ -26,22 +26,22 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: 0f849536-248b-4f56-b61a-943cd7215b45
+revision: 958b2c90-0db7-4bff-95df-cdee7c42d344
 
 ----field----
-field: {2B58D9C3-33FE-4644-A378-EB856BF33ECD}
-name: Button Text
-key: button text
-content-length: 11
+field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
+name: __Display name
+key: __display name
+content-length: 12
 
-Place Order
+Address Form
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
 content-length: 15
 
-20150515T151737
+20140808T144418
 ----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
@@ -55,14 +55,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-0f849536-248b-4f56-b61a-943cd7215b45
+958b2c90-0db7-4bff-95df-cdee7c42d344
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20160421T150531Z
+20160422T172134Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

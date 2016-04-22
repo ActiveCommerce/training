@@ -38,7 +38,7 @@ namespace ActiveCommerce.Training.OrderUpdateService.Services
                     }
                     order.State = endState;
                     order.DefaultDelivery.TrackingID = trackingUrl;
-                    orderManager.Save(order);
+                    orderManager.Save();
                 }
             }
             catch (Exception e)

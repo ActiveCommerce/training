@@ -1,11 +1,10 @@
 using System;
 using ActiveCommerce.Carts;
 using ActiveCommerce.Extensions;
-using ActiveCommerce.Payment;
+using ActiveCommerce.Payments;
 using ActiveCommerce.Training.OnsitePayment.MockService;
-using Sitecore.Ecommerce;
+using Sitecore.Diagnostics;
 using Sitecore.Ecommerce.DomainModel.Payments;
-using PaymentSystem = Sitecore.Ecommerce.DomainModel.Payments.PaymentSystem;
 
 namespace ActiveCommerce.Training.OnsitePayment
 {
@@ -20,11 +19,13 @@ namespace ActiveCommerce.Training.OnsitePayment
         /// <summary>
         /// You must implement this method for any integrated/onsite payment provider.
         /// </summary>
-        public override void Invoke(PaymentSystem paymentSystem, PaymentArgs paymentArgs)
+        public override void Invoke(Sitecore.Ecommerce.DomainModel.Payments.PaymentSystem paymentSystem, Sitecore.Ecommerce.DomainModel.Payments.PaymentArgs paymentArgs)
         {
-            //read cart from PaymentArgs
-            var cart = paymentArgs.ShoppingCart as ShoppingCart;
-
+            //read credit card and cart from PaymentArgs
+            var args = Assert.ResultNotNull(paymentArgs as ActiveCommerce.Payments.PaymentArgs, "PaymentArgs must be of type ActiveCommerce.Payments.PaymentArgs");
+            var creditCard = Assert.ResultNotNull(args.PaymentDetails as ActiveCommerce.Payments.CreditCardInfo, "PaymentDetails must be of type ActiveCommerce.Payments.CreditCardInfo");
+            var cart = Assert.ResultNotNull(args.ShoppingCart as ShoppingCart, "Cart must be of type ActiveCommerce.Carts.ShoppingCart");
+            
             //PaymentSystem contains values configured on payment item
             var paymentService = new MockPaymentService
             {
@@ -59,10 +60,10 @@ namespace ActiveCommerce.Training.OnsitePayment
                 },
                 CreditCard = new CreditCard
                 {
-                    CardNumber = cart.CreditCardInfo.CardNumber,
-                    CardType = cart.CreditCardInfo.CardType,
-                    Expiration = cart.CreditCardInfo.ExpirationDate.ToString("MM/yy"),
-                    SecurityCode = cart.CreditCardInfo.SecurityCode
+                    CardNumber = creditCard.CardNumber,
+                    CardType = creditCard.CardType,
+                    Expiration = creditCard.ExpirationDate.ToString("MM/yy"),
+                    SecurityCode = creditCard.SecurityCode
                 }
             };
             var response = paymentService.ExecuteRequest(request);
@@ -80,36 +81,23 @@ namespace ActiveCommerce.Training.OnsitePayment
                 this.PaymentStatus = PaymentStatus.Failure;
             }
 
-            //IMPORTANT: Save payment details using SaveCallBackValues
-            var transactionData = Context.Entity.Resolve<ITransactionData>();
-            transactionData.SaveCallBackValues(
-                paymentArgs.ShoppingCart.OrderNumber, //order number
-                this.PaymentStatus.ToString(), //payment status
-                response.TransactionId, //transaction number
-                cart.Totals.TotalPriceIncVat.ToString(), //final amount
-                cart.Currency.Code, //currency code
-                this.PaymentStatus.ToString(), //repeat payment status (due to SES bug)
-                response.ResponseCode, //gateway response code
-                response.Message, //gateway message
-                cart.CreditCardInfo.CardType //card type
-            );
-
-            //IMPORTANT: Save authorization number
-            transactionData.SavePersistentValue(cart.OrderNumber, TransactionConstants.AuthorizationNumber,
-                response.AuthorizationCode);
-
+            //IMPORTANT: Save payment details
+            TransactionDetails.TransactionNumber = response.TransactionId;
+            TransactionDetails.AuthorizationCode = response.AuthorizationCode;
+            TransactionDetails.ProviderStatus = response.ResponseStatus.ToString();
+            TransactionDetails.ProviderMessage = response.Message;
+            TransactionDetails.ProviderErrorCode = response.ResponseCode;
+            
             //IMPORTANT: If a reservation / auth only, save the reservation ticket
             if (this.PaymentStatus == PaymentStatus.Reserved)
             {
-                var reservationTicket = new ReservationTicket
+                TransactionDetails.ReservationTicket = new ReservationTicket
                 {
                     InvoiceNumber = cart.OrderNumber,
                     Amount = cart.Totals.TotalPriceIncVat,
                     AuthorizationCode = response.AuthorizationCode,
                     TransactionNumber = response.TransactionId
                 };
-                transactionData.SavePersistentValue(cart.OrderNumber, PaymentConstants.ReservationTicket,
-                    reservationTicket);
             }
         }
 
@@ -120,7 +108,7 @@ namespace ActiveCommerce.Training.OnsitePayment
         /// Allows for canceling of a reservation, in particular if there is a failure during
         /// order processing after an authorization has been completed.
         /// </summary>
-        public virtual void CancelReservation(PaymentSystem paymentSystem, PaymentArgs paymentArgs, ReservationTicket reservationTicket)
+        public virtual void CancelReservation(Sitecore.Ecommerce.DomainModel.Payments.PaymentSystem paymentSystem, Sitecore.Ecommerce.DomainModel.Payments.PaymentArgs paymentArgs, ReservationTicket reservationTicket)
         {
             var paymentService = new MockPaymentService
             {
@@ -146,7 +134,7 @@ namespace ActiveCommerce.Training.OnsitePayment
         /// out of the box, but would be useful if you wish to automate capture in your
         /// Active Commerce implementation.
         /// </summary>
-        public virtual void Capture(PaymentSystem paymentSystem, PaymentArgs paymentArgs, ReservationTicket reservationTicket, decimal amount)
+        public virtual void Capture(Sitecore.Ecommerce.DomainModel.Payments.PaymentSystem paymentSystem, Sitecore.Ecommerce.DomainModel.Payments.PaymentArgs paymentArgs, ReservationTicket reservationTicket, decimal amount)
         {
             var paymentService = new MockPaymentService
             {
@@ -180,7 +168,7 @@ namespace ActiveCommerce.Training.OnsitePayment
         /// Allows the issue of a credit to a card after a captured transaction. Used in particular
         /// when order processing fails if a payment gateway is configured for authorize-and-capture.
         /// </summary>
-        public virtual void Credit(PaymentSystem paymentSystem, PaymentArgs paymentArgs, ReservationTicket reservationTicket)
+        public virtual void Credit(Sitecore.Ecommerce.DomainModel.Payments.PaymentSystem paymentSystem, Sitecore.Ecommerce.DomainModel.Payments.PaymentArgs paymentArgs, ReservationTicket reservationTicket)
         {
             var paymentService = new MockPaymentService
             {

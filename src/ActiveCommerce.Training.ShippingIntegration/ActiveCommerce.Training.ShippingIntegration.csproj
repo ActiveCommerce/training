@@ -44,10 +44,8 @@
       <Private>False</Private>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
-    <Reference Include="Microsoft.Practices.Unity, Version=1.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\Sitecore\ActiveCommerceTraining\Website\bin\Microsoft.Practices.Unity.dll</HintPath>
-      <Private>False</Private>
+    <Reference Include="Microsoft.Practices.Unity">
+      <HintPath>$(SitecorePath)\bin\Microsoft.Practices.Unity.dll</HintPath>
     </Reference>
     <Reference Include="Sitecore.Ecommerce.DomainModel">
       <HintPath>$(SitecorePath)\bin\Sitecore.Ecommerce.DomainModel.dll</HintPath>

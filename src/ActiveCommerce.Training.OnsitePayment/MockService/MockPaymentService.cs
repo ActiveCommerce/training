@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections.Concurrent;
 using System.Collections.Generic;
-using ActiveCommerce.Payment;
-using Sitecore.Ecommerce.DomainModel.Payments;
 
 namespace ActiveCommerce.Training.OnsitePayment.MockService
 {
