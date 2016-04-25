@@ -1,0 +1,236 @@
+﻿<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Condition=" '$(Configuration)' == 'Day1' ">
+    <DebugSymbols>true</DebugSymbols>
+    <RecursiveDeployAction>Ignore</RecursiveDeployAction>
+    <SitecoreDeployFolder>C:\Sitecore\ActiveCommerceTraining\Website</SitecoreDeployFolder>
+    <SitecoreWebUrl>
+    </SitecoreWebUrl>
+    <SitecoreAccessGuid>
+    </SitecoreAccessGuid>
+    <InstallSitecoreConnector>False</InstallSitecoreConnector>
+    <OutputPath>.\Day1\</OutputPath>
+  </PropertyGroup>
+  <Import Project="..\deploy.targets" Condition="Exists('..\deploy.targets')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9754aa4a-0ba1-4f9d-aef9-d1f6d80508cd}</ProjectGuid>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <SourceWebPhysicalPath>..\ActiveCommerce.GiftCards</SourceWebPhysicalPath>
+    <SourceWebProject>{921b6dea-0287-430d-a368-9ee02345b645}|ActiveCommerce.GiftCards\ActiveCommerce.GiftCards.csproj</SourceWebProject>
+    <SourceWebVirtualPath>/ActiveCommerce.GiftCards.csproj</SourceWebVirtualPath>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <EnableUpdateable>true</EnableUpdateable>
+    <UseMerge>true</UseMerge>
+    <SingleAssemblyName>ActiveCommerce.GiftMessage.Sitecore</SingleAssemblyName>
+    <UseWebConfigReplacement>false</UseWebConfigReplacement>
+    <DeleteAppCodeCompiledFiles>true</DeleteAppCodeCompiledFiles>
+    <LegacyFileReplacement>false</LegacyFileReplacement>
+    <AssemblyName>ActiveCommerce.GiftMessage.Sitecore</AssemblyName>
+    <Name>ActiveCommerce.GiftCards.Sitecore</Name>
+    <RootNamespace>ActiveCommerce.GiftMessage.Sitecore</RootNamespace>
+    <SitecoreDatabase>master</SitecoreDatabase>
+    <EnableCodeGeneration>false</EnableCodeGeneration>
+    <ManageRoles>False</ManageRoles>
+    <AssemblyStatus>Exclude</AssemblyStatus>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>.\Debug\</OutputPath>
+    <RecursiveDeployAction>Ignore</RecursiveDeployAction>
+    <SitecoreDeployFolder>C:\Sitecore\ActiveCommerceTraining\Website</SitecoreDeployFolder>
+    <SitecoreWebUrl>http://activecommercetraining</SitecoreWebUrl>
+    <SitecoreAccessGuid>6620bde8-a0cd-4307-a749-f772a7176c22</SitecoreAccessGuid>
+    <InstallSitecoreConnector>True</InstallSitecoreConnector>
+    <EnableValidations>False</EnableValidations>
+    <ValidationSettingsFilePath>.\ActiveCommerce.GiftCards.Sitecore_Debug.xml</ValidationSettingsFilePath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>false</DebugSymbols>
+    <OutputPath>.\Release\</OutputPath>
+    <RecursiveDeployAction>Ignore</RecursiveDeployAction>
+  </PropertyGroup>
+  <ItemGroup>
+    <AssemblyAttributes Include="AssemblyFileVersion">
+      <Value>$(AssemblyFileVersion)</Value>
+    </AssemblyAttributes>
+    <AssemblyAttributes Include="AssemblyVersion">
+      <Value>$(AssemblyVersion)</Value>
+    </AssemblyAttributes>
+  </ItemGroup>
+  <ItemGroup>
+    <SitecoreItem Include="sitecore\commerce.item">
+      <Icon>/temp/IconCache/activecommerce-icons/32x32/logo-orange.png</Icon>
+      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\commerce\translation.item">
+      <Icon>/temp/IconCache/People/16x16/book_red.png</Icon>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\commerce\translation\C.item">
+      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
+      <ExcludeItemFrom>
+      </ExcludeItemFrom>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\commerce\translation\C\Checkout-Gift-Card-Already-Added.item">
+      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
+      <ExcludeItemFrom>
+      </ExcludeItemFrom>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\commerce\translation\C\Checkout-Gift-Card-Error.item">
+      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
+      <ExcludeItemFrom>
+      </ExcludeItemFrom>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\commerce\translation\C\Checkout-Gift-Card-Success.item">
+      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
+      <ExcludeItemFrom>
+      </ExcludeItemFrom>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\commerce\translation\C\Checkout-Gift-Card-Zero-Balance-Due.item">
+      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
+      <ExcludeItemFrom>
+      </ExcludeItemFrom>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\commerce\translation\G.item">
+      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
+      <ExcludeItemFrom>
+      </ExcludeItemFrom>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\commerce\translation\G\Gift-Card-Description.item">
+      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
+      <ExcludeItemFrom>
+      </ExcludeItemFrom>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\commerce\translation\G\Gift-Card-Insufficient-Balance.item">
+      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
+      <ExcludeItemFrom>
+      </ExcludeItemFrom>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\commerce\translation\G\Gift-Card-Not-Valid.item">
+      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
+      <ExcludeItemFrom>
+      </ExcludeItemFrom>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\layout.item">
+      <Icon>/temp/IconCache/Applications/16x16/windows.png</Icon>
+      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\layout\Sublayouts.item">
+      <Icon>/temp/IconCache/Software/16x16/elements_selection.png</Icon>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\layout\Sublayouts\ActiveCommerce.item">
+      <Icon>/temp/IconCache/activecommerce-icons/32x32/logo-black.png</Icon>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\layout\Sublayouts\ActiveCommerce\Checkout.item">
+      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
+      <ExcludeItemFrom>
+      </ExcludeItemFrom>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\layout\Sublayouts\ActiveCommerce\Checkout\Checkout - Gift Card.item">
+      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
+      <ExcludeItemFrom>
+      </ExcludeItemFrom>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\templates.item">
+      <Icon>/temp/IconCache/Applications/16x16/form_blue.png</Icon>
+      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\templates\ActiveCommerce.item">
+      <Icon>/temp/IconCache/activecommerce-icons/32x32/logo-black.png</Icon>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\templates\ActiveCommerce\Purchasing.item">
+      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
+      <ExcludeItemFrom>
+      </ExcludeItemFrom>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\templates\ActiveCommerce\Purchasing\CheckoutComponents.item">
+      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
+      <ExcludeItemFrom>
+      </ExcludeItemFrom>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\templates\ActiveCommerce\Purchasing\CheckoutComponents\Gift Card Component.item">
+      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
+      <ExcludeItemFrom>
+      </ExcludeItemFrom>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\templates\ActiveCommerce\Purchasing\CheckoutComponents\Gift Card Component\__Standard Values.item">
+      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
+      <ExcludeItemFrom>
+      </ExcludeItemFrom>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\templates\ActiveCommerce\Purchasing\CheckoutComponents\Gift Card Component\Buttons and Links.item">
+      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
+      <ExcludeItemFrom>
+      </ExcludeItemFrom>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\templates\ActiveCommerce\Purchasing\CheckoutComponents\Gift Card Component\Buttons and Links\Apply Button.item">
+      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
+      <ExcludeItemFrom>
+      </ExcludeItemFrom>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\templates\ActiveCommerce\Purchasing\CheckoutComponents\Gift Card Component\Buttons and Links\Remove Button.item">
+      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
+      <ExcludeItemFrom>
+      </ExcludeItemFrom>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\templates\ActiveCommerce\Purchasing\CheckoutComponents\Gift Card Component\Field Labels.item">
+      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
+      <ExcludeItemFrom>
+      </ExcludeItemFrom>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\templates\ActiveCommerce\Purchasing\CheckoutComponents\Gift Card Component\Field Labels\Card Number.item">
+      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
+      <ExcludeItemFrom>
+      </ExcludeItemFrom>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\templates\ActiveCommerce\Purchasing\CheckoutComponents\Gift Card Component\Field Labels\Pin.item">
+      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
+      <ExcludeItemFrom>
+      </ExcludeItemFrom>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ActiveCommerce.GiftCards\ActiveCommerce.GiftCards.csproj">
+      <Project>{921b6dea-0287-430d-a368-9ee02345b645}</Project>
+      <Name>ActiveCommerce.GiftCards</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ExcludedAssemblies Include="Sitecore.%2a.dll" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\HedgehogDevelopment\SitecoreProject\v9.0\HedgehogDevelopment.SitecoreProject.targets" />
+</Project>
