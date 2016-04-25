@@ -1,23 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.ServiceModel;
 using ActiveCommerce.Orders;
 using ActiveCommerce.Orders.Management;
 using ActiveCommerce.Orders.States;
 using ActiveCommerce.ShopContext;
-using ActiveCommerce.SitecoreX;
 using Microsoft.Practices.Unity;
-using ActiveCommerce.Addresses;
-using Sitecore.Data;
-using Sitecore.Ecommerce.DomainModel.Data;
-using Sitecore.Ecommerce.Search;
-using Sitecore.SecurityModel;
-using Sitecore.Sites;
 using Sitecore.StringExtensions;
 using Sitecore.Tasks;
 using Item = Sitecore.Data.Items.Item;
-using Order = ActiveCommerce.Training.OrderExtension.Order;
 
 namespace ActiveCommerce.Training.OrderBatching
 {
@@ -50,7 +41,7 @@ namespace ActiveCommerce.Training.OrderBatching
                     var id = ExportOrder(order);
                     (order as ActiveCommerce.Training.OrderExtension.Order).ExternalOrderId = id;
                     order.State = endState;
-                    orderManager.Save(order);
+                    orderManager.Save();
                 }
                 catch (Exception e)
                 {

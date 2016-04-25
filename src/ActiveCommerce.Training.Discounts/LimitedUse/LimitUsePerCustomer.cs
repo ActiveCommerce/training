@@ -3,6 +3,8 @@ using System.Linq;
 using ActiveCommerce.Orders;
 using ActiveCommerce.Orders.Management;
 using ActiveCommerce.Rules;
+using ActiveCommerce.SitecoreX.Globalization;
+using ActiveCommerce.Validation;
 using Microsoft.Practices.Unity;
 using Sitecore.Diagnostics;
 using Sitecore.Rules.Conditions;
@@ -35,7 +37,11 @@ namespace ActiveCommerce.Training.Discounts.LimitedUse
                     x.AllowanceCharge.Any(y => !y.ChargeIndicator && y.ID == ruleContext.PromoRule.Code));
             if (count >= UseLimit)
             {
-                DiscountMessages.Add("Discount-Redemption-Customer-Limit-Reached", ruleContext.PromoRule.LineDescription, UseLimit);
+                ruleContext.Cart.AlertMessages.Push(new AlertMessage
+                {
+                    Message = Translator.Format("Discount-Redemption-Customer-Limit-Reached", ruleContext.PromoRule.LineDescription, UseLimit),
+                    Severity = AlertMessageSeverity.WARNING
+                });
             }
             return count < UseLimit;
         }

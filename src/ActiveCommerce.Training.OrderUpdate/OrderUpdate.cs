@@ -1,19 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.ServiceModel;
-using ActiveCommerce.Orders;
-using ActiveCommerce.Orders.Management;
 using ActiveCommerce.Orders.States;
 using ActiveCommerce.ShopContext;
-using ActiveCommerce.SitecoreX;
 using Microsoft.Practices.Unity;
-using Sitecore.Data;
-using Sitecore.Ecommerce.DomainModel.Data;
-using Sitecore.Ecommerce.DomainModel.Orders;
-using Sitecore.Ecommerce.Search;
-using Sitecore.SecurityModel;
-using Sitecore.Sites;
 using Sitecore.StringExtensions;
 using Sitecore.Tasks;
 using Item = Sitecore.Data.Items.Item;
@@ -55,7 +45,7 @@ namespace ActiveCommerce.Training.OrderUpdate
                         {
                             order.DefaultDelivery.TrackingID = serviceOrder.TrackingUrl;
                             order.State = endState;
-                            orderManager.Save(order);
+                            orderManager.Save();
                         }
                     }
                 }

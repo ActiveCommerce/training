@@ -7,7 +7,6 @@ using System.Web.Mvc;
 using ActiveCommerce.Carts;
 using ActiveCommerce.CheckOuts;
 using ActiveCommerce.Orders.Processing;
-using ActiveCommerce.Payment;
 using ActiveCommerce.Products;
 using Microsoft.Practices.Unity;
 using Sitecore.Ecommerce.DomainModel.Addresses;
@@ -15,8 +14,6 @@ using Sitecore.Ecommerce.DomainModel.Carts;
 using Sitecore.Ecommerce.DomainModel.Data;
 using Sitecore.Ecommerce.DomainModel.Prices;
 using Sitecore.Ecommerce.DomainModel.Shippings;
-using Sitecore.Ecommerce.Products;
-using PaymentSystem = Sitecore.Ecommerce.DomainModel.Payments.PaymentSystem;
 using ShoppingCart = Sitecore.Ecommerce.DomainModel.Carts.ShoppingCart;
 using ShoppingCartLine = ActiveCommerce.Carts.ShoppingCartLine;
 
