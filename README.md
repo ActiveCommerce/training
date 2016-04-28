@@ -81,6 +81,9 @@ and we provide no warranty. Use at your own risk.
 [Checkout via API](./src/ActiveCommerce.Training.CheckoutViaApi)
 - Construct a shopping cart and execute order processing directly through the Active Commerce domain layer.
 
+[Gift Cards](./src/ActiveCommerce.GiftCards)
+- Example implementation of Gift Cards, including checkout modifications, a backing (NHibernate-based) Gift Card repository, and simple admin page.
+
 ## Orders and Order Processing
 
 [Order Data Extension](./src/ActiveCommerce.Training.OrderExtension)
