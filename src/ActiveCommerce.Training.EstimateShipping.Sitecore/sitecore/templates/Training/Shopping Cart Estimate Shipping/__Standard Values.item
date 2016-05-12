@@ -1,0 +1,86 @@
+----item----
+version: 1
+id: {C102E168-45B1-497C-8D53-33DBD169132A}
+database: master
+path: /sitecore/templates/Training/Shopping Cart Estimate Shipping/__Standard Values
+parent: {2F93C268-0D3A-46E2-B2D1-3E6981E3F8C0}
+name: __Standard Values
+master: {00000000-0000-0000-0000-000000000000}
+template: {2F93C268-0D3A-46E2-B2D1-3E6981E3F8C0}
+templatekey: Shopping Cart Estimate Shipping
+
+----field----
+field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
+name: __Sortorder
+key: __sortorder
+content-length: 3
+
+400
+----version----
+language: en
+version: 1
+revision: 9c5c8d38-f820-472e-8f62-9bab25ed1a7b
+
+----field----
+field: {689B918F-0D75-483C-85D6-805F823F7627}
+name: Estimate Shipping Header
+key: estimate shipping header
+content-length: 23
+
+Estimate Shipping Costs
+----field----
+field: {787AF474-22B9-47FA-A2F5-7BC0652713C3}
+name: Disclaimer
+key: disclaimer
+content-length: 46
+
+Shipping available to 48 contiguous US states.
+----field----
+field: {55321B77-E774-48C4-A7E8-61582C1D6C37}
+name: Submit Button
+key: submit button
+content-length: 6
+
+Submit
+----field----
+field: {F3EA21B9-234F-4AB1-B75C-4D6E5142B697}
+name: Zip Code Label
+key: zip code label
+content-length: 24
+
+Enter ZIP / Postal Code:
+----field----
+field: {218BD379-9F46-465C-93B4-90669A12F2A9}
+name: Zip Code Placeholder
+key: zip code placeholder
+content-length: 8
+
+Zip Code
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20151207T205444Z
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+9c5c8d38-f820-472e-8f62-9bab25ed1a7b
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20151207T205659Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

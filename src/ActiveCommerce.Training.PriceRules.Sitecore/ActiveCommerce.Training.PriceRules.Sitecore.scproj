@@ -32,6 +32,8 @@
     <SitecoreWebUrl>http://activecommercetraining</SitecoreWebUrl>
     <SitecoreAccessGuid>6620bde8-a0cd-4307-a749-f772a7176c22</SitecoreAccessGuid>
     <InstallSitecoreConnector>True</InstallSitecoreConnector>
+    <EnableValidations>False</EnableValidations>
+    <ValidationSettingsFilePath>.\ActiveCommerce.Training.PriceRules.Sitecore_Debug.xml</ValidationSettingsFilePath>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
     <DebugSymbols>false</DebugSymbols>
@@ -136,31 +138,35 @@
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Settings\Rules\Definitions\Elements\Pricing Actions.item">
+    <SitecoreItem Include="sitecore\system\Settings\Rules\Definitions\Elements\Pricing.item">
       <Icon>/temp/IconCache/activecommerce-icons/32x32/logo-black.png</Icon>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Settings\Rules\Definitions\Elements\Pricing Actions\Discount Displayed Product Price.item">
+    <SitecoreItem Include="sitecore\system\Settings\Rules\Definitions\Elements\Pricing\Discount Displayed Product Price.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Settings\Rules\Definitions\Elements\Pricing Actions\Set Price Matrix Name.item">
+    <SitecoreItem Include="sitecore\system\Settings\Rules\Definitions\Elements\Pricing\Product Category.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\system\Settings\Rules\Definitions\Elements\Pricing\Set Price Matrix Name.item">
       <Icon>/temp/IconCache/Software/32x32/shape_rectangle.png</Icon>
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Settings\Rules\Definitions\Elements\Pricing Actions\Tags.item">
+    <SitecoreItem Include="sitecore\system\Settings\Rules\Definitions\Elements\Pricing\Tags.item">
       <Icon>/temp/IconCache/applications/32x32/bookmarks.png</Icon>
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Settings\Rules\Definitions\Elements\Pricing Actions\Tags\Default.item">
+    <SitecoreItem Include="sitecore\system\Settings\Rules\Definitions\Elements\Pricing\Tags\Default.item">
       <Icon>/temp/IconCache/applications/32x32/bookmark_preferences.png</Icon>
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Settings\Rules\Definitions\Elements\Pricing Actions\Visibility.item">
+    <SitecoreItem Include="sitecore\system\Settings\Rules\Definitions\Elements\Pricing\Visibility.item">
       <Icon>/temp/IconCache/applications/32x32/lightbulb.png</Icon>
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
@@ -170,12 +176,12 @@
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Settings\Rules\Definitions\Tags\Pricing Actions.item">
+    <SitecoreItem Include="sitecore\system\Settings\Rules\Definitions\Tags\Pricing.item">
       <Icon>/temp/IconCache/activecommerce-icons/32x32/logo-black.png</Icon>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Settings\Rules\Definitions\Tags\Pricing Actions\Visibility.item">
+    <SitecoreItem Include="sitecore\system\Settings\Rules\Definitions\Tags\Pricing\Visibility.item">
       <Icon>/temp/IconCache/applications/32x32/lightbulb.png</Icon>
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>

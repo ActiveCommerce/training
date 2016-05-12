@@ -1,0 +1,103 @@
+<project>
+  <Metadata>
+    <metadata>
+      <PackageName>Active Commerce Training - Pricing Rules</PackageName>
+      <Author />
+      <Version />
+      <Revision />
+      <License />
+      <Comment />
+      <Attributes />
+      <Readme />
+      <Publisher />
+      <PostStep />
+      <PackageID />
+    </metadata>
+  </Metadata>
+  <SaveProject>True</SaveProject>
+  <Sources>
+    <xfiles>
+      <Entries>
+        <x-item>/App_Config/Include/xActiveCommerce.zTraining.PriceRules.config</x-item>
+        <x-item>/bin/ActiveCommerce.Training.PriceRules.dll</x-item>
+      </Entries>
+      <Converter>
+        <FileToEntryConverter>
+          <Root>/</Root>
+          <Transforms>
+            <InstallerConfigurationTransform>
+              <Options>
+                <BehaviourOptions>
+                  <ItemMode>Undefined</ItemMode>
+                  <ItemMergeMode>Undefined</ItemMergeMode>
+                </BehaviourOptions>
+              </Options>
+            </InstallerConfigurationTransform>
+          </Transforms>
+        </FileToEntryConverter>
+      </Converter>
+      <Include />
+      <Exclude />
+      <Name>Files</Name>
+    </xfiles>
+    <xitems>
+      <Entries>
+        <x-item>/master/sitecore/templates/Training/General Settings/{545AE26F-5475-43DE-91A4-3CB609F23D53}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Training/General Settings/Prices and Currencies/{8FB7C2CD-E341-4688-929E-2448F55A3895}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Training/General Settings/Prices and Currencies/Pricing Rules/{1A285996-A75A-4F48-ADD7-9BE030AC03AC}/invariant/0</x-item>
+      </Entries>
+      <SkipVersions>False</SkipVersions>
+      <Converter>
+        <ItemToEntryConverter>
+          <Transforms>
+            <InstallerConfigurationTransform>
+              <Options>
+                <BehaviourOptions>
+                  <ItemMode>Undefined</ItemMode>
+                  <ItemMergeMode>Undefined</ItemMergeMode>
+                </BehaviourOptions>
+              </Options>
+            </InstallerConfigurationTransform>
+          </Transforms>
+        </ItemToEntryConverter>
+      </Converter>
+      <Include />
+      <Exclude />
+      <Name>General Settings Extension</Name>
+    </xitems>
+    <xitems>
+      <Entries>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Elements/Pricing/{961B9CA0-926E-4D01-9E08-74A1D53D4401}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Elements/Pricing/Discount Displayed Product Price/{BA3126C8-EF9D-4804-8388-5230F2C826C6}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Elements/Pricing/Product Category/{C2F5A795-4EA9-4D04-A137-ECE693C69603}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Elements/Pricing/Set Price Matrix Name/{CBC2B8A2-71A3-4567-9C53-2583BB1FB970}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Elements/Pricing/Tags/{0E089C9A-1CE2-44FD-8ABF-8F6CF80D7E42}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Elements/Pricing/Tags/Default/{2E17AE76-1333-400D-BB41-CB073575F706}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Elements/Pricing/Visibility/{D57D57B6-1F4C-46FB-9A5F-63FA279039D1}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Tags/Pricing/{586079C7-A4C1-43DA-980D-A197B23C3753}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Tags/Pricing/Visibility/{082AD284-D1E1-44CB-9086-7240D1CEE72C}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Pricing Level/{152206A4-E066-4A43-9DD4-0E65874BB0DA}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Pricing Level/Rules/{23B17F57-2488-486C-9958-28F8262FA41D}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Pricing Level/Tags/{794B6409-EEB8-48A4-8B30-21D8055A7D30}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Pricing Level/Tags/Default/{0E8E1288-F3D4-41A0-8E0A-B55453402208}/invariant/0</x-item>
+      </Entries>
+      <SkipVersions>False</SkipVersions>
+      <Converter>
+        <ItemToEntryConverter>
+          <Transforms />
+        </ItemToEntryConverter>
+      </Converter>
+      <Include />
+      <Exclude />
+      <Name>Rules</Name>
+    </xitems>
+  </Sources>
+  <Converter>
+    <TrivialConverter>
+      <Transforms />
+    </TrivialConverter>
+  </Converter>
+  <Include />
+  <Exclude />
+  <Name />
+</project>
