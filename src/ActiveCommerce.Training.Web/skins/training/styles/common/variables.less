@@ -1,11 +1,150 @@
 
 //
-// Variables.less
+// Common/Variables.less
+// Variables to customize the look and feel of Active Commerce
 // -----------------------------------------------------------
 
-// DEFINE ADDITIONAL AND OVERRIDES OF BASE VARIABLES HERE
 
+
+// GLOBAL VALUES
+// --------------------------------------------------
+
+
+// Base colors
+// -------------------------
+@black: #000000;
+@white: #ffffff;
+
+@foregroundDarker: green;
+@foregroundDark: green;
+@foreground: #999999;
+@foregroundLight: #dddddd;
+@foregroundLighter: #f5f5f5;
 @background: gold;
+
+
+// Accent colors
+// -------------------------
 @highlight: green;
-@bodyBackground: gold;
-@textColor: green;
+@error: #BB0000;
+@warning: #FFC741;
+@info: #0F67A1;
+
+
+// Base
+// -------------------------
+@bodyBackground: @background;
+@textColor: @foregroundDarker;
+
+
+// Links
+// -------------------------
+@linkColor: @highlight;
+@linkColorHover: darken(@linkColor, 10%);
+
+
+// Typography
+// -------------------------
+@baseFontSize: 13px;
+@baseFontFamily: "Helvetica Neue", Helvetica, Arial, sans-serif;
+@baseLineHeight: 18px;
+
+@headingsFontFamily: inherit; // empty to use AC default, @baseFontFamily
+@headingsFontWeight: bold; // instead of browser default, bold
+@headingsColor: inherit; // empty to use AC default, @textColor
+
+
+// Forms
+// -------------------------
+@inputBackground: @white;
+@inputText: @foregroundDark;
+@inputBorder: @foreground;
+@inputBorderRadius: 0px;
+@inputDisabledBackground: @foregroundLighter;
+
+
+// Input placeholder text color
+// -------------------------
+@placeholderText: @foreground;
+
+
+
+// LAYOUT VARIABLES
+// --------------------------------------------------
+
+
+// Scaffolding
+// -------------------------
+@siteWidth: 910px;
+@containerWidth: @siteWidth;
+@sidebarWidth: 162px;
+@sidebarRightWidth: 270px;
+@panelWidth: 205px; // mobile slide-out panels
+@panelRightWidth: @panelWidth;
+@gutter: 20px;
+
+
+// Main Navigation
+// -------------------------
+@navSpacing: 10px;
+@navColumnWidth: 155px;
+@navColumnHeight: 'auto';
+
+
+// Headers
+// -------------------------
+@categoryHeaderBackground: @highlight;
+@categoryHeaderText: @white;
+@categoryImageWidth: 631px;
+
+@sectionHeaderBackground: @highlight;
+@sectionHeaderText: @white;
+
+
+// Footer
+// -------------------------
+@footerLinksColWidth: 166px;
+@footerLinksColTotal: 3; // number of links columns
+
+
+
+// COMPONENT VARIABLES
+// --------------------------------------------------
+
+
+// Dropdown, Tooltip, Modals
+// -------------------------
+@overlayBackground: @white;
+
+
+// Buttons
+// -------------------------
+@bttnBorderRadius: 0px;
+
+@bttnBackground: @foregroundLight;
+@bttnBorder: @bttnBackground;
+@bttnText: @foregroundDarker;
+@bttnHoverBackground: darken(@foregroundLight, 10%);
+@bttnHoverBorder: @bttnHoverBackground;
+@bttnHoverText: darken(@foregroundDarker, 10%);
+
+@bttnAltBackground: @bttnBackground;
+@bttnAltBorder: @bttnAltBackground;
+@bttnAltText: @bttnText;
+@bttnAltHoverBackground: @bttnHoverBackground;
+@bttnAltHoverBorder: @bttnAltHoverBackground;
+@bttnAltHoverText: @bttnHoverText;
+
+@bttnPrimaryBackground: @highlight;
+@bttnPrimaryBorder: @bttnPrimaryBackground;
+@bttnPrimaryText: @white;
+@bttnPrimaryHoverBackground: lighten(@highlight, 10%);
+@bttnPrimaryHoverBorder: @bttnPrimaryHoverBackground;
+@bttnPrimaryHoverText: @white;
+
+@bttnActiveBackground: #51a351;
+@bttnActiveBorder: @bttnActiveBackground;
+@bttnActiveText: @white;
+@bttnActiveHoverBackground: lighten(@bttnActiveBackground, 10%);
+@bttnActiveHoverBorder: @bttnActiveHoverBackground;
+@bttnActiveHoverText: @white;

@@ -61,15 +61,10 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Config\Include\xActiveCommerce.Sites.zTraining.config">
-      <SubType>Designer</SubType>
-    </Content>
-  </ItemGroup>
-  <ItemGroup>
     <Content Include="EndSession.aspx" />
     <Content Include="skins\training\images\icons\cart.png" />
     <Content Include="skins\training\scripts\browse-product.js" />
-    <Content Include="skins\training\scripts\product.cart.js" />
+    <None Include="skins\training\scripts\product.cart.js" />
     <Content Include="skins\training\templates\browse-product\product.htm" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -104,9 +99,11 @@
     <Content Include="skins\training\styles\signin.less" />
     <Content Include="skins\training\styles\signin.mobile.less" />
     <Content Include="skins\training\templates\README.md" />
-    <Content Include="App_Config\Include\xActiveCommerce.zTrainingSkin.config">
+    <None Include="App_Config\Include\xActiveCommerce.zTrainingSkin.config">
       <SubType>Designer</SubType>
-    </Content>
+    </None>
+    <Content Include="App_Config\Include\SiteDefinition.config" />
+    <Content Include="App_Config\Include\MailServer.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
