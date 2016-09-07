@@ -20,6 +20,7 @@
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -154,7 +155,7 @@
     <Content Include="README.md" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Config\Include\xActiveCommerce.zTraining.CoveoSearch.config" />
+    <Content Include="App_Config\Include\Coveo\Coveo.SearchProvider.xActiveCommerce.zTraining.config" />
     <Content Include="skins\sherpa\CoveoSearch.ascx" />
   </ItemGroup>
   <PropertyGroup>
