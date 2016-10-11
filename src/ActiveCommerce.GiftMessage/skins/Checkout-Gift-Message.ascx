@@ -3,11 +3,11 @@
 
 <div ng-controller="GiftMessageCtrl" class="checkout-component">
     
-    <% if (!string.IsNullOrEmpty(Model.Title) || Sitecore.Context.PageMode.IsPageEditorEditing) { %>
+    <% if (!string.IsNullOrEmpty(Model.Title) || ActiveCommerce.SitecoreX.PageMode.IsEditing) { %>
     <h3><%=Editable(x => x.Title) %></h3>
     <% } %>
     
-    <% if (!string.IsNullOrEmpty(Model.Instructions) || Sitecore.Context.PageMode.IsPageEditorEditing) { %>
+    <% if (!string.IsNullOrEmpty(Model.Instructions) || ActiveCommerce.SitecoreX.PageMode.IsEditing) { %>
     <div class="instructions">
     <%=Editable(x => x.Instructions) %>
     </div>
