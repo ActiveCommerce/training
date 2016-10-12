@@ -1,15 +1,17 @@
 ﻿using ActiveCommerce.Prices.Pipelines.GetProductTotals;
-using Sitecore.Caching;
+using ActiveCommerce.Caching;
+using Sitecore.Ecommerce;
 
 namespace ActiveCommerce.Training.RealTimePricing
 {
     public class GetProductPriceFromService : IGetProductTotalsProcessor
     {
-        private static Cache _priceCache;
+        private static ICache _priceCache;
 
         static GetProductPriceFromService()
         {
-            _priceCache = Cache.GetNamedInstance("acPrices", 1 * 1024 * 1024);
+            var cacheManager = Sitecore.Ecommerce.Context.Entity.Resolve<ICacheManager>();
+            _priceCache = cacheManager.GetCache("acPrices", 1 * 1024 * 1024);
         }
 
         public void Process(GetProductTotalsArgs args)

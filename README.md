@@ -104,9 +104,6 @@ and we provide no warranty. Use at your own risk.
 [Microsoft Unity "Hello World" Example](./src/ActiveCommerce.Training.HelloWorld)
 - Simple example of replacing a component in Unity. In this case, the `ShoppingCartManager`.
 
-[Shopping Cart Persistence](./src/ActiveCommerce.Training.CartPersistence)
-- Persist user shopping carts beyond the ASP.NET Session, in cookies and/or user profiles.
-
 [Product Quantity Input](./src/ActiveCommerce.Training.ProductQuantity)
 - Allow a user to specify a product quantity before adding to cart.
 

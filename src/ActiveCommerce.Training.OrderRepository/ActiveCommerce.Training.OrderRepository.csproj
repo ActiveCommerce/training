@@ -14,7 +14,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>ActiveCommerce.Training.OrderRepository</RootNamespace>
     <AssemblyName>ActiveCommerce.Training.OrderRepository</AssemblyName>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <UseIISExpress>true</UseIISExpress>
     <IISExpressSSLPort />
     <IISExpressAnonymousAuthentication />
@@ -60,10 +60,9 @@
       <HintPath>$(SitecorePath)\bin\Glass.Mapper.Sc.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
-    <Reference Include="Microsoft.Practices.Unity, Version=1.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+    <Reference Include="Microsoft.Practices.Unity">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>$(SitecorePath)\bin\Microsoft.Practices.Unity.dll</HintPath>
-      <Private>False</Private>
     </Reference>
     <Reference Include="Sitecore.Ecommerce.Core">
       <HintPath>$(SitecorePath)\bin\Sitecore.Ecommerce.Core.dll</HintPath>

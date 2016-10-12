@@ -2,7 +2,7 @@
 
 <div ng-controller="GiftMessageSummaryCtrl" class="checkout-component">
 
-    <% if (!string.IsNullOrEmpty(Model.Title) || Sitecore.Context.PageMode.IsPageEditorEditing) { %>
+    <% if (!string.IsNullOrEmpty(Model.Title) || ActiveCommerce.SitecoreX.PageMode.IsEditing) { %>
     <h3><%=Editable(x => x.Title) %></h3>
     <% } %>
     

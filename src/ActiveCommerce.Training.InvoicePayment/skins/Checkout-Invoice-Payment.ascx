@@ -2,15 +2,15 @@
 
 <div ng-controller="InvoicePaymentCtrl" class="checkout-component">
     
-    <% if (!string.IsNullOrEmpty(Model.Title) || Sitecore.Context.PageMode.IsPageEditorEditing) { %>
+    <% if (!string.IsNullOrEmpty(Model.Title) || ActiveCommerce.SitecoreX.PageMode.IsEditing) { %>
         <h3><%=Editable(x => x.Title) %></h3>
     <% } %>
     
-    <% if (!string.IsNullOrEmpty(Model.HeaderInstructions) || Sitecore.Context.PageMode.IsPageEditorEditing) { %>
+    <% if (!string.IsNullOrEmpty(Model.HeaderInstructions) || ActiveCommerce.SitecoreX.PageMode.IsEditing) { %>
         <div class="header-instructions"><%=Editable(x => x.HeaderInstructions) %></div>
     <% } %>
 
-    <% if (!string.IsNullOrEmpty(Model.Instructions) || Sitecore.Context.PageMode.IsPageEditorEditing) { %>
+    <% if (!string.IsNullOrEmpty(Model.Instructions) || ActiveCommerce.SitecoreX.PageMode.IsEditing) { %>
         <div class="instructions"><%=Editable(x => x.Instructions) %></div>
     <% } %>
     

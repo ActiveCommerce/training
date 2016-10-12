@@ -19,7 +19,7 @@
                 
 
 		    </div>
-            <% if (!String.IsNullOrEmpty(Model.HeaderImage.GetUri()) || Sitecore.Context.PageMode.IsPageEditorEditing) { %>
+            <% if (!String.IsNullOrEmpty(Model.HeaderImage.GetUri()) || ActiveCommerce.SitecoreX.PageMode.IsEditing) { %>
             <div class="banner">
                 <%=RenderImage(x => x.HeaderImage, new ImageParameters().FromSettings("Browse.Header"), true) %>
 		    </div>
@@ -51,7 +51,7 @@
                     </div>
                     <a class="details" href="<%=category.GetUrl() %>">
                         <span class="name"><%=GlassHtml.Editable(category, x => x.Title) %></span>
-                        <% if (!String.IsNullOrEmpty(category.ShortDescription) || Sitecore.Context.PageMode.IsPageEditorEditing) { %>
+                        <% if (!String.IsNullOrEmpty(category.ShortDescription) || ActiveCommerce.SitecoreX.PageMode.IsEditing) { %>
                         <span class="desc"><%=GlassHtml.Editable(category, x => x.ShortDescription) %></span>
                         <% } %>
                     </a>

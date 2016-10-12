@@ -1,7 +1,7 @@
 ﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="Checkout-Gift-Card.ascx.cs" Inherits="ActiveCommerce.GiftCards.skins.Checkout_Gift_Card" %>
 <%@ Import Namespace="ActiveCommerce.SitecoreX.Globalization" %>
 
-<% if (Sitecore.Context.PageMode.IsPageEditorEditing && Model.PaymentOption == null) { %>
+<% if (ActiveCommerce.SitecoreX.PageMode.IsEditing && Model.PaymentOption == null) { %>
 <div class="editor-info-bar">
     Click the 'Edit Payment Configuration' button to configure the payment option (required).
 </div>
@@ -9,15 +9,15 @@
 
 <div ng-show="enabled" ng-controller="GiftCardCtrl" class="gift-card checkout-component" ng-init="code='<%=Model.PaymentOption != null ? Model.PaymentOption.Code : string.Empty %>'">
 
-    <% if (!string.IsNullOrEmpty(Model.Title) || Sitecore.Context.PageMode.IsPageEditorEditing) { %>
+    <% if (!string.IsNullOrEmpty(Model.Title) || ActiveCommerce.SitecoreX.PageMode.IsEditing) { %>
     <h3><%=Editable(x => x.Title) %></h3>
     <% } %>
     
-    <% if (!string.IsNullOrEmpty(Model.HeaderInstructions) || Sitecore.Context.PageMode.IsPageEditorEditing) { %>
+    <% if (!string.IsNullOrEmpty(Model.HeaderInstructions) || ActiveCommerce.SitecoreX.PageMode.IsEditing) { %>
         <div class="header-instructions"><%=Editable(x => x.HeaderInstructions) %></div>
     <% } %>
 
-    <% if (!string.IsNullOrEmpty(Model.Instructions) || Sitecore.Context.PageMode.IsPageEditorEditing) { %>
+    <% if (!string.IsNullOrEmpty(Model.Instructions) || ActiveCommerce.SitecoreX.PageMode.IsEditing) { %>
     <div class="instructions">
     <%=Editable(x => x.Instructions) %>
     </div>

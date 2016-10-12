@@ -1,6 +1,6 @@
 ﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="BookTab.ascx.cs" Inherits="ActiveCommerce.Training.CustomProduct.skins.training.BookTab" %>
 
-<% if(Sitecore.Context.PageMode.IsPageEditor) { %>
+<% if(ActiveCommerce.SitecoreX.PageMode.IsEditing) { %>
     <ul class="ui-tabs-nav">
         <li class="ui-state-active"><a href="#<%=Id %>"><%=ActiveCommerce.SitecoreX.Globalization.Translator.Render(TitleKey)%></a></li>
     </ul>
